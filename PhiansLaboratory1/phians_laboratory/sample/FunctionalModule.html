@@ -1,0 +1,325 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>模板配置</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Include font-awesome here, CDN is ok, or locally installed by bower to your project -->
+    <link rel="stylesheet" href="../Content/css/bootstrap.min.css" />
+    <link href="../Scripts/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../Content/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Scripts/zTree_v3/css/awesomeStyle/awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Content/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+    <link rel="stylesheet" href="../Content/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="../Content/css/ace-rtl.min.css" />
+    <!--//通用css-->
+    <link href="../Content/common.css" rel="stylesheet" />
+  
+    <!-- ace styles -->
+    <script src="../Scripts/jquery-1.11.3.min.js"></script>
+    <script src="../Scripts/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="../Scripts/boostrap/bootstrap.min.js"></script>
+    <script src="../Scripts/ace/ace.min.js" class="ace-main-stylesheet" id="main-ace-style"></script>
+    <script type="text/javascript" src="../Scripts/zTree_v3/js/jquery.ztree.core.js"></script>
+    <script type="text/javascript" src="../Scripts/zTree_v3/js/jquery.ztree.excheck.js"></script>
+    <script type="text/javascript" src="../Scripts/zTree_v3/js/jquery.ztree.exedit.js"></script>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="widget-box widget-color-green2">
+                    <div class="widget-header">
+                        <h4 class="widget-title lighter smaller">
+                            页面权限配置
+                            <span class="smaller-80">(页面填写)</span>
+                        </h4>
+                    </div>
+
+                    <div class="widget-body">
+                        <div class="widget-main padding-8">
+                            <ul id="treeDemo" class="ztree"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 添加节点树模态窗模态框（Modal） -->
+        <div style="display:none">
+            <div id="dialog">
+                <form class="form-horizontal" role="form" style="margin-top:20px">
+                    <div class="form-group">
+                        <label for="firstname" class="col-sm-3 control-label">节点名称:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="firstname" placeholder="请输入名字">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname" class="col-sm-3 control-label">节点ID:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="lastname" placeholder="请输入姓">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname" class="col-sm-3 control-label">按钮:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="lastname" placeholder="请输入姓">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname" class="col-sm-3 control-label">链接地址:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="lastname" placeholder="请输入姓">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+       
+    </div>
+
+</body>
+</html>
+<script type="text/javascript">
+    $(function () {
+       
+    })
+    var setting = {
+        view: {
+            addHoverDom: addHoverDom,
+            removeHoverDom: removeHoverDom,
+            // addDiyDom: addDiyDom,
+            selectedMulti: false
+        },
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        edit: {
+            enable: true,
+            //给节点额外增加属性来控制“重命名”、“删除”图标的显示或隐藏
+            showRenameBtn: showRenameBtn,
+            showRemoveBtn: showRemoveBtn
+        }
+        ,
+        callback: {
+            beforeDrag: beforeDrag,
+            beforeEditName: beforeEditName,
+            beforeRemove: beforeRemove,
+            beforeRename: beforeRename,
+            onRemove: onRemove,
+            onRename: onRename
+        }
+    };
+
+    var zNodes = [
+        { id: 1, pId: 0, name: "pNode 1", open: true },
+        { id: 11, pId: 1, name: "pNode 11" },
+        { id: 111, pId: 11, name: "sNode 111" },
+        { id: 112, pId: 11, name: "sNode 112" },
+        { id: 113, pId: 11, name: "sNode 113" },
+        { id: 114, pId: 11, name: "sNode 114" },
+        { id: 12, pId: 1, name: "pNode 12" },
+        { id: 121, pId: 12, name: "sNode 121" },
+        { id: 122, pId: 12, name: "sNode 122" },
+        { id: 123, pId: 12, name: "sNode 123" },
+        { id: 124, pId: 12, name: "sNode 124" },
+        { id: 13, pId: 1, name: "pNode 13", isParent: true },
+        { id: 2, pId: 0, name: "pNode 2" },
+        { id: 21, pId: 2, name: "pNode 21", open: true },
+        { id: 211, pId: 21, name: "sNode 211" },
+        { id: 212, pId: 21, name: "sNode 212" },
+        { id: 213, pId: 21, name: "sNode 213" },
+        { id: 214, pId: 21, name: "sNode 214" },
+        { id: 22, pId: 2, name: "pNode 22" },
+        { id: 221, pId: 22, name: "sNode 221" },
+        { id: 222, pId: 22, name: "sNode 222" },
+        { id: 223, pId: 22, name: "sNode 223" },
+        { id: 224, pId: 22, name: "sNode 224" },
+        { id: 23, pId: 2, name: "pNode 23" },
+        { id: 231, pId: 23, name: "sNode 231" },
+        { id: 232, pId: 23, name: "sNode 232" },
+        { id: 233, pId: 23, name: "sNode 233" },
+        { id: 234, pId: 23, name: "sNode 234" },
+        { id: 3, pId: 0, name: "pNode 3", isParent: true }
+    ];
+
+    $(document).ready(function () {
+        $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+        //设置前面是复选框还是单选框还是不可编辑
+    });
+    //是否可以拖
+    var log, className = "dark";
+    function beforeDrag(treeId, treeNodes) {
+        return true;
+    }
+
+    //鼠标放上去出现图标
+    var newCount = 1;
+    function addHoverDom(treeId, treeNode) {
+        var sObj = $("#" + treeNode.tId + "_span");
+        if (treeNode.editNameFlag || $("#addBtn_" + treeNode.tId).length > 0) return;
+        var addStr = "<span class='button add' id='addBtn_" + treeNode.tId
+                 + "' title='add node' onfocus='this.blur();'></span>";
+        sObj.after(addStr);
+
+        var btn = $("#addBtn_" + treeNode.tId);
+        if (btn) btn.bind("click", function () {
+            var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+            // zTree.addNodes(treeNode, { id: (100 + newCount), pId: treeNode.id, name: "new node" + (newCount++) });
+            $("#dialog").dialog({
+                resizable: true,
+                title: "添加节点",
+                width: 500,
+                height: 400,
+                modal: true,
+                buttons: {
+                    "提交": function () {
+                        $(this).dialog("close");
+                    },
+                    "取消": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+            return false;
+        });
+
+    };
+    //鼠标移开失去hover事件
+    function removeHoverDom(treeId, treeNode) {
+        $("#addBtn_" + treeNode.tId).unbind().remove();
+    };
+    //点击编辑按钮
+    function beforeEditName(treeId, treeNode) {
+        $("#dialog").dialog({
+            resizable: true,
+            title: "修改节点",
+            width: 500,
+            height: 400,
+            modal: true,
+            buttons: {
+                "提交": function () {
+                    $(this).dialog("close");
+                },
+                "取消": function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+        //className = (className === "dark" ? "" : "dark");
+        //showLog("[ " + getTime() + " beforeEditName ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+        //var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+        //zTree.selectNode(treeNode);
+        //$("#addBtn_" + treeNode.tId).unbind().remove();
+    }
+
+    //点击删除按钮
+    function beforeRemove(treeId, treeNode) {
+        className = (className === "dark" ? "" : "dark");
+        var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+        zTree.selectNode(treeNode);
+        return 44;
+    }
+
+    function onRemove(e, treeId, treeNode) {
+        // showLog("[ " + getTime() + " onRemove ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+    }
+
+
+    //判断节点名称不能为空
+    function beforeRename(treeId, treeNode, newName) {
+        className = (className === "dark" ? "" : "dark");
+        //  showLog("[ " + getTime() + " beforeRename ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+        if (newName.length == 0) {
+            alert("节点名称不能为空.");
+            var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+            setTimeout(function () { zTree.editName(treeNode) }, 10);
+            return false;
+        }
+        return true;
+    }
+    function onRename(e, treeId, treeNode) {
+        //showLog("[ " + getTime() + " onRename ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+    }
+    //function showLog(str) {
+    //    if (!log) log = $("#log");
+    //    log.append("<li class='" + className + "'>" + str + "</li>");
+    //    if (log.children("li").length > 8) {
+    //        log.get(0).removeChild(log.children("li")[0]);
+    //    }
+    //}
+    //function getTime() {
+    //    var now = new Date(),
+    //    h = now.getHours(),
+    //    m = now.getMinutes(),
+    //    s = now.getSeconds(),
+    //    ms = now.getMilliseconds();
+    //    return (h + ":" + m + ":" + s + " " + ms);
+    //}
+    ////是否显示编辑按钮
+    function showRenameBtn(treeId, treeNode) {
+        //获取节点所配置的noEditBtn属性值
+        if (treeNode.noEditBtn != undefined && treeNode.noEditBtn) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    ////是否显示删除按钮
+    function showRemoveBtn(treeId, treeNode) {
+        return !treeNode.pId == "0";             //跟节点返回false,所以跟节点不显示删除按钮。
+    }
+    //function beforeRemove(treeId, treeNode) {
+    //    if (treeNode.pId == 0) {                //如果删除的是根节点，也提示无法删除
+    //        alert("根节点无法删除！")
+    //        return false;                    //返回false 就会使前端的节点还保持存在，
+    //        //  如果是true,则会在前端界面删除，但数据库中还会有，刷新一下即可再次出现
+    //    }
+    //    if (confirm("是否删除？")) {  // 询问是否删除，若删除，则利用Ajax 技术异步删除，同是返回json格式数据，告知前台是否删除成功！
+    //        $.post('${path}/DeleteCityServlet?ids=' + treeNode.id, function (data) { // 从数据库中删除
+    //            if (data.success) {                   // data  为 json 格式数据
+    //                zTree.removeNode(treeNode);     // z-Tree 的api ，从视角上 删除
+    //                alert(data.msg);                // 要在后台删除成功后再进行视角上删除，这样就真正意义实现了删除。
+    //            } else {
+    //                alert(data.msg);
+    //                return false;
+    //            }
+    //        });
+    //    }
+    //    return;
+    //}
+
+    //function beforeRename(treeId, treeNode, newName, isCancel) {
+    //    var oldName = treeNode.nodeName;    //首先取原始的节点值
+    //    if (newName == "") {                  // 新名称为空的情况
+    //        var node = treeNode.getParentNode();  //获取父节点
+    //        zTree.reAsyncChildNodes(node, "refresh");  //重新访问数据库更新父节点，即可回到旧名称
+    //        alert("名称不能为空！");
+    //    }
+    //    else if (newName != treeNode.nodeName) {     // 如果新名称与就名称一致，什么也不做
+    //        $.ajax({
+    //            url: "${path}/EditCityServlet",     //更改请求
+    //            data: { id: treeNode.id, name: newName, pId: treeNode.pId },
+    //            cache: false,
+    //            dataType: 'JSON',
+    //            type: 'post',
+    //            success: function (data) {
+    //                if (data.success) {
+    //                    alert(data.msg);   //提示更改成功!
+    //                } else {                    //修改失败，即同一父类型下不能名称相同（我自己加的限制条件，你可以根据需要修改）
+    //                    var node = treeNode.getParentNode();
+    //                    zTree.reAsyncChildNodes(node, "refresh");  //回到旧名称
+    //                    alert(data.msg);
+    //                }
+    //            }
+    //        });
+    //    }
+    //}
+
+</script>

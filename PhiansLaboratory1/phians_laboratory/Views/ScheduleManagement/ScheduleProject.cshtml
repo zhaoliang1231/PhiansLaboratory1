@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "ScheduleProject";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("ScheduleProjectJs")
+</head>
+
+<body>
+    <div id="_layout" class="easyui-layout" data-options="fit:true,border:false">
+        <!--<%-- 项目树 --%>-->
+        <div data-options="region:'west', border:false">
+            <div id="ProjectTree">
+            </div>
+           
+        </div>
+        <div data-options="region:'east', border:false">
+            <!--<%-- 子项目列表 --%>-->
+            <div id="ProjectSubList">
+            </div>
+        </div>
+    </div>
+    <div style="display:none">
+        <!-- MTR信息工具栏 -->
+        <div id="ProjectSubList_toolbar">
+
+           
+                <label class="h_d1" style="width: 80px; text-align: right;">Main item:</label>
+                <label class="h_d1" style="width: 120px; text-align: right;">ProjectName:</label>
+                <input id="ProjectName1" class="easyui-textbox" name="ProjectName" style="width: 200px; " readonly="readonly" />
+
+
+                <label class="h_d1" style="width: 120px; text-align: right; display: inline-block">Plan Start Date:</label>
+                <input id="PlanStartDate1" class="easyui-datetimebox" name="PlanStartDate" style="width: 140px;"  />
+
+
+                <label class="h_d1" style="width: 120px; text-align: right; display: inline-block; ">Plan End Date:</label>
+                <input id="PlanEndDate1" class="easyui-datetimebox" name="PlanEndDate" style="width: 140px;"/>
+
+                <a href="javascript:;" id="edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Save</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+           
+</div>
+
+
+        @*<form id="ProjectSubInfo" method="post">
+            <div class="h_d" >
+                <div class="h_dline" style="height: 23px; margin-top: 40px; margin-left: 20px; float: left;">
+                    <label class="h_d1" style="width: 120px; text-align: right;">MTR No:</label>
+                    <input id="ProjectName" class="easyui-textbox" name="ProjectName" style="width: 140px; " readonly="readonly" />
+                </div>
+              
+                <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 20px;float: left;">
+                    <label class="h_d1" style="width: 120px; text-align: right; display: inline-block">Plan Start Date:</label>
+                    <input id="PlanStartDate" class="easyui-datetimebox" name="PlanStartDate" style="width: 140px;" required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 20px;float: left;">
+                    <label class="h_d1" style="width: 120px; text-align: right; display: inline-block; ">Plan End Date:</label>
+                    <input id="PlanEndDate" class="easyui-datetimebox" name="PlanEndDate" style="width: 140px;" required="required" />
+                </div>
+
+            </div>
+        </form>*@
+    </div>
+</body>
+</html>

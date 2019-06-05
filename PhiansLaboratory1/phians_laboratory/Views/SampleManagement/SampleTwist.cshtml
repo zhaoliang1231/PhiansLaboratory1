@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "SampleTwist";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("SampleTwistJs")
+</head>
+<body>
+    @* *************** 样品流转信息列表 *************** *@
+    <div id="Sample_datagrid"></div>
+
+    <div style="display:none">
+        @* *************样品流转信息工具栏************* *@
+        <div id="Sample_circulation_toolbar">
+            <span style="margin-left:10px">
+                <input id="return_checked" type="checkbox" value="0" checked="checked" /><label for="sample_return">Return</label>
+                <span style="width:10px;display:inline-block"></span>
+                <input id="borrow_checked" type="checkbox" value="1" /><label for="sample_borrow">Borrow</label>
+            </span>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <label>Scan code：</label>
+            <input id="search_text" class="easyui-textbox" style="width: 150px" />
+            <a href="javascript:;" id="append_sample" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Append</a> @* 追加 *@
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="edit_sample" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit</a> @* 修改 *@
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="del_sample" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delect</a> @* 删除 *@
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="sumbit_sample" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">Sumbit</a> @* 提交 *@
+        </div>
+        @*归还/借用弹窗*@
+        <form method="post" id="edit_dialog">
+            <div class="h_d" style="margin-top: 20px;">
+                <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 130px;text-align:right;display:inline-block">Status:</label>
+                    <input id="Status" class="easyui-textbox" name="Status" style="width: 250px; height: 50px" required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 50px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 130px; text-align: right; display: inline-block">Remark:</label>
+                    <input id="status" class="easyui-textbox" name="Remark" style="width: 250px; height: 50px; " required="required" data-options="multiline:true" />
+                </div>
+            </div>
+        </form>
+
+        @*归还/借用弹窗*@
+        @*<form method="post" id="return_dialog">
+            <div class="h_d" style="margin-top: 20px;">
+                <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 130px;text-align:right;display:inline-block">SampleNo:</label>
+                    <input id="sample_text" class="easyui-textbox" name="" style="width: 220px;height:50px" required="required" data-options="editable:false" />
+                </div>
+                <div class ="h_dline" style="height: 23px; margin-top: 30px; margin-left: 10px; float: left;">
+                    <a href="javascript:;" id="search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a> 
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 50px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 130px; text-align: right; display: inline-block">Status:</label>
+                    <input id="status" class="easyui-textbox" name="" style="width: 220px; height: 50px; " required="required" data-options="editable:false" />
+                </div>
+            </div>
+        </form>*@
+</body>
+</html>

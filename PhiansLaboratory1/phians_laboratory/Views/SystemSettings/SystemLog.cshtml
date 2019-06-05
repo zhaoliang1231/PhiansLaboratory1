@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "SystemLog";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title>系统日志</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("SystemLogJs")
+</head>
+<body>
+    @*日志列表*@
+    <div id="System_log"></div>
+    @*日志工具栏*@
+    <div style="display: none">
+        <div id="message_show_toolbar">
+            <a href="javascript:;" id="click_ok" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">查看日志内容</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <input id="search" style="width: 150px" class="easyui-combobox" />
+            <span id="key_span" style="display:inline-block">
+                <input id="key" style="width: 150px" class="easyui-textbox" />
+            </span>
+            <a href="javascript:;" id="search_info" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+        </div>
+        <!--@*查看信息表单*@-->
+        <form id="S1_dialog">
+            <div title="查看">
+                <div class="h_dline" style="height: 23px; margin-top: 40px; margin-left: 50px">
+                    <div class="h_dline" style="height: 23px; margin-top: 20px;">
+                        <label class="h_d1" style="display:inline-block;width: 140px;text-align:right;">登录用户:</label>
+                        <input id="UserId" name="UserName" class="easyui-textbox" style="width: 180px; height: 22px; margin-left: 5px" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 20px;">
+                        <label class="h_d1" style="display:inline-block;width: 140px;text-align:right;">用户IP:</label>
+                        <input id="OperationIp" name="OperationIp" class="easyui-textbox" style="width: 180px; height: 22px; margin-left: 5px" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 20px;">
+                        <label class="h_d1" style="display:inline-block;width: 140px;text-align:right;">操作日期:</label>
+                        <input id="Text11" name="OperationDate" class="easyui-datebox" style="width: 180px; height: 22px; margin-left: 5px" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 20px;">
+                        <label class="h_d1" style="display:inline-block;width: 140px;text-align:right;">操作类型:</label>
+                        <input id="OperationType" name="OperationType" class="easyui-textbox" style="width: 180px; height: 22px; margin-left: 5px" />
+                    </div>
+                    <div class="h_dline" style="height: 46px; margin-top: 20px;">
+                        <label class="h_d1" style="display:inline-block;width: 140px;text-align:right;">操作信息:</label>
+                        <input id="OperationInfo" name="OperationInfo" class="easyui-textbox" data-options="multiline:true" style="width: 180px; height: 66px; margin-left: 5px" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    
+</body>
+</html>

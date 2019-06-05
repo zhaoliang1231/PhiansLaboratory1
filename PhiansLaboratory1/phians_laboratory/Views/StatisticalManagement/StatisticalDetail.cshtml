@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title>@ViewBag.Title</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+
+    @Html.CombresLink("StatisticalDetailJs")
+</head>
+<body>
+
+    <div id="cc" class="easyui-layout" style="height:800px;">
+        <div data-options="region:'north',title:'图表类型选择',split:true" style="height:100px;text-align:center;line-height:50px;">
+            <label>类型选择：</label>
+            <input id="Type_choose" class="easyui-combobox" style="width: 300px" />
+            <label>开始时间：</label>
+            <input id="StartTime" class="easyui-datebox" style="width: 150px" />
+            <label>结束时间： </label>
+            <input id="EndTime" class="easyui-datebox" style="width: 150px" />
+            <a href="javascript:;" id="search" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">refresh</a>
+        </div>
+        <div data-options="region:'south',title:'图表显示',split:true" style="height:700px;">
+            <div id="Chart1">
+                <div id="tt" class="easyui-tabs">
+                    <div title="LAB Operation Team" style="" onclick="">
+                        <div id="container1" style="width:900px;height:600px;margin:20px auto"></div>
+                    </div>
+                    <div title="LAB Support Team">
+                        <div id="department_layout" class="easyui-layout" style="height:600px;">
+                            <!--<%-- 部门树 --%>-->
+                            <div data-options="region:'west', border:false">
+                                <div id="department_info">
+                                </div>
+                            </div>
+                            <div data-options="region:'east', border:false">
+                                <!--<%-- 员工列表 --%>-->
+                                <div id="container2" style="width:900px;height:600px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="Chart2" style="display:none">
+              
+                <div id="container3" style="width:1200px;height:600px;margin:20px auto"></div>
+            </div>
+            <div id="Chart3" style="display:none">
+             
+                <div id="container4" style="width:1200px;height:600px;margin:20px auto"></div>
+            </div>
+            <div id="Chart4" style="display:none">
+             
+                <div class="" style="text-align:center;margin:20px;">
+                    <label>BU： </label>
+                    <input id="BU" class="easyui-combobox" style="width: 200px;margin:0 auto" />
+                </div>
+                <div id="container5" style="width:1200px;height:600px;margin:20px auto"></div>
+            </div>
+            <div id="Chart5" style="display:none">
+                
+                <div id="container6" style="width:1200px;height:600px;margin:20px auto"></div>
+            </div>
+            <div id="Chart6" style="display:none">
+              
+                <div id="container7" style="width:1200px;height:400px;margin:20px auto"></div>
+                <div class="" style="text-align:center;margin-bottom:20px;">
+                    <label>最大值：</label><input type="number" style="width:100px;height:24px;border-radius:4px;outline:none; border:1px solid #cfcfcf;"  id="max"/>
+                    <label>最小值：</label><input type="number" style="width:100px;height:24px;border-radius:4px;outline:none; border:1px solid #cfcfcf;" id="min" />
+                    <a href="javascript:;" id="Add" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">确认</a>
+                </div>
+                <div id="month" style="text-align:center">
+                    <label>2018-05：</label><input class="easyui-textbox" style="width:100px"/>
+                   
+                </div>
+            </div>
+            <div id="Chart7" style="display:none">
+                
+                <div id="container8" style="width:1200px;height:600px;margin:20px auto"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../../easyui/themes/default/easyui.css" rel="stylesheet" />
+</head>
+
+<body>
+    <img id="Picture_img" src="#" width="1000" height="500" />
+</body>
+
+</html>
+<script src="../../easyui/jquery.min.js"></script>
+<script src="../../easyui/jquery.easyui.min.js"></script>
+<script>
+ function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r != null) {
+            return decodeURIComponent(r[2]);
+        }
+        return null; //返回参数值
+ }
+ var url = Util.getUrlParam('url');
+ $(function () {
+     $("#Picture_img").attr("src", url);
+ });
+</script>

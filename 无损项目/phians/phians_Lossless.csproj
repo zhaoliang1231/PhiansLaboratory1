@@ -1,0 +1,2322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF38267A-6BA6-4995-A170-489BC9426B80}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>phians</RootNamespace>
+    <AssemblyName>phians</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.5.14.5506.26202\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.BarCode">
+      <HintPath>adduction_dll\Aspose.BarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells">
+      <HintPath>adduction_dll\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Pdf, Version=10.1.0.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>adduction_dll\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Slides">
+      <HintPath>adduction_dll\Aspose.Slides.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=17.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>adduction_dll\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="Combres">
+      <HintPath>..\packages\combres.2.3.0.4\lib\net40\Combres.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="dotless.Core">
+      <HintPath>..\packages\dotless.1.4.1.0\lib\dotless.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EcmaScript.NET">
+      <HintPath>..\packages\EcmaScript.Net.1.0.1.0\lib\net20\EcmaScript.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Fasterflect">
+      <HintPath>..\packages\fasterflect.2.1.3\lib\net40\Fasterflect.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>adduction_dll\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.2.1\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="PageOffice, Version=4.0.0.1, Culture=neutral, PublicKeyToken=1d75ee5788809228, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>adduction_dll\PageOffice.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=2.6.1.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Quartz.2.6.1\lib\net40\Quartz.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Security">
+      <HintPath>adduction_dll\Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Yahoo.Yui.Compressor">
+      <HintPath>..\packages\YUICompressor.NET.2.7.0.0\lib\NET20\Yahoo.Yui.Compressor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adduction_dll\Aspose.BarCode.dll" />
+    <Content Include="adduction_dll\Aspose.Words.dll" />
+    <Content Include="App_Data\combres.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\combres_full_with_annotation.xml" />
+    <Content Include="App_Data\combres_minimal.xml" />
+    <Content Include="App_Data\seal.mdb" />
+    <Content Include="artDialog\artDialog.js" />
+    <Content Include="artDialog\artDialog.source.js" />
+    <Content Include="artDialog\index.html" />
+    <Content Include="artDialog\jquery.artDialog.js" />
+    <Content Include="artDialog\jquery.artDialog.source.js" />
+    <Content Include="artDialog\plugins\iframeTools.js" />
+    <Content Include="artDialog\plugins\iframeTools.source.js" />
+    <Content Include="artDialog\skins\aero.css" />
+    <Content Include="artDialog\skins\aero\aero_s.png" />
+    <Content Include="artDialog\skins\aero\aero_s2.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_close.hover.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_close.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_e.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_n.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_ne.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_nw.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_s.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_se.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_sw.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_title_icon.png" />
+    <Content Include="artDialog\skins\aero\ie6\aui_w.png" />
+    <Content Include="artDialog\skins\black.css" />
+    <Content Include="artDialog\skins\black\bg.png" />
+    <Content Include="artDialog\skins\black\bg2.png" />
+    <Content Include="artDialog\skins\black\bg_css3.png" />
+    <Content Include="artDialog\skins\black\bg_css3_2.png" />
+    <Content Include="artDialog\skins\black\ie6\close.hover.png" />
+    <Content Include="artDialog\skins\black\ie6\close.png" />
+    <Content Include="artDialog\skins\black\ie6\e.png" />
+    <Content Include="artDialog\skins\black\ie6\n.png" />
+    <Content Include="artDialog\skins\black\ie6\ne.png" />
+    <Content Include="artDialog\skins\black\ie6\nw.png" />
+    <Content Include="artDialog\skins\black\ie6\s.png" />
+    <Content Include="artDialog\skins\black\ie6\se.png" />
+    <Content Include="artDialog\skins\black\ie6\sw.png" />
+    <Content Include="artDialog\skins\black\ie6\w.png" />
+    <Content Include="artDialog\skins\blue.css" />
+    <Content Include="artDialog\skins\blue\bg.png" />
+    <Content Include="artDialog\skins\blue\bg2.png" />
+    <Content Include="artDialog\skins\blue\bg_css3.png" />
+    <Content Include="artDialog\skins\blue\bg_css3_2.png" />
+    <Content Include="artDialog\skins\blue\ie6\close.hover.png" />
+    <Content Include="artDialog\skins\blue\ie6\close.png" />
+    <Content Include="artDialog\skins\blue\ie6\e.png" />
+    <Content Include="artDialog\skins\blue\ie6\n.png" />
+    <Content Include="artDialog\skins\blue\ie6\ne.png" />
+    <Content Include="artDialog\skins\blue\ie6\nw.png" />
+    <Content Include="artDialog\skins\blue\ie6\s.png" />
+    <Content Include="artDialog\skins\blue\ie6\se.png" />
+    <Content Include="artDialog\skins\blue\ie6\sw.png" />
+    <Content Include="artDialog\skins\blue\ie6\w.png" />
+    <Content Include="artDialog\skins\chrome.css" />
+    <Content Include="artDialog\skins\chrome\border.png" />
+    <Content Include="artDialog\skins\chrome\chrome_s.png" />
+    <Content Include="artDialog\skins\default.css" />
+    <Content Include="artDialog\skins\green.css" />
+    <Content Include="artDialog\skins\green\bg.png" />
+    <Content Include="artDialog\skins\green\bg2.png" />
+    <Content Include="artDialog\skins\green\bg_css3.png" />
+    <Content Include="artDialog\skins\green\bg_css3_2.png" />
+    <Content Include="artDialog\skins\green\color_bg.png" />
+    <Content Include="artDialog\skins\green\ie6\close.hover.png" />
+    <Content Include="artDialog\skins\green\ie6\close.png" />
+    <Content Include="artDialog\skins\green\ie6\e.png" />
+    <Content Include="artDialog\skins\green\ie6\n.png" />
+    <Content Include="artDialog\skins\green\ie6\ne.png" />
+    <Content Include="artDialog\skins\green\ie6\nw.png" />
+    <Content Include="artDialog\skins\green\ie6\s.png" />
+    <Content Include="artDialog\skins\green\ie6\se.png" />
+    <Content Include="artDialog\skins\green\ie6\sw.png" />
+    <Content Include="artDialog\skins\green\ie6\w.png" />
+    <Content Include="artDialog\skins\icons\error.png" />
+    <Content Include="artDialog\skins\icons\face-sad.png" />
+    <Content Include="artDialog\skins\icons\face-smile.png" />
+    <Content Include="artDialog\skins\icons\loading.gif" />
+    <Content Include="artDialog\skins\icons\question.png" />
+    <Content Include="artDialog\skins\icons\succeed.png" />
+    <Content Include="artDialog\skins\icons\warning.png" />
+    <Content Include="artDialog\skins\idialog.css" />
+    <Content Include="artDialog\skins\idialog\idialog_s.png" />
+    <Content Include="artDialog\skins\idialog\idialog_s2.png" />
+    <Content Include="artDialog\skins\idialog\ie6\aui_close.hover.png" />
+    <Content Include="artDialog\skins\idialog\ie6\aui_close.png" />
+    <Content Include="artDialog\skins\idialog\ie6\aui_e.png" />
+    <Content Include="artDialog\skins\idialog\ie6\aui_n.png" />
+    <Content Include="artDialog\skins\idialog\ie6\aui_ne.png" />
+    <Content Include="artDialog\skins\idialog\ie6\aui_nw.png" />
+    <Content Include="artDialog\skins\idialog\ie6\aui_s.png" />
+    <Content Include="artDialog\skins\idialog\ie6\aui_se.png" />
+    <Content Include="artDialog\skins\idialog\ie6\aui_sw.png" />
+    <Content Include="artDialog\skins\idialog\ie6\aui_w.png" />
+    <Content Include="artDialog\skins\opera.css" />
+    <Content Include="artDialog\skins\opera\ie6\aui_close.hover.png" />
+    <Content Include="artDialog\skins\opera\ie6\aui_close.png" />
+    <Content Include="artDialog\skins\opera\ie6\aui_e.png" />
+    <Content Include="artDialog\skins\opera\ie6\aui_n.png" />
+    <Content Include="artDialog\skins\opera\ie6\aui_ne.png" />
+    <Content Include="artDialog\skins\opera\ie6\aui_nw.png" />
+    <Content Include="artDialog\skins\opera\ie6\aui_s.png" />
+    <Content Include="artDialog\skins\opera\ie6\aui_se.png" />
+    <Content Include="artDialog\skins\opera\ie6\aui_sw.png" />
+    <Content Include="artDialog\skins\opera\ie6\aui_w.png" />
+    <Content Include="artDialog\skins\opera\s1.png" />
+    <Content Include="artDialog\skins\opera\s2.png" />
+    <Content Include="artDialog\skins\simple.css" />
+    <Content Include="artDialog\skins\twitter.css" />
+    <Content Include="artDialog\_doc\ajaxContent\content.html" />
+    <Content Include="artDialog\_doc\ajaxContent\googleMaps.html" />
+    <Content Include="artDialog\_doc\ajaxContent\login.html" />
+    <Content Include="artDialog\_doc\API.html" />
+    <Content Include="artDialog\_doc\demo.css" />
+    <Content Include="artDialog\_doc\demo.js" />
+    <Content Include="artDialog\_doc\down.html" />
+    <Content Include="artDialog\_doc\frameset.html" />
+    <Content Include="artDialog\_doc\googleMaps.html" />
+    <Content Include="artDialog\_doc\helloWorld.html" />
+    <Content Include="artDialog\_doc\highlight\AUTHORS.en.txt" />
+    <Content Include="artDialog\_doc\highlight\export.html" />
+    <Content Include="artDialog\_doc\highlight\highlight.js" />
+    <Content Include="artDialog\_doc\highlight\highlight.pack.js" />
+    <Content Include="artDialog\_doc\highlight\languages\javascript.js" />
+    <Content Include="artDialog\_doc\highlight\readme.eng.txt" />
+    <Content Include="artDialog\_doc\highlight\styles\magula.css" />
+    <Content Include="artDialog\_doc\highlight\test.html" />
+    <Content Include="artDialog\_doc\iframe.html" />
+    <Content Include="artDialog\_doc\iframeA.html" />
+    <Content Include="artDialog\_doc\iframeB.html" />
+    <Content Include="artDialog\_doc\iframeTop.html" />
+    <Content Include="artDialog\_doc\iframe_frameset.html" />
+    <Content Include="artDialog\_doc\images\alipay.jpg" />
+    <Content Include="artDialog\_doc\images\bg.png" />
+    <Content Include="artDialog\_doc\images\bottom.png" />
+    <Content Include="artDialog\_doc\images\doc.png" />
+    <Content Include="artDialog\_doc\images\lixiaolong.png" />
+    <Content Include="artDialog\_doc\images\logo.png" />
+    <Content Include="artDialog\_doc\images\opensource.gif" />
+    <Content Include="artDialog\_doc\images\photo.jpg" />
+    <Content Include="artDialog\_doc\images\text.png" />
+    <Content Include="artDialog\_doc\labs.html" />
+    <Content Include="artDialog\_doc\license.html" />
+    <Content Include="artDialog\_doc\log.html" />
+    <Content Include="artDialog\_doc\login_iframe.html" />
+    <Content Include="artDialog\_doc\login_iframe_2.html" />
+    <Content Include="artDialog\_doc\new.html" />
+    <Content Include="artDialog\_doc\plugin.iframe.html" />
+    <Content Include="artDialog\_doc\topFrame.html" />
+    <Content Include="artDialog\_doc\upd.txt" />
+    <Content Include="easyui\datagrid-cellediting.js" />
+    <Content Include="image\logo_d.png" />
+    <Content Include="image\东方重机logo.png" />
+    <Content Include="index.html" />
+    <Content Include="mainform\Certificate_error_word_print.aspx" />
+    <Content Include="mainform\Controls_download.html" />
+    <Content Include="mainform\errorPage.html" />
+    <Content Include="mainform\functional_module.aspx" />
+    <Content Include="mainform\Lossless_report\Device_Library.aspx" />
+    <Content Include="mainform\Lossless_report\LookPicture.html" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Apply_Audit.aspx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Apply_Management.aspx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Edit.aspx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Issue.aspx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Management.aspx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Monitor.aspx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Review.aspx" />
+    <Content Include="mainform\Lossless_report\Probe_Library.aspx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_EditApply_Edit.aspx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_EditApply_Audit.aspx" />
+    <Content Include="mainform\Lossless_report_word_edit.aspx" />
+    <Content Include="mainform\read_contract.aspx" />
+    <Content Include="mainform\ReportManager.html" />
+    <Content Include="mainform\Revisionsshow.aspx" />
+    <Content Include="mainform\System_settings\PageShowSetting.aspx" />
+    <Content Include="mainform\System_settings\Template_file.aspx" />
+    <Content Include="pdf_read\build\pdf.js" />
+    <Content Include="pdf_read\build\pdf.worker.js" />
+    <Content Include="pdf_read\web\compatibility.js" />
+    <Content Include="pdf_read\web\debugger.js" />
+    <Content Include="pdf_read\web\images\annotation-check.svg" />
+    <Content Include="pdf_read\web\images\annotation-comment.svg" />
+    <Content Include="pdf_read\web\images\annotation-help.svg" />
+    <Content Include="pdf_read\web\images\annotation-insert.svg" />
+    <Content Include="pdf_read\web\images\annotation-key.svg" />
+    <Content Include="pdf_read\web\images\annotation-newparagraph.svg" />
+    <Content Include="pdf_read\web\images\annotation-noicon.svg" />
+    <Content Include="pdf_read\web\images\annotation-note.svg" />
+    <Content Include="pdf_read\web\images\annotation-paragraph.svg" />
+    <Content Include="pdf_read\web\images\findbarButton-next%402x.png" />
+    <Content Include="pdf_read\web\images\findbarButton-next-rtl%402x.png" />
+    <Content Include="pdf_read\web\images\findbarButton-next-rtl.png" />
+    <Content Include="pdf_read\web\images\findbarButton-next.png" />
+    <Content Include="pdf_read\web\images\findbarButton-previous%402x.png" />
+    <Content Include="pdf_read\web\images\findbarButton-previous-rtl%402x.png" />
+    <Content Include="pdf_read\web\images\findbarButton-previous-rtl.png" />
+    <Content Include="pdf_read\web\images\findbarButton-previous.png" />
+    <Content Include="pdf_read\web\images\grab.cur" />
+    <Content Include="pdf_read\web\images\grabbing.cur" />
+    <Content Include="pdf_read\web\images\loading-icon.gif" />
+    <Content Include="pdf_read\web\images\loading-small%402x.png" />
+    <Content Include="pdf_read\web\images\loading-small.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-documentProperties%402x.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-documentProperties.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-firstPage%402x.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-firstPage.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-handTool%402x.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-handTool.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-lastPage%402x.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-lastPage.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-rotateCcw%402x.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-rotateCcw.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-rotateCw%402x.png" />
+    <Content Include="pdf_read\web\images\secondaryToolbarButton-rotateCw.png" />
+    <Content Include="pdf_read\web\images\shadow.png" />
+    <Content Include="pdf_read\web\images\texture.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-bookmark%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-bookmark.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-download%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-download.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-menuArrows%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-menuArrows.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-openFile%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-openFile.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-pageDown%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-pageDown-rtl%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-pageDown-rtl.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-pageDown.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-pageUp%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-pageUp-rtl%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-pageUp-rtl.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-pageUp.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-presentationMode%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-presentationMode.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-print%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-print.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-search%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-search.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-secondaryToolbarToggle%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-secondaryToolbarToggle-rtl%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-secondaryToolbarToggle-rtl.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-secondaryToolbarToggle.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-sidebarToggle%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-sidebarToggle-rtl%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-sidebarToggle-rtl.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-sidebarToggle.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-viewAttachments%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-viewAttachments.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-viewOutline%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-viewOutline-rtl%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-viewOutline-rtl.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-viewOutline.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-viewThumbnail%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-viewThumbnail.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-zoomIn%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-zoomIn.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-zoomOut%402x.png" />
+    <Content Include="pdf_read\web\images\toolbarButton-zoomOut.png" />
+    <Content Include="pdf_read\web\l10n.js" />
+    <Content Include="pdf_read\web\viewer.css" />
+    <Content Include="pdf_read\web\viewer.html" />
+    <Content Include="pdf_read\web\viewer.js" />
+    <Content Include="phians_js\Lossless_report\Device_Library.js" />
+    <Content Include="mainform\Lossless_report\LosslessPerson_Management.aspx" />
+    <Content Include="phians_js\Lossless_report\LosslessPerson_Management.js" />
+    <Content Include="phians_js\Lossless_report\LosslessReport_Apply_Audit.js" />
+    <Content Include="phians_js\Lossless_report\LosslessReport_Apply_Management.js" />
+    <Content Include="phians_js\Lossless_report\LosslessReport_Edit.js" />
+    <Content Include="phians_js\Lossless_report\LosslessReport_EditApply_Audit.js" />
+    <Content Include="phians_js\Lossless_report\LosslessReport_EditApply_Edit.js" />
+    <Content Include="phians_js\Lossless_report\LosslessReport_Issue.js" />
+    <Content Include="phians_js\Lossless_report\LosslessReport_Management.js" />
+    <Content Include="phians_js\Lossless_report\LosslessReport_Monitor.js" />
+    <Content Include="phians_js\Lossless_report\LosslessReport_Review.js" />
+    <Content Include="phians_js\Lossless_report\Probe_Library.js" />
+    <Content Include="mainform\System_settings\System_log.aspx" />
+    <Content Include="mainform\System_settings\Dictionary_management.aspx" />
+    <Content Include="mainform\test_records_view_word.aspx" />
+    <Content Include="phians_css\myStyle.css" />
+    <Content Include="phians_js\Lossless_report\ReportManager.js" />
+    <Content Include="phians_js\print_form.js" />
+    <Content Include="phians_js\Certificate_error_word_print.js" />
+    <Content Include="phians_js\functional_module.js" />
+    <Content Include="phians_js\System_settings\Dictionary_management.js" />
+    <Content Include="phians_js\System_log.js" />
+    <Content Include="phians_js\Lossless_report_word_edit.js" />
+    <Content Include="phians_js\System_settings\PageShowSetting.js" />
+    <Content Include="phians_js\System_settings\Template_file.js" />
+    <Content Include="phians_js\word_view.js" />
+    <Content Include="mainform\print_form1.aspx" />
+    <Content Include="script\echarts.min.js" />
+    <Content Include="script\My97DatePicker\calendar.js" />
+    <Content Include="script\My97DatePicker\config.js" />
+    <Content Include="script\My97DatePicker\lang\en.js" />
+    <Content Include="script\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="script\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="script\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="script\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="script\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="script\My97DatePicker\skin\default\img.gif" />
+    <Content Include="script\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="script\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="script\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="script\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="script\My97DatePicker\WdatePicker.js" />
+    <Content Include="script\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="script\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="script\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="script\My97DatePicker\开发包\readme.txt" />
+    <Content Include="script\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="script\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="script\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="script\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="script\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="script\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="script\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Service References\get_interface\phians.get_interface.get_infoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\get_interface\phians.get_interface.GetOrderNUMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="mainform\Lossless_report\LosslessReport_Monitor.ashx" />
+    <None Include="job_scheduling_data_2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\get_interface\phians.get_interface.GetmethodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="mainform\System_settings\Template_file.ashx" />
+    <Content Include="mainform\Lossless_report\ReportManager.ashx" />
+    <Content Include="pageoffice\lic\license.lic" />
+    <Content Include="mainform\System_settings\PageShowSetting.ashx" />
+    <None Include="Service References\get_interface\phians_webservice_N1.disco" />
+    <None Include="Service References\get_interface\configuration91.svcinfo" />
+    <None Include="Service References\get_interface\configuration.svcinfo" />
+    <None Include="Service References\get_interface\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MESINTERFACE\MES_INTERFACE.disco" />
+    <None Include="Service References\MESINTERFACE\configuration91.svcinfo" />
+    <None Include="Service References\MESINTERFACE\configuration.svcinfo" />
+    <Content Include="Service References\MESINTERFACE\phians.MESINTERFACE.GET_MESINFO1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\MESINTERFACE\phians.MESINTERFACE.GET_MESINFOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\MESINTERFACE\phians.MESINTERFACE.GET_MESINFO2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\MESINTERFACE\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="test\test_message\Index - 复制.html" />
+    <Content Include="test\test_message\Index.html" />
+    <Content Include="mainform\home.html" />
+    <Content Include="mainform\Personal_center\message_management.aspx" />
+    <Content Include="mainform\Personal_center\personal_information.aspx" />
+    <Content Include="mainform\print.aspx" />
+    <Content Include="mainform\print_Certificate.aspx" />
+    <Content Include="mainform\read_pdf.aspx" />
+    <Content Include="test\test_message\message_show.html" />
+    <Content Include="test\test_message\message_show2.aspx" />
+    <Content Include="phians_css\reset.css" />
+    <Content Include="phians_css\style.css" />
+    <Content Include="phians_css\supersized.css" />
+    <Content Include="phians_js\login_new.js" />
+    <Content Include="easyui\easyloader.js" />
+    <Content Include="easyui\jquery-1.7.2.min.js" />
+    <Content Include="easyui\jquery.ajaxfileupload.js" />
+    <Content Include="easyui\jquery.easyui.min.js" />
+    <Content Include="easyui\jquery.easyui.mobile.js" />
+    <Content Include="easyui\jquery.min.js" />
+    <Content Include="easyui\locale\easyui-lang-af.js" />
+    <Content Include="easyui\locale\easyui-lang-am.js" />
+    <Content Include="easyui\locale\easyui-lang-ar.js" />
+    <Content Include="easyui\locale\easyui-lang-bg.js" />
+    <Content Include="easyui\locale\easyui-lang-ca.js" />
+    <Content Include="easyui\locale\easyui-lang-cs.js" />
+    <Content Include="easyui\locale\easyui-lang-cz.js" />
+    <Content Include="easyui\locale\easyui-lang-da.js" />
+    <Content Include="easyui\locale\easyui-lang-de.js" />
+    <Content Include="easyui\locale\easyui-lang-el.js" />
+    <Content Include="easyui\locale\easyui-lang-en.js" />
+    <Content Include="easyui\locale\easyui-lang-es.js" />
+    <Content Include="easyui\locale\easyui-lang-fr.js" />
+    <Content Include="easyui\locale\easyui-lang-it.js" />
+    <Content Include="easyui\locale\easyui-lang-jp.js" />
+    <Content Include="easyui\locale\easyui-lang-nl.js" />
+    <Content Include="easyui\locale\easyui-lang-pl.js" />
+    <Content Include="easyui\locale\easyui-lang-pt_BR.js" />
+    <Content Include="easyui\locale\easyui-lang-ru.js" />
+    <Content Include="easyui\locale\easyui-lang-sv_SE.js" />
+    <Content Include="easyui\locale\easyui-lang-tr.js" />
+    <Content Include="easyui\locale\easyui-lang-zh_CN.js" />
+    <Content Include="easyui\locale\easyui-lang-zh_TW.js" />
+    <Content Include="easyui\plugins\jquery.accordion.js" />
+    <Content Include="easyui\plugins\jquery.calendar.js" />
+    <Content Include="easyui\plugins\jquery.combo.js" />
+    <Content Include="easyui\plugins\jquery.combobox.js" />
+    <Content Include="easyui\plugins\jquery.combogrid.js" />
+    <Content Include="easyui\plugins\jquery.combotree.js" />
+    <Content Include="easyui\plugins\jquery.datagrid.js" />
+    <Content Include="easyui\plugins\jquery.datalist.js" />
+    <Content Include="easyui\plugins\jquery.datebox.js" />
+    <Content Include="easyui\plugins\jquery.datetimebox.js" />
+    <Content Include="easyui\plugins\jquery.datetimespinner.js" />
+    <Content Include="easyui\plugins\jquery.dialog.js" />
+    <Content Include="easyui\plugins\jquery.draggable.js" />
+    <Content Include="easyui\plugins\jquery.droppable.js" />
+    <Content Include="easyui\plugins\jquery.filebox.js" />
+    <Content Include="easyui\plugins\jquery.form.js" />
+    <Content Include="easyui\plugins\jquery.layout.js" />
+    <Content Include="easyui\plugins\jquery.linkbutton.js" />
+    <Content Include="easyui\plugins\jquery.menu.js" />
+    <Content Include="easyui\plugins\jquery.menubutton.js" />
+    <Content Include="easyui\plugins\jquery.messager.js" />
+    <Content Include="easyui\plugins\jquery.mobile.js" />
+    <Content Include="easyui\plugins\jquery.numberbox.js" />
+    <Content Include="easyui\plugins\jquery.numberspinner.js" />
+    <Content Include="easyui\plugins\jquery.pagination.js" />
+    <Content Include="easyui\plugins\jquery.panel.js" />
+    <Content Include="easyui\plugins\jquery.parser.js" />
+    <Content Include="easyui\plugins\jquery.progressbar.js" />
+    <Content Include="easyui\plugins\jquery.propertygrid.js" />
+    <Content Include="easyui\plugins\jquery.resizable.js" />
+    <Content Include="easyui\plugins\jquery.searchbox.js" />
+    <Content Include="easyui\plugins\jquery.slider.js" />
+    <Content Include="easyui\plugins\jquery.spinner.js" />
+    <Content Include="easyui\plugins\jquery.splitbutton.js" />
+    <Content Include="easyui\plugins\jquery.switchbutton.js" />
+    <Content Include="easyui\plugins\jquery.tabs.js" />
+    <Content Include="easyui\plugins\jquery.textbox.js" />
+    <Content Include="easyui\plugins\jquery.timespinner.js" />
+    <Content Include="easyui\plugins\jquery.tooltip.js" />
+    <Content Include="easyui\plugins\jquery.tree.js" />
+    <Content Include="easyui\plugins\jquery.treegrid.js" />
+    <Content Include="easyui\plugins\jquery.validatebox.js" />
+    <Content Include="easyui\plugins\jquery.window.js" />
+    <Content Include="easyui\src\easyloader.js" />
+    <Content Include="easyui\src\jquery.accordion.js" />
+    <Content Include="easyui\src\jquery.calendar.js" />
+    <Content Include="easyui\src\jquery.combobox.js" />
+    <Content Include="easyui\src\jquery.datebox.js" />
+    <Content Include="easyui\src\jquery.draggable.js" />
+    <Content Include="easyui\src\jquery.droppable.js" />
+    <Content Include="easyui\src\jquery.form.js" />
+    <Content Include="easyui\src\jquery.linkbutton.js" />
+    <Content Include="easyui\src\jquery.menu.js" />
+    <Content Include="easyui\src\jquery.parser.js" />
+    <Content Include="easyui\src\jquery.progressbar.js" />
+    <Content Include="easyui\src\jquery.propertygrid.js" />
+    <Content Include="easyui\src\jquery.resizable.js" />
+    <Content Include="easyui\src\jquery.slider.js" />
+    <Content Include="easyui\src\jquery.tabs.js" />
+    <Content Include="easyui\src\jquery.window.js" />
+    <Content Include="easyui\themes\black\accordion.css" />
+    <Content Include="easyui\themes\black\calendar.css" />
+    <Content Include="easyui\themes\black\combo.css" />
+    <Content Include="easyui\themes\black\combobox.css" />
+    <Content Include="easyui\themes\black\datagrid.css" />
+    <Content Include="easyui\themes\black\datalist.css" />
+    <Content Include="easyui\themes\black\datebox.css" />
+    <Content Include="easyui\themes\black\dialog.css" />
+    <Content Include="easyui\themes\black\easyui.css" />
+    <Content Include="easyui\themes\black\filebox.css" />
+    <Content Include="easyui\themes\black\images\accordion_arrows.png" />
+    <Content Include="easyui\themes\black\images\blank.gif" />
+    <Content Include="easyui\themes\black\images\calendar_arrows.png" />
+    <Content Include="easyui\themes\black\images\combo_arrow.png" />
+    <Content Include="easyui\themes\black\images\datagrid_icons.png" />
+    <Content Include="easyui\themes\black\images\datebox_arrow.png" />
+    <Content Include="easyui\themes\black\images\layout_arrows.png" />
+    <Content Include="easyui\themes\black\images\linkbutton_bg.png" />
+    <Content Include="easyui\themes\black\images\loading.gif" />
+    <Content Include="easyui\themes\black\images\menu_arrows.png" />
+    <Content Include="easyui\themes\black\images\messager_icons.png" />
+    <Content Include="easyui\themes\black\images\pagination_icons.png" />
+    <Content Include="easyui\themes\black\images\panel_tools.png" />
+    <Content Include="easyui\themes\black\images\searchbox_button.png" />
+    <Content Include="easyui\themes\black\images\slider_handle.png" />
+    <Content Include="easyui\themes\black\images\spinner_arrows.png" />
+    <Content Include="easyui\themes\black\images\tabs_icons.png" />
+    <Content Include="easyui\themes\black\images\tree_icons.png" />
+    <Content Include="easyui\themes\black\images\validatebox_warning.png" />
+    <Content Include="easyui\themes\black\layout.css" />
+    <Content Include="easyui\themes\black\linkbutton.css" />
+    <Content Include="easyui\themes\black\menu.css" />
+    <Content Include="easyui\themes\black\menubutton.css" />
+    <Content Include="easyui\themes\black\messager.css" />
+    <Content Include="easyui\themes\black\numberbox.css" />
+    <Content Include="easyui\themes\black\pagination.css" />
+    <Content Include="easyui\themes\black\panel.css" />
+    <Content Include="easyui\themes\black\progressbar.css" />
+    <Content Include="easyui\themes\black\propertygrid.css" />
+    <Content Include="easyui\themes\black\searchbox.css" />
+    <Content Include="easyui\themes\black\slider.css" />
+    <Content Include="easyui\themes\black\spinner.css" />
+    <Content Include="easyui\themes\black\splitbutton.css" />
+    <Content Include="easyui\themes\black\switchbutton.css" />
+    <Content Include="easyui\themes\black\tabs.css" />
+    <Content Include="easyui\themes\black\textbox.css" />
+    <Content Include="easyui\themes\black\tooltip.css" />
+    <Content Include="easyui\themes\black\tree.css" />
+    <Content Include="easyui\themes\black\validatebox.css" />
+    <Content Include="easyui\themes\black\window.css" />
+    <Content Include="easyui\themes\bootstrap\accordion.css" />
+    <Content Include="easyui\themes\bootstrap\calendar.css" />
+    <Content Include="easyui\themes\bootstrap\combo.css" />
+    <Content Include="easyui\themes\bootstrap\combobox.css" />
+    <Content Include="easyui\themes\bootstrap\datagrid.css" />
+    <Content Include="easyui\themes\bootstrap\datalist.css" />
+    <Content Include="easyui\themes\bootstrap\datebox.css" />
+    <Content Include="easyui\themes\bootstrap\dialog.css" />
+    <Content Include="easyui\themes\bootstrap\easyui.css" />
+    <Content Include="easyui\themes\bootstrap\filebox.css" />
+    <Content Include="easyui\themes\bootstrap\images\accordion_arrows.png" />
+    <Content Include="easyui\themes\bootstrap\images\blank.gif" />
+    <Content Include="easyui\themes\bootstrap\images\calendar_arrows.png" />
+    <Content Include="easyui\themes\bootstrap\images\combo_arrow.png" />
+    <Content Include="easyui\themes\bootstrap\images\datagrid_icons.png" />
+    <Content Include="easyui\themes\bootstrap\images\datebox_arrow.png" />
+    <Content Include="easyui\themes\bootstrap\images\layout_arrows.png" />
+    <Content Include="easyui\themes\bootstrap\images\linkbutton_bg.png" />
+    <Content Include="easyui\themes\bootstrap\images\loading.gif" />
+    <Content Include="easyui\themes\bootstrap\images\menu_arrows.png" />
+    <Content Include="easyui\themes\bootstrap\images\messager_icons.png" />
+    <Content Include="easyui\themes\bootstrap\images\pagination_icons.png" />
+    <Content Include="easyui\themes\bootstrap\images\panel_tools.png" />
+    <Content Include="easyui\themes\bootstrap\images\searchbox_button.png" />
+    <Content Include="easyui\themes\bootstrap\images\slider_handle.png" />
+    <Content Include="easyui\themes\bootstrap\images\spinner_arrows.png" />
+    <Content Include="easyui\themes\bootstrap\images\tabs_icons.png" />
+    <Content Include="easyui\themes\bootstrap\images\tree_icons.png" />
+    <Content Include="easyui\themes\bootstrap\images\validatebox_warning.png" />
+    <Content Include="easyui\themes\bootstrap\layout.css" />
+    <Content Include="easyui\themes\bootstrap\linkbutton.css" />
+    <Content Include="easyui\themes\bootstrap\menu.css" />
+    <Content Include="easyui\themes\bootstrap\menubutton.css" />
+    <Content Include="easyui\themes\bootstrap\messager.css" />
+    <Content Include="easyui\themes\bootstrap\numberbox.css" />
+    <Content Include="easyui\themes\bootstrap\pagination.css" />
+    <Content Include="easyui\themes\bootstrap\panel.css" />
+    <Content Include="easyui\themes\bootstrap\progressbar.css" />
+    <Content Include="easyui\themes\bootstrap\propertygrid.css" />
+    <Content Include="easyui\themes\bootstrap\searchbox.css" />
+    <Content Include="easyui\themes\bootstrap\slider.css" />
+    <Content Include="easyui\themes\bootstrap\spinner.css" />
+    <Content Include="easyui\themes\bootstrap\splitbutton.css" />
+    <Content Include="easyui\themes\bootstrap\switchbutton.css" />
+    <Content Include="easyui\themes\bootstrap\tabs.css" />
+    <Content Include="easyui\themes\bootstrap\textbox.css" />
+    <Content Include="easyui\themes\bootstrap\tooltip.css" />
+    <Content Include="easyui\themes\bootstrap\tree.css" />
+    <Content Include="easyui\themes\bootstrap\validatebox.css" />
+    <Content Include="easyui\themes\bootstrap\window.css" />
+    <Content Include="easyui\themes\color.css" />
+    <Content Include="easyui\themes\default\accordion.css" />
+    <Content Include="easyui\themes\default\calendar.css" />
+    <Content Include="easyui\themes\default\combo.css" />
+    <Content Include="easyui\themes\default\combobox.css" />
+    <Content Include="easyui\themes\default\datagrid.css" />
+    <Content Include="easyui\themes\default\datalist.css" />
+    <Content Include="easyui\themes\default\datebox.css" />
+    <Content Include="easyui\themes\default\dialog.css" />
+    <Content Include="easyui\themes\default\easyui.css" />
+    <Content Include="easyui\themes\default\filebox.css" />
+    <Content Include="easyui\themes\default\images\accordion_arrows.png" />
+    <Content Include="easyui\themes\default\images\blank.gif" />
+    <Content Include="easyui\themes\default\images\calendar_arrows.png" />
+    <Content Include="easyui\themes\default\images\combo_arrow.png" />
+    <Content Include="easyui\themes\default\images\datagrid_icons.png" />
+    <Content Include="easyui\themes\default\images\datebox_arrow.png" />
+    <Content Include="easyui\themes\default\images\layout_arrows.png" />
+    <Content Include="easyui\themes\default\images\linkbutton_bg.png" />
+    <Content Include="easyui\themes\default\images\loading.gif" />
+    <Content Include="easyui\themes\default\images\menu_arrows.png" />
+    <Content Include="easyui\themes\default\images\messager_icons.png" />
+    <Content Include="easyui\themes\default\images\pagination_icons.png" />
+    <Content Include="easyui\themes\default\images\panel_tools.png" />
+    <Content Include="easyui\themes\default\images\searchbox_button.png" />
+    <Content Include="easyui\themes\default\images\slider_handle.png" />
+    <Content Include="easyui\themes\default\images\spinner_arrows.png" />
+    <Content Include="easyui\themes\default\images\tabs_icons.png" />
+    <Content Include="easyui\themes\default\images\tree_icons.png" />
+    <Content Include="easyui\themes\default\images\validatebox_warning.png" />
+    <Content Include="easyui\themes\default\layout.css" />
+    <Content Include="easyui\themes\default\linkbutton.css" />
+    <Content Include="easyui\themes\default\menu.css" />
+    <Content Include="easyui\themes\default\menubutton.css" />
+    <Content Include="easyui\themes\default\messager.css" />
+    <Content Include="easyui\themes\default\numberbox.css" />
+    <Content Include="easyui\themes\default\pagination.css" />
+    <Content Include="easyui\themes\default\panel.css" />
+    <Content Include="easyui\themes\default\progressbar.css" />
+    <Content Include="easyui\themes\default\propertygrid.css" />
+    <Content Include="easyui\themes\default\searchbox.css" />
+    <Content Include="easyui\themes\default\slider.css" />
+    <Content Include="easyui\themes\default\spinner.css" />
+    <Content Include="easyui\themes\default\splitbutton.css" />
+    <Content Include="easyui\themes\default\switchbutton.css" />
+    <Content Include="easyui\themes\default\tabs.css" />
+    <Content Include="easyui\themes\default\textbox.css" />
+    <Content Include="easyui\themes\default\tooltip.css" />
+    <Content Include="easyui\themes\default\tree.css" />
+    <Content Include="easyui\themes\default\validatebox.css" />
+    <Content Include="easyui\themes\default\window.css" />
+    <Content Include="easyui\themes\gray\accordion.css" />
+    <Content Include="easyui\themes\gray\calendar.css" />
+    <Content Include="easyui\themes\gray\combo.css" />
+    <Content Include="easyui\themes\gray\combobox.css" />
+    <Content Include="easyui\themes\gray\datagrid.css" />
+    <Content Include="easyui\themes\gray\datalist.css" />
+    <Content Include="easyui\themes\gray\datebox.css" />
+    <Content Include="easyui\themes\gray\dialog.css" />
+    <Content Include="easyui\themes\gray\easyui.css" />
+    <Content Include="easyui\themes\gray\filebox.css" />
+    <Content Include="easyui\themes\gray\images\accordion_arrows.png" />
+    <Content Include="easyui\themes\gray\images\blank.gif" />
+    <Content Include="easyui\themes\gray\images\calendar_arrows.png" />
+    <Content Include="easyui\themes\gray\images\combo_arrow.png" />
+    <Content Include="easyui\themes\gray\images\datagrid_icons.png" />
+    <Content Include="easyui\themes\gray\images\datebox_arrow.png" />
+    <Content Include="easyui\themes\gray\images\layout_arrows.png" />
+    <Content Include="easyui\themes\gray\images\linkbutton_bg.png" />
+    <Content Include="easyui\themes\gray\images\loading.gif" />
+    <Content Include="easyui\themes\gray\images\menu_arrows.png" />
+    <Content Include="easyui\themes\gray\images\messager_icons.png" />
+    <Content Include="easyui\themes\gray\images\pagination_icons.png" />
+    <Content Include="easyui\themes\gray\images\panel_tools.png" />
+    <Content Include="easyui\themes\gray\images\searchbox_button.png" />
+    <Content Include="easyui\themes\gray\images\slider_handle.png" />
+    <Content Include="easyui\themes\gray\images\spinner_arrows.png" />
+    <Content Include="easyui\themes\gray\images\tabs_icons.png" />
+    <Content Include="easyui\themes\gray\images\tree_icons.png" />
+    <Content Include="easyui\themes\gray\images\validatebox_warning.png" />
+    <Content Include="easyui\themes\gray\layout.css" />
+    <Content Include="easyui\themes\gray\linkbutton.css" />
+    <Content Include="easyui\themes\gray\menu.css" />
+    <Content Include="easyui\themes\gray\menubutton.css" />
+    <Content Include="easyui\themes\gray\messager.css" />
+    <Content Include="easyui\themes\gray\numberbox.css" />
+    <Content Include="easyui\themes\gray\pagination.css" />
+    <Content Include="easyui\themes\gray\panel.css" />
+    <Content Include="easyui\themes\gray\progressbar.css" />
+    <Content Include="easyui\themes\gray\propertygrid.css" />
+    <Content Include="easyui\themes\gray\searchbox.css" />
+    <Content Include="easyui\themes\gray\slider.css" />
+    <Content Include="easyui\themes\gray\spinner.css" />
+    <Content Include="easyui\themes\gray\splitbutton.css" />
+    <Content Include="easyui\themes\gray\switchbutton.css" />
+    <Content Include="easyui\themes\gray\tabs.css" />
+    <Content Include="easyui\themes\gray\textbox.css" />
+    <Content Include="easyui\themes\gray\tooltip.css" />
+    <Content Include="easyui\themes\gray\tree.css" />
+    <Content Include="easyui\themes\gray\validatebox.css" />
+    <Content Include="easyui\themes\gray\window.css" />
+    <Content Include="easyui\themes\icon.css" />
+    <Content Include="easyui\themes\icons\back.png" />
+    <Content Include="easyui\themes\icons\blank.gif" />
+    <Content Include="easyui\themes\icons\cancel.png" />
+    <Content Include="easyui\themes\icons\clear.png" />
+    <Content Include="easyui\themes\icons\cut.png" />
+    <Content Include="easyui\themes\icons\edit_add.png" />
+    <Content Include="easyui\themes\icons\edit_remove.png" />
+    <Content Include="easyui\themes\icons\filesave.png" />
+    <Content Include="easyui\themes\icons\filter.png" />
+    <Content Include="easyui\themes\icons\help.png" />
+    <Content Include="easyui\themes\icons\large_chart.png" />
+    <Content Include="easyui\themes\icons\large_clipart.png" />
+    <Content Include="easyui\themes\icons\large_picture.png" />
+    <Content Include="easyui\themes\icons\large_shapes.png" />
+    <Content Include="easyui\themes\icons\large_smartart.png" />
+    <Content Include="easyui\themes\icons\lock.png" />
+    <Content Include="easyui\themes\icons\man.png" />
+    <Content Include="easyui\themes\icons\mini_add.png" />
+    <Content Include="easyui\themes\icons\mini_edit.png" />
+    <Content Include="easyui\themes\icons\mini_refresh.png" />
+    <Content Include="easyui\themes\icons\more.png" />
+    <Content Include="easyui\themes\icons\no.png" />
+    <Content Include="easyui\themes\icons\ok.png" />
+    <Content Include="easyui\themes\icons\pencil.png" />
+    <Content Include="easyui\themes\icons\print.png" />
+    <Content Include="easyui\themes\icons\redo.png" />
+    <Content Include="easyui\themes\icons\reload.png" />
+    <Content Include="easyui\themes\icons\search.png" />
+    <Content Include="easyui\themes\icons\sum.png" />
+    <Content Include="easyui\themes\icons\tip.png" />
+    <Content Include="easyui\themes\icons\undo.png" />
+    <Content Include="easyui\themes\metro\accordion.css" />
+    <Content Include="easyui\themes\metro\calendar.css" />
+    <Content Include="easyui\themes\metro\combo.css" />
+    <Content Include="easyui\themes\metro\combobox.css" />
+    <Content Include="easyui\themes\metro\datagrid.css" />
+    <Content Include="easyui\themes\metro\datalist.css" />
+    <Content Include="easyui\themes\metro\datebox.css" />
+    <Content Include="easyui\themes\metro\dialog.css" />
+    <Content Include="easyui\themes\metro\easyui.css" />
+    <Content Include="easyui\themes\metro\filebox.css" />
+    <Content Include="easyui\themes\metro\images\accordion_arrows.png" />
+    <Content Include="easyui\themes\metro\images\blank.gif" />
+    <Content Include="easyui\themes\metro\images\calendar_arrows.png" />
+    <Content Include="easyui\themes\metro\images\combo_arrow.png" />
+    <Content Include="easyui\themes\metro\images\datagrid_icons.png" />
+    <Content Include="easyui\themes\metro\images\datebox_arrow.png" />
+    <Content Include="easyui\themes\metro\images\layout_arrows.png" />
+    <Content Include="easyui\themes\metro\images\linkbutton_bg.png" />
+    <Content Include="easyui\themes\metro\images\loading.gif" />
+    <Content Include="easyui\themes\metro\images\menu_arrows.png" />
+    <Content Include="easyui\themes\metro\images\messager_icons.png" />
+    <Content Include="easyui\themes\metro\images\pagination_icons.png" />
+    <Content Include="easyui\themes\metro\images\panel_tools.png" />
+    <Content Include="easyui\themes\metro\images\searchbox_button.png" />
+    <Content Include="easyui\themes\metro\images\slider_handle.png" />
+    <Content Include="easyui\themes\metro\images\spinner_arrows.png" />
+    <Content Include="easyui\themes\metro\images\tabs_icons.png" />
+    <Content Include="easyui\themes\metro\images\tree_icons.png" />
+    <Content Include="easyui\themes\metro\images\validatebox_warning.png" />
+    <Content Include="easyui\themes\metro\layout.css" />
+    <Content Include="easyui\themes\metro\linkbutton.css" />
+    <Content Include="easyui\themes\metro\menu.css" />
+    <Content Include="easyui\themes\metro\menubutton.css" />
+    <Content Include="easyui\themes\metro\messager.css" />
+    <Content Include="easyui\themes\metro\numberbox.css" />
+    <Content Include="easyui\themes\metro\pagination.css" />
+    <Content Include="easyui\themes\metro\panel.css" />
+    <Content Include="easyui\themes\metro\progressbar.css" />
+    <Content Include="easyui\themes\metro\propertygrid.css" />
+    <Content Include="easyui\themes\metro\searchbox.css" />
+    <Content Include="easyui\themes\metro\slider.css" />
+    <Content Include="easyui\themes\metro\spinner.css" />
+    <Content Include="easyui\themes\metro\splitbutton.css" />
+    <Content Include="easyui\themes\metro\switchbutton.css" />
+    <Content Include="easyui\themes\metro\tabs.css" />
+    <Content Include="easyui\themes\metro\textbox.css" />
+    <Content Include="easyui\themes\metro\tooltip.css" />
+    <Content Include="easyui\themes\metro\tree.css" />
+    <Content Include="easyui\themes\metro\validatebox.css" />
+    <Content Include="easyui\themes\metro\window.css" />
+    <Content Include="easyui\themes\mobile.css" />
+    <Content Include="Global.asax" />
+    <Content Include="image\bnner1.png" />
+    <Content Include="image\login.jpg" />
+    <Content Include="Interop.poserverLib.dll" />
+    <Content Include="jQuery-dialogBox\css\jquery.dialogbox.css" />
+    <Content Include="jQuery-dialogBox\js\jquery-1.11.2.min.js" />
+    <Content Include="jQuery-dialogBox\js\jquery.dialogBox.js" />
+    <Content Include="login\login.aspx" />
+    <Content Include="mainform\hello.aspx" />
+    <Content Include="mainform\HtmlPage1.html" />
+    <Content Include="mainform\mainform.aspx" />
+    <Content Include="mainform\System_settings\Authority_management.aspx" />
+    <Content Include="mainform\System_settings\Personnel_management.aspx" />
+    <Content Include="mainform\transfer_edit.aspx" />
+    <Content Include="mainform\WebForm2.aspx" />
+    <Content Include="mainform\word_view.aspx" />
+    <Content Include="pageoffice\posetup.exe" />
+    <Content Include="pageoffice\SaveFile.aspx" />
+    <Content Include="pageoffice\seal.aspx" />
+    <Content Include="pageoffice\sealPic.aspx" />
+    <Content Include="pageoffice\sealsetup.exe" />
+    <Content Include="pageoffice\server.aspx" />
+    <Content Include="phians_css\communal.css" />
+    <Content Include="phians_css\Create_contract.css" />
+    <Content Include="phians_css\h_test.css" />
+    <Content Include="phians_css\Laboratory_Qualification_info.css" />
+    <Content Include="phians_css\login.css" />
+    <Content Include="phians_css\mainform.css" />
+    <Content Include="phians_css\supplier_info.css" />
+    <Content Include="phians_css\system_file.css" />
+    <Content Include="phians_js\ieBetter.js" />
+    <Content Include="phians_js\login.js" />
+    <Content Include="phians_js\mainfrom.js" />
+    <Content Include="phians_js\Personal_center\message_management.js" />
+    <Content Include="phians_js\System_settings\Authority_management.js" />
+    <Content Include="phians_js\Personal_center\personal_information.js" />
+    <Content Include="phians_js\phians.js" />
+    <Content Include="phians_js\print.js" />
+    <Content Include="phians_js\read_contract.js" />
+    <Content Include="phians_js\read_pdf.js" />
+    <Content Include="phians_js\System_settings\Personnel_management.js" />
+    <Content Include="phians_js\test.js" />
+    <Content Include="phians_js\test1.css" />
+    <Content Include="phians_js\test_records_view_word.js" />
+    <Content Include="poserver.dll" />
+    <Content Include="packages.config" />
+    <Content Include="ClassDiagram1.cd" />
+    <Content Include="mainform\Personal_center\personal_information.ashx" />
+    <Content Include="ClassDiagram2.cd" />
+    <Content Include="combres.readme" />
+    <Content Include="mainform\functional_module.ashx" />
+    <Content Include="ClassDiagram3.cd" />
+    <Content Include="Download\posetup.zip" />
+    <Content Include="mainform\System_settings\System_log_new.ashx" />
+    <Content Include="mainform\System_settings\Dictionary_management.ashx" />
+    <Content Include="mainform\barcode.ashx" />
+    <Content Include="pdf_read\web\cmaps\78-EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\78-EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\78-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\78-RKSJ-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\78-RKSJ-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\78-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\78ms-RKSJ-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\78ms-RKSJ-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\83pv-RKSJ-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\90ms-RKSJ-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\90ms-RKSJ-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\90msp-RKSJ-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\90msp-RKSJ-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\90pv-RKSJ-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\90pv-RKSJ-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Add-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Add-RKSJ-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Add-RKSJ-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Add-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-CNS1-0.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-CNS1-1.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-CNS1-2.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-CNS1-3.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-CNS1-4.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-CNS1-5.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-CNS1-6.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-CNS1-UCS2.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-GB1-0.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-GB1-1.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-GB1-2.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-GB1-3.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-GB1-4.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-GB1-5.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-GB1-UCS2.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Japan1-0.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Japan1-1.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Japan1-2.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Japan1-3.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Japan1-4.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Japan1-5.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Japan1-6.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Japan1-UCS2.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Korea1-0.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Korea1-1.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Korea1-2.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Adobe-Korea1-UCS2.bcmap" />
+    <Content Include="pdf_read\web\cmaps\B5-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\B5-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\B5pc-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\B5pc-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\CNS-EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\CNS-EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\CNS1-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\CNS1-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\CNS2-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\CNS2-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\ETen-B5-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\ETen-B5-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\ETenms-B5-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\ETenms-B5-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\ETHK-B5-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\ETHK-B5-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Ext-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Ext-RKSJ-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Ext-RKSJ-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Ext-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GB-EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GB-EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GB-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GB-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBK-EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBK-EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBK2K-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBK2K-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBKp-EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBKp-EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBpc-EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBpc-EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBT-EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBT-EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBT-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBT-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBTpc-EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\GBTpc-EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\generic - 快捷方式.lnk" />
+    <Content Include="pdf_read\web\cmaps\H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Hankaku.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Hiragana.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKdla-B5-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKdla-B5-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKdlb-B5-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKdlb-B5-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKgccs-B5-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKgccs-B5-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKm314-B5-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKm314-B5-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKm471-B5-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKm471-B5-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKscs-B5-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\HKscs-B5-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Katakana.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSC-EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSC-EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSC-Johab-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSC-Johab-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSCms-UHC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSCms-UHC-HW-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSCms-UHC-HW-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSCms-UHC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSCpc-EUC-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\KSCpc-EUC-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\LICENSE" />
+    <Content Include="pdf_read\web\cmaps\NWP-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\NWP-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\RKSJ-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\RKSJ-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\Roman.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniCNS-UCS2-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniCNS-UCS2-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniCNS-UTF16-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniCNS-UTF16-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniCNS-UTF32-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniCNS-UTF32-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniCNS-UTF8-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniCNS-UTF8-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniGB-UCS2-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniGB-UCS2-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniGB-UTF16-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniGB-UTF16-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniGB-UTF32-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniGB-UTF32-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniGB-UTF8-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniGB-UTF8-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS-UCS2-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS-UCS2-HW-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS-UCS2-HW-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS-UCS2-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS-UTF16-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS-UTF16-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS-UTF32-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS-UTF32-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS-UTF8-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS-UTF8-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS2004-UTF16-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS2004-UTF16-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS2004-UTF32-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS2004-UTF32-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS2004-UTF8-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJIS2004-UTF8-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJISPro-UCS2-HW-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJISPro-UCS2-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJISPro-UTF8-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJISX0213-UTF32-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJISX0213-UTF32-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJISX02132004-UTF32-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniJISX02132004-UTF32-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniKS-UCS2-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniKS-UCS2-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniKS-UTF16-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniKS-UTF16-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniKS-UTF32-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniKS-UTF32-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniKS-UTF8-H.bcmap" />
+    <Content Include="pdf_read\web\cmaps\UniKS-UTF8-V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\V.bcmap" />
+    <Content Include="pdf_read\web\cmaps\WP-Symbol.bcmap" />
+    <Content Include="pdf_read\web\compressed.tracemonkey-pldi-09.pdf" />
+    <Content Include="pdf_read\web\locale\ach\viewer.properties" />
+    <Content Include="pdf_read\web\locale\af\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ak\viewer.properties" />
+    <Content Include="pdf_read\web\locale\an\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ar\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ast\viewer.properties" />
+    <Content Include="pdf_read\web\locale\as\viewer.properties" />
+    <Content Include="pdf_read\web\locale\az\viewer.properties" />
+    <Content Include="pdf_read\web\locale\be\viewer.properties" />
+    <Content Include="pdf_read\web\locale\bg\viewer.properties" />
+    <Content Include="pdf_read\web\locale\bn-BD\viewer.properties" />
+    <Content Include="pdf_read\web\locale\bn-IN\viewer.properties" />
+    <Content Include="pdf_read\web\locale\br\viewer.properties" />
+    <Content Include="pdf_read\web\locale\bs\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ca\viewer.properties" />
+    <Content Include="pdf_read\web\locale\csb\viewer.properties" />
+    <Content Include="pdf_read\web\locale\cs\viewer.properties" />
+    <Content Include="pdf_read\web\locale\cy\viewer.properties" />
+    <Content Include="pdf_read\web\locale\da\viewer.properties" />
+    <Content Include="pdf_read\web\locale\de\viewer.properties" />
+    <Content Include="pdf_read\web\locale\el\viewer.properties" />
+    <Content Include="pdf_read\web\locale\en-GB\viewer.properties" />
+    <Content Include="pdf_read\web\locale\en-US\viewer.properties" />
+    <Content Include="pdf_read\web\locale\en-ZA\viewer.properties" />
+    <Content Include="pdf_read\web\locale\eo\viewer.properties" />
+    <Content Include="pdf_read\web\locale\es-AR\viewer.properties" />
+    <Content Include="pdf_read\web\locale\es-CL\viewer.properties" />
+    <Content Include="pdf_read\web\locale\es-ES\viewer.properties" />
+    <Content Include="pdf_read\web\locale\es-MX\viewer.properties" />
+    <Content Include="pdf_read\web\locale\et\viewer.properties" />
+    <Content Include="pdf_read\web\locale\eu\viewer.properties" />
+    <Content Include="pdf_read\web\locale\fa\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ff\viewer.properties" />
+    <Content Include="pdf_read\web\locale\fi\viewer.properties" />
+    <Content Include="pdf_read\web\locale\fr\viewer.properties" />
+    <Content Include="pdf_read\web\locale\fy-NL\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ga-IE\viewer.properties" />
+    <Content Include="pdf_read\web\locale\gd\viewer.properties" />
+    <Content Include="pdf_read\web\locale\gl\viewer.properties" />
+    <Content Include="pdf_read\web\locale\gu-IN\viewer.properties" />
+    <Content Include="pdf_read\web\locale\he\viewer.properties" />
+    <Content Include="pdf_read\web\locale\hi-IN\viewer.properties" />
+    <Content Include="pdf_read\web\locale\hr\viewer.properties" />
+    <Content Include="pdf_read\web\locale\hu\viewer.properties" />
+    <Content Include="pdf_read\web\locale\hy-AM\viewer.properties" />
+    <Content Include="pdf_read\web\locale\id\viewer.properties" />
+    <Content Include="pdf_read\web\locale\is\viewer.properties" />
+    <Content Include="pdf_read\web\locale\it\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ja\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ka\viewer.properties" />
+    <Content Include="pdf_read\web\locale\kk\viewer.properties" />
+    <Content Include="pdf_read\web\locale\km\viewer.properties" />
+    <Content Include="pdf_read\web\locale\kn\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ko\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ku\viewer.properties" />
+    <Content Include="pdf_read\web\locale\lg\viewer.properties" />
+    <Content Include="pdf_read\web\locale\lij\viewer.properties" />
+    <Content Include="pdf_read\web\locale\locale.properties" />
+    <Content Include="pdf_read\web\locale\lt\viewer.properties" />
+    <Content Include="pdf_read\web\locale\lv\viewer.properties" />
+    <Content Include="pdf_read\web\locale\mai\viewer.properties" />
+    <Content Include="pdf_read\web\locale\mk\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ml\viewer.properties" />
+    <Content Include="pdf_read\web\locale\mn\viewer.properties" />
+    <Content Include="pdf_read\web\locale\mr\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ms\viewer.properties" />
+    <Content Include="pdf_read\web\locale\my\viewer.properties" />
+    <Content Include="pdf_read\web\locale\nb-NO\viewer.properties" />
+    <Content Include="pdf_read\web\locale\nl\viewer.properties" />
+    <Content Include="pdf_read\web\locale\nn-NO\viewer.properties" />
+    <Content Include="pdf_read\web\locale\nso\viewer.properties" />
+    <Content Include="pdf_read\web\locale\oc\viewer.properties" />
+    <Content Include="pdf_read\web\locale\or\viewer.properties" />
+    <Content Include="pdf_read\web\locale\pa-IN\viewer.properties" />
+    <Content Include="pdf_read\web\locale\pl\viewer.properties" />
+    <Content Include="pdf_read\web\locale\pt-BR\viewer.properties" />
+    <Content Include="pdf_read\web\locale\pt-PT\viewer.properties" />
+    <Content Include="pdf_read\web\locale\rm\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ro\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ru\viewer.properties" />
+    <Content Include="pdf_read\web\locale\rw\viewer.properties" />
+    <Content Include="pdf_read\web\locale\sah\viewer.properties" />
+    <Content Include="pdf_read\web\locale\si\viewer.properties" />
+    <Content Include="pdf_read\web\locale\sk\viewer.properties" />
+    <Content Include="pdf_read\web\locale\sl\viewer.properties" />
+    <Content Include="pdf_read\web\locale\son\viewer.properties" />
+    <Content Include="pdf_read\web\locale\sq\viewer.properties" />
+    <Content Include="pdf_read\web\locale\sr\viewer.properties" />
+    <Content Include="pdf_read\web\locale\sv-SE\viewer.properties" />
+    <Content Include="pdf_read\web\locale\sw\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ta-LK\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ta\viewer.properties" />
+    <Content Include="pdf_read\web\locale\te\viewer.properties" />
+    <Content Include="pdf_read\web\locale\th\viewer.properties" />
+    <Content Include="pdf_read\web\locale\tl\viewer.properties" />
+    <Content Include="pdf_read\web\locale\tn\viewer.properties" />
+    <Content Include="pdf_read\web\locale\tr\viewer.properties" />
+    <Content Include="pdf_read\web\locale\uk\viewer.properties" />
+    <Content Include="pdf_read\web\locale\ur\viewer.properties" />
+    <Content Include="pdf_read\web\locale\vi\viewer.properties" />
+    <Content Include="pdf_read\web\locale\wo\viewer.properties" />
+    <Content Include="pdf_read\web\locale\xh\viewer.properties" />
+    <Content Include="pdf_read\web\locale\zh-CN\viewer.properties" />
+    <Content Include="pdf_read\web\locale\zh-TW\viewer.properties" />
+    <Content Include="pdf_read\web\locale\zu\viewer.properties" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Edit.ashx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Review.ashx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Issue.ashx" />
+    <Content Include="mainform\Lossless_report\LosslessReport_Management.ashx" />
+    <Content Include="mainform\Lossless_report\Device_Library.ashx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.1.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.1.min.js" />
+    <Content Include="script\echarts\chart.js" />
+    <Content Include="script\echarts\chart\bar.js" />
+    <Content Include="script\echarts\chart\chord.js" />
+    <Content Include="script\echarts\chart\eventRiver.js" />
+    <Content Include="script\echarts\chart\force.js" />
+    <Content Include="script\echarts\chart\funnel.js" />
+    <Content Include="script\echarts\chart\gauge.js" />
+    <Content Include="script\echarts\chart\heatmap.js" />
+    <Content Include="script\echarts\chart\k.js" />
+    <Content Include="script\echarts\chart\line.js" />
+    <Content Include="script\echarts\chart\map.js" />
+    <Content Include="script\echarts\chart\pie.js" />
+    <Content Include="script\echarts\chart\radar.js" />
+    <Content Include="script\echarts\chart\scatter.js" />
+    <Content Include="script\echarts\chart\tree.js" />
+    <Content Include="script\echarts\chart\treemap.js" />
+    <Content Include="script\echarts\chart\venn.js" />
+    <Content Include="script\echarts\chart\wordCloud.js" />
+    <Content Include="script\echarts\component.js" />
+    <Content Include="script\echarts\component\axis.js" />
+    <Content Include="script\echarts\component\base.js" />
+    <Content Include="script\echarts\component\categoryAxis.js" />
+    <Content Include="script\echarts\component\dataRange.js" />
+    <Content Include="script\echarts\component\dataView.js" />
+    <Content Include="script\echarts\component\dataZoom.js" />
+    <Content Include="script\echarts\component\grid.js" />
+    <Content Include="script\echarts\component\legend.js" />
+    <Content Include="script\echarts\component\polar.js" />
+    <Content Include="script\echarts\component\roamController.js" />
+    <Content Include="script\echarts\component\timeline.js" />
+    <Content Include="script\echarts\component\title.js" />
+    <Content Include="script\echarts\component\toolbox.js" />
+    <Content Include="script\echarts\component\tooltip.js" />
+    <Content Include="script\echarts\component\valueAxis.js" />
+    <Content Include="script\echarts\config.js" />
+    <Content Include="script\echarts\data\Graph.js" />
+    <Content Include="script\echarts\data\KDTree.js" />
+    <Content Include="script\echarts\data\quickSelect.js" />
+    <Content Include="script\echarts\data\Tree.js" />
+    <Content Include="script\echarts\echarts.js" />
+    <Content Include="script\echarts\layer\heatmap.js" />
+    <Content Include="script\echarts\layout\Chord.js" />
+    <Content Include="script\echarts\layout\EdgeBundling.js" />
+    <Content Include="script\echarts\layout\eventRiver.js" />
+    <Content Include="script\echarts\layout\Force.js" />
+    <Content Include="script\echarts\layout\forceLayoutWorker.js" />
+    <Content Include="script\echarts\layout\Tree.js" />
+    <Content Include="script\echarts\layout\TreeMap.js" />
+    <Content Include="script\echarts\layout\WordCloud.js" />
+    <Content Include="script\echarts\layout\WordCloudRectZero.js" />
+    <Content Include="script\echarts\theme\default.js" />
+    <Content Include="script\echarts\theme\infographic.js" />
+    <Content Include="script\echarts\theme\macarons.js" />
+    <Content Include="script\echarts\util\accMath.js" />
+    <Content Include="script\echarts\util\coordinates.js" />
+    <Content Include="script\echarts\util\date.js" />
+    <Content Include="script\echarts\util\ecAnimation.js" />
+    <Content Include="script\echarts\util\ecData.js" />
+    <Content Include="script\echarts\util\ecEffect.js" />
+    <Content Include="script\echarts\util\ecQuery.js" />
+    <Content Include="script\echarts\util\kwargs.js" />
+    <Content Include="script\echarts\util\mapData\geoCoord.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\an_hui_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\ao_men_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\bei_jing_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\china_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\chong_qing_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\fu_jian_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\gan_su_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\guang_dong_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\guang_xi_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\gui_zhou_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\hai_nan_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\hei_long_jiang_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\he_bei_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\he_nan_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\hu_bei_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\hu_nan_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\jiang_su_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\jiang_xi_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\ji_lin_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\liao_ning_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\nei_meng_gu_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\ning_xia_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\qing_hai_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\shang_hai_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\shan_dong_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\shan_xi_1_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\shan_xi_2_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\si_chuan_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\tai_wan_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\tian_jin_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\world_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\xiang_gang_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\xin_jiang_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\xi_zang_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\yun_nan_geo.js" />
+    <Content Include="script\echarts\util\mapData\geoJson\zhe_jiang_geo.js" />
+    <Content Include="script\echarts\util\mapData\params.js" />
+    <Content Include="script\echarts\util\mapData\rawData\encode.js" />
+    <Content Include="script\echarts\util\mapData\textFixed.js" />
+    <Content Include="script\echarts\util\ndarray.js" />
+    <Content Include="script\echarts\util\number.js" />
+    <Content Include="script\echarts\util\projection\albers.js" />
+    <Content Include="script\echarts\util\projection\mercator.js" />
+    <Content Include="script\echarts\util\projection\normal.js" />
+    <Content Include="script\echarts\util\projection\svg.js" />
+    <Content Include="script\echarts\util\shape\Candle.js" />
+    <Content Include="script\echarts\util\shape\Chain.js" />
+    <Content Include="script\echarts\util\shape\Cross.js" />
+    <Content Include="script\echarts\util\shape\GaugePointer.js" />
+    <Content Include="script\echarts\util\shape\HalfSmoothPolygon.js" />
+    <Content Include="script\echarts\util\shape\HandlePolygon.js" />
+    <Content Include="script\echarts\util\shape\Icon.js" />
+    <Content Include="script\echarts\util\shape\MarkLine.js" />
+    <Content Include="script\echarts\util\shape\normalIsCover.js" />
+    <Content Include="script\echarts\util\shape\Ribbon.js" />
+    <Content Include="script\echarts\util\shape\Symbol.js" />
+    <Content Include="script\echarts\util\smartLogSteps.js" />
+    <Content Include="script\echarts\util\smartSteps.js" />
+    <Content Include="script\echarts\zrender\animation\Animation.js" />
+    <Content Include="script\echarts\zrender\animation\Clip.js" />
+    <Content Include="script\echarts\zrender\animation\easing.js" />
+    <Content Include="script\echarts\zrender\config.js" />
+    <Content Include="script\echarts\zrender\dep\excanvas.js" />
+    <Content Include="script\echarts\zrender\dep\excanvas2.js" />
+    <Content Include="script\echarts\zrender\dep\excanvas3.js" />
+    <Content Include="script\echarts\zrender\Group.js" />
+    <Content Include="script\echarts\zrender\Handler.js" />
+    <Content Include="script\echarts\zrender\Layer.js" />
+    <Content Include="script\echarts\zrender\loadingEffect\Bar.js" />
+    <Content Include="script\echarts\zrender\loadingEffect\Base.js" />
+    <Content Include="script\echarts\zrender\loadingEffect\Bubble.js" />
+    <Content Include="script\echarts\zrender\loadingEffect\DynamicLine.js" />
+    <Content Include="script\echarts\zrender\loadingEffect\Ring.js" />
+    <Content Include="script\echarts\zrender\loadingEffect\Spin.js" />
+    <Content Include="script\echarts\zrender\loadingEffect\Whirling.js" />
+    <Content Include="script\echarts\zrender\macro.js" />
+    <Content Include="script\echarts\zrender\mixin\Eventful.js" />
+    <Content Include="script\echarts\zrender\mixin\Transformable.js" />
+    <Content Include="script\echarts\zrender\Painter.js" />
+    <Content Include="script\echarts\zrender\shape\Base.js" />
+    <Content Include="script\echarts\zrender\shape\BezierCurve.js" />
+    <Content Include="script\echarts\zrender\shape\Circle.js" />
+    <Content Include="script\echarts\zrender\shape\Droplet.js" />
+    <Content Include="script\echarts\zrender\shape\Ellipse.js" />
+    <Content Include="script\echarts\zrender\shape\Heart.js" />
+    <Content Include="script\echarts\zrender\shape\Image.js" />
+    <Content Include="script\echarts\zrender\shape\Isogon.js" />
+    <Content Include="script\echarts\zrender\shape\Line.js" />
+    <Content Include="script\echarts\zrender\shape\Path.js" />
+    <Content Include="script\echarts\zrender\shape\Polygon.js" />
+    <Content Include="script\echarts\zrender\shape\Polyline.js" />
+    <Content Include="script\echarts\zrender\shape\Rectangle.js" />
+    <Content Include="script\echarts\zrender\shape\Ring.js" />
+    <Content Include="script\echarts\zrender\shape\Rose.js" />
+    <Content Include="script\echarts\zrender\shape\Sector.js" />
+    <Content Include="script\echarts\zrender\shape\ShapeBundle.js" />
+    <Content Include="script\echarts\zrender\shape\Star.js" />
+    <Content Include="script\echarts\zrender\shape\Text.js" />
+    <Content Include="script\echarts\zrender\shape\Trochoid.js" />
+    <Content Include="script\echarts\zrender\shape\util\dashedLineTo.js" />
+    <Content Include="script\echarts\zrender\shape\util\PathProxy.js" />
+    <Content Include="script\echarts\zrender\shape\util\smoothBezier.js" />
+    <Content Include="script\echarts\zrender\shape\util\smoothSpline.js" />
+    <Content Include="script\echarts\zrender\Storage.js" />
+    <Content Include="script\echarts\zrender\tool\area.js" />
+    <Content Include="script\echarts\zrender\tool\color.js" />
+    <Content Include="script\echarts\zrender\tool\computeBoundingBox.js" />
+    <Content Include="script\echarts\zrender\tool\curve.js" />
+    <Content Include="script\echarts\zrender\tool\env.js" />
+    <Content Include="script\echarts\zrender\tool\event.js" />
+    <Content Include="script\echarts\zrender\tool\guid.js" />
+    <Content Include="script\echarts\zrender\tool\http.js" />
+    <Content Include="script\echarts\zrender\tool\log.js" />
+    <Content Include="script\echarts\zrender\tool\math.js" />
+    <Content Include="script\echarts\zrender\tool\matrix.js" />
+    <Content Include="script\echarts\zrender\tool\util.js" />
+    <Content Include="script\echarts\zrender\tool\vector.js" />
+    <Content Include="script\echarts\zrender\zrender.js" />
+    <Content Include="script\LodopFuncs.js" />
+    <Content Include="script\supersized.3.2.7.min.js" />
+    <Content Include="test\show_echart.aspx" />
+    <Content Include="test\test.aspx" />
+    <Content Include="test\test_charts.js" />
+    <Content Include="test\test_message\test_messge2.aspx" />
+    <Content Include="test\test_word_link.aspx" />
+    <Content Include="test\test_word_view.aspx" />
+    <Content Include="test\tree_json_test.aspx" />
+    <Content Include="uploadify\Change Log.txt" />
+    <Content Include="uploadify\jquery.uploadify_change.js" />
+    <Content Include="uploadify\jquery.uploadify.js" />
+    <Content Include="uploadify\jquery.uploadify.min.js" />
+    <Content Include="uploadify\license.txt" />
+    <Content Include="uploadify\swfobject.js" />
+    <Content Include="uploadify\uploadify-cancel.png" />
+    <Content Include="uploadify\uploadify.css" />
+    <Content Include="uploadify\uploadify.swf" />
+    <Content Include="uploadify\__MACOSX\._Change Log.txt" />
+    <Content Include="uploadify\__MACOSX\._uploadify.swf" />
+    <Content Include="upload_Folder\Lossless_report_accessory\d67c17d5-29ec-454f-a148-874a4971f93f.jpg" />
+    <Content Include="upload_Folder\Lossless_report_accessory\ec0c4910-0e0b-4577-9243-9a3f492b7f73.jpg" />
+    <Content Include="upload_Folder\Lossless_report_Picture\29620dda-c9fa-441b-b0b4-8af9f4eaac9d.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\2dfee903-9db9-41cb-97e7-6dd219f97fbb.jpg" />
+    <Content Include="upload_Folder\Lossless_report_Picture\30335c88-046f-4f33-87ff-4edc3862544e.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\37d2b99f-f537-4bab-9a89-32c094385578.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\390ccf8c-9014-49af-8de0-5f0d7703cdaf.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\4628b25a-04b5-4595-960e-5d5f61e910b6.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\4f952e7e-c737-48f4-b5f2-e65e6d3b3c71.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\67fa118c-baeb-4e13-9d18-998783b3d782.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\8e6794d5-c71b-44d3-aeab-22548b44e672.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\924a8fd8-99bd-4d91-89d5-b223b4a65c75.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\97c25533-8c01-4fec-be79-af0fbbc9b9c2.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\9d52ea4c-198b-4375-8a82-7a8f8ad053b1.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\bfb4a45c-6770-4b47-b391-79864ecd4bb1.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\c594c9f6-19ae-42e1-b5ea-38199b78a145.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\e86f8f55-fdc4-49f4-aff3-8634c08a6d60.png" />
+    <Content Include="upload_Folder\Lossless_report_Picture\edbfd197-3a65-47f9-8eea-311012a1696b.jpg" />
+    <Content Include="upload_Folder\signature_pic\0164236c-dec5-4dba-a212-8a29ad353e44.gif" />
+    <Content Include="upload_Folder\signature_pic\04ccab9e-812c-4332-a51b-310414a16b9f.jpg" />
+    <Content Include="upload_Folder\signature_pic\069763bb-b548-4748-9d41-3a470ce24315.jpg" />
+    <Content Include="upload_Folder\signature_pic\174fec0e-7ea5-4a97-95dd-f613d6bf8d08.jpg" />
+    <Content Include="upload_Folder\signature_pic\182601f6-b1d4-478b-83b4-ca91fa1dbfe4.png" />
+    <Content Include="upload_Folder\signature_pic\4acf25e5-01ac-435e-94ad-cfb1d249e84e.jpg" />
+    <Content Include="upload_Folder\signature_pic\5910a2aa-188b-45eb-bcba-9cc984ad457b.jpg" />
+    <Content Include="upload_Folder\signature_pic\63f65300-e160-45ee-a2e1-3e8dacc6f652.png" />
+    <Content Include="upload_Folder\signature_pic\6d48720c-bea5-499c-9ad0-b85287e8d280.jpg" />
+    <Content Include="upload_Folder\signature_pic\72a87a61-0335-461b-9197-add5f889d392.png" />
+    <Content Include="upload_Folder\signature_pic\83198e1c-53ee-4a1c-b73e-049d6fb52827.jpg" />
+    <Content Include="upload_Folder\signature_pic\83ddfe27-e7a3-4ff8-bdf9-d4a93f55d123.png" />
+    <Content Include="upload_Folder\signature_pic\869ec8c8-5804-4fb6-a57a-963cfbc65997.jpg" />
+    <Content Include="upload_Folder\signature_pic\8dd70cbe-ecbe-4748-aef0-6fee55757461.jpg" />
+    <Content Include="upload_Folder\signature_pic\a8e38ff2-48f2-4b11-a073-983e757609a8.png" />
+    <Content Include="upload_Folder\signature_pic\aab5f846-e56c-4300-9f19-bd54d63fed4e.jpg" />
+    <Content Include="upload_Folder\signature_pic\b61680a7-c747-42e3-8874-072e721aab34.jpg" />
+    <Content Include="upload_Folder\signature_pic\c757aa29-9468-4428-be48-994e97f1581c.png" />
+    <Content Include="upload_Folder\signature_pic\d8affb6b-77b1-4316-9e34-8f9a6f42329a.jpg" />
+    <Content Include="upload_Folder\signature_pic\e0b5c563-3e84-43cd-ac7b-a26f875a06fd.png" />
+    <Content Include="upload_Folder\signature_pic\e232f830-53cd-4f9d-b1a9-da8425530a71.png" />
+    <Content Include="upload_Folder\signature_pic\f3636cf7-f501-4dc8-b667-6ad77d22592e.jpg" />
+    <Content Include="upload_Folder\signature_pic\f545fd18-0aa0-4e40-90c0-5ad2949c8cfe.png" />
+    <Content Include="upload_Folder\文件夹说明.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\Combres.cs" />
+    <Compile Include="custom_class\BarCode.cs" />
+    <Compile Include="custom_class\check_Permissions.cs" />
+    <Compile Include="custom_class\ChemistryData.cs" />
+    <Compile Include="custom_class\CollectionHelper.cs" />
+    <Compile Include="custom_class\ContractInfoStatusEnum.cs" />
+    <Compile Include="custom_class\ContractKeep_SampleStatusEnum.cs" />
+    <Compile Include="custom_class\ContractSampleStatusEnum.cs" />
+    <Compile Include="custom_class\ContractTaskReturnStatusEnum.cs" />
+    <Compile Include="custom_class\ContractTaskStatusEnum.cs" />
+    <Compile Include="custom_class\create_word.cs" />
+    <Compile Include="custom_class\Data_Model.cs" />
+    <Compile Include="custom_class\DBHelper.cs" />
+    <Compile Include="custom_class\DecryptEncryption.cs" />
+    <Compile Include="custom_class\DeviceStateEnum.cs" />
+    <Compile Include="custom_class\ErrorEquipmentStatusEnum.cs" />
+    <Compile Include="custom_class\ErrorReportStatusEnum.cs" />
+    <Compile Include="custom_class\ErrorSampleInvalidStatusEnum.cs" />
+    <Compile Include="custom_class\ExcelHelper.cs" />
+    <Compile Include="custom_class\HandleData.cs" />
+    <Compile Include="custom_class\JsonHelper.cs" />
+    <Compile Include="custom_class\LosslessReportStatusEnum.cs" />
+    <Compile Include="custom_class\LosslessReport_EditApplyEnum.cs" />
+    <Compile Include="custom_class\NDE_report_review.cs" />
+    <Compile Include="custom_class\Operation_log.cs" />
+    <Compile Include="custom_class\ProbeStateEnum.cs" />
+    <Compile Include="custom_class\ReportDistributionReceive.cs" />
+    <Compile Include="custom_class\ReportProcessStatusEnum.cs" />
+    <Compile Include="custom_class\SampleNumState.cs" />
+    <Compile Include="custom_class\Sample_machiningStatusEnum.cs" />
+    <Compile Include="custom_class\Send_message.cs" />
+    <Compile Include="custom_class\StandardLibraryStatusEnum.cs" />
+    <Compile Include="custom_class\Startup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="custom_class\TB_ProcessRecordNodeIdEnum.cs" />
+    <Compile Include="custom_class\TimeJob .cs" />
+    <Compile Include="custom_class\WordConverter.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="custom_class\AssetNum.cs" />
+    <Compile Include="login\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\barcode.ashx.cs">
+      <DependentUpon>barcode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Certificate_error_word_print.aspx.cs">
+      <DependentUpon>Certificate_error_word_print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Certificate_error_word_print.aspx.designer.cs">
+      <DependentUpon>Certificate_error_word_print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\Device_Library.ashx.cs">
+      <DependentUpon>Device_Library.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\Device_Library.aspx.cs">
+      <DependentUpon>Device_Library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\Device_Library.aspx.designer.cs">
+      <DependentUpon>Device_Library.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\ExecuteResult.cs" />
+    <Compile Include="mainform\Lossless_report\LosslessReport_Apply_Audit.aspx.cs">
+      <DependentUpon>LosslessReport_Apply_Audit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Apply_Audit.aspx.designer.cs">
+      <DependentUpon>LosslessReport_Apply_Audit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Apply_Management.aspx.cs">
+      <DependentUpon>LosslessReport_Apply_Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Apply_Management.aspx.designer.cs">
+      <DependentUpon>LosslessReport_Apply_Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Edit.ashx.cs">
+      <DependentUpon>LosslessReport_Edit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Edit.aspx.cs">
+      <DependentUpon>LosslessReport_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Edit.aspx.designer.cs">
+      <DependentUpon>LosslessReport_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Issue.ashx.cs">
+      <DependentUpon>LosslessReport_Issue.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Issue.aspx.cs">
+      <DependentUpon>LosslessReport_Issue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Issue.aspx.designer.cs">
+      <DependentUpon>LosslessReport_Issue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Management.ashx.cs">
+      <DependentUpon>LosslessReport_Management.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Management.aspx.cs">
+      <DependentUpon>LosslessReport_Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Management.aspx.designer.cs">
+      <DependentUpon>LosslessReport_Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Monitor.ashx.cs">
+      <DependentUpon>LosslessReport_Monitor.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Monitor.aspx.cs">
+      <DependentUpon>LosslessReport_Monitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Monitor.aspx.designer.cs">
+      <DependentUpon>LosslessReport_Monitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Review.ashx.cs">
+      <DependentUpon>LosslessReport_Review.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Review.aspx.cs">
+      <DependentUpon>LosslessReport_Review.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_Review.aspx.designer.cs">
+      <DependentUpon>LosslessReport_Review.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\Probe_Library.aspx.cs">
+      <DependentUpon>Probe_Library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\Probe_Library.aspx.designer.cs">
+      <DependentUpon>Probe_Library.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_EditApply_Edit.aspx.cs">
+      <DependentUpon>LosslessReport_EditApply_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_EditApply_Edit.aspx.designer.cs">
+      <DependentUpon>LosslessReport_EditApply_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_EditApply_Audit.aspx.cs">
+      <DependentUpon>LosslessReport_EditApply_Audit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessReport_EditApply_Audit.aspx.designer.cs">
+      <DependentUpon>LosslessReport_EditApply_Audit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\ReportManager.ashx.cs">
+      <DependentUpon>ReportManager.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Lossless_report_word_edit.aspx.cs">
+      <DependentUpon>Lossless_report_word_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report_word_edit.aspx.designer.cs">
+      <DependentUpon>Lossless_report_word_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\functional_module.ashx.cs">
+      <DependentUpon>functional_module.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\functional_module.aspx.cs">
+      <DependentUpon>functional_module.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\functional_module.aspx.designer.cs">
+      <DependentUpon>functional_module.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\read_contract.aspx.cs">
+      <DependentUpon>read_contract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\read_contract.aspx.designer.cs">
+      <DependentUpon>read_contract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Revisionsshow.aspx.cs">
+      <DependentUpon>Revisionsshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Revisionsshow.aspx.designer.cs">
+      <DependentUpon>Revisionsshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\Dictionary_management.ashx.cs">
+      <DependentUpon>Dictionary_management.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\PageShowSetting.ashx.cs">
+      <DependentUpon>PageShowSetting.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\PageShowSetting.aspx.cs">
+      <DependentUpon>PageShowSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\System_settings\PageShowSetting.aspx.designer.cs">
+      <DependentUpon>PageShowSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\System_log.aspx.cs">
+      <DependentUpon>System_log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\System_settings\System_log.aspx.designer.cs">
+      <DependentUpon>System_log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\Dictionary_management.aspx.cs">
+      <DependentUpon>Dictionary_management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\System_settings\Dictionary_management.aspx.designer.cs">
+      <DependentUpon>Dictionary_management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\System_log_new.ashx.cs">
+      <DependentUpon>System_log_new.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\hello.aspx.cs">
+      <DependentUpon>hello.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\hello.aspx.designer.cs">
+      <DependentUpon>hello.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\mainform.aspx.cs">
+      <DependentUpon>mainform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\mainform.aspx.designer.cs">
+      <DependentUpon>mainform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Personal_center\message_management.aspx.cs">
+      <DependentUpon>message_management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Personal_center\message_management.aspx.designer.cs">
+      <DependentUpon>message_management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\Authority_management.ashx.cs">
+      <DependentUpon>Authority_management.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\Authority_management.aspx.cs">
+      <DependentUpon>Authority_management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\System_settings\Authority_management.aspx.designer.cs">
+      <DependentUpon>Authority_management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Personal_center\personal_information.ashx.cs">
+      <DependentUpon>personal_information.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\Personal_center\personal_information.aspx.cs">
+      <DependentUpon>personal_information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Personal_center\personal_information.aspx.designer.cs">
+      <DependentUpon>personal_information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\print.aspx.cs">
+      <DependentUpon>print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\print.aspx.designer.cs">
+      <DependentUpon>print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\print_Certificate.aspx.cs">
+      <DependentUpon>print_Certificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\print_Certificate.aspx.designer.cs">
+      <DependentUpon>print_Certificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\read_pdf.aspx.cs">
+      <DependentUpon>read_pdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\read_pdf.aspx.designer.cs">
+      <DependentUpon>read_pdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\Personnel_management.ashx.cs">
+      <DependentUpon>Personnel_management.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\Personnel_management.aspx.cs">
+      <DependentUpon>Personnel_management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\System_settings\Personnel_management.aspx.designer.cs">
+      <DependentUpon>Personnel_management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\Template_file.ashx.cs">
+      <DependentUpon>Template_file.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\System_settings\Template_file.aspx.cs">
+      <DependentUpon>Template_file.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\System_settings\Template_file.aspx.designer.cs">
+      <DependentUpon>Template_file.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\test_records_view_word.aspx.cs">
+      <DependentUpon>test_records_view_word.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\test_records_view_word.aspx.designer.cs">
+      <DependentUpon>test_records_view_word.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\transfer_edit.aspx.cs">
+      <DependentUpon>transfer_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\transfer_edit.aspx.designer.cs">
+      <DependentUpon>transfer_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainform\word_view.aspx.cs">
+      <DependentUpon>word_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\word_view.aspx.designer.cs">
+      <DependentUpon>word_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom_class\message_Hub.cs" />
+    <Compile Include="mainform\print_form1.aspx.cs">
+      <DependentUpon>print_form1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\print_form1.aspx.designer.cs">
+      <DependentUpon>print_form1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ChemistryRecordModel.cs" />
+    <Compile Include="Model\ChemistryStandardModel.cs" />
+    <Compile Include="Model\StandardLibraryModel.cs" />
+    <Compile Include="mainform\Lossless_report\LosslessPerson_Management.aspx.cs">
+      <DependentUpon>LosslessPerson_Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainform\Lossless_report\LosslessPerson_Management.aspx.designer.cs">
+      <DependentUpon>LosslessPerson_Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\get_interface\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MESINTERFACE\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="test\test.ashx.cs">
+      <DependentUpon>test.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="test\test_message\message_show2.aspx.cs">
+      <DependentUpon>message_show2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\test_message\message_show2.aspx.designer.cs">
+      <DependentUpon>message_show2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageoffice\SaveFile.aspx.cs">
+      <DependentUpon>SaveFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageoffice\SaveFile.aspx.designer.cs">
+      <DependentUpon>SaveFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageoffice\seal.aspx.cs">
+      <DependentUpon>seal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageoffice\seal.aspx.designer.cs">
+      <DependentUpon>seal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageoffice\sealPic.aspx.cs">
+      <DependentUpon>sealPic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageoffice\sealPic.aspx.designer.cs">
+      <DependentUpon>sealPic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageoffice\server.aspx.cs">
+      <DependentUpon>server.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageoffice\server.aspx.designer.cs">
+      <DependentUpon>server.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="custom_class\rewrite_IHttpModule.cs" />
+    <Compile Include="custom_class\SignalR_User_id.cs" />
+    <Compile Include="custom_class\SQLHelper.cs" />
+    <Compile Include="test\Handler.ashx.cs">
+      <DependentUpon>Handler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="test\show_echart.aspx.cs">
+      <DependentUpon>show_echart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\show_echart.aspx.designer.cs">
+      <DependentUpon>show_echart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\test_message\test_messge2.aspx.cs">
+      <DependentUpon>test_messge2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\test_message\test_messge2.aspx.designer.cs">
+      <DependentUpon>test_messge2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\test_word_link.aspx.cs">
+      <DependentUpon>test_word_link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\test_word_link.aspx.designer.cs">
+      <DependentUpon>test_word_link.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\test_word_view.aspx.cs">
+      <DependentUpon>test_word_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\test_word_view.aspx.designer.cs">
+      <DependentUpon>test_word_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\tes_word_create.ashx.cs">
+      <DependentUpon>tes_word_create.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="test\tree_json_test.ashx.cs">
+      <DependentUpon>tree_json_test.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="test\tree_json_test.aspx.cs">
+      <DependentUpon>tree_json_test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\tree_json_test.aspx.designer.cs">
+      <DependentUpon>tree_json_test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\副本 Handler.ashx.cs">
+      <DependentUpon>副本 Handler.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="test\Handler.ashx" />
+    <Content Include="test\副本 Handler.ashx" />
+    <Content Include="test\tree_json_test.ashx" />
+    <Content Include="mainform\System_settings\Personnel_management.ashx" />
+    <Content Include="uploadify\uploadify.php" />
+    <Content Include="uploadify\check-exists.php" />
+    <Content Include="uploadify\index.php" />
+    <Content Include="artDialog\_doc\ajaxContent\content.json" />
+    <Content Include="artDialog\_doc\commercial_license.doc" />
+    <Content Include="artDialog\_doc\highlight\LICENSE" />
+    <Content Include="pageoffice\template\file001.doc" />
+    <Content Include="pageoffice\template\file002.xls" />
+    <Content Include="pageoffice\template\file003.ppt" />
+    <Content Include="pageoffice\template\file004.docx" />
+    <Content Include="pageoffice\template\file005.xlsx" />
+    <Content Include="pageoffice\template\file006.pptx" />
+    <Content Include="mainform\System_settings\Authority_management.ashx" />
+    <None Include="Properties\PublishProfiles\webconfig.pubxml" />
+    <Content Include="script\echarts\util\.DS_Store" />
+    <Content Include="script\echarts\util\mapData\.DS_Store" />
+    <Content Include="script\echarts\util\mapData\rawData\.DS_Store" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\an_hui_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\ao_men_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\bei_jing_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\china_city.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\china_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\chong_qing_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\fu_jian_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\gan_su_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\guang_dong_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\guang_xi_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\gui_zhou_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\hai_nan_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\hei_long_jiang_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\he_bei_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\he_nan_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\hu_bei_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\hu_nan_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\jiang_su_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\jiang_xi_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\ji_lin_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\liao_ning_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\nei_meng_gu_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\ning_xia_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\qing_hai_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\shang_hai_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\shan_dong_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\shan_xi_1_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\shan_xi_2_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\si_chuan_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\tai_wan_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\tian_jin_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\world_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\xiang_gang_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\xin_jiang_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\xi_zang_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\yun_nan_geo.json" />
+    <Content Include="script\echarts\util\mapData\rawData\geoJson\zhe_jiang_geo.json" />
+    <Content Include="test\tes_word_create.ashx" />
+    <Content Include="test\test.ashx" />
+    <None Include="Service References\get_interface\phians_webservice_N1.wsdl" />
+    <None Include="Service References\MESINTERFACE\MES_INTERFACE.wsdl" />
+    <Content Include="upload_Folder\Lossless_report\1.docx" />
+    <Content Include="upload_Folder\Lossless_report\10.doc" />
+    <Content Include="upload_Folder\Lossless_report\10.docx" />
+    <Content Include="upload_Folder\Lossless_report\11.doc" />
+    <Content Include="upload_Folder\Lossless_report\11.docx" />
+    <Content Include="upload_Folder\Lossless_report\12.doc" />
+    <Content Include="upload_Folder\Lossless_report\13.doc" />
+    <Content Include="upload_Folder\Lossless_report\13.docx" />
+    <Content Include="upload_Folder\Lossless_report\14.doc" />
+    <Content Include="upload_Folder\Lossless_report\15.docx" />
+    <Content Include="upload_Folder\Lossless_report\16.docx" />
+    <Content Include="upload_Folder\Lossless_report\17.docx" />
+    <Content Include="upload_Folder\Lossless_report\18.docx" />
+    <Content Include="upload_Folder\Lossless_report\19.docx" />
+    <Content Include="upload_Folder\Lossless_report\2.doc" />
+    <Content Include="upload_Folder\Lossless_report\20.docx" />
+    <Content Include="upload_Folder\Lossless_report\21.docx" />
+    <Content Include="upload_Folder\Lossless_report\22.docx" />
+    <Content Include="upload_Folder\Lossless_report\23.docx" />
+    <Content Include="upload_Folder\Lossless_report\24.docx" />
+    <Content Include="upload_Folder\Lossless_report\25.docx" />
+    <Content Include="upload_Folder\Lossless_report\26.doc" />
+    <Content Include="upload_Folder\Lossless_report\26.docx" />
+    <Content Include="upload_Folder\Lossless_report\27.doc" />
+    <Content Include="upload_Folder\Lossless_report\27.docx" />
+    <Content Include="upload_Folder\Lossless_report\3.docx" />
+    <Content Include="upload_Folder\Lossless_report\4.doc" />
+    <Content Include="upload_Folder\Lossless_report\4.docx" />
+    <Content Include="upload_Folder\Lossless_report\5.doc" />
+    <Content Include="upload_Folder\Lossless_report\5.docx" />
+    <Content Include="upload_Folder\Lossless_report\5_1.doc" />
+    <Content Include="upload_Folder\Lossless_report\6.doc" />
+    <Content Include="upload_Folder\Lossless_report\6.docx" />
+    <Content Include="upload_Folder\Lossless_report\7.doc" />
+    <Content Include="upload_Folder\Lossless_report\8.doc" />
+    <Content Include="upload_Folder\Lossless_report\9.docx" />
+    <Content Include="upload_Folder\Lossless_report\DT模板空白 4版.docx" />
+    <Content Include="upload_Folder\Lossless_report\ECT-涡流检验报告模板RPV.docx" />
+    <Content Include="upload_Folder\Lossless_report\ECT-涡流检验报告模板SG.docx" />
+    <Content Include="upload_Folder\Lossless_report\LT-氦检漏报告模板 4版.docx" />
+    <Content Include="upload_Folder\Lossless_report\LT-氦检漏报告模板 4版123.docx" />
+    <Content Include="upload_Folder\Lossless_report\MT-磁粉检验报告床式.doc" />
+    <Content Include="upload_Folder\Lossless_report\MT-磁轭法和触头法磁粉检验报告3版.doc" />
+    <Content Include="upload_Folder\Lossless_report\MT-磁轭法和触头法磁粉检验报告3版123.doc" />
+    <Content Include="upload_Folder\Lossless_report\NDE报告附页.docx" />
+    <Content Include="upload_Folder\Lossless_report\PT-液体渗透检验报告.docx" />
+    <Content Include="upload_Folder\Lossless_report\RT-射线检验报告1.docx" />
+    <Content Include="upload_Folder\Lossless_report\RT-射线照相封口焊评定记录3.docx" />
+    <Content Include="upload_Folder\Lossless_report\RT-射线照相封口焊评定记录3（打不开）.docx" />
+    <Content Include="upload_Folder\Lossless_report\RT-射线照相评定记录2.docx" />
+    <Content Include="upload_Folder\Lossless_report\UT-超声波检验报告1-正页.docx" />
+    <Content Include="upload_Folder\Lossless_report\UT-超声波检验报告2-扫查示意图.doc" />
+    <Content Include="upload_Folder\Lossless_report\UT-超声波检验报告3-对接焊缝缺陷记录.docx" />
+    <Content Include="upload_Folder\Lossless_report\UT-超声波检验报告3-小接管角焊缝缺陷记录.docx" />
+    <Content Include="upload_Folder\Lossless_report\UT-超声波检验报告3-角焊缝缺陷记录（横）.docx" />
+    <Content Include="upload_Folder\Lossless_report\UT-超声波检验报告3-角焊缝缺陷记录（竖）.docx" />
+    <Content Include="upload_Folder\Lossless_report\UT-超声波检验报告4-近表面附加扫查.docx" />
+    <Content Include="upload_Folder\Lossless_report\UT-超声波检验报告4-近表面附加扫查（打不开）.docx" />
+    <Content Include="upload_Folder\Lossless_report\UT-超声波测厚报告.docx" />
+    <Content Include="upload_Folder\Lossless_report\水压试验报告模板21.doc" />
+    <Content Include="upload_Folder\Lossless_report\热处理模板3.docx" />
+    <Content Include="upload_Folder\Lossless_report\目视报告模板 VT  63.doc" />
+    <Content Include="upload_Folder\Lossless_report\自动超声波检验报告1-检 验 报 告.docx" />
+    <Content Include="upload_Folder\Lossless_report\自动超声波检验报告1.docx" />
+    <Content Include="upload_Folder\Lossless_report\自动超声波检验报告2-缺陷信号记录.docx" />
+    <Content Include="upload_Folder\Lossless_report\自动超声波检验报告2.docx" />
+    <Content Include="upload_Folder\Lossless_report\自动超声波检验报告3-校验数据表.docx" />
+    <Content Include="upload_Folder\Lossless_report\自动超声波检验报告3.docx" />
+    <Content Include="upload_Folder\Lossless_report\自动超声波检验报告4-扫查清单.docx" />
+    <Content Include="upload_Folder\Lossless_report\自动超声波检验报告4.docx" />
+    <Content Include="upload_Folder\Lossless_report\自动超声波检验报告5.docx" />
+    <Content Include="upload_Folder\Lossless_report\自动超声波检验报告5焊缝数据记录单.docx" />
+    <Content Include="upload_Folder\Lossless_report_accessory\04b0f2f1-0f61-4a44-bf2b-7a5c35caa2ac.docx" />
+    <Content Include="upload_Folder\Lossless_report_accessory\2e8b6015-3de9-4563-852a-941e8eeb4547.doc" />
+    <Content Include="upload_Folder\Lossless_report_accessory\485b0020-a027-41aa-a68d-68ccd6dc1583.xls" />
+    <Content Include="upload_Folder\Lossless_report_accessory\4cd6628c-93e1-40e3-a1a7-6ac8e5f3aa8b.docx" />
+    <Content Include="upload_Folder\Lossless_report_accessory\6a1d23ae-6575-4f37-8d30-6db28fdd0a31.docx" />
+    <Content Include="upload_Folder\Lossless_report_accessory\729abaa7-843c-4da1-93b6-2e8fa79cb86f.docx" />
+    <Content Include="upload_Folder\Lossless_report_accessory\742958c2-06d3-4307-8692-6e3453d9a57d.docx" />
+    <Content Include="upload_Folder\Lossless_report_accessory\76af801a-e7f3-4f6b-9bea-aec8c7e57eee.xls" />
+    <Content Include="upload_Folder\Lossless_report_accessory\889cf39f-9cba-4729-afd1-6cf45eb95f23.xls" />
+    <Content Include="upload_Folder\Lossless_report_accessory\90556735-20e0-4c67-83db-0c907f085eee.docx" />
+    <Content Include="upload_Folder\Lossless_report_accessory\a070c95c-b921-4745-be3d-77a229eb0d1d.xls" />
+    <Content Include="upload_Folder\Lossless_report_accessory\a8ab9b70-cb07-4e70-bb4d-5de957e6fab7.doc" />
+    <Content Include="upload_Folder\Lossless_report_accessory\ef1f0b68-c34a-470b-8902-5afe55c433a2.docx" />
+    <Content Include="upload_Folder\Lossless_report_accessory\f3f54c60-0852-4b79-ac1a-43b57d56b3e8.docx" />
+    <Content Include="upload_Folder\Lossless_report_accessory\f8d6f864-9be8-4d7d-85df-11e7cc960d65.docx" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\0a72a53e-f1d2-4d6b-b9a3-8bc13a4dcc3b.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\18ad3a5d-b9ba-499b-9669-a618e0aa5a67.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\18c023f2-934f-4b44-a94d-4fc40ea60bda.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\1adb5cf1-5a5b-41d0-bc3a-529f8bdccbc8.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\1ff48434-f1ef-4741-a9ec-f8dbdda323d8.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\36cc6e53-72bb-4881-acf7-d25f39955d10.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\37707cf1-2dd0-49b4-875a-58128b4cd44d.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\3f29ad8b-e6df-4ffa-bd27-e4670230a4eb.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\5058285a-4131-4945-a034-9800b3b3bad6.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\5249b728-df94-4d9c-a14c-42421ad12474.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\750cdd66-a363-4551-abb7-e852966a1543.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\81d31ded-a67b-45da-9afb-77c4c5fa7866.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\8694ae25-91dc-4768-9f3a-8c7c9cfd508f.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\8ed4c4eb-12a3-41f1-b4b3-6ff761465338.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\92467813-ae1b-4d65-ac8b-54328fdf31c7.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\9ba31e1d-900e-486f-b994-341f61570231.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\a6e0cad0-93ed-4e56-b8c6-bcf7967fc417.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\bb74e2dc-ad86-4e90-b9b9-645d9a3d74a2.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\d9079159-6ee5-4f5a-b443-9cd02844697a.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\e7195ffe-3dec-4b53-b9fd-38dae711825a.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\f616ea60-2e6a-4b7a-952f-3c99d4779e57.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\fd1663e9-45d9-47c5-8af4-eaec09c7f2ee.doc" />
+    <Content Include="upload_Folder\Lossless_report_certificate_E\ff8d909d-e736-4081-ae8b-096bcf6323d7.doc" />
+    <Content Include="upload_Folder\Lossless_report_Picture\f74b903a-3c28-4433-995e-1d724c2eb66b.doc" />
+    <Content Include="upload_Folder\Lossless_report_\021ad5e3-ca71-4bd1-92ae-01a1c8b979cd.doc" />
+    <Content Include="upload_Folder\Lossless_report_\0465f8d4-a661-432a-a3e5-9b73f4409b91.doc" />
+    <Content Include="upload_Folder\Lossless_report_\04b9343c-d1b1-4c22-a80a-3a122b9e64ec.doc" />
+    <Content Include="upload_Folder\Lossless_report_\060e0b61-e521-41dc-8c07-508ce142c785.doc" />
+    <Content Include="upload_Folder\Lossless_report_\08411dc3-46ce-40bb-b3ea-b8ab6894af5e.doc" />
+    <Content Include="upload_Folder\Lossless_report_\0af9f0ae-70f8-4bd9-93e8-f673729bde47.doc" />
+    <Content Include="upload_Folder\Lossless_report_\0c92a75a-bc16-4886-9d56-4e1a7a75c91f.doc" />
+    <Content Include="upload_Folder\Lossless_report_\0ff81424-8096-414b-99cf-9aad0d2b3de9.doc" />
+    <Content Include="upload_Folder\Lossless_report_\1650d25b-908e-4a40-a059-607f30de1f45.doc" />
+    <Content Include="upload_Folder\Lossless_report_\1753ccc0-7767-4991-875e-28f0459d5468.doc" />
+    <Content Include="upload_Folder\Lossless_report_\186ae76b-186c-4455-9818-1ff3dcc44219.doc" />
+    <Content Include="upload_Folder\Lossless_report_\1a0508dc-8ae9-44c2-8704-40f9fb6d25dd.doc" />
+    <Content Include="upload_Folder\Lossless_report_\1f9b1f60-256a-4a52-b44a-048e31192f7b.doc" />
+    <Content Include="upload_Folder\Lossless_report_\20eb0145-f7f7-4a5f-ba31-a172287fb132.doc" />
+    <Content Include="upload_Folder\Lossless_report_\2511b9c3-6c94-4efe-8221-2044fba063fb.doc" />
+    <Content Include="upload_Folder\Lossless_report_\25242623-ec28-4c8e-8dad-9363d8e1ec09.doc" />
+    <Content Include="upload_Folder\Lossless_report_\286835fa-fdde-4a9c-b31c-f11f22024d4f.doc" />
+    <Content Include="upload_Folder\Lossless_report_\2bafe5ca-d153-4f83-9bcd-401ed075b5bb.doc" />
+    <Content Include="upload_Folder\Lossless_report_\2c3e88c4-05dd-4d98-bd1f-efcf18e594e8.doc" />
+    <Content Include="upload_Folder\Lossless_report_\2eceaa45-cf27-40eb-985e-8f5d66c4f7bb.doc" />
+    <Content Include="upload_Folder\Lossless_report_\35a38be5-4496-4bf2-98e9-af35943a67f2.doc" />
+    <Content Include="upload_Folder\Lossless_report_\3a9e1d9e-99ec-4ad4-8693-03ad10ba06d2.doc" />
+    <Content Include="upload_Folder\Lossless_report_\3ba45ca2-8f5b-4fec-9eb4-559754385c0f.doc" />
+    <Content Include="upload_Folder\Lossless_report_\3bcaeff7-bdc1-430d-89a7-2d15c86b4834.doc" />
+    <Content Include="upload_Folder\Lossless_report_\3d453c7c-1767-40c4-896b-092eb79aa02f.doc" />
+    <Content Include="upload_Folder\Lossless_report_\3e77ccf6-0307-4d39-8fe2-32f9cd6ec4e7.doc" />
+    <Content Include="upload_Folder\Lossless_report_\3f66c8bc-889a-4f28-acbd-42abb16577df.doc" />
+    <Content Include="upload_Folder\Lossless_report_\411574e0-7fdb-4f07-893d-5a9a39d6cd1f.doc" />
+    <Content Include="upload_Folder\Lossless_report_\42bd7c8b-ccab-4b74-9717-56daf7ddcb65.doc" />
+    <Content Include="upload_Folder\Lossless_report_\495c1d5f-5716-4887-8f77-e5aae8e78901.doc" />
+    <Content Include="upload_Folder\Lossless_report_\49670d43-70e3-4ea6-9032-be70aec928d8.doc" />
+    <Content Include="upload_Folder\Lossless_report_\4bc0761d-c55b-44fa-ace9-e1c0fae7e975.doc" />
+    <Content Include="upload_Folder\Lossless_report_\4d3f5f43-d740-4c2f-b956-98378bdf1395.doc" />
+    <Content Include="upload_Folder\Lossless_report_\50c0665f-a9c0-4192-b628-e0b737aae0a2.doc" />
+    <Content Include="upload_Folder\Lossless_report_\50ffc62e-78c8-4d44-9de5-db19d38d401a.doc" />
+    <Content Include="upload_Folder\Lossless_report_\533c5bc9-7dc4-414b-a84d-cdcdc2e21d44.doc" />
+    <Content Include="upload_Folder\Lossless_report_\5350837e-29ff-4eec-8af1-0d5f342c3bff.doc" />
+    <Content Include="upload_Folder\Lossless_report_\540e576b-7b8c-4b6e-b1fe-6b7b23161c7a.doc" />
+    <Content Include="upload_Folder\Lossless_report_\5453373d-1306-46a9-ac05-f72d4402090e.doc" />
+    <Content Include="upload_Folder\Lossless_report_\5572420e-5b95-46b9-9665-f162d438cba8.doc" />
+    <Content Include="upload_Folder\Lossless_report_\57f770b7-c010-4d4e-83bf-a8b3fcc3e486.doc" />
+    <Content Include="upload_Folder\Lossless_report_\5f4b14f4-2433-496f-baa4-b119517aed5a.doc" />
+    <Content Include="upload_Folder\Lossless_report_\602bea8e-7a03-4e25-a6ed-f86492b02e1c.doc" />
+    <Content Include="upload_Folder\Lossless_report_\61168e8e-d80c-4f7f-bd4d-a1653cff9ca3.doc" />
+    <Content Include="upload_Folder\Lossless_report_\61d9c51d-b9a1-4709-bbd3-d5675a171296.doc" />
+    <Content Include="upload_Folder\Lossless_report_\62e06972-517f-4478-9ce3-f3437a23804e.doc" />
+    <Content Include="upload_Folder\Lossless_report_\63073c12-81e9-4038-bfa1-cf2b4825a435.doc" />
+    <Content Include="upload_Folder\Lossless_report_\69234a1a-2860-41b8-bf2c-677d45e8bbc3.doc" />
+    <Content Include="upload_Folder\Lossless_report_\6a8644a4-0f15-45c4-8b44-98dded45d816.doc" />
+    <Content Include="upload_Folder\Lossless_report_\6b9ca8ee-a11b-469f-9b6c-41e31dbee567.doc" />
+    <Content Include="upload_Folder\Lossless_report_\70285cfc-7645-40c1-8988-60b5dc41a32c.doc" />
+    <Content Include="upload_Folder\Lossless_report_\71fa1713-c937-4945-8103-1ea1643c7c88.doc" />
+    <Content Include="upload_Folder\Lossless_report_\747f7cad-042d-4b6b-9a25-41e8644b5f20.doc" />
+    <Content Include="upload_Folder\Lossless_report_\7b1c8feb-be33-4306-9ad1-e0b6e39b1dc8.doc" />
+    <Content Include="upload_Folder\Lossless_report_\7e6a369a-4186-41d5-8e53-769786207fab.doc" />
+    <Content Include="upload_Folder\Lossless_report_\7ede4b05-791f-44eb-9e4d-e71f99fbfe52.doc" />
+    <Content Include="upload_Folder\Lossless_report_\8599d89f-f58c-4547-847d-c45e7d4f8c92.doc" />
+    <Content Include="upload_Folder\Lossless_report_\86759875-cfbc-4e32-884d-b4adf450dde8.doc" />
+    <Content Include="upload_Folder\Lossless_report_\8c575896-1bca-46df-8db7-2538537aa349.doc" />
+    <Content Include="upload_Folder\Lossless_report_\8e5654f7-8b9e-4637-945a-1c3d607b926f.doc" />
+    <Content Include="upload_Folder\Lossless_report_\8e83f06f-8ebd-4a3d-b9d2-7cf5c2a161a9.doc" />
+    <Content Include="upload_Folder\Lossless_report_\92a6dac9-4497-4944-a3ef-5d55954caa4a.doc" />
+    <Content Include="upload_Folder\Lossless_report_\95e58036-79ba-4c76-b610-fb43a37af78d.doc" />
+    <Content Include="upload_Folder\Lossless_report_\96e2128d-0c33-4f90-a15a-cf7d26c21b35.doc" />
+    <Content Include="upload_Folder\Lossless_report_\97910a8f-75a9-48fe-a459-010e75122115.doc" />
+    <Content Include="upload_Folder\Lossless_report_\9b3eb56c-1f46-4989-b490-2876e6d14550.doc" />
+    <Content Include="upload_Folder\Lossless_report_\9c8fcfd5-552e-4d01-ac5a-3dacfe7d6e56.doc" />
+    <Content Include="upload_Folder\Lossless_report_\a207d08a-432f-44f5-8ce8-00c905a028b4.doc" />
+    <Content Include="upload_Folder\Lossless_report_\a573b338-e929-4fb6-a794-7cef23e7d887.doc" />
+    <Content Include="upload_Folder\Lossless_report_\a8066867-398d-44d6-9cf5-601505dfbea7.doc" />
+    <Content Include="upload_Folder\Lossless_report_\abcf20b5-3b90-4e06-8256-e4f3feee3df2.doc" />
+    <Content Include="upload_Folder\Lossless_report_\abeef3d5-06c7-41bd-858e-7442bbaf94e1.doc" />
+    <Content Include="upload_Folder\Lossless_report_\ad1d31e6-2ce2-4f0f-baa7-ade37097c385.doc" />
+    <Content Include="upload_Folder\Lossless_report_\ad960696-eca9-4de4-8c09-a83ad93b5eb1.doc" />
+    <Content Include="upload_Folder\Lossless_report_\ae590941-52c2-4ff6-88d2-1496d72f3e09.doc" />
+    <Content Include="upload_Folder\Lossless_report_\af2f3855-6bf9-41c0-a0c2-7c1d31d26e5c.doc" />
+    <Content Include="upload_Folder\Lossless_report_\afea3e4e-ce45-429d-803c-8549b842e410.doc" />
+    <Content Include="upload_Folder\Lossless_report_\b0d360f5-6ef5-4319-826a-030337fb1454.doc" />
+    <Content Include="upload_Folder\Lossless_report_\b8b3a8e7-ce7f-48b7-a1a4-24e86e6a29e6.doc" />
+    <Content Include="upload_Folder\Lossless_report_\b8fef9db-54a6-4168-90ec-089aca7fa88e.doc" />
+    <Content Include="upload_Folder\Lossless_report_\ba979902-4ebd-47b2-9c5a-b23b90f1a77f.doc" />
+    <Content Include="upload_Folder\Lossless_report_\bc9fb592-06b8-4681-966c-0d9e13fa779e.doc" />
+    <Content Include="upload_Folder\Lossless_report_\bed11fd2-9964-468c-8bc0-735af70e32fb.doc" />
+    <Content Include="upload_Folder\Lossless_report_\cb02b458-b093-4795-b935-39711abf2b09.doc" />
+    <Content Include="upload_Folder\Lossless_report_\cb3e96a8-674e-4a5f-a830-6e688510e64c.doc" />
+    <Content Include="upload_Folder\Lossless_report_\cf39d796-a534-48b2-8ae5-abbd940fbeef.doc" />
+    <Content Include="upload_Folder\Lossless_report_\d01d13c5-e2af-45e3-9a76-149190831f46.doc" />
+    <Content Include="upload_Folder\Lossless_report_\d0f2dd9b-7950-4462-8015-b4434609cf8e.doc" />
+    <Content Include="upload_Folder\Lossless_report_\d12ddc09-8321-4cbf-9ee4-cb7cd688b506.doc" />
+    <Content Include="upload_Folder\Lossless_report_\d210a823-f4b8-4146-af23-940a5d9a3bbf.doc" />
+    <Content Include="upload_Folder\Lossless_report_\d54728c2-49b6-4ad5-9f4d-56de75991683.doc" />
+    <Content Include="upload_Folder\Lossless_report_\d6652d1b-003b-40d9-8723-85b1e2d5c458.doc" />
+    <Content Include="upload_Folder\Lossless_report_\d75c51dc-960d-4360-bc20-3d79bd3a1d62.doc" />
+    <Content Include="upload_Folder\Lossless_report_\dbf37f3d-fdd1-4f7c-a24b-a24175624f5c.doc" />
+    <Content Include="upload_Folder\Lossless_report_\dc0cbfa3-bac0-4dea-9779-56c16724addb.doc" />
+    <Content Include="upload_Folder\Lossless_report_\e0d95cb7-f6c2-4cb3-8486-90bd2accedd1.doc" />
+    <Content Include="upload_Folder\Lossless_report_\e58c5de3-4203-42d3-9b88-d58d4df3588e.doc" />
+    <Content Include="upload_Folder\Lossless_report_\e6ed1c83-4266-4f7b-9f43-cb41e2faaf75.doc" />
+    <Content Include="upload_Folder\Lossless_report_\e93681dd-6aff-43c4-b85a-06414237bd13.doc" />
+    <Content Include="upload_Folder\Lossless_report_\ef6ca0ab-ce78-4f53-8a92-152727e0e536.doc" />
+    <Content Include="upload_Folder\Lossless_report_\efe9f666-2641-464a-b423-f20329b0898b.doc" />
+    <Content Include="upload_Folder\Lossless_report_\eff3a6e4-c64f-4402-9870-67e8549513c0.doc" />
+    <Content Include="upload_Folder\Lossless_report_\f1af1d85-4d44-416a-8dc3-abbb7078b567.doc" />
+    <Content Include="upload_Folder\Lossless_report_\f850cc33-257c-4668-af3b-5e54b9ed0216.doc" />
+    <Content Include="upload_Folder\Lossless_report_\f8ef330b-bc90-4ad5-9ddd-552efe5f45f5.doc" />
+    <Content Include="upload_Folder\Lossless_report_\fd7912c6-f164-47ab-a68c-472be9123ff1.doc" />
+    <Content Include="upload_Folder\report_accessory\000aac0f-0458-4d0b-b43f-6063955f18e1.doc" />
+    <Content Include="upload_Folder\report_accessory\137ca894-f2eb-4de3-922c-6ad130755a81.doc" />
+    <Content Include="upload_Folder\report_accessory\3878f921-3977-4c96-a82a-03ac4fda76ec.doc" />
+    <Content Include="upload_Folder\report_accessory\81d48d73-411c-425c-a09f-4fd326f49770.doc" />
+    <Content Include="upload_Folder\report_accessory\beb67405-dd9c-4f2f-bad9-3521bd0dd0d8.doc" />
+    <Content Include="upload_Folder\report_accessory\c96383c5-d891-4c36-b289-cc98e661756b.doc" />
+    <Content Include="upload_Folder\report_accessory\e23d8993-f294-4cd2-82bc-63f69445be2b.doc" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="contract_word\" />
+    <Folder Include="log\" />
+    <Folder Include="Upload\" />
+    <Folder Include="view_temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Acrobat">
+      <Guid>{E64169B3-3592-47D2-816E-602C5C13F328}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VxExtensibility4">
+      <Guid>{26E89277-5448-48A5-A12F-9CCD84BB809C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\get_interface\" />
+    <WCFMetadataStorage Include="Service References\MESINTERFACE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9209</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3049/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

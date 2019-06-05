@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B551C389-A244-48DD-AC43-AE2C014D2A4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Phians_Entity</RootNamespace>
+    <AssemblyName>Phians_Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BacklogStatistics.cs" />
+    <Compile Include="ComboboxEntity\ComboboxEntity.cs" />
+    <Compile Include="ComboboxEntity\ComboboxEntityString.cs" />
+    <Compile Include="ComboboxEntity\ComboboxEntity_ss.cs" />
+    <Compile Include="comboxStringEntity.cs" />
+    <Compile Include="CommonStatistics.cs" />
+    <Compile Include="Common\CommonFileModel.cs" />
+    <Compile Include="Common\PersonnelQualificationModel.cs" />
+    <Compile Include="Common\ReturnBLLResult.cs" />
+    <Compile Include="Common\ReturnDALResult.cs" />
+    <Compile Include="Common\TB_MessageRegister.cs" />
+    <Compile Include="Common\TPageModel.cs" />
+    <Compile Include="EquipmentTypeTestStatistics.cs" />
+    <Compile Include="EquipmentTypeStatistics.cs" />
+    <Compile Include="EquipmentStatistics.cs" />
+    <Compile Include="FileModel.cs" />
+    <Compile Include="HeadCountStatistics.cs" />
+    <Compile Include="InputParamsModel.cs" />
+    <Compile Include="LosslessReport\LosslessComboboxEntity.cs" />
+    <Compile Include="LosslessReport\LosslessComboboxEntityss.cs" />
+    <Compile Include="LosslessReport\LosslessUserComboboxEntity.cs" />
+    <Compile Include="LosslessReport\MESInfo.cs" />
+    <Compile Include="LosslessReport\ReportManagementDownload.cs" />
+    <Compile Include="LosslessReport\TB_NDT_EditionCertificate.cs" />
+    <Compile Include="LosslessReport\TB_NDT_error_Certificate.cs" />
+    <Compile Include="LosslessReport\TB_NDT_error_log.cs" />
+    <Compile Include="LosslessReport\TB_NDT_probe_library.cs" />
+    <Compile Include="LosslessReport\TB_NDT_report_title.cs" />
+    <Compile Include="LosslessReport\TB_NDT_RevisionsRecord.cs" />
+    <Compile Include="LosslessReport\TB_NDT_TestBlockLibrary.cs" />
+    <Compile Include="LosslessReport\TB_NDT_TestTestBlock.cs" />
+    <Compile Include="LosslessReport\TB_NDT_test_equipment.cs" />
+    <Compile Include="LosslessReport\TB_NDT_test_probereport_data.cs" />
+    <Compile Include="LosslessReport\TB_PageShowCustom.cs" />
+    <Compile Include="LosslessReport\TB_NDT_equipment_library.cs" />
+    <Compile Include="LosslessReport\TB_standing_book.cs" />
+    <Compile Include="LosslessReport\TB_StatisticsCount.cs" />
+    <Compile Include="LosslessReport\TB_TemplateFile.cs" />
+    <Compile Include="ReportStatisticsRate.cs" />
+    <Compile Include="ResultStatistics.cs" />
+    <Compile Include="ScheduleUnitView.cs" />
+    <Compile Include="TB_BU.cs" />
+    <Compile Include="TB_CertificateAppendix.cs" />
+    <Compile Include="TB_CertificateManagement.cs" />
+    <Compile Include="ExecuteResult.cs" />
+    <Compile Include="TB_FunctionalModule.cs" />
+    <Compile Include="group.cs" />
+    <Compile Include="TB_groupAuthorization.cs" />
+    <Compile Include="TB_NDT_report_accessory.cs" />
+    <Compile Include="TB_NDT_test_probe.cs" />
+    <Compile Include="TB_PageAuthorization.cs" />
+    <Compile Include="TB_DictionaryManagement.cs" />
+    <Compile Include="TB_EquipmentInfo.cs" />
+    <Compile Include="TB_FileManagement.cs" />
+    <Compile Include="TB_Message.cs" />
+    <Compile Include="TB_Organization.cs" />
+    <Compile Include="PagedResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TB_OperationLog.cs" />
+    <Compile Include="TB_PendingTransaction.cs" />
+    <Compile Include="TB_PersonnelQualification.cs" />
+    <Compile Include="TB_ProcessDesign.cs" />
+    <Compile Include="TB_ProcessRecord.cs" />
+    <Compile Include="TB_StandardMaterial.cs" />
+    <Compile Include="TB_standing_book.cs" />
+    <Compile Include="TB_Unit.cs" />
+    <Compile Include="TB_UnusualCertificate.cs" />
+    <Compile Include="TB_UnusualProcessRecord.cs" />
+    <Compile Include="TB_UserHireAndLeave.cs" />
+    <Compile Include="TB_user_info.cs" />
+    <Compile Include="UserDemo.cs" />
+    <Compile Include="User_department.cs" />
+    <Compile Include="User_info.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PetaPoco\PetaPoco.csproj">
+      <Project>{33699753-151d-4100-8f12-9ae1aeb5c5bd}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

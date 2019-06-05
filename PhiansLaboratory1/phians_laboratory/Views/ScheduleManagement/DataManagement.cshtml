@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "DataManagement";
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>数据管理</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("DataManagementJs")
+    <link href="~/Content/kindeditor/themes/default/default.css" rel="stylesheet" />
+    <link href="~/Content/kindeditor/plugins/code/prettify.css" rel="stylesheet" />
+</head>
+<body>
+    @*MTR信息列表*@
+    <div id="MTRInformationDatagrid"></div>
+
+    <div style="display: none">
+        <!-- MTR信息工具栏 -->
+        <div id="MTRInformationToolbar">
+            <a href="javascript:;" id="MTREdit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <input id="key" style="width: 150px" class="easyui-combobox" />
+            <label>for</label>
+            <input id="key1" style="width: 150px" class="easyui-textbox" />
+            <a href="javascript:;" id="search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+        </div>
+
+        <div id="EditMTRDialog">
+            <div id="Layout" class="easyui-layout" data-options="fit:true,border:false">
+                @*DVP信息树*@
+                <div data-options="region:'west', border:false,split:true" title="DVP信息">
+                    <div id="tree"></div>
+                </div>
+                @*操作类型*@
+                <div data-options="region:'east', border:false,split:true" title="操作类型">
+                    <div id="tt" class="easyui-tabs">
+                        <!--<%-- 基本信息 --%>-->
+                        <div title="基本信息">
+                            <form style="margin-top: 20px; margin-left: 20px" id="info_Add">
+                                <fieldset style="border: 2px solid #c3ddf4;  width: 1000px;height:100px; margin-top: 15px;margin-left:20px;margin:auto;">
+                                    <legend style="font-weight: 600">Test Title</legend>
+                                    <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px;float: left;">
+                                        <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">Test Title:</label>
+                                        <input id="" class="easyui-textbox" name="ProjectName" style="width: 200px;" disabled />
+                                    </div>
+                                    <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px; float: left;">
+                                        <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">资质名称:</label>
+                                        <input id="" class="easyui-textbox" name="ProjectName_n" style="width: 200px;" disabled />
+                                    </div>
+                                </fieldset>
+                                <fieldset style="border: 2px solid #c3ddf4;  width: 1000px;height:400px; margin-top: 30px;margin-left:20px;margin:auto;">
+                                    <legend style="font-weight: 600">Information</legend>
+                                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                                        <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">SampleQty:</label>
+                                        <input id="" class="easyui-textbox" name="SampleQty" style="width: 200px;" readonly />
+                                    </div>
+                                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                        <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">SampleNo:</label>
+                                        <input id="" class="easyui-textbox" name="SampleNo" style="width: 200px;" readonly />
+                                    </div>
+                                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                        <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">Operator:</label>
+                                        <input id="Operator" class="easyui-textbox" name="Operator" style="width: 200px;" />
+                                    </div>
+                                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                        <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">TestStartDate:</label>
+                                        <input id="TestStartDate" class="easyui-datetimebox" name="TestStartDate" style="width: 200px;" />
+                                    </div>
+                                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                        <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">TestEndDate:</label>
+                                        <input id="TestEndDate" class="easyui-datetimebox" name="TestEndDate" style="width: 200px;" />
+                                    </div>
+                                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                        <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">Room Num:</label>
+                                        <input id="RoomNum" class="easyui-combobox" name="RoomNum" style="width: 200px;" />
+                                    </div>
+                                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                        <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">Lab Climate Conditions:</label>
+                                        <input id="Temperature" class="easyui-textbox" name="Temperature" style="width: 200px;" />℃
+                                        <input id="Humidity" class="easyui-textbox" name="humidity" style="width: 200px;" />%RH
+                                    </div>
+                                    <div style="margin:10px 25px;float: left;width:100%;">
+                                        <div class="h_d" style="margin-top:4px;margin-bottom:4px;margin-right:25px">
+                                            <div class="h_d1" style="width:150px;text-align:right;">SetupRemark：</div>
+                                            <input class="easyui-textbox" name="SetupRemark" id="SetupRemark" style="width: 500px;height:66px;" data-options="multiline:true" />
+                                        </div>
+                                    </div>
+                                    <div class="h_dline" style="margin:0 10px;float: left;width:100%;">
+                                        <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">Conculsion:</label>
+                                        <input class="easyui-textbox" style="width:500px;height:66px;" name="Conculsion" id="Conculsion" />
+                                    </div>
+                                    <div class="h_dline" style="height: 23px;margin-top: 10px; margin-left: 200px; float: left;width:100%">
+                                        <a href="javascript:;" id="information_save" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">Save</a>
+                                    </div>
+
+
+
+                                </fieldset>
+                            </form>
+
+                        </div>
+                        <!--<%-- 检验条件 --%>-->
+                        <div title="检验条件">
+                            <!--style给定宽度可以影响编辑器的最终宽度-->
+                            <div id="p" class="easyui-panel" title="检验条件/检验标准" style="width:100%;height:700px;padding:10px;background:#fafafa;">
+                                <!--style给定宽度可以影响编辑器的最终宽度-->
+                                <form style="float:left;width:50%;position:relative;" id="form_submit" runat="server">
+                                    <textarea id="editor" runat="server" style="width:100%;height:550px;float:left;overflow-x:hidden;"></textarea>
+
+                                </form>
+                                <form style="float:left;width:50%;position:relative;" id="form_submit1" runat="server">
+                                    <textarea id="editor1" runat="server" style="width:100%;height:550px;float:left;overflow-x:hidden;"></textarea>
+
+                                </form>
+                            </div>
+                        </div>
+                        <!--<%-- 测试设备 --%>-->
+                        <div title="检测设备">
+                            <div id="View_TestEquipment_datagrid"></div>
+                        </div>
+                        <!--<%-- 测试数据 --%>-->
+                        <div title="检测数据">
+                            <div id="tt3" class="easyui-tabs" style="height:720px;">
+                                <div title="3.1 Data">
+                                    <div id="UploadTestDataFile_datagrid"></div>
+                                </div>
+                                <div title="3.2 Set-up Data">
+                                    <div id="View_photo_records_datagrid1"></div>
+                                </div>
+                                <div title="3.3 Monitor Data">
+                                    <div id="View_photo_records_Monitor_datagrid"></div>
+                                </div>
+                                <div title="3.4 Test Photos">
+                                    <div id="View_photo_records_Test_datagrid"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--<%-- 上传文件 --%>-->
+                        <div title="检测结果&&备注">
+                            <form method="post" id="Submit_Remark_dialog">
+                                <div style="margin-right:25px;width:700px;margin:50px auto;">
+                                    <div class="h_d">
+                                        <label style="width:100px;text-align:right;display:inline-block">Test Result：</label>
+                                        <input class="easyui-textbox" style="width:500px;height:150px;" name="TestResult" data-options="multiline:true" id="TestResult" />
+                                    </div>
+                                    <div class="h_d" style="margin:25px auto;">
+                                        <div class="h_d1" style="width:100px;text-align:right;">Remark：</div>
+                                        <input class="easyui-textbox" name="TaskRemarks" id="" style="width: 500px;height:150px;" data-options="multiline:true" />
+                                    </div>
+                                    <a href="javascript:;" id="Submit_Remark" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true" style="margin-left:500px;font-size:16px;">Submit</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,409 @@
+﻿@{
+    ViewBag.Title = "PersonalManagement";
+}
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("PersonalManagementJs")
+</head>
+<body>
+    <div id="department_layout" class="easyui-layout" data-options="fit:true,border:false">
+        <!--<%-- 部门树 --%>-->
+        <div data-options="region:'west', border:false">
+            <div id="department_info">
+            </div>
+            <div class="easyui-menu" id="keyMenu" style="display: none;">
+                <div id="tree_edit" data-options="iconCls:'icon-edit'">Edit Group</div>
+                @*<div id="tree_add_next" data-options="iconCls:'icon-add'">
+                    Add Children Group
+                </div>
+                <div id="tree_del" data-options="iconCls:'icon-remove'">
+                    Delete Group
+                </div>*@
+            </div>
+          
+        </div>
+        <div data-options="region:'east', border:false">
+            <!--<%-- 员工列表 --%>-->
+            <div id="department_people">
+            </div>
+        </div>
+    </div>
+    <div style="display: none">
+        @*人员信息列表工具栏*@
+        <div id="department_people_toolbar">
+            <a id="department_people_add" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加人员</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="read_info" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">修改人员</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="read_certificate" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">查看证书</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="read_Signature" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">查看签名</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="read_photo_Signature" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">查看头像</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Reset_password" class="easyui-linkbutton" data-options="iconCls:'icon-Set_up',plain:true">重置密码</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            @*<a id="group_add" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">组管理</a>
+    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+            <a id="add_others_department" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">组人员授权</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            @*<a id="Stop_CNAS_Authority" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-shop',plain:true">Cancel CNAS Authority</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a id="Start_CNAS_Authority" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-strat',plain:true">CNAS Authority</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a id="view_CNAS_Authority" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">View CNAS</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+          
+            <a href="javascript:;" id="disable_personnel" class="easyui-linkbutton" data-options="iconCls:'icon-shop',plain:true">停用</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="view_stop" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">查看停用人员</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+         
+            <input id="search" style="width: 150px" />
+            <input id="search1" style="width: 150px" />
+            <a href="javascript:;" id="department_people_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+
+            @*<span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="del_person" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>*@
+
+        </div>
+        @*证书dialog*@
+        <div id="certificate_dialog">
+            @*证书列表*@
+            <div id="read_certificate_datagrid"></div>
+            @*证书工具栏*@
+            <div id="read_certificate_toolbar">
+                <a href="javascript:;" id="add_certificate" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加证书</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="javascript:;" id="del_certificate" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">删除证书</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="javascript:;" id="view_certificate_annex" class="easyui-linkbutton" data-options="iconCls:'icon-files',plain:true">查看证书附件</a>
+            </div>
+        </div>
+        @*view_CNAS_Authority*@
+        <div id="view_CNAS_dialog">
+            @*view_CNAS_Authority*@
+            <div id="CNAS_datagrid"></div>
+            @*证书工具栏*@
+            <div id="CNAS_toolbar">
+                <input id="CNAS_search" class="easyui-combobox" style="width: 150px" />
+                <input id="CNAS_search1" class="easyui-textbox" style="width: 150px" />
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="javascript:;" id="CNAS_datagrid_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+            </div>
+        </div>
+        @*view_stop*@
+    <div id="view_Stop_dialog">
+        <div id="view_Stop_toolbar">
+            <a href="javascript:;" id="enable_personnel" class="easyui-linkbutton" data-options="iconCls:'icon-strat',plain:true">启用</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+        </div>
+       
+        <div id="Stop_datagrid"></div>
+    </div>
+        @*证书附件dialog*@
+        <div id="certificate_annex_dialog">
+            @*证书附件列表*@
+            <div id="annex_datagrid"></div>
+            @*证书附件工具栏*@
+            <div id="certificate_annex_toolbar">
+                <a href="javascript:;" id="add_annex" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加附件</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="javascript:;" id="del_files" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">删除附件</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="javascript:;" id="view_annex" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">查看附件</a>
+            </div>
+        </div>
+
+        <a href="@PageOffice.PageOfficeLink.OpenWindow("/WordCommon/WordOperation?", "width=1300px;height=1000px;")" id="ShowOffice">显示报告版本</a>@*打开word链接*@
+        @*上传证书附件*@
+        <form id="add_annex_dialog" method="post" enctype="multipart/form-data">
+            <div style="float: left; margin-top: 10px">
+                <div class="h_dline" style="margin-left: 50px;margin-top:30px">
+                    <label style="width:120px;text-align:right;display:inline-block;">文件名称：</label>
+                    <input class="easyui-textbox" style="width:200px" name="DocumentName" required="required" id="DocumentName" />
+                </div>
+                <div class="h_dline" style="margin-left: 50px;margin-top:30px">
+                    <label style="width:120px;text-align:right;display:inline-block">选择文件：</label>
+                    <input class="easyui-filebox" style="width:200px" name="FileName" required="required" id="FileName" />
+                </div>
+            </div>
+        </form>
+        @*//組管理*@
+        <div id="group_dialog">
+            <!-- 树页面工具栏 -->
+            <div id="Laboratory_tree_toolbar" class="easyui-panel" style="border-top:none;width: 100%;position:relative;">
+                <a href="javascript:;" id="tree_edit_" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">编辑组</a>
+                <a href="javascript:;" id="tree_add_next_" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加子级</a>
+                <a href="javascript:;" id="tree_del_" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">删除组</a>
+            </div>
+            <div id="group_management">
+            </div>
+            @*<div class="easyui-menu" id="keyMenu" style="display: none;">
+                <div id="tree_edit" data-options="iconCls:'icon-edit'">Edit Group</div>
+                <div id="tree_add_next" data-options="iconCls:'icon-add'">
+                    Add Children Group
+                </div>
+                <div id="tree_del" data-options="iconCls:'icon-remove'">
+                    Delete Group
+                </div>
+            </div>*@
+        </div>
+        @*签名表单*@
+        <form id="Signature_form" method="post" enctype="multipart/form-data">
+            <div style="margin-left:50px;">
+                <img style="margin-top: 10px;margin-left:30px;" id="upload_org_code_img" src="#" width="200" height="100" />
+                <div class="h_d" style="margin-top: 10px; margin-left: 15px">
+                    <div class="h_d1">查看签名：</div>
+                    <input class="easyui-filebox" name="Filedata" style="width: 150px" />
+                </div>
+                <a href="javascript:;" id="save_image" style="margin-left: 80px" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">保存签名</a>
+            </div>
+        </form>
+        <form id="Signature_photo_form" method="post" enctype="multipart/form-data">
+            <div style="margin-left:50px;">
+                <img style="margin-top: 10px;margin-left:30px;" id="upload_org_code_img1" src="#" width="200" height="100" />
+                <div class="h_d" style="margin-top: 10px; margin-left: 15px">
+                    <div class="h_d1">照片上传：</div>
+                    <input class="easyui-filebox" name="Filedata" style="width: 150px" />
+                </div>
+                <a href="javascript:;" id="save_photo_image" style="margin-left: 80px" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">保存头像</a>
+            </div>
+        </form>
+        @*添加/修改树节表单*@
+        <form id="tree_addDepartment_dialog" method="post">
+            <div class="h_d" style="margin-top: 20px; margin-left: 50px">
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 120px;text-align:right;display:inline-block">NodeType:</label>
+                    <input id="NodeType" class="easyui-combobox" name="NodeType" style="width: 200px;" required="required" data-options="editable:false" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 120px;text-align:right;display:inline-block">OrganizationCode:</label>
+                    <input id="OrganizationCode" class="easyui-textbox" name="OrganizationCode" style="width: 200px;" />
+                </div>
+
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 120px;text-align:right;display:inline-block">NodeName:</label>
+                    <input id="NodeName" class="easyui-textbox" name="NodeName" style="width: 200px;" required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 120px;text-align:right;display:inline-block">Address:</label>
+                    <input id="Address" class="easyui-textbox" name="Address" style="width: 200px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 120px;text-align:right;display:inline-block">SortNum:</label>
+                    <input id="SortNum" class="easyui-numberbox" name="SortNum" style="width: 200px;" required="required" />
+                </div>
+                @*<div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                        <label class="h_d1" style="width: 120px;text-align:right;display:inline-block">Phone:</label>
+                        <input id="Phone" class="easyui-textbox" name="Phone" style="width: 200px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                        <label class="h_d1" style="width: 120px;text-align:right;display:inline-block">PostCode:</label>
+                        <input id="PostCode" class="easyui-textbox" name="PostCode" style="width: 200px;" />
+                    </div>*@
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 120px;text-align:right;display:inline-block">Remarks:</label>
+                    <input id="remarks" class="easyui-textbox" name="Remarks" data-options="multiline:true" style="width: 200px;height:44px;" />
+                </div>
+            </div>
+        </form>
+        <!--<%-- 添加組项目对话框 --%>-->
+        <form id="tree_add_dialog" method="post">
+            <div style="margin-top: 55px;">
+                <div class="h_dline" style="height: 23px; margin-top: 5px; margin-left: 10px; float: left;">
+                    <label style="text-align:right;display:inline-block;width:140px;">组名：</label>
+                    <input id="GroupName" class="h_d1 easyui-textbox" name="GroupName" required="required" style="width: 200px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label style="text-align:right;display:inline-block;width:140px;">备注：</label>
+                    <input id="Remarks" class="h_d1 easyui-textbox" name="Remarks" style="width: 200px;height:80px;" data-options="multiline:true" />
+                </div>
+            </div>
+        </form>
+        <!--<%-- 添加员工对话框 --%>-->
+        <form id="department_people_info_dialog" method="post">
+            <div style="float: left; margin-top: 15px">
+                <div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                    <label style="text-align:right;display:inline-block;width:80px;">用户账号：</label>
+                    <input id="UserCount" class="h_d1 easyui-textbox" name="UserCount" required="required" style="width: 150px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                    <label style="text-align:right;display:inline-block;width:80px;">用户名：</label>
+                    <input id="UserName" class="h_d1 easyui-textbox" name="UserName" required="required" style="width: 150px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                    <label style="width:80px;text-align:right;display:inline-block">工号：</label>
+                    <input id="JobNum" class="h_d1 easyui-textbox" name="JobNum" style="width: 150px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                    <label style="width:80px;text-align:right;display:inline-block">职位：</label>
+                    <input id="Job" class="h_d1 easyui-combobox" name="Job" style="width: 150px;" />
+                </div>
+                @*<div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                        <label style="width:80px;text-align:right;display:inline-block">Profession：</label>
+                        <input id="Profession" class="h_d1 easyui-textbox" name="Profession" style="width: 150px;" />
+                    </div>*@
+                <div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                    <label style="width:80px;text-align:right;display:inline-block">电话：</label>
+                    <input id="Tel" class="h_d1 easyui-numberbox" name="Tel" style="width: 150px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                    <label style="width:80px;text-align:right;display:inline-block">手机：</label>
+                    <input id="Phone" class="h_d1 easyui-numberbox" name="Phone" style="width: 150px;" />
+                </div>
+                @*<div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                        <label style="width:80px;text-align:right;display:inline-block">Fax：</label>
+                        <input id="Fax" class="h_d1 easyui-textbox" name="Fax" style="width: 150px;" />
+                    </div>*@
+                <div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                    <label style="width:80px;text-align:right;display:inline-block">电子邮箱：</label>
+                    <input id="Email" class="h_d1 easyui-textbox" name="Email" style="width: 150px;" />
+                </div>
+                @*<div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                        <label style="width:80px;text-align:right;display:inline-block">Postcode：</label>
+                        <input id="Postcode" class="h_d1 easyui-textbox" name="Postcode" style="width: 150px;" />
+                    </div>*@
+                <div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                    <label style="width:80px;text-align:right;display:inline-block">地址：</label>
+                    <input id="Address" class="h_d1 easyui-textbox" name="Address" style="width: 150px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;display:none">
+                    <label style="width:80px;text-align:right;display:inline-block">QQ：</label>
+                    <input id="QQ" class="h_d1 easyui-textbox" name="QQ" style="width: 150px;" />
+                </div>
+                @*<div class="h_dline" style="height: 23px; margin-top: 5px; margin-left: 10px; float: left;">
+                        <label style="width:80px;text-align:right;display:inline-block">sort_num：</label>
+                        <input id="sort_num" class="h_d1 easyui-numberbox" name="sort_num" style="width: 150px;" />
+                    </div>*@
+                <div class="h_dline" style="height: 23px; margin-top: 8px; margin-left: 10px; float: left;">
+                    <label style="width:80px;text-align:right;display:inline-block">用户性别：</label>
+                    <span class="radioSpan">
+                        <input id="UserNsex1" type="checkbox" checked="checked" value="true" /><label for="UserNsex1" style="color: #f00;">man</label>
+                        <input id="UserNsex2" type="checkbox" value="false" /><label for="UserNsex2" style="color: #f00;">women</label>
+                        <input type="hidden" name="UserNsex" value='true' id="UserNsex" />
+                    </span>
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 5px; margin-left: 10px; float: left;">
+                    <label style="width:80px;text-align:right;display:inline-block">说明：</label>
+                    <input id="Remarks" class="h_d1 easyui-textbox" name="Remarks" data-options="multiline:true" style="width: 320px; height: 66px;" />
+                </div>
+            </div>
+        </form>
+
+        <!--<%-- 添加证书对话框 --%>-->
+        <form id="add_certificate_dialog" method="post" enctype="multipart/form-data">
+            <div class="h_dline" style="height: 23px; margin-left: 40px;margin-top: 20px">
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">证书编号:</p>
+                    <input id="CertificateNum" class="easyui-textbox" name="CertificateNum" required="required" style="width: 160px; height: 23px" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">证书名称:</p>
+                    <input id="CertificateName" class="easyui-textbox" name="CertificateName" required="required" style="width: 160px; height: 23px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">证书类型:</p>
+                    <input id="CertificateType" class="easyui-combobox" name="CertificateType" style="width: 160px; height: 23px" required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">发行单位:</p>
+                    <input id="IssuingUnit" class="easyui-textbox" name="IssuingUnit" required="required" style="width: 160px; height: 23px" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">发证日期:</p>
+                    <input id="IssueDate" type="text" class="easyui-datebox" required="required" name="IssueDate" style="width: 160px; height: 23px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">有效日期:</p>
+                    <input id="ValidDate" type="text" class="easyui-datebox" required="required" name="ValidDate" style="width: 160px; height: 23px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">专业:</p>
+                    <input id="Profession" class="easyui-textbox" name="Profession" required="required" style="width: 160px; height: 23px" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">岗位:</p>
+                    <input id="Quarters" class="easyui-textbox" name="Quarters" style="width: 160px; height: 23px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">等级:</p>
+                    <input id="Grade" class="easyui-textbox" name="Grade" style="width: 160px; height: 23px" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">证书状态:</p>
+                    <input id="CertificateSate" class="easyui-combobox" name="CertificateSate" style="width: 160px; height: 23px;" required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">创建日期:</p>
+                    <input id="CreateDate" type="text" class="easyui-datebox" required="required" name="CreateDate" style="width: 160px; height: 23px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 15px;float:left">
+                    <p class="h_d1" style="width: 120px;text-align:right;">备注:</p>
+                    <input id="remarks" class="easyui-textbox" name="remarks" data-options="multiline:true" style="width: 442px; height: 78px" />
+                </div>
+            </div>
+        </form>
+        <!--<%-- 将员工指派到其它部门 --%>-->
+        <form id="add_others_department_dialog">
+            <div style="margin-top: 10px; float: left;width:100%;overflow-x:hidden;">
+                <div class="h_d" style="margin-left: 15px;width:100%">
+                    <div class="h_d1" style="width: 20%; height: 700px; margin-left: 6px; margin-top: 6px">
+                        <!--<%-- 检定项目--%>-->
+                        <div id="department_info_add" style="width: 100%; height: 700px;" class="easyui-panel" title="部门 "></div>
+
+                    </div>
+                    <div class="h_d1" style="width: 30%;margin-left: 6px; margin-top: 6px">
+                        <!--<%-- 检定项目--%>-->
+                        <div id="person_info_add" style="width: 100%; height: 700px;">
+                            <div id="person_info_toolbar">
+                                <a href="javascript:;" id="view_group" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">查看组</a>
+                                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                                <input id="person_info_search" style="width: 150px" />
+                                <input id="person_info_search1" class="easyui-textbox" style="width: 150px" />
+                                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                                <a href="javascript:;" id="person_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="h_d1" style="width: 6%;margin-left: 5px;">
+                        <div class="easyui-panel" style="width: 100%; height: 700px;">
+                            <a href="javascript:;" id="tree_add_project" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-left: 10px; margin-top: 70px;">添加人员</a>
+                            <a href="javascript:;" id="tree_remove_project" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-left: 10px; margin-top: 30px;">移出人员</a>
+                        </div>
+                    </div>
+                    <div class="h_d1" style="width: 40%; height: 700px; margin-left: 5px;">
+                        <div id="Auth_person" style="width: 100%; height: 700px;"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="View_Group_dialog">
+            <div id="project_room"></div>
+        </div>
+        <!--<%-- 将员工指派到其它部门 --%>-->
+        <form id="GroupLeader_dialog" method="post">
+            <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 50px; float: left;">
+                <label style="width:80px;text-align:right;display:inline-block">领导者：</label>
+                <span class="radioSpan">
+                    <input id="GroupLeader1" type="checkbox" value="true" /><label style="color: #f00;">是</label>
+                    <input id="GroupLeader2" type="checkbox" value="false" checked="checked" /><label style="color: #f00;">否</label>
+                    <input type="hidden" name="GroupLeader" value="false" id="GroupLeader" />
+                </span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>  
+<html>  
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+<title>在线预览PDF文档</title>  
+<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">  
+<script type="text/javascript" src="js/jquery.min.js"></script>  
+<script type="text/javascript" src="js/jquery.media.js"></script>  
+<script type="text/javascript">  
+    $(function () {
+
+        //参数获取
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+
+        var Request = new Object();
+        Request = GetRequest();
+        $('a.media').media({width:800, height:600});  
+        $('a.mediase').media({width:800, height:600});  
+    });
+
+
+    $(function () {
+      
+        //隐藏域--获取用户名
+        // document.getElementById('HiddenField1').value = Request['user_count'];
+        //alert(url);
+
+        //$('#iframe1').prop('contentWindow').document.getElementById("PageOfficeCtrl1").Close();
+        //alert(Request['url']);
+        document.getElementById("PageOfficeCtrl1").WebOpen(Request['url'], "docNormalEdit", "admins");
+
+    });
+</script> 
+
+</head>
+<body>
+<center>
+ <div class="panel panel-primary">
+   <div class="panel-heading" align="center">
+      <h2>预览pdf文件</h2>
+   </div>
+   <div class="panel-body">
+	  <a class="media" href="yulan.pdf"></a>  
+   </div>
+     </div>
+</center>
+</body>
+</html>

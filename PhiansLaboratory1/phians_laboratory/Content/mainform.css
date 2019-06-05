@@ -1,0 +1,140 @@
+﻿
+#m_north {
+  background:url(/Content/image/bnner1.jpg) no-repeat center top;
+    background-size:cover;
+    
+
+}
+
+#m_showtime {
+ 
+font-size:10px;
+font-weight:bold;
+color:#6E7B8B;
+margin-right:50px;  
+}
+#Label1 {
+font-size:10px;
+font-weight:bold;
+color:#fff;
+}
+#Button1 {
+font-size:10px;
+font-weight:bold;
+border:0px;
+color:#6E7B8B;
+}
+a{ color:Black; text-decoration:none;}
+a:hover{ color:Red; text-decoration:underline;}
+.m-btn-plain-active{
+            color:#333 !important;
+        }
+#mainbox .panel-title{font-size:14px !important;}
+.easyui-accordion ul{list-style-type:none;margin:0px; padding:10px;font-size:14px;}
+.easyui-accordion ul li{ padding:0px;}
+.easyui-accordion ul li div a{line-height:24px;font-size:14px;}
+.easyui-accordion ul li div{margin:2px 0px;padding-left:10px;padding-top:2px;}
+.easyui-accordion ul li div.hover{border:1px dashed #99BBE8; background:#E0ECFF;cursor:pointer;}
+.easyui-accordion ul li div.hover a{color:#416AA3;}
+.easyui-accordion ul li div.selected{border:1px solid #99BBE8; background:#E0ECFF;cursor:default;}
+.easyui-accordion ul li div.selected a{color:#416AA3; font-weight:bold;}
+/*.icon{padding:2px 9px; background:url(../images/tabicons.png) no-repeat; }*/
+/*对话框input的之间距离*/
+.d1 {
+margin-left: 20px;
+width:80px;
+float:left;
+text-align: right;
+ 
+}
+.d {
+margin-bottom:5px;
+margin-top:5px;
+}
+
+.h_d 
+{   
+    clear:both;  
+ }  
+  
+.h_d1 
+{    
+    display:inline-block;  
+     margin-top:0px;
+    text-align: right;
+
+}  
+.password
+{   
+    clear:both;  
+ }  
+  
+.password1 
+{    
+    display:inline-block; 
+    margin-top:10px;
+   margin-left:15px
+  
+
+}  
+
+
+.welcome_2 {
+height:40px;
+line-height:50px;
+font-size:50px;
+font-weight:600;
+margin-top:350px;
+margin-left:350px;
+ font-family: "Microsoft YaHei" ! important;
+color:#27408B;
+}
+.logo1{
+ float:left;
+ width:128px;
+ height:55px;
+ margin-left:0px;
+ margin-top:18px;
+ /*background:url(../image/logo_d.png) no-repeat center top;*/
+background-size:cover;
+}
+
+.logo {
+height:32px;
+line-height:32px;
+font-size:28px;
+font-weight:600;
+float:left;
+/*margin-left:30px;*/
+margin-top:35px;
+ font-family: "Microsoft YaHei" ! important;
+color:#fff;
+}
+.logo3{
+ float:right;
+ margin-top:60px;
+margin-right:30px;
+
+}
+.image_show {
+
+ width:300px; height:100px;overflow:hidden;
+}
+    .image_show img {
+        max-width: 300px;
+        _width: expression(this.width > 300 ? "300px" : this.width);
+    }
+
+
+.h_d3 {
+height:20px;
+line-height:20px;
+font-size:8px;
+font-weight:600;
+float:right;
+margin-right:100px;
+
+}
+#message_menu .menu-item .menu-text a{
+    color:#27408B !important;
+}

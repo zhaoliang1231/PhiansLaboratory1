@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+
+    @Html.CombresLink("PersonnelTaskStatisticsJs")
+</head>
+<body>
+    <div id="cc" class="easyui-layout" data-options="fit:true">
+        <div id="report_management"></div>
+    </div>
+
+    <div style="display: none">
+        <!-- 报告管理工具栏 -->
+        <div id="report_management_toolbar">
+
+            <span class="link_button" style="display: inline-block; float: left;">
+                <a href="#" id="download_report_pdf" class="easyui-linkbutton print_report" data-options="iconCls:'icon-print',plain:true">预览报告</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            </span>
+            <label>检索条件：</label>
+            室：
+            <input id="room" style="width: 110px" class="easyui-combobox" />
+            组：
+            <input id="Group" style="width: 110px" class="easyui-combobox" />
+            <span id="key_span3" style="display: inline-block">人员：<input id="Personnel" style="width: 110px" class="easyui-combobox" /></span>
+            操作类型：
+            <input id="operateType" style="width: 110px" class="easyui-combobox" />
+            开始时间：
+            <input id="StartTime" style="width: 110px" class="easyui-datebox" />
+            <span id="key_span2" style="display: inline-block">结束时间：<input id="EndTime" style="width: 110px" class="easyui-datebox" /></span>
+           
+            <a href="#" id="report_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+        </div>
+    </div>
+
+    <form id="Picture_form">
+        <img id="Picture_img" src="#" width="200" height="120" />
+    </form>
+
+    <a href="@PageOffice.PageOfficeLink.OpenWindow("/OfficeOperate/WordRead?", "width=1300px;height=1000px;")" id="WordRead"></a> @*只读报告*@
+</body>
+</html>

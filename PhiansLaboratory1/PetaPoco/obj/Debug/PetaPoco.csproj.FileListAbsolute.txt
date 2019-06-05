@@ -1,0 +1,10 @@
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\bin\Debug\v4.0\PetaPoco.dll
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\bin\Debug\v4.0\PetaPoco.pdb
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\obj\Debug\PetaPoco.dll
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\obj\Debug\PetaPoco.pdb
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\obj\Debug\PetaPoco.csprojResolveAssemblyReference.cache
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\bin\Debug\v4.0\PetaPoco.dll
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\bin\Debug\v4.0\PetaPoco.pdb
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\obj\Debug\PetaPoco.dll
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\obj\Debug\PetaPoco.pdb
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\obj\Debug\PetaPoco.csprojResolveAssemblyReference.cache

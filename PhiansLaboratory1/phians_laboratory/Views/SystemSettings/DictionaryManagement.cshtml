@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "DictionaryManagement";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("DictionaryManagementJs")
+</head>
+<body>
+    <div id="Layout" class="easyui-layout" data-options="fit:true">
+        <!--@*文件类型类别*@-->
+        <div data-options="region:'west',border:true" title="">
+            <div id="project_info"></div>
+            <!--@*右击菜单*@-->
+            <div class="easyui-menu" id="keyMenu" style="display: none;">
+                <!--@*<div id="tree_edit" data-options="iconCls:'icon-edit'">修改节点</div>*@-->
+                <div id="tree_add" data-options="iconCls:'icon-add'">添加同级节点</div>
+                <!--@*<div id="tree_add_next" data-options="iconCls:'icon-add'">添加子节点</div>-->
+                <!--<div id="tree_del" data-options="iconCls:'icon-remove'">删除节点</div>*@-->
+            </div>
+        </div>
+
+        <!--@*列表*@-->
+        <div data-options="region:'east',border:true" title="">
+            <div id="standards_info"></div>
+        </div>
+    </div>
+
+    <!--@*添加树子节点的同级节点*@-->
+    <form id="tree_add_dialog" method="post">
+        <div class="h_d" style="top: 40px; margin-top: 25px; ">
+            <label class="h_d1" style="width: 80px;text-align:right;display:inline-block">节点名称:</label>
+            <input id="tree_add_dialog_input" class="h_d1 easyui-textbox" name="tree_add_dialog_input" required="required" />
+        </div>
+        <div class="h_d" style="top: 20px; margin-top: 25px;">
+            <label class="h_d1" style="width: 80px;text-align:right;display:inline-block">节点序号:</label>
+            <input id="SortNum" class="h_d1 easyui-numberbox" name="" required="required" />
+        </div>
+    </form>
+
+    <!--@*列表工具栏*@-->
+    <div style="display: none">
+        <div id="standards_info_toolbar">
+            <a href="javascript:;" id="click_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加字典</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="click_edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">修改字典</a>
+            @*<span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="click_del" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">删除字典</a>*@
+        </div>
+
+        <!--<%-- 添加修改字典内容 --%>-->
+        <form id="dictionary_dialog" enctype="multipart/form-data" method="post">
+            <div style="margin-top:10px;margin-left:30px">
+                <div class="h_dline" style="height: 23px; margin-top: 25px; margin-left: 42px; float: left">
+                    <p class="h_d1" style="width: 100px;text-align:right;">项目名称:</p>&nbsp;
+                    <input id="Project_name" name="Project_name" class="easyui-textbox" required="required" style="width: 150px; height: 22px; margin-left: 5px" />
+                </div>
+                <br />
+                <div class="h_dline" style="height: 23px; margin-top: 25px; margin-left: 42px; float: left">
+                    <p class="h_d1" style="width: 100px;text-align:right;">项目值:</p>&nbsp;
+                    <input id="Project_value" name="Project_value" class="easyui-textbox" required="required" style="width: 150px; height: 22px; margin-left: 5px" />
+                </div>
+                <br />
+                <div class="h_dline" style="height: 23px; margin-top: 25px; margin-left: 42px; float: left">
+                    <p class="h_d1" style="width: 100px; text-align:right;">序列号:</p>&nbsp;
+                    <input id="Sort_num" name="Sort_num" class="easyui-numberbox" style="width: 150px; height: 22px; margin-left: 5px" required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top:25px; margin-left:42px; float: left">
+                    <p class="h_d1" style="width: 100px;text-align:right;">备注:</p>&nbsp;
+                    <input id="remarks" name="remarks" class="easyui-textbox" data-options="multiline:true" style="width: 150px; height: 66px; margin-left: 5px" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("AuthorityManagementJs")
+</head>
+<body>
+    <div id="test_layout" class="easyui-layout" data-options="fit:true,border:false">
+        <!--<%-- 部门树 --%>-->
+        <div data-options="region:'west', border:false">
+            <div id="cc" class="easyui-layout" style="width: 400px;height: 900px;">   
+                <div data-options="region:'north',title:'组',split:true" style="height: 500px;">
+                    <input id="authGroup" type="checkbox" checked="checked" /><label for="authGroup" style="color: #f00; font-size: 14px; font-weight: bold;">组授权</label>
+                    <input id="authPersonal" type="checkbox" /><label for="authPersonal" style="color: #f00; font-size: 14px;font-weight: bold;">人员授权</label>
+                    <input id="auth" type="hidden" value="false" />
+
+                    <div id="department_info" style="overflow-y: auto; height: 500px;">
+                    </div>
+                </div>   
+                <div data-options="region:'south',title:'人员',split:true" style="height: 400px;">
+                    <div id="personDatagrid" style="height: 400px;">
+                    </div>
+                </div>   
+              
+            </div>
+           
+           
+        </div>
+        <div data-options="region:'east', border:false">
+            <!--<%-- 员工列表 --%>-->
+            <table id="test"></table>
+        </div>
+    </div>
+    <div style="display: none">
+        <div id="btn_dialog">
+            <div id="check_btn">
+            </div>
+        </div>
+        <div id="btn_toolbar">
+            <a href="javascript:;" id="Btn_Auth_All" class="easyui-linkbutton" data-options="iconCls:'icon-strat',plain:true">全部授权</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Btn_UnAuth_All" class="easyui-linkbutton" data-options="iconCls:'icon-shop',plain:true">全部取消授权</a>
+        </div>
+        <div id="test_toolbar">
+            <label>选择系统：</label>
+            <input id="system_choose" class="easyui-combobox" style="width: 150px"/>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+

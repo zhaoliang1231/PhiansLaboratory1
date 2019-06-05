@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "MTRRegistration";
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("TaskScheduleJs")
+
+</head>
+<body>
+    @*MTR信息列表*@
+    <div id="MTR_information_datagrid"></div>
+
+    <div style="display:none">
+        <!-- MTR信息工具栏 -->
+        <div id="MTR_information_toolbar">
+            <a href="javascript:;" id="View_Schedule" class="easyui-linkbutton" data-options="iconCls:'icon-tip',plain:true">View Schedule</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <label>Inquire：</label>
+            <input id="key" style="width: 150px" class="easyui-combobox" />
+            <label>for</label>
+            <input id="key1" style="width: 150px" class="easyui-textbox" />
+            <a href="javascript:;" id="search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+        </div>
+        @*日常任务排程*@
+        <div id="Schedule_dialog" style="overflow:hidden;">
+            <iframe src="#" width="100%" height="100%" id="TaskScheduleList"></iframe>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿@*@{
+    ViewBag.Title = "Index";
+}*@
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>系统主页</title>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="~/signalr/hubs" type="text/javascript"></script>
+    <script src="~/Scripts/layer/2.4/layer.js"></script>
+    @*  <script src="~/Scripts/jquery.cookie.js"></script>*@
+
+</head>
+<body>
+    <label>消息</label>
+    <input id="value" />
+    <button id="send">发送</button>
+</body>
+</html>
+
+<script>
+    $(function () {
+
+        //初始化消息插件
+        init_message_Hub();
+    });
+
+    function init_message_Hub() {
+         $.connection.hub.logging = true;
+
+         var chat = $.connection.messageHub;
+
+        chat.client.broadcastMessage = function (message) {
+
+            var mes = message.split("**")
+            //iframe窗
+            layer.open({
+                type: 1,
+                title: "广播消息提示",
+                closeBtn: 0, //不显示关闭按钮
+                shade: false,
+                area: ['300px', '300px'],
+                offset: 'rb', //右下角弹出
+                time: 8000, //2秒后自动关闭
+                anim: 2,
+                content: "消息内容：" + mes[0] + "<br>" + "消息时间：" + mes[1]
+            });
+          // document.getElementById('ifa').contentWindow.location.reload(true);
+        };
+        chat.client.receive_message = function (message) {
+            layer.open({
+                type: 1,
+                title: "消息提示",
+                closeBtn: 0, //不显示关闭按钮
+                shade: false,
+                area: ['300px', '300px'],
+                offset: 'rb', //右下角弹出
+                time: 8000, //2秒后自动关闭
+                anim: 2,
+                content: "消息内容：" + message
+            });
+           // document.getElementById('ifa').contentWindow.location.reload(true);
+        }
+        //开始服务
+        $.connection.hub.start().done(function () {
+            //注册用户服务
+            //获取登录用户的直
+            //var UserName = $("#UserName").html();
+            //chat.server.register("admin");
+            $('#send').click(function () {
+                chat.server.broadcastmessage_($('#value').val());
+
+            })
+
+        });
+    };
+
+</script>

@@ -1,0 +1,38 @@
+﻿
+
+.easyui-datagrid{width:100% !important;}
+.datagrid-header-inner{width:100%;}
+.datagrid-view2 .datagrid-header-inner .datagrid-htable{width:99%;height:21px;}
+.datagrid-header-row{text-align: center;}
+.datagrid-btable{width:100%;}
+.datagrid-btable tr td{text-align: center;}
+
+.datagrid-btable .datagrid-cell-c2-remarks{text-overflow:ellipsis;white-space: nowrap;height:28px !important;}  
+.datagrid-body {
+  
+    overflow-y: scroll;
+ 
+}
+.d1 {
+margin-left: 20px;
+width:80px;
+float:left;
+text-align: right;
+ 
+}
+.d {
+margin-bottom:5px;
+margin-top:5px;
+}
+
+.h_d 
+{   
+    clear:both;  
+ }  
+  
+.h_d1 
+{    
+    display:inline-block;  
+     margin-top:0px;
+    text-align: right;
+}  

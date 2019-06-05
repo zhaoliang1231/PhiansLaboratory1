@@ -1,0 +1,2384 @@
+
+ 
+记录时间：2019-01-10 15:17:43,287 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:Index
+            开始时间：2019/1/10 15:17:42
+            结束时间：2019/1/10 15:17:43
+            总 时 间：0.3974159秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:45,203 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:Index
+            开始时间：2019/1/10 15:17:43
+            结束时间：2019/1/10 15:17:45
+            总 时 间：1.905448秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:46,110 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:main
+            开始时间：2019/1/10 15:17:45
+            结束时间：2019/1/10 15:17:46
+            总 时 间：0.4203103秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:46,401 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:main
+            开始时间：2019/1/10 15:17:46
+            结束时间：2019/1/10 15:17:46
+            总 时 间：0.2912051秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:46,845 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:GetMenuData
+            开始时间：2019/1/10 15:17:46
+            结束时间：2019/1/10 15:17:46
+            总 时 间：0.1736289秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:46,845 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:GetMenuData
+            开始时间：2019/1/10 15:17:46
+            结束时间：2019/1/10 15:17:46
+            总 时 间：0.0005009秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:49,436 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportPreparation
+            开始时间：2019/1/10 15:17:49
+            结束时间：2019/1/10 15:17:49
+            总 时 间：0.000532秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:51,723 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportPreparation
+            开始时间：2019/1/10 15:17:49
+            结束时间：2019/1/10 15:17:51
+            总 时 间：2.2864447秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:53,652 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadTemplateCombobox
+            开始时间：2019/1/10 15:17:53
+            结束时间：2019/1/10 15:17:53
+            总 时 间：0.0355947秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:53,725 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadTemplateCombobox
+            开始时间：2019/1/10 15:17:53
+            结束时间：2019/1/10 15:17:53
+            总 时 间：0.072551秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:53,736 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2019/1/10 15:17:53
+            结束时间：2019/1/10 15:17:53
+            总 时 间：0.0831531秒
+            Form表单数据：PageId=101
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:53,736 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2019/1/10 15:17:53
+            结束时间：2019/1/10 15:17:53
+            总 时 间：0秒
+            Form表单数据：PageId=101
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:53,745 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportPreparation
+            开始时间：2019/1/10 15:17:53
+            结束时间：2019/1/10 15:17:53
+            总 时 间：0.0005604秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:53,777 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportPreparation
+            开始时间：2019/1/10 15:17:53
+            结束时间：2019/1/10 15:17:53
+            总 时 间：0.0315217秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:54,687 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportEditList
+            开始时间：2019/1/10 15:17:54
+            结束时间：2019/1/10 15:17:54
+            总 时 间：0.1785196秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:54,687 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportEditList
+            开始时间：2019/1/10 15:17:54
+            结束时间：2019/1/10 15:17:54
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:17:59,570 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：MonitoringManagementController
+            ActionName:TemperatureRecord
+            开始时间：2019/1/10 15:17:59
+            结束时间：2019/1/10 15:17:59
+            总 时 间：0.0005624秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:00,768 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：MonitoringManagementController
+            ViewName:TemperatureRecord
+            开始时间：2019/1/10 15:17:59
+            结束时间：2019/1/10 15:18:00
+            总 时 间：1.1973664秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:01,022 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2019/1/10 15:18:00
+            结束时间：2019/1/10 15:18:01
+            总 时 间：0.0321096秒
+            Form表单数据：PageId=113
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:01,022 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2019/1/10 15:18:01
+            结束时间：2019/1/10 15:18:01
+            总 时 间：0秒
+            Form表单数据：PageId=113
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:01,036 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：MonitoringManagementController
+            ActionName:TemperatureRecord
+            开始时间：2019/1/10 15:18:01
+            结束时间：2019/1/10 15:18:01
+            总 时 间：1.95E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:01,039 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：MonitoringManagementController
+            ViewName:TemperatureRecord
+            开始时间：2019/1/10 15:18:01
+            结束时间：2019/1/10 15:18:01
+            总 时 间：0.0030018秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:02,043 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2019/1/10 15:18:02
+            结束时间：2019/1/10 15:18:02
+            总 时 间：0.0015159秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:02,186 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：MonitoringManagementController
+            ActionName:load_list
+            开始时间：2019/1/10 15:18:01
+            结束时间：2019/1/10 15:18:02
+            总 时 间：0.4153171秒
+            Form表单数据：search=&key=&search1=&key1=&search2=&key2=&search3=&key3=&page=1&rows=20&sort=id&order=desc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:02,187 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：MonitoringManagementController
+            ViewName:load_list
+            开始时间：2019/1/10 15:18:02
+            结束时间：2019/1/10 15:18:02
+            总 时 间：0秒
+            Form表单数据：search=&key=&search1=&key1=&search2=&key2=&search3=&key3=&page=1&rows=20&sort=id&order=desc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:03,411 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2019/1/10 15:18:02
+            结束时间：2019/1/10 15:18:03
+            总 时 间：1.3689681秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:03,927 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:18:03
+            结束时间：2019/1/10 15:18:03
+            总 时 间：0.0891484秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:03,927 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:18:03
+            结束时间：2019/1/10 15:18:03
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:06,414 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:18:06
+            结束时间：2019/1/10 15:18:06
+            总 时 间：0.0286181秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:06,414 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:18:06
+            结束时间：2019/1/10 15:18:06
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:08,690 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:18:08
+            结束时间：2019/1/10 15:18:08
+            总 时 间：0.6500028秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:08,690 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:18:08
+            结束时间：2019/1/10 15:18:08
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:12,366 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:18:12
+            结束时间：2019/1/10 15:18:12
+            总 时 间：0.2558148秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:12,366 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:18:12
+            结束时间：2019/1/10 15:18:12
+            总 时 间：0秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:18:19,321 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:18:13
+            结束时间：2019/1/10 15:18:19
+            总 时 间：5.4370043秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=admin
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:19:39,107 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:19:29
+            结束时间：2019/1/10 15:19:39
+            总 时 间：9.3362453秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=admin
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:23:31,581 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:23:27
+            结束时间：2019/1/10 15:23:31
+            总 时 间：4.2712538秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=admin
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:24:53,091 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:24:53
+            结束时间：2019/1/10 15:24:53
+            总 时 间：0.0385772秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:24:53,092 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:24:53
+            结束时间：2019/1/10 15:24:53
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:24:55,288 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:24:55
+            结束时间：2019/1/10 15:24:55
+            总 时 间：0.0391173秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:24:55,289 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:24:55
+            结束时间：2019/1/10 15:24:55
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:24:56,997 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:24:56
+            结束时间：2019/1/10 15:24:56
+            总 时 间：0.0320875秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:24:56,997 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:24:56
+            结束时间：2019/1/10 15:24:56
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:24:59,836 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:24:59
+            结束时间：2019/1/10 15:24:59
+            总 时 间：0.0490614秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:24:59,836 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:24:59
+            结束时间：2019/1/10 15:24:59
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:25:47,476 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:25:47
+            结束时间：2019/1/10 15:25:47
+            总 时 间：0.0376067秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:25:47,476 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:25:47
+            结束时间：2019/1/10 15:25:47
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:42,213 
+线程ID:[40] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2019/1/10 15:26:42
+            结束时间：2019/1/10 15:26:42
+            总 时 间：7.9E-06秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:42,226 
+线程ID:[40] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2019/1/10 15:26:42
+            结束时间：2019/1/10 15:26:42
+            总 时 间：0.0125079秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:43,270 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:26:43
+            结束时间：2019/1/10 15:26:43
+            总 时 间：0.0766542秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:43,270 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:26:43
+            结束时间：2019/1/10 15:26:43
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:44,856 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:26:44
+            结束时间：2019/1/10 15:26:44
+            总 时 间：0.0501062秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:44,856 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:26:44
+            结束时间：2019/1/10 15:26:44
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:47,297 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:26:46
+            结束时间：2019/1/10 15:26:47
+            总 时 间：0.5109068秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:47,297 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:26:47
+            结束时间：2019/1/10 15:26:47
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:50,701 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:26:50
+            结束时间：2019/1/10 15:26:50
+            总 时 间：0.1847125秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:50,701 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:26:50
+            结束时间：2019/1/10 15:26:50
+            总 时 间：0秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:26:54,543 
+线程ID:[46] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:26:52
+            结束时间：2019/1/10 15:26:54
+            总 时 间：2.3381712秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=admin&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:27:37,049 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:27:37
+            结束时间：2019/1/10 15:27:37
+            总 时 间：0.0351012秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:27:37,049 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:27:37
+            结束时间：2019/1/10 15:27:37
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:27:43,149 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:27:42
+            结束时间：2019/1/10 15:27:43
+            总 时 间：0.4799269秒
+            Form表单数据：StatisticsType=editAlloverdue&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=1&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:27:43,149 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:27:43
+            结束时间：2019/1/10 15:27:43
+            总 时 间：0秒
+            Form表单数据：StatisticsType=editAlloverdue&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=1&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:27:49,047 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:27:48
+            结束时间：2019/1/10 15:27:49
+            总 时 间：0.1481514秒
+            Form表单数据：ListType=系统&StatisticsType=editAlloverdue&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=1&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:27:49,048 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:27:49
+            结束时间：2019/1/10 15:27:49
+            总 时 间：0秒
+            Form表单数据：ListType=系统&StatisticsType=editAlloverdue&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=1&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:27:52,806 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:27:50
+            结束时间：2019/1/10 15:27:52
+            总 时 间：1.8798718秒
+            Form表单数据：StatisticsType=editAlloverdue&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=1&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=系统&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:28:14,393 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:28:14
+            结束时间：2019/1/10 15:28:14
+            总 时 间：0.061137秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:28:14,393 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:28:14
+            结束时间：2019/1/10 15:28:14
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:28:20,168 
+线程ID:[45] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:28:19
+            结束时间：2019/1/10 15:28:20
+            总 时 间：0.4973747秒
+            Form表单数据：StatisticsType=IssueSendBack&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=1&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:28:20,168 
+线程ID:[45] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:28:20
+            结束时间：2019/1/10 15:28:20
+            总 时 间：0秒
+            Form表单数据：StatisticsType=IssueSendBack&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=1&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:28:24,210 
+线程ID:[45] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:28:23
+            结束时间：2019/1/10 15:28:24
+            总 时 间：0.3007937秒
+            Form表单数据：ListType=蒋希文&StatisticsType=IssueSendBack&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=1&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=10&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:28:24,210 
+线程ID:[45] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:28:24
+            结束时间：2019/1/10 15:28:24
+            总 时 间：0秒
+            Form表单数据：ListType=蒋希文&StatisticsType=IssueSendBack&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=1&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=10&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:28:34,793 
+线程ID:[45] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:28:29
+            结束时间：2019/1/10 15:28:34
+            总 时 间：4.8138819秒
+            Form表单数据：StatisticsType=IssueSendBack&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=1&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=蒋希文&SendBackCount=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:23,933 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2019/1/10 15:32:23
+            结束时间：2019/1/10 15:32:23
+            总 时 间：0.000533秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:23,945 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2019/1/10 15:32:23
+            结束时间：2019/1/10 15:32:23
+            总 时 间：0.0120097秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:24,746 
+线程ID:[67] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:32:24
+            结束时间：2019/1/10 15:32:24
+            总 时 间：0.0531253秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:24,746 
+线程ID:[67] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:32:24
+            结束时间：2019/1/10 15:32:24
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:26,717 
+线程ID:[66] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:32:26
+            结束时间：2019/1/10 15:32:26
+            总 时 间：0.0540575秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:26,717 
+线程ID:[66] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:32:26
+            结束时间：2019/1/10 15:32:26
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:29,616 
+线程ID:[66] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:32:29
+            结束时间：2019/1/10 15:32:29
+            总 时 间：0.5170193秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:29,616 
+线程ID:[66] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:32:29
+            结束时间：2019/1/10 15:32:29
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:32,197 
+线程ID:[67] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:32:32
+            结束时间：2019/1/10 15:32:32
+            总 时 间：0.1648612秒
+            Form表单数据：ListType=陈兵华&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:32,197 
+线程ID:[67] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:32:32
+            结束时间：2019/1/10 15:32:32
+            总 时 间：0秒
+            Form表单数据：ListType=陈兵华&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:32:35,557 
+线程ID:[66] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:32:33
+            结束时间：2019/1/10 15:32:35
+            总 时 间：2.0474158秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=陈兵华&SendBackCount=&ListTypeKey=0
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:34:51,218 
+线程ID:[74] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2019/1/10 15:34:51
+            结束时间：2019/1/10 15:34:51
+            总 时 间：7.79E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:34:51,224 
+线程ID:[74] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2019/1/10 15:34:51
+            结束时间：2019/1/10 15:34:51
+            总 时 间：0.0060035秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:34:54,277 
+线程ID:[73] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2019/1/10 15:34:54
+            结束时间：2019/1/10 15:34:54
+            总 时 间：4.94E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:34:54,281 
+线程ID:[73] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2019/1/10 15:34:54
+            结束时间：2019/1/10 15:34:54
+            总 时 间：0.0035023秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:34:55,137 
+线程ID:[74] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:34:55
+            结束时间：2019/1/10 15:34:55
+            总 时 间：0.0645783秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:34:55,137 
+线程ID:[74] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:34:55
+            结束时间：2019/1/10 15:34:55
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:34:56,545 
+线程ID:[73] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:34:56
+            结束时间：2019/1/10 15:34:56
+            总 时 间：0.043042秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:34:56,545 
+线程ID:[73] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:34:56
+            结束时间：2019/1/10 15:34:56
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:34:59,235 
+线程ID:[73] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:34:58
+            结束时间：2019/1/10 15:34:59
+            总 时 间：0.5340352秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:34:59,236 
+线程ID:[73] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:34:59
+            结束时间：2019/1/10 15:34:59
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:35:02,022 
+线程ID:[73] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:35:01
+            结束时间：2019/1/10 15:35:02
+            总 时 间：0.159821秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:35:02,022 
+线程ID:[73] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:35:02
+            结束时间：2019/1/10 15:35:02
+            总 时 间：0秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:35:09,111 
+线程ID:[72] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:35:03
+            结束时间：2019/1/10 15:35:09
+            总 时 间：5.3241347秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=admin&SendBackCount=&ListTypeKey=0
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:36:37,239 
+线程ID:[72] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:35:19
+            结束时间：2019/1/10 15:36:37
+            总 时 间：78.1891177秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=admin&SendBackCount=&ListTypeKey=0
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:38:45,073 
+线程ID:[55] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2019/1/10 15:38:45
+            结束时间：2019/1/10 15:38:45
+            总 时 间：8.55E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:38:45,079 
+线程ID:[55] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2019/1/10 15:38:45
+            结束时间：2019/1/10 15:38:45
+            总 时 间：0.006003秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:38:45,815 
+线程ID:[55] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:38:45
+            结束时间：2019/1/10 15:38:45
+            总 时 间：0.0451141秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:38:45,815 
+线程ID:[55] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:38:45
+            结束时间：2019/1/10 15:38:45
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:38:47,484 
+线程ID:[58] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:38:47
+            结束时间：2019/1/10 15:38:47
+            总 时 间：0.0450357秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:38:47,484 
+线程ID:[58] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:38:47
+            结束时间：2019/1/10 15:38:47
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:38:48,549 
+线程ID:[58] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:38:48
+            结束时间：2019/1/10 15:38:48
+            总 时 间：0.1546276秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:38:48,549 
+线程ID:[58] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:38:48
+            结束时间：2019/1/10 15:38:48
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:40:46,894 
+线程ID:[53] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:40:46
+            结束时间：2019/1/10 15:40:46
+            总 时 间：0.2790987秒
+            Form表单数据：ListType=核岛探伤组&StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:40:46,894 
+线程ID:[53] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:40:46
+            结束时间：2019/1/10 15:40:46
+            总 时 间：0秒
+            Form表单数据：ListType=核岛探伤组&StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:42:41,632 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2019/1/10 15:42:41
+            结束时间：2019/1/10 15:42:41
+            总 时 间：2.22E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:42:45,829 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2019/1/10 15:42:41
+            结束时间：2019/1/10 15:42:45
+            总 时 间：4.1966364秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:42:46,460 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:42:46
+            结束时间：2019/1/10 15:42:46
+            总 时 间：0.0385803秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:42:46,460 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:42:46
+            结束时间：2019/1/10 15:42:46
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:42:50,614 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:42:50
+            结束时间：2019/1/10 15:42:50
+            总 时 间：0.0307531秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:42:50,614 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:42:50
+            结束时间：2019/1/10 15:42:50
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:42:52,838 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:42:52
+            结束时间：2019/1/10 15:42:52
+            总 时 间：0.5168825秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:42:52,839 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:42:52
+            结束时间：2019/1/10 15:42:52
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:42:56,828 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:42:56
+            结束时间：2019/1/10 15:42:56
+            总 时 间：0.146821秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:42:56,829 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:42:56
+            结束时间：2019/1/10 15:42:56
+            总 时 间：0.0005065秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:43:53,277 
+线程ID:[74] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2019/1/10 15:43:53
+            结束时间：2019/1/10 15:43:53
+            总 时 间：5.54E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:43:57,447 
+线程ID:[74] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2019/1/10 15:43:53
+            结束时间：2019/1/10 15:43:57
+            总 时 间：4.1688247秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:43:58,158 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:43:58
+            结束时间：2019/1/10 15:43:58
+            总 时 间：0.0360686秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:43:58,159 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:43:58
+            结束时间：2019/1/10 15:43:58
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:43:59,559 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:43:59
+            结束时间：2019/1/10 15:43:59
+            总 时 间：0.0250609秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:43:59,559 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:43:59
+            结束时间：2019/1/10 15:43:59
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:01,908 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:44:01
+            结束时间：2019/1/10 15:44:01
+            总 时 间：0.6334085秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:01,908 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:44:01
+            结束时间：2019/1/10 15:44:01
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:08,581 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:44:08
+            结束时间：2019/1/10 15:44:08
+            总 时 间：0.1396603秒
+            Form表单数据：ListType=陈兵华&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:08,581 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:44:08
+            结束时间：2019/1/10 15:44:08
+            总 时 间：0秒
+            Form表单数据：ListType=陈兵华&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:42,675 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2019/1/10 15:44:42
+            结束时间：2019/1/10 15:44:42
+            总 时 间：6.3E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:47,168 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2019/1/10 15:44:42
+            结束时间：2019/1/10 15:44:47
+            总 时 间：4.4919821秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:47,777 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:44:47
+            结束时间：2019/1/10 15:44:47
+            总 时 间：0.0511033秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:47,778 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:44:47
+            结束时间：2019/1/10 15:44:47
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:49,079 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2019/1/10 15:44:49
+            结束时间：2019/1/10 15:44:49
+            总 时 间：0.0260259秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:49,079 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2019/1/10 15:44:49
+            结束时间：2019/1/10 15:44:49
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:50,010 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:44:49
+            结束时间：2019/1/10 15:44:50
+            总 时 间：0.1254252秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:50,010 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:44:50
+            结束时间：2019/1/10 15:44:50
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:52,802 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:44:52
+            结束时间：2019/1/10 15:44:52
+            总 时 间：0.1890209秒
+            Form表单数据：ListType=核岛探伤组&StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:52,803 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:44:52
+            结束时间：2019/1/10 15:44:52
+            总 时 间：0秒
+            Form表单数据：ListType=核岛探伤组&StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:44:56,996 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:44:54
+            结束时间：2019/1/10 15:44:56
+            总 时 间：2.5424252秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=核岛探伤组&SendBackCount=&ListTypeKey=0
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:51:05,945 
+线程ID:[66] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2019/1/10 15:51:05
+            结束时间：2019/1/10 15:51:05
+            总 时 间：0.5183886秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:51:05,945 
+线程ID:[66] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2019/1/10 15:51:05
+            结束时间：2019/1/10 15:51:05
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=&dateEnd=&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:51:15,330 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:51:15
+            结束时间：2019/1/10 15:51:15
+            总 时 间：0.1517711秒
+            Form表单数据：ListType=陈兵华&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=2019-01-10&dateEnd=2019-01-10&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:51:15,330 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:51:15
+            结束时间：2019/1/10 15:51:15
+            总 时 间：0秒
+            Form表单数据：ListType=陈兵华&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=2019-01-10&dateEnd=2019-01-10&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:51:19,933 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:51:19
+            结束时间：2019/1/10 15:51:19
+            总 时 间：0.0961199秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=2019-01-10&dateEnd=2019-01-10&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:51:19,933 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:51:19
+            结束时间：2019/1/10 15:51:19
+            总 时 间：0秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=2019-01-10&dateEnd=2019-01-10&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:51:27,276 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ArrangeList
+            开始时间：2019/1/10 15:51:27
+            结束时间：2019/1/10 15:51:27
+            总 时 间：0.1612043秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=2019-01-01&dateEnd=2019-01-10&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:51:27,276 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:Report_ArrangeList
+            开始时间：2019/1/10 15:51:27
+            结束时间：2019/1/10 15:51:27
+            总 时 间：0秒
+            Form表单数据：ListType=admin&StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=2019-01-01&dateEnd=2019-01-10&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&SendBackCount=&ListTypeKey=0&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 15:51:32,136 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 15:51:29
+            结束时间：2019/1/10 15:51:32
+            总 时 间：2.5613784秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=2019-01-01&dateEnd=2019-01-10&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=admin&SendBackCount=&ListTypeKey=0
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 16:29:04,312 
+线程ID:[82] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 16:29:01
+            结束时间：2019/1/10 16:29:04
+            总 时 间：3.0784556秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=2019-01-01&dateEnd=2019-01-10&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=admin&SendBackCount=&ListTypeKey=0
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-10 16:29:27,797 
+线程ID:[83] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:Report_ExportExcl
+            开始时间：2019/1/10 16:29:18
+            结束时间：2019/1/10 16:29:27
+            总 时 间：9.1830029秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=2c735d45-dc06-4294-850a-14b8384820c2&ElapsedTimeDay=&dateStart=2019-01-01&dateEnd=2019-01-10&OverdueTimeDay=&ReportOverdueName=&ReportTypeName=&ListType=admin&SendBackCount=&ListTypeKey=0
+            URL参数：
+                    
+ 

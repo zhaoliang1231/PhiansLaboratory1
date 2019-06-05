@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This file contains basic settings needed for most web apps.
+  For full Combres settings (with explanation), refer to the sample definition file: combres_full_with_annotation.xml
+  Also, refer to Combres' documentation: http://combres.codeplex.com/documentation	
+-->
+<combres xmlns='urn:combres'>
+  <filters>
+    <filter type="Combres.Filters.FixUrlsInCssFilter, Combres" />
+  </filters>
+  <resourceSets url="~/combres.axd"
+                defaultDuration="30"
+                defaultVersion="201d7-asas"
+                defaultDebugEnabled="true"
+                defaultIgnorePipelineWhenDebug="true"
+                localChangeMonitorInterval="30"
+                remoteChangeMonitorInterval="60"
+                >
+    <!--defaultDuration 生存时间 ；单位是天-->
+    <!--defaultVersion auto 自动版本 ；可以输入版本号-->
+    <!--defaultDebugEnabled 开发调试模式，false关闭；true打开-->
+
+    <!--公用css-->
+    <resourceSet name="public_Css" type="css">
+      <resource path="/easyui/themes/default/easyui.css" />
+      <resource path="/easyui/themes/icon.css" />
+
+      <resource path="/phians_css/myStyle.css" />
+    </resourceSet>
+    <resourceSet name="siteJs"  type="js" >
+      <resource path="/easyui/jquery.min.js" />
+      <resource path="/easyui/jquery.easyui.min.js" />
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/script/supersized.3.2.7.min.js" />
+    
+    </resourceSet>
+    <resourceSet name="siteLoginJs"  type="js">
+      <resource path="/easyui/jquery.min.js" />
+      <resource path="/easyui/jquery.easyui.min.js" />
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/script/supersized.3.2.7.min.js" />
+      <resource path="/phians_js/login_new.js?version=20160722" />
+    </resourceSet>
+    <resourceSet name="siteCss" type="css">
+      <resource path="/easyui/themes/default/easyui.css" />
+      <resource path="/easyui/themes/icon.css" />
+      <resource path="/phians_css/supersized.css" />
+      <resource path="/phians_css/style.css" />
+    </resourceSet>
+    <!--试验项目配置-->
+    <resourceSet name="TestCss" type="css">
+      <resource path="/easyui/themes/default/easyui.css" />
+      <resource path="/easyui/themes/icon.css" />
+      <resource path="/phians_css/Laboratory_Qualification_info.css" />
+      <resource path="/phians_css/myStyle.css" />
+    </resourceSet>
+    <resourceSet name="mainformJs"  type="js">
+      <resource path="/easyui/jquery.min.js" />
+      <resource path="/easyui/jquery.easyui.min.js" />
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.1.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phians_js/mainfrom.js" />
+    </resourceSet>
+    <resourceSet name="mainformCss" type="css">
+      <resource path="/easyui/themes/default/easyui.css" />
+      <resource path="/easyui/themes/icon.css" />
+      <resource path="/phians_css/mainform.css" />
+      <resource path="/phians_css/supplier_info.css" />
+    </resourceSet>
+
+    <resourceSet name="customer_info_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/customer_info.js"/>
+    </resourceSet>
+
+    <resourceSet name="Environmental_management_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Quality_management/Environmental_management.js"/>
+      <resource path="/uploadify/jquery.uploadify.js"/>
+    </resourceSet>
+    <resourceSet name="Environmental_management_Css" type="css">
+      <resource path="/uploadify/uploadify.css"/>
+      <resource path="/easyui/themes/default/easyui.css" />
+      <resource path="/easyui/themes/icon.css" />
+      <resource path="/phians_css/mainform.css" />
+      <resource path="/phians_css/system_file.css" />
+      <resource path="/phians_css/myStyle.css" />
+    </resourceSet>
+
+    <!--<resourceSet name="equipment_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/equipment.js"/>
+    </resourceSet>-->
+
+    <resourceSet name="hello_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/phians_js/test.js"/>
+    </resourceSet>
+    <resourceSet name="PageShowSetting_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/phians_js/System_settings/PageShowSetting.js"/>
+    </resourceSet>
+
+    <resourceSet name="Internal_audit_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Quality_management/Internal_audit.js"/>
+      <resource path="/uploadify/jquery.uploadify.js"/>
+    </resourceSet>
+
+    <!--<resourceSet name="Laboratory_data_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Laboratory_data.js"/>
+    </resourceSet>-->
+<!--试验技术资质-->
+    <resourceSet name="Laboratory_Qualification_info_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Technical_management/Laboratory_Qualification_info.js"/>
+    </resourceSet>
+    <resourceSet name="Laboratory_Qualification_info_Css" type="css">
+      <resource path="/easyui/themes/default/easyui.css" />
+      <resource path="/easyui/themes/icon.css"/>
+      <resource path="/phians_css/Laboratory_Qualification_info.css" />
+    </resourceSet>
+
+    <resourceSet name="Management_review_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Quality_management/Management_review.js"/>
+      <resource  path="/uploadify/jquery.uploadify.js"/>
+    </resourceSet>
+
+    <resourceSet name="message_management_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Personal_center/message_management.js"/>
+    </resourceSet>
+
+    <resourceSet name="Method_management_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Technical_management/Method_management.js"/>
+      <resource  path="/uploadify/jquery.uploadify.min.js"/>
+    </resourceSet>
+<!--//权限管理-->
+    <resourceSet name="Authority_management_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/System_settings/Authority_management.js"/>
+      <resource  path="/uploadify/jquery.uploadify.js"/>
+    </resourceSet>
+    <!--//无损权限管理-->
+    <resourceSet name="LosslessPerson_Management_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Lossless_report/LosslessPerson_Management.js"/>
+      <resource  path="/uploadify/jquery.uploadify.js"/>
+    </resourceSet>
+    <resourceSet name="Authority_management_Css" type="css">
+      <resource  path="/uploadify/uploadify.css" />
+      <resource  path="/easyui/themes/default/easyui.css" />
+      <resource  path="/easyui/themes/icon.css" />
+    </resourceSet>
+
+    <resourceSet name="personal_information_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/uploadify/jquery.uploadify.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Personal_center/personal_information.js"/>
+    </resourceSet>
+    <resourceSet name="personal_information_Css" type="css">
+      <resource  path="/easyui/themes/default/easyui.css" />
+      <resource  path="/easyui/themes/icon.css" />
+      <resource  path="/phians_css/Laboratory_Qualification_info.css" />
+      <resource  path="/uploadify/uploadify.css"  />
+    </resourceSet>
+
+    <resourceSet name="print_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/print.js"/>
+    </resourceSet>
+
+    <resourceSet name="read_contract_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/read_contract.js"/>
+    </resourceSet>
+
+    <resourceSet name="read_pdf_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+    </resourceSet>
+<!--报告管理-->
+    <resourceSet name="Report_management_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>   
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/Scripts/jquery.cookie.js"/>
+      <resource  path="/phians_js/Report_management/Report_management.js"/>     
+    </resourceSet>
+    <resourceSet name="Report_management_Css" type="css">
+      <!--<resource  path="/artDialog/skins/blue.css" />
+      <resource  path="/uploadify/uploadify.css"   />-->
+      <resource  path="/easyui/themes/default/easyui.css" />
+      <resource  path="/easyui/themes/icon.css" />
+      <resource  path="/phians_css/supplier_info.css" />
+    </resourceSet>
+
+    <!--<resourceSet name="Report_Edit_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/artDialog/jquery.artDialog.js"/>
+      <resource  path="/artDialog/plugins/iframeTools.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/uploadify/swfobject.js"/>
+      <resource  path="/uploadify/jquery.uploadify.js"/>
+      <resource  path="/phians_js/Report_management/Report_Edit.js"/>
+      --><!--<resource  path="/phians_js/Report_Procedure_Edit.js?time=New Date()"/>--><!--
+    </resourceSet>-->
+
+
+    <resourceSet name="Back_suggestion_dialogJs"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Certificate_error_word_print.js"/>
+    </resourceSet>
+
+    <!--<resourceSet name="Metering_standard_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Metering_standard.js"/>
+    </resourceSet>-->
+
+    <!--<resourceSet name="supplier_info_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/supplier_info.js"/>
+    </resourceSet>-->
+
+    <resourceSet name="system_file_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Quality_management/system_file.js"/>
+      <resource  path="/uploadify/jquery.uploadify.js"/>
+    </resourceSet>
+    <resourceSet name="ReportManager_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Quality_management/system_file.js"/>
+      <resource  path="/uploadify/jquery.uploadify.js"/>
+    </resourceSet>
+    <resourceSet name="Technical_training_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Technical_management/Technical_training.js"/>
+      <resource  path="/uploadify/jquery.uploadify.js"/>
+    </resourceSet>
+
+    <resourceSet name="technicians_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/Technical_management/technicians.js"/>
+    </resourceSet>
+<!--人员管理-->
+    <resourceSet name="Personnel_management_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/uploadify/jquery.uploadify.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/System_settings/Personnel_management.js"/>
+    </resourceSet>
+    <!--系统日志-->
+    <resourceSet name="System_log_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/System_log.js"/>
+    </resourceSet>
+    <!--模板文件-->
+    <resourceSet name="Template_file_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource  path="/phians_js/System_settings/Template_file.js"/>
+      <resource  path="/uploadify/swfobject.js"/>
+      <resource  path="/uploadify/jquery.uploadify.min.js"/>
+    </resourceSet>
+
+    <resourceSet name="transfer_edit_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/artDialog/jquery.artDialog.js"/>
+      <resource  path="/artDialog/plugins/iframeTools.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+    </resourceSet>
+
+    <resourceSet name="WebForm2_Js"  type="js">
+      <resource  path="/easyui/jquery.min.js"/>
+      <resource  path="/easyui/jquery.easyui.min.js"/>
+      <resource  path="/easyui/locale/easyui-lang-zh_CN.js"/>
+    </resourceSet>
+    <resourceSet name="WebForm2_Css" type="css">
+      <resource  path="/easyui/themes/default/easyui.css" />
+      <resource  path="/easyui/themes/icon.css" />
+    </resourceSet>
+
+    <resourceSet name="functional_module_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/functional_module.js"/>
+    </resourceSet>
+    <!--字典管理-->
+    <resourceSet name="Dictionary_management_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/System_settings/Dictionary_management.js"/>
+    </resourceSet>
+    <!--试验记录-->
+    <resourceSet name="Test_record_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/datagrid-cellediting.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Test_management/Test_record.js"/>
+    </resourceSet>
+    <!--试验标准编制-->
+    <resourceSet name="Test_Standard_constitute_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/easyui/datagrid-cellediting.js"/>
+      <resource path="/phians_js/Technical_management/Test_Standard_constitute.js"/>
+    </resourceSet>
+    <!--试验标准配置-->
+    <resourceSet name="Commissioned_Information_config_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/easyui/datagrid-cellediting.js"/>
+      <resource path="/script/LodopFuncs.js"/>
+      <resource path="/phians_js/Technical_management/commissioned_Information_config.js"/>
+    </resourceSet>
+    <!--试验委托申请-->
+    <resourceSet name="Test_commissioned_application_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/script/LodopFuncs.js"/>
+      <resource path="/easyui/datagrid-cellediting.js"/>
+      <resource path="/phians_js/Test_management/Test_commissioned_application.js"/>
+    </resourceSet>
+    <!--试验项目配置-->
+    <resourceSet name="Test_Item_config_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Technical_management/Test_Item_config.js"/>
+    </resourceSet>
+    <!--试验标准库-->
+    <resourceSet name="Test_Standard_Library_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Technical_management/Test_Standard_Library.js"/>
+    </resourceSet>
+    <!--试验标准审核-->
+    <resourceSet name="Test_standard_review_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Technical_management/Test_standard_review.js"/>
+    </resourceSet>
+    <!--样品接受-->
+    <resourceSet name="Sample_accept_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/script/LodopFuncs.js"/>
+      <resource path="/phians_js/Sample_management/Sample_accept.js"/>
+      <resource path="/Scripts/jquery.cookie.js"/>
+    </resourceSet>
+    <!--样品管理-->
+    <resourceSet name="Sample_management_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Sample_management/Sample_management.js"/>
+    </resourceSet>
+    <!--样品领取-->
+    <resourceSet name="Sample_receive_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Sample_management/Sample_receive.js"/>
+    </resourceSet>
+    <!--留样管理-->
+    <resourceSet name="Stay_management_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Sample_management/Stay_management.js"/>
+    </resourceSet>
+    <!--委托统计-->
+    <resourceSet name="Commissioned_statistical_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Statistical_management/Commissioned_statistical.js"/>
+    </resourceSet>
+    <!--台账统计-->
+    <resourceSet name="Equipment_statistical_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Statistical_management/Equipment_statistical.js"/>
+    </resourceSet>
+    <!--监控-->
+    <resourceSet name="Overdue_monitoring_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Business_monitoring/Overdue_monitoring.js"/>
+    </resourceSet>
+    <!--任务监控-->
+    <resourceSet name="task_monitoring_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Business_monitoring/task_monitoring.js"/>
+    </resourceSet>
+    <!--计量器具-->
+    <resourceSet name="Metering_equipment_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/script/LodopFuncs.js"/>
+      <resource path="/Scripts/jquery.cookie.js"/>
+      <resource path="/phians_js/Equipment_management/Metering_equipment.js"/>
+    </resourceSet>
+    <!--计量标准-->
+    <resourceSet name="Metering_standard_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/script/LodopFuncs.js"/>
+      <resource path="/Scripts/jquery.cookie.js"/>
+      <resource path="/phians_js/Equipment_management/Metering_standard.js"/>
+    </resourceSet>
+    <!--入库委托-->
+    <resourceSet name="Warehousing_commissioned_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/script/LodopFuncs.js"/>
+      <resource path="/phians_js/Test_management/Warehousing_commissioned.js"/>
+    </resourceSet>
+    <!--试验退回申请-->
+    <resourceSet name="Test_return_application_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Test_management/Test_return_application.js"/>
+    </resourceSet>
+    <!--任务池-->
+    <resourceSet name="Task_pool_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Test_management/Task_pool.js"/>
+    </resourceSet>
+    <!--记录校对-->
+    <resourceSet name="Record_collate_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Test_management/Record_collate.js"/>
+    </resourceSet>
+    <!--样品失效-->
+    <resourceSet name="Sample_invalid_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Test_management/Sample_invalid.js"/>
+    </resourceSet>
+    <!--样品失效处理-->
+    <resourceSet name="Sample_invalid_machining_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Test_management/Sample_invalid_machining.js"/>
+    </resourceSet>
+    <!--任务指派-->
+    <resourceSet name="Task_appoint_machining_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Test_management/Task_appoint_machining.js"/>
+    </resourceSet>
+    <!--样品机加-->
+    <resourceSet name="Sample_machining_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Test_management/Sample_machining.js"/>
+    </resourceSet>
+    <!--试验委托管理-->
+    <resourceSet name="Test_commissioned_management_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Test_management/Test_commissioned_management.js"/>
+    </resourceSet>
+    <!--试验委托审核-->
+    <resourceSet name="Test_commissioned_review_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Test_management/Test_commissioned_review.js"/>
+    </resourceSet>
+    <!--异常报告申请管理-->
+    <resourceSet name="Error_Report_Apply_Management_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Report_management/Error_Report_Apply_Management.js"/>
+      <resource path="/Scripts/jquery.cookie.js"/>
+    </resourceSet>
+    <!--报告编制-->
+    <resourceSet name="Report_Edit_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Report_management/Report_Edit.js"/>
+    </resourceSet>
+    <!--报告签发-->
+    <resourceSet name="Report_Issue_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Report_management/Report_Issue.js"/>
+    </resourceSet>
+    <!--报告查看-->
+    <resourceSet name="Report_view_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Report_management/Report_view.js"/>
+      <resource path="/Scripts/jquery.cookie.js"/>
+    </resourceSet>
+    <!--报告审核-->
+    <resourceSet name="Report_Review_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Report_management/Report_Review.js"/>
+    </resourceSet>
+    <!--异常报告申请审核-->
+    <resourceSet name="Error_Report_Apply_Audit_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phians_js/Report_management/Error_Report_Apply_Audit.js"/>
+    </resourceSet>
+    <!--异常报告编辑申请审核-->
+    <resourceSet name="Error_Report_EditApply_Audit_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Report_management/Error_Report_EditApply_Audit.js"/>
+    </resourceSet>
+    <!--异常报告编辑申请编制-->
+    <resourceSet name="Error_Report_EditApply_Edit_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Report_management/Error_Report_EditApply_Edit.js"/>
+    </resourceSet>
+    <!--word_view 报告显示页面-->
+    <resourceSet name="word_view_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/word_view.js"/>
+    </resourceSet>
+
+    <!--word_view 报告显示页面-->
+    <resourceSet name="Lossless_report_word_edit"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Lossless_report_word_edit.js"/>
+    </resourceSet>
+    <!--word_view 报告分发-->
+    <resourceSet name="Report_distribution_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/Scripts/jquery.cookie.js"/>
+      <resource path="/phians_js/Report_management/Report_distribution.js"/>
+    </resourceSet>
+    <!--word_view 报告接收-->
+    <resourceSet name="Report_receive_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/Scripts/jquery.cookie.js"/>
+      <resource path="/phians_js/Report_management/Report_receive.js"/>
+    </resourceSet>
+
+    <!--探头库-->
+    <resourceSet name="Device_Library_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/script/LodopFuncs.js"/>
+      <resource path="/Scripts/jquery.cookie.js"/>
+      <resource path="/phians_js/Lossless_report/Device_Library.js"/>
+    </resourceSet>
+    <!--设备库-->
+    <resourceSet name="Probe_Library_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/script/LodopFuncs.js"/>
+      <resource path="/Scripts/jquery.cookie.js"/>
+      <resource path="/phians_js/Lossless_report/Probe_Library.js"/>
+    </resourceSet>
+    <!--无损报告编制-->
+    <resourceSet name="LosslessReport_Edit_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Lossless_report/LosslessReport_Edit.js"/>
+    </resourceSet>
+    <!--无损报告审核-->
+    <resourceSet name="LosslessReport_Review_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Lossless_report/LosslessReport_Review.js"/>
+    </resourceSet>
+    <!--无损报告签发-->
+    <resourceSet name="LosslessReport_Issue_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phians_js/Lossless_report/LosslessReport_Issue.js"/>
+    </resourceSet>
+    <!--无损报告管理-->
+    <resourceSet name="LosslessReport_Management_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/script/echarts.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      
+      <resource path="/phians_js/Lossless_report/LosslessReport_Management.js"/>
+    </resourceSet>
+
+
+    <!--无损异常报告申请审核-->
+    <resourceSet name="LosslessReport_Apply_Audit_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Lossless_report/LosslessReport_Apply_Audit.js"/>
+    </resourceSet>
+    <!--无损异常报告编辑-->
+    <resourceSet name="LosslessReport_EditApply_Edit_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Lossless_report/LosslessReport_EditApply_Edit.js"/>
+    </resourceSet>
+    <!--无损异常报告审核-->
+    <resourceSet name="LosslessReport_EditApply_Audit_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Lossless_report/LosslessReport_EditApply_Audit.js"/>
+    </resourceSet>
+    <!--无损异常报告管理-->
+    <resourceSet name="LosslessReport_Apply_Management_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Lossless_report/LosslessReport_Apply_Management.js"/>
+    </resourceSet>
+    <!--无损异常报告管理-->
+    <resourceSet name="LosslessReport_Monitor_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+      <resource path="/phians_js/Lossless_report/LosslessReport_Monitor.js"/>
+    </resourceSet>
+    <!--报告整理-->
+    <resourceSet name="report_arrange_Js"  type="js">
+      <resource path="/easyui/jquery.min.js"/>
+      <resource path="/easyui/jquery.easyui.min.js"/>
+      <resource path="/easyui/locale/easyui-lang-zh_CN.js"/>
+   <!--<resource path="/phians_js/Lossless_report/LosslessReport_Management.js"/>-->
+    </resourceSet>
+  </resourceSets>
+
+
+</combres>

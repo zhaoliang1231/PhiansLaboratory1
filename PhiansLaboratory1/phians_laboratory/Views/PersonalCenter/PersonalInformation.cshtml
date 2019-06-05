@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "PersonalInformation";
+}
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title> 个人信息</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("PersonalInformmationJs")
+    @*<link rel="stylesheet" type="text/css" href="/uploadify/uploadify.css" />*@
+
+</head>
+<body>
+    <div id="Layout" class="easyui-layout" data-options="fit:true">
+        @*个人证书列表*@
+        <div data-options="region:'west'">
+            <div id="qualification_certificate">
+            </div>
+        </div>
+
+        @*个人信息*@
+        <div data-options="region:'center'">
+            <div class="h_d" style="margin-left: 100px;">
+                @*用来作为文件队列区域*@
+                <div>
+                    <img style="margin-top: 10px" id="Signature" src="#" width="200" height="100" />
+                    <form id="info_form" method="post" enctype="multipart/form-data">
+                        <div class="h_d" style="margin-top: 10px;">
+                            <div class="h_d1">头像：</div>
+                            <input class="easyui-filebox" name="file_" style="width: 150px" id="Url_image" />
+                        </div>
+                    </form>
+                    <a href="#" id="save_image" style="margin-left: 60px;margin-top:10px" class="easyui-linkbutton" data-options="iconCls:'icon-ok'">修改头像</a>
+                </div>
+                @*修改签名*@
+                <div>
+                    <img style="margin-top: 10px" id="SignatureModification" src="#" width="200" height="100" />
+                    <form id="info_form1" method="post" enctype="multipart/form-data">
+                        <div class="h_d" style="margin-top: 10px;">
+                            <div class="h_d1">签名：</div>
+                            <input class="easyui-filebox" name="file_" style="width: 150px" id="Modification_image" />
+                        </div>
+                    </form>
+                    <a href="#" id="edit_image" style="margin-left: 60px;margin-top:10px" class="easyui-linkbutton" data-options="iconCls:'icon-ok'">修改签名</a>
+                </div>
+                @*个人信息表单*@
+                <form id="department_people_info" class="h_d1" method="post">
+                    <div style="height: 25px;margin-top:20px">
+                        <label style="width: 80px; margin-top: 5px; float: left">用户：</label>
+                        <input id="UserCount" class="easyui-textbox" name="UserCount" readonly="readonly" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>
+                        <label style="width: 80px; margin-top: 5px; float: left">用户名：</label>
+                        <input id="UserName" class="easyui-textbox" name="UserName" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>
+                        <label style="width: 80px; margin-top: 5px; float: left">工号：</label>
+                        <input id="JobNum" class="easyui-textbox" name="JobNum" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>
+                        <label style="width: 80px; margin-top: 5px; float: left">用户性别：</label>
+                        <input id="UserNsex" class="easyui-combobox" name="UserNsex" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>
+                        <label style="width: 80px; margin-top: 5px; float: left">标题：</label>
+                        <input id="Job" class="easyui-textbox" name="Job" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>
+                        <label style="width: 80px; margin-top: 5px; float: left">专业：</label>
+                        <input id="Profession" class="easyui-textbox" name="Profession"  style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>
+                        <label style="width: 80px; margin-top: 5px; float: left">电话：</label>
+                        <input id="Tel" class="easyui-numberbox" name="Tel" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>
+                        <label style="width: 80px; margin-top: 5px; float: left">手机：</label>
+                        <input id="Phone" class="easyui-numberbox" name="Phone" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>
+                        @*<label style="width: 80px; margin-top: 5px; float: left">Fax：</label>
+                        <input id="Fax" class="easyui-textbox" name="Fax" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>*@
+                        <label style="width: 80px; margin-top: 5px; float: left">电子邮件：</label>
+                        <input id="Email" class="easyui-textbox" name="Email" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>
+                        @*<label style="width: 80px; margin-top: 5px; float: left">QQ：</label>
+                        <input id="QQ" class="easyui-textbox" name="QQ" style="width: 150px;" /><br />*@
+                        @*<div style="height: 5px"></div>
+                        <label style="width: 80px; margin-top: 5px; float: left">Address：</label>
+                        <input id="Address" class="easyui-textbox" name="Address" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>
+                        <label style="width: 80px; margin-top: 5px; float: left">Postcode：</label>
+                        <input id="Postcode" class="easyui-numberbox" name="Postcode" style="width: 150px;" /><br />
+                        <div style="height: 5px"></div>*@
+                        <label style="width: 80px; margin-top: 5px; float: left">说明：</label>
+                        <input id="Remarks" class="easyui-textbox" name="Remarks" data-options="multiline:true" style="width: 150px;height:45px;" /><br />
+                    </div>
+                </form>
+                <a href="#" id="save_personnel_info" class="easyui-linkbutton" data-options="iconCls:'icon-ok'" style="margin-top: 100px; margin-left: -150px">修改信息</a>
+            </div>
+        </div>
+    </div>
+    <div style="display: none">
+        @*证书列表工具栏*@
+        <div id="qualification_certificate_toolbar">
+            <a href="javascript:;" id="view_certificate_attachments" class="easyui-linkbutton" data-options="iconCls:'icon-files',plain:true">查看证书附件</a>
+            @*<span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="due_warning" class="easyui-linkbutton" data-options="iconCls:'icon-tip',plain:true">Expired warning(30 days)</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="overdue_query" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Expired Query</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="show_all" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Show All</a>*@
+        </div>
+        @*证书附件dialog*@
+        <div id="certificate_annex_dialog">
+            @*证书附件列表*@
+            <div id="annex_datagrid"></div>
+            @*证书附件工具栏*@
+            <div id="certificate_annex_toolbar">
+                <a href="javascript:;" id="view_annex" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">查看附件</a>
+            </div>
+        </div>
+        <a href="@PageOffice.PageOfficeLink.OpenWindow("/WordCommon/WordOperation?", "width=1300px;height=1000px;")" id="ShowOffice">显示报告版本</a>@*打开word链接*@
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>jQuery.Gantt</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <link href="~/Content/Gantt/css/style.css" rel="stylesheet" />
+    <link href="~/Content/Gantt/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Gantt/css/prettify.min.css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            padding: 0 0 50px 0;
+        }
+    </style>
+</head>
+<body>
+    @*<div style="margin:20px auto;text-align:center;">*@
+        @*<label>子项目名称：</label>
+        <input type="text" style="width:300px;height:30px;line-height:30px;border:1px solid #0094ff;border-radius:4px;" id="itemSearch"/>
+        <a href="#" style="width:80px;height:30px;background-color:#0094ff;color:#ffffff;line-height:30px;display:inline-block;text-align:center;border-radius:4px;" id="search">搜索</a>
+    </div>*@
+    <div class="taskGant" style="border: 1px solid #0094ff !important;"></div>
+</body>
+</html>
+<script src="~/Content/Gantt/js/jquery-2.1.4.min.js"></script>
+<script src="~/Content/Gantt/js/bootstrap.min.js"></script>
+<script src="~/Content/Gantt/js/jquery.fn.gantt.js"></script>
+<script src="~/Content/Gantt/js/prettify.min.js"></script>
+<script src="~/Scripts/layer/2.4/layer.js"></script>
+<script>
+    /** 
+     * 取得url参数 
+     */
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); // 构造一个含有目标参数的正则表达式对象  
+        var r = window.location.search.substr(1).match(reg);  // 匹配目标参数  
+        if (r != null) return unescape(r[2]); return null; // 返回参数值  
+    }
+    var mrtNo = getUrlParam('mrtNo');
+    $(function () {
+
+        "use strict";
+        //初始化gantt
+        $(".taskGant").gantt({
+            // source: "/ScheduleManagement/GetTaskSchedule",
+            navigate: 'scroll',//buttons  scroll
+            scale: "weeks",// months  weeks days  hours
+            maxScale: "days",
+            minScale: "hours",
+            itemsPerPage: 20,
+        });
+      
+        //弹窗功能
+        $(".gantt").popover({
+            selector: ".bar",
+            title: "I'm a popover",
+            content: "And I'm the content of said popover.",
+            trigger: "hover",
+            placement: "auto right"
+        });
+        scheduleData();//调取排程接口
+        //prettyPrint();
+        //layer弹窗 弹出详细信息
+
+    });
+    ////searchItem
+    //$("#search").unbind("click").bind("click", function () {
+    //    scheduleData();
+    //});
+
+    //调取排程接口
+    function scheduleData() {
+        $.ajax({
+            url: "/ScheduleManagement/GetTaskSchedule",
+            type: "post",
+            dataType: "json",
+            data: {
+                mrtNo: mrtNo,
+              //  key: $("#itemSearch").val()
+            },
+            success: function (data) {
+                if (data) {
+                    $(".taskGant").gantt({
+                        source: data,
+                        navigate: 'scroll',//buttons  scroll
+                        scale: "days",// months  weeks days  hours
+                        maxScale: "days",
+                        minScale: "hours",
+                        itemsPerPage: 20,
+                        onItemClick: function (data) {
+                            //data为taskId
+                            layer.open({
+                                type: 2,
+                                area: ['800px', '600px'],
+                                fixed: false, //不固定
+                                maxmin: true,
+                                content: '/ScheduleManagement/TaskScheduleDatagrid?taskId=' + data//显示项目详细信息
+                            });
+                        },
+                        onAddClick: function (dt, rowId) {
+                            console.log(dt);
+                            alert("Empty space clicked - add an item!");
+                        },
+                        onRender: function () {
+                            if (window.console && typeof console.log === "function") {
+                                console.log("chart rendered");
+                            }
+                        }
+                    });
+                }
+
+
+            }
+
+
+        });
+    }
+</script>

@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "pdfLoading";
+}
+<style>
+    #imageDiv {
+        position: relative;
+    }
+
+    img {
+        position: absolute;
+        left: 46%;
+        top:38%;
+    }
+</style>
+<div id="imageDiv">
+    <img src="../image/loading.gif" />
+</div>
+<script>
+    var imageDiv = document.getElementById('imageDiv');
+    imageDiv.style.height = document.body.offsetHeight;
+    imageDiv.style.width = document.body.offsetWidth;
+</script>

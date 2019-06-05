@@ -1,0 +1,172 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>login</title>
+    @using Combres.Mvc
+    @Html.CombresLink("loginCss")
+    @Html.CombresLink("loginJs")
+    @*<link rel="stylesheet" href="~/Content/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />*@
+        @*<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+            <link href="~/Content/css/jquery-ui.min.css" rel="stylesheet" />
+
+        <a href="~/Content/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2">~/Content/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2</a>
+
+            <link rel="stylesheet" href="~/Content/css/ace-skins.min.css" />
+            <link rel="stylesheet" href="~/Content/css/ace-rtl.min.css" />
+            //通用css
+            <link href="~/Content/common.css" rel="stylesheet" />*@
+    
+    <style>
+        #progressbar .ui-progressbar-value {
+            background-color: #ff6a00;
+        }
+        .login-layout .widget-box{
+            background-color:#d5d5d5;border-radius:4px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        //跳出本页面劫持iframe
+    if (top.location !== self.location) {
+        top.location = self.location;
+    }
+
+    document.onkeydown = function (event) {
+        e = event ? event : (window.event ? window.event : null);
+        if (e.keyCode == 13) {
+            //执行的方法
+            $('#login').click();
+        }
+    }
+ 
+    </script>
+
+</head>
+<body class="login-layout" style="margin-top: 100px; overflow: scroll; overflow-x: hidden; overflow-y: hidden;background:url(../../Content/image/login-bg1.jpg);">
+    <div class="main-container">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="login-container">
+                        <div class="center">
+                            <h1 style="margin-left:-10px;">
+                                <img src="~/Content/image/logo.png"  width="400"/>
+                            </h1>
+                            @*<h4 class="blue" id="id-company-text">&copy; Company Name</h4>*@
+                        </div>
+
+                        <div class="space-6"></div>
+                        <div class="position-relative">
+                            <div id="login-box" class="login-box visible widget-box no-border">
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <h4 class="header blue lighter bigger">
+                                            <i class="ace-icon fa fa-coffee green"></i>登录信息管理后台
+                                        </h4>
+                                        <div class="space-6"></div>
+                                        <form>
+                                            <fieldset>
+                                                <label class="block clearfix">
+                                                    <span class="block input-icon input-icon-right">
+                                                        <input type="text" class="form-control" placeholder="用户名" name="User_count" id="User_count" />
+                                                        <i class="ace-icon fa fa-user"></i>
+                                                    </span>
+                                                </label>
+
+                                                <label class="block clearfix">
+                                                    <span class="block input-icon input-icon-right">
+                                                        <input type="password" class="form-control" placeholder="密码" name="User_pwd" id="User_pwd" />
+                                                        <i class="ace-icon fa fa-lock"></i>
+                                                    </span>
+                                                </label>
+                                                <div class="space"></div>
+                                                <div class="clearfix text-c">
+                                                    <button type="button" class="width-35 pull-center btn btn-sm btn-primary" id="login">
+                                                        <i class="ace-icon fa fa-key"></i>
+                                                        <span class="bigger-110">登录</span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="space-4"></div>
+                                            </fieldset>
+                                        </form>
+
+                                    </div><!-- /.widget-main -->
+
+                                    <div class="toolbar clearfix">
+                                        <div>
+                                            <a href="#" data-target="#forgot-box" class="forgot-password-link">
+                                                @*<i class="ace-icon fa fa-arrow-left"></i>
+                                                    忘记密码*@
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <a href="#" data-target="#signup-box" class="user-signup-link">
+                                                @*注册
+                                                    <i class="ace-icon fa fa-arrow-right"></i>*@
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.widget-body -->
+                            </div><!-- /.login-box -->
+                        </div><!-- /.position-relative -->
+
+
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.main-content -->
+
+        </div><!-- /.main-container -->
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="footer-content">
+                    <span class="bigger-120 text-c" style="display:inline-block">
+                        <p style="font-size:12px;line-height:20px;text-align:left;color:#333;"> 供应商：广东清大菲恩工业数据技术有限公司</p>
+                        <p style="font-size:12px;line-height:20px;text-align:left;color:#333;"> 联系电话：0755-86218118</p>
+                        <p style="font-size:12px;line-height:20px;text-align:left;color:#333;"> 公司地址：深圳市南山区丽山路硅谷大学城创业园三楼（桑泰大厦）</p>
+                    </span>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="progressbar"></div>
+
+        </div>
+</body>
+
+</html>
+<!-- ace styles -->
+@*<script src="~/Scripts/jquery-1.11.3.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="~/Scripts/boostrap/bootstrap.min.js"></script>
+<script src="~/Scripts/ace/ace.min.js" class="ace-main-stylesheet" id="main-ace-style"></script>
+<script src="~/Scripts/layer/2.4/layer.js"></script>
+<script src="~/phianJs/login.js"></script>*@
+@section scripts{
+    <script type="text/javascript">
+
+        if (top.location !== self.location) {
+            top.location = self.location;
+        }
+
+        document.onkeydown = function (event) {
+            e = event ? event : (window.event ? window.event : null);
+            if (e.keyCode == 13) {
+                //执行的方法
+                $('#login').click();
+            }
+        }
+        function show_info() {
+
+            $.messager.alert('提示', '用户名或者密码错误');
+
+        }                </script>
+}

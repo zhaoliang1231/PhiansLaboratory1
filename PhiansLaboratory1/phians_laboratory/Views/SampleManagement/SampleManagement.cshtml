@@ -1,0 +1,200 @@
+﻿@{
+    ViewBag.Title = "SampleManagement";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("SampleManagementJs")
+</head>
+<body>
+    @*样品管理列表*@
+    <div id="sample_management_datagrid"></div>
+
+    <div style="display:none">
+        @*样品管理列表工具栏*@
+        <div id="sample_management_toolbar">
+            <label>MTR NO.：</label>
+            <input id="key" style="width: 150px" class="easyui-textbox" />
+            <a href="javascript:;" id="Search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="editSample" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">Edit Sample</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="view_record" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">Sample Record</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="read_sample" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">View Sample</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Motor" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">Motor List</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="export_Sample" class="easyui-linkbutton" data-options="iconCls:'icon-redo',plain:true">Export Sample Records </a>
+        </div>
+        @*样品记录*@
+        <form id="record_dialog">
+            <div id="sample_record_datagrid"></div>
+            <div id="sample_record_toolbar">
+                <input id="key1" style="width: 150px" class="easyui-combobox" />
+                <input id="key2" style="width: 150px" class="easyui-textbox" />
+                <a href="javascript:;" id="Search_record" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+            </div>
+        </form>
+
+        <!--查看样品详细信息-->
+        <form id="Sample_dialog" method="post">
+            <div class="h_d" style="margin-top: 15px; margin-left: 30px">
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">MTR NO:</label>
+                    <input class="easyui-textbox" name="MTRNO" style="width: 140px;" id="MTRNO"  disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Sample Name:</label>
+                    <input class="easyui-textbox" name="SampleName" style="width: 140px;" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Sample Qty:</label>
+                    <input class="easyui-textbox" name="SampleQty" style="width: 140px;" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Sample Position:</label>
+                    <input class="easyui-textbox" name="SamplePosition" style="width: 140px;" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Test Load:</label>
+                    <input class="easyui-combobox" name="TestLoad" style="width: 140px;" id="TestLoad"/>
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Identification:</label>
+                    <input class="easyui-combobox" name="Identification" style="width: 140px;" id="Identification"  />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Appearance:</label>
+                    <input class="easyui-combobox" name="Appearance" style="width: 140px;" id="Appearance"  />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Others Status:</label>
+                    <input class="easyui-combobox" name="OthersStatus" style="width: 140px;" id="OthersStatus"  />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Follow Person:</label>
+                    <input class="easyui-textbox" name="FollowUp_n" style="width: 140px;" id="FollowUp" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Receiving Date:</label>
+                    <input class="easyui-datebox" name="ReceivingDate" style="width: 140px;" id="ReceivingDate" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Reviewer:</label>
+                    <input class="easyui-combobox" name="Reviewer_n" style="width: 140px;" id="Reviewer" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Receiving Signature:</label>
+                    <input class="easyui-textbox" name="ReceivingSignature_n" style="width: 140px;" id="ReceivingSignature" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Take Out Date:</label>
+                    <input class="easyui-datebox" name="TakeOutDate" style="width: 140px;" id="TakeOutDate" disabled="disabled" data-options="editable:false" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">TakeOut Signature:</label>
+                    <input class="easyui-combobox" name="TakeOutSignature_n" style="width: 140px;" id="TakeOutSignature" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Retrieval(Y/N):</label>
+                    <input class="easyui-combobox" name="Retrieval" style="width: 140px;" id="Retrieval" disabled="disabled" data-options="editable:false" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Retriever:</label>
+                    <input class="easyui-combobox" name="Retriever_n" style="width: 140px;" id="Retriever" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">ContactMethod:</label>
+                    <input class="easyui-textbox" name="ContactMethod" style="width: 140px;" id="ContactMethod" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Retrieval Date:</label>
+                    <input class="easyui-datebox" name="RetrievalDate" style="width: 140px;" id="RetrievalDate" disabled="disabled" data-options="editable:false" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Status:</label>
+                    <input class="easyui-combobox" name="Status" style="width: 140px;" id="Status" disabled="disabled" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Description:</label>
+                    <input class="easyui-textbox" name="SampleDescription" style="width: 140px;" data-options="multiline:true" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Sample Details:</label>
+                    <input class="easyui-textbox" name="SampleDetails" style="width: 140px; height: 60px;" data-options="multiline:true" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px; text-align: right; display: inline-block">Remarks:</label>
+                    <input class="easyui-textbox" name="Remarks" style="width: 140px;height:60px;" data-options="multiline:true" />
+                </div>
+            </div>
+        </form>
+
+        @*电机列表弹窗*@
+        <form id="datagrid_dialog">
+            @*电机信息列表*@
+            <div id="Motor_datagrid"></div>
+            @*电机信息列表工具栏*@
+            <div id="Motor_datagrid_toolbar">
+                <label>Range：</label>
+                <input id="search_combox" style="width: 150px" class="easyui-combobox" />
+                <input id="key_text" style="width: 150px" class="easyui-textbox" />
+                <a href="javascript:;" id="search_motor" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="javascript:;" id="edit_motor" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit Motor</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="javascript:;" id="Scrap" class="easyui-linkbutton" data-options="iconCls:'icon-shop',plain:true">Scrap</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="javascript:;" id="print" class="easyui-linkbutton" data-options="iconCls:'icon-print',plain:true">print QRcode</a>
+            </div>
+        </form>
+        @*修改电机信息*@
+        <form method="post" id="Motor_dialog">
+            <div class="h_d" style="margin-top: 30px;">
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">MTR NO:</label>
+                    <input class="easyui-textbox" name="MTRNO" style="width: 140px;" id="MTRNO1" readonly="readonly" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Motor Num:</label>
+                    <input class="easyui-textbox" name="MotoNum" style="width: 140px;" id="MotoNum" readonly="readonly" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Scrap Date:</label>
+                    <input class="easyui-datebox" name="ScrapDate" style="width: 140px;" id="ScrapDate" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Scrap Remarks:</label>
+                    <input class="easyui-textbox" name="ScrapRemarks" style="width: 140px;" id="ScrapRemarks" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Scrap:</label>
+                    <input class="easyui-combobox" style="width: 140px;" id="Scrap_statu" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Remarks:</label>
+                    <input class="easyui-textbox" name="Remarks" style="width: 440px;height:66px" id="Remarks" />
+                </div>
+            </div>
+        </form>
+        @*失效弹窗*@
+        <form method="post" id="scrap_dialog">
+            <div class="h_dline" style="height: 23px; margin-top: 30px; margin-left: 10px;float: left;">
+                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Scrap Date:</label>
+                <input class="easyui-datebox" name="ScrapDate" style="width: 140px;" id="ScrapDate" required="required" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px;float: left;">
+                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Scrap Remarks:</label>
+                <input id="" name="ScrapRemarks" class="easyui-textbox" style="width: 280px; height: 120px; margin-left: 10px" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

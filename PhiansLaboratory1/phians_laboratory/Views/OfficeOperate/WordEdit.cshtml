@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "WordEdit";
+}
+
+
+  
+
+
+<script type="text/javascript">
+
+    //function AfterDocumentOpened() {
+    //    document.getElementById("PageOfficeCtrl1").SetEnableFileCommand(3, false); // 禁止保存
+    //    document.getElementById("PageOfficeCtrl1").SetEnableFileCommand(4, false); // 禁止另存
+    //    document.getElementById("PageOfficeCtrl1").SetEnableFileCommand(5, false); //禁止打印
+    //    document.getElementById("PageOfficeCtrl1").SetEnableFileCommand(6, false); // 禁止页面设置
+    //}
+
+    function view_office_toolbar() {
+        document.getElementById("PageOfficeCtrl1").OfficeToolbars = !document.getElementById("PageOfficeCtrl1").OfficeToolbars;
+    }
+    function SetFullScreen() {
+        document.getElementById("PageOfficeCtrl1").FullScreen = !document.getElementById("PageOfficeCtrl1").FullScreen;
+    }
+    function OnProgressComplete() {
+        //window.parent.myFunc(); //调用父页面(Default.aspx)的js函数
+    }
+
+    //$(document).ready(function () {
+    //    SetFullScreen();
+    //});
+    //弹窗关闭函数
+    function Close() {
+        window.external.close();
+    }
+    function Save() {
+        document.getElementById("PageOfficeCtrl1").WebSave();
+    }
+
+</script>
+<div>
+    @Html.Raw(ViewBag.EditorHtml)
+</div>
+
+

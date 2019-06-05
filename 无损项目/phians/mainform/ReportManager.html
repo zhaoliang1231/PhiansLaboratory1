@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../easyui/themes/default/easyui.css" rel="stylesheet" />
+    <link href="../easyui/themes/icon.css" rel="stylesheet" />
+    <link href="../phians_css/myStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="tt" class="easyui-panel" data-options="fit:true,border:false" style="margin-left: 2px; overflow: scroll; overflow-x: hidden; overflow-y: hidden">
+        <div id="report_management"></div>
+    </div>
+    <div style="display: none">
+        <!-- 报告管理工具栏 -->
+        <div id="report_management_toolbar">
+
+            <!--<span class="link_button" style="display: inline-block; float: left;">
+                <a href="#" id="download_report_pdf" class="easyui-linkbutton print_report" data-options="iconCls:'icon-print',plain:true">预览打印报告</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            </span>-->
+
+            <span class="link_button" style="display: inline-block; float: left;">
+                <a href="#" id="download_info" class="easyui-linkbutton" data-options="iconCls:'icon-upload',plain:true">下载报告</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            </span>
+            <span class="link_button" style="display: inline-block; float: left;">
+                <label>报告来源：</label>
+                <input id="DBType" style="width: 110px" class="easyui-combobox" />
+            </span>
+
+            <label>检索条件：</label>
+            <div class="gasphysic_" style="display:none;">
+                <input id="search3" style="width: 110px" class="easyui-combobox" />
+                <span id="key_span3" style="display:inline-block"><input id="key3" style="width: 110px" class="easyui-textbox" /></span>
+                <input id="search2" style="width: 110px" class="easyui-combobox" />
+                <span id="key_span2" style="display:inline-block"><input id="key2" style="width: 110px" class="easyui-textbox" /></span>
+            </div>
+            <div class="losess" style="display:inline-block;">
+                <input id="search1" style="width: 110px" class="easyui-combobox" />
+                <span id="key_span1" style="display:inline-block"><input id="key1" style="width: 110px" class="easyui-textbox" /></span>
+                <input id="search" style="width: 110px" class="easyui-combobox" />
+                <span id="key_span" style="display:inline-block"><input id="key" style="width: 110px" class="easyui-textbox" /></span>
+            </div>
+            <a href="#" id="report_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+        </div>
+    </div>
+
+    <form id="Picture_form">
+        <img id="Picture_img" src="#" width="200" height="120" />
+    </form>
+
+</body>
+</html>
+<script src="../easyui/jquery-1.7.2.min.js"></script>
+<script src="../easyui/jquery.easyui.min.js"></script>
+<script src="../easyui/locale/easyui-lang-zh_CN.js"></script>
+<script>
+
+    $(function () {
+        report_management();
+        //报告搜索
+        $('#report_search').unbind('click').bind('click', function () {
+            report_search();
+        });
+        //下载报告
+        $('#download_info').unbind('click').bind('click', function () {
+            //var rows = $("#report_management").datagrid("getSelections");
+            download_info();
+        });
+        //预览打印报告pdf
+        $('#download_report_pdf').unbind("click").bind("click", function () {
+            download_report_pdf();
+        });
+
+        //搜索
+        $('#search').combobox({
+            value: 'Subassembly_name',
+            data: [
+                    { 'value': 'Subassembly_name', 'text': '部件名称' },
+                    { 'value': 'report_name', 'text': '报告名称' },
+                    { 'value': 'Job_num', 'text': '工号' },
+                    { 'value': 'circulation_NO', 'text': '流转卡号' },
+                    { 'value': 'Inspection_date', 'text': '检验时间' },//检验时间
+                    { 'value': 'Inspection_personnel', 'text': '报告人（用户名）' },//检验人
+                    { 'value': 'report_num', 'text': '报告编号' },
+                    { 'value': 'Audit_personnel', 'text': '审核人（用户名）' }
+            ],
+            onSelect: function () {
+                var value = $('#search').combobox('getValue');
+                if (value == "Inspection_date") {
+                    $("#key_span").html('<input id="key" style="width: 110px;" class="easyui-datebox"  />')
+                    //  $('#key1').attr('class', 'easyui-datebox');
+                    $.parser.parse($('#key_span'));
+
+                } else {
+                    $("#key_span").html('<input id="key" style="width: 110px;" class="easyui-textbox"  />')
+                    $.parser.parse("#key_span");
+                }
+
+            }
+        });
+        $('#DBType').combobox({
+            value: 'DBType_Lossless',
+            data: [
+                    { 'value': 'DBType_Lossless', 'text': '无损系统' },
+                    { 'value': 'DBType_Gasphysic', 'text': '理化系统' }
+            ],
+            onSelect: function () {
+                var Value = $('#DBType').combobox("getValue");
+                if (Value == "DBType_Lossless") {
+                    $(".gasphysic_").css("display", "none");
+                    $(".losess").css("display", "inline-block");
+                } else if (Value == "DBType_Gasphysic") {
+                    $(".losess").css("display", "none");
+                    $(".gasphysic_").css("display", "inline-block");
+                }
+            }
+        });
+        $('#search1').combobox({
+            value: 'report_name',
+            data: [
+                    { 'value': 'Subassembly_name', 'text': '部件名称' },
+                    { 'value': 'report_name', 'text': '报告类别' },
+                    { 'value': 'Job_num', 'text': '工号' },
+                    { 'value': 'circulation_NO', 'text': '流转卡号' },
+                    { 'value': 'Inspection_date', 'text': '检验时间' },//检验时间
+                    { 'value': 'Inspection_personnel', 'text': '报告人' },//检验人
+                    { 'value': 'report_num', 'text': '报告编号' },
+                    { 'value': 'Audit_personnel', 'text': '审核人' }
+            ],
+            onSelect: function () {
+                var value = $('#search1').combobox('getValue');
+                if (value == "Inspection_date") {
+                    $("#key_span1").html('<input id="key1" style="width: 110px;" class="easyui-datebox"  />')
+                    //  $('#key1').attr('class', 'easyui-datebox');
+                    $.parser.parse($('#key_span1'));
+
+                } else {
+                    $("#key_span1").html('<input id="key1" style="width: 110px;" class="easyui-textbox"  />')
+                    $.parser.parse("#key_span1");
+                }
+            }
+        });
+        $('#search2').combobox({
+            value: 'clientele_department',
+            data: [
+                    { 'value': 'report_total_num', 'text': '报告编号' },
+                    { 'value': 'clientele_department', 'text': '委托部门' },
+                    { 'value': 'contract_num', 'text': '委托编号' },
+                    { 'value': 'issue_date_', 'text': '签发时间' },
+                    { 'value': 'Inspection_NO', 'text': '检验编号' }
+            ]
+        });
+        $('#search3').combobox({
+            value: 'report_total_num',
+            data: [
+                    { 'value': 'report_total_num', 'text': '报告编号' },
+                    { 'value': 'clientele_department', 'text': '委托部门' },
+                    { 'value': 'contract_num', 'text': '委托编号' },
+                    { 'value': 'issue_date_', 'text': '签发时间' },
+                    { 'value': 'Inspection_NO', 'text': '检验编号' }
+            ]
+        });
+        //页面加载
+        function report_management() {
+            var tabs_width = screen.width - 182;
+            var other_height = window.outerHeight - document.body.clientHeight;
+            //iframe可用高度
+            var _height = screen.availHeight - 107 - 35 - other_height;
+            //显示分页条数
+            var _height1 = screen.availHeight - (window.outerHeight - window.top.document.body.clientHeight) - 300;
+            var num = parseInt(_height1 / 25);
+            if (tabs_width < 1110) {
+                tabs_width = 1100;
+
+            }
+            if (_height < 650) {
+                _height = 650;
+            }
+            var search = $("#search").combobox('getValue');
+            var key = $("#key").textbox('getText');
+            var search1 = $("#search1").combobox('getValue');
+            var key1 = $("#key1").textbox('getText');
+            //var search2 = $("#search2").combobox('getValue');
+            //var key2 = $("#key2").textbox('getText');
+            //var search3 = $("#search3").combobox('getValue');
+            //var key3 = $("#key3").textbox('getText');
+            var DBType = $("#DBType").textbox('getText');
+
+            $('#report_management').datagrid(
+              {
+                  striped: true,
+                  rownumbers: true,
+                  //singleSelect: true,
+                  ctrlSelect: true,
+                  //autoRowHeight: true,
+                  border: false,
+                  fitColumns: true,
+                  fit: true,
+                  pagination: true,
+                  pageSize: num,
+                  pageList: [num, num + 10, num + 20, num + 30],
+                  pageNumber: 1,
+                  type: 'POST',
+                  dataType: "json",
+                  url: "/mainform/Lossless_report/ReportManager.ashx?&cmd=load_List",//接收一般处理程序返回来的json数据
+                  queryParams: {
+                      DBType: $("#DBType").textbox('getText')
+                  },
+                  columns: [[
+                   { field: 'report_num', title: '总报告编号', sortable: 'true' },
+                   { field: 'report_name', title: '报告名称' },
+                    { field: 'Inspection_personnel_n', title: '检验人员' },
+                   {
+                       field: 'Inspection_date', title: '检验日期', sortable: 'true', formatter: function (value, row, index) {
+                           if (value) {
+                               if (value.length > 10) {
+                                   value = value.substr(0, 10)
+                                   return value;
+                               }
+                           }
+                       }
+                   },
+                     {
+                         field: 'Audit_date', title: '二级归档日期', sortable: 'true', formatter: function (value, row, index) {
+                             if (value) {
+                                 if (value.length > 10) {
+                                     value = value.substr(0, 10)
+                                     return value;
+                                 }
+                             }
+                         }
+                     },
+                      {
+                          field: 'issue_date', title: '归档日期', sortable: 'true', formatter: function (value, row, index) {
+                              if (value) {
+                                  if (value.length > 10) {
+                                      value = value.substr(0, 10)
+                                      return value;
+                                  }
+                              }
+                          }
+                      },
+
+
+                   { field: 'Audit_personnel_n', title: '审核人员' },
+                   { field: 'issue_personnel_n', title: '签发人员' },
+                   { field: 'Job_num', title: '工号' },
+
+                   { field: 'Project_name', title: '项目名称' },
+                   //{ field: 'Type_', title: '规格' },
+                   //{ field: 'Chamfer_type', title: '坡口型式' },
+                    { field: 'application_num', title: '订单号', sortable: 'true' },
+                   { field: 'Subassembly_name', title: '部件名称' },
+                  { field: 'circulation_NO', title: '流转卡号' },
+                   {
+                       field: 'state_', title: '状态', formatter: function (value, row, index) {
+
+                           switch (value) {
+                               case '1': return "编辑";
+                               case '2': return "审核";
+                               case '3': return "签发";
+                               case '4': return "完成";
+                               case '5': return "异常申请中";
+                               case '6': return "报废";
+                               default:
+
+                           }
+
+                       }
+                   },
+                   { field: 'remarks', title: '附注' }
+                  ]],
+                  queryParams: {
+                      search: search,
+                      key: key,
+                      search1: search1,
+                      key1: key1,
+                      //search2: search2,
+                      //key2: key2,
+                      //search3: search3,
+                      //key3: key3,
+                      DBType: DBType
+                  },
+                  onLoadSuccess: function (data) {
+                      //默认选择行
+                      $('#report_management').datagrid('selectRow', 0);
+                  },
+                  onSelect: function () {
+                      //提示
+                      //$('#report_management').datagrid('doCellTip', { cls: { 'background-color': 'red' }, delay: 1000 });
+                      //view_taskinfo1();
+                  },
+                  sortOrder: 'asc',
+                  toolbar: "#report_management_toolbar"
+              });
+        }
+
+        //加载页面
+        function report_search() {
+            //判断是无损的还是理化的
+            var searchValue = $("#DBType").combobox('getValue');
+            switch (searchValue) {
+                case "DBType_Lossless":
+                    $('#report_management').datagrid(
+                         {
+                             url: "/mainform/Lossless_report/ReportManager.ashx?&cmd=load_List",//接收一般处理程序返回来的json数据
+                             queryParams: {
+                                 search: $("#search").combobox('getValue'),
+                                 key: $("#key").textbox('getText'),
+                                 search1: $("#search1").combobox('getValue'),
+                                 key1: $("#key1").textbox('getText'),
+                                 DBType: $("#DBType").textbox('getText')
+
+                             },
+                             columns: [[
+                                { field: 'report_num', title: '总报告编号', sortable: 'true' },
+                                { field: 'report_name', title: '报告名称' },
+                                { field: 'Inspection_personnel_n', title: '检验人员' },
+                                {
+                                    field: 'Inspection_date', title: '检验日期', sortable: 'true', formatter: function (value, row, index) {
+                                        if (value) {
+                                            if (value.length > 10) {
+                                                value = value.substr(0, 10)
+                                                return value;
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    field: 'Audit_date', title: '二级归档日期', sortable: 'true', formatter: function (value, row, index) {
+                                        if (value) {
+                                            if (value.length > 10) {
+                                                value = value.substr(0, 10)
+                                                return value;
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    field: 'issue_date', title: '归档日期', sortable: 'true', formatter: function (value, row, index) {
+                                        if (value) {
+                                            if (value.length > 10) {
+                                                value = value.substr(0, 10)
+                                                return value;
+                                            }
+                                        }
+                                    }
+                                },
+                                { field: 'Audit_personnel_n', title: '审核人员' },
+                                { field: 'issue_personnel_n', title: '签发人员' },
+                                { field: 'Job_num', title: '工号' },
+                                { field: 'Project_name', title: '项目名称' },
+                                //{ field: 'Type_', title: '规格' },
+                                //{ field: 'Chamfer_type', title: '坡口型式' },
+                                { field: 'application_num', title: '订单号', sortable: 'true' },
+                                { field: 'Subassembly_name', title: '部件名称' },
+                                { field: 'circulation_NO', title: '流转卡号' },
+                                {
+                                    field: 'state_', title: '状态', formatter: function (value, row, index) {
+                                        switch (value) {
+                                            case '1': return "编辑";
+                                            case '2': return "审核";
+                                            case '3': return "签发";
+                                            case '4': return "完成";
+                                            case '5': return "异常申请中";
+                                            case '6': return "报废";
+                                            default: break;
+                                        }
+                                    }
+                                },
+                                { field: 'remarks', title: '附注' }
+                             ]],
+                         }).datagrid('resize');
+                    break;
+                case "DBType_Gasphysic":
+                    $('#report_management').datagrid(
+                        {
+                            url: "/mainform/Lossless_report/ReportManager.ashx?&cmd=load_List",//接收一般处理程序返回来的json数据
+                            queryParams: {
+                                search2: $("#search2").combobox('getValue'),
+                                key2: $("#key2").textbox('getText'),
+                                search3: $("#search3").combobox('getValue'),
+                                key3: $("#key3").textbox('getText'),
+                                DBType: $("#DBType").textbox('getText')
+
+                            },
+                            columns: [[
+                                { field: 'report_total_num', title: '报告编号', sortable: 'true' },
+                                { field: 'contract_num', title: '委托编号' },
+                                { field: 'clientele_department', title: '委托部门' },
+                                { field: 'clientele_name', title: '委托人' },
+                                { field: 'contract_type_t', title: '委托类型' },
+                                { field: 'product_NO', title: '产品工号' },
+                                { field: 'circulation_NO', title: '流转卡号' },
+                                { field: 'Batch_No', title: '炉批号' },
+                                 { field: 'sample_NO', title: '试样编号' },
+                                { field: 'Inspection_NO', title: '检验编号' },
+                                { field: 'Acceptance_standard', title: '验收标准' },
+                                  {
+                                      field: 'issue_date_', title: '签发时间', formatter: function (value, row, index) {
+                                          if (value) {
+                                              if (value.length > 10) {
+                                                  value = value.substr(0, 10)
+                                                  return value;
+                                              }
+                                          }
+                                      }
+                                  },
+                                {
+                                    field: 'remarks', title: '附注', width: 200, formatter: function (value, row, index) {
+                                        if (value != null & value != "") {
+                                            var result = value.replace(" ", "");
+                                            return '<span  class="class-with-tooltip"  title= ' + (result) + '>' + result + '</span>'
+                                        }
+                                    }
+                                },
+                                { field: 'report_total_url', title: '报告地址', hidden: 'true' }
+                            ]],
+                        }).datagrid('resize');
+                    break;
+                default: break;
+            }
+        }
+    })
+    function download_info() {
+        var Value = $('#DBType').combobox("getValue");
+        var selectrows = $("#report_management").datagrid("getSelected");
+        //var File_Url = '';
+        //var report_num = '';
+        if (Value == "DBType_Lossless") {
+            File_Url = "http://10.115.100.68:8087"+selectrows.report_url;
+            //report_num = selectrows.report_num;
+
+            window.location = File_Url;
+        } else if (Value == "DBType_Gasphysic") {
+            File_Url = "http://10.115.100.68:8081" + selectrows.report_total_url;
+            //report_num = selectrows.report_total_num;
+            window.location = File_Url;
+        }
+    }
+    //    alert(File_Url);
+    //    $.ajax({
+    //        type: "post",
+    //        async: true,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+    //        url: "/mainform/Lossless_report/ReportManager.ashx?&cmd=download_word",
+    //        data: {
+    //            File_Url: File_Url,
+    //            report_num: report_num
+    //        },
+    //        success: function (data) { // 接口调用成功回调函数
+    //            // data 为服务器返回的数据
+    //            if (data == "F") {
+    //                $.messager.alert('提示', '下载失败！');
+    //            } else {
+
+    //                
+    //            }
+    //        }
+    //    })
+    //}
+    //预览报告文件
+    //function download_report_pdf() {
+
+
+    //    var selected_report = $("#report_management").datagrid("getSelected");
+
+    //    if (selected_report && selected_report.state_ != '6') {
+    //        $.messager.progress({
+    //            text: '正在打开报告.....'
+    //        });
+    //        $.ajax({
+    //            url: "LosslessReport_Monitor.ashx?&cmd=Preview_Report",
+    //            dataType: "text",
+    //            type: 'POST',
+    //            data: {
+    //                id: selected_report.id
+    //            },
+    //            success: function (data) {
+    //                $.messager.progress('close');
+    //                if (data == 'F') {
+    //                    $.messager.alert('提示', '预览错误！');
+    //                } else {
+    //                    var url_ = "/pdf_read/web/viewer.html?___hxw&url=" + data;
+    //                    window.parent.addTab(selected_report.report_num + "报告文件查看", url_);
+    //                    $('#download_report_pdf').linkbutton('enable');
+    //                    $('#download_report_pdf').bind("click")
+    //                }
+    //            },
+    //            error: function (e) {
+    //                $.messager.progress('close');
+    //            },
+    //        });
+
+    //    } else {
+    //        $.messager.alert('提示', '预览失败');
+    //    }
+    //}
+</script>

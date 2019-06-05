@@ -1,0 +1,19 @@
+<configuration>
+  <configSections>
+    <section name="combres" type="Combres.ConfigSectionSetting, Combres"/>
+  </configSections>  
+  <combres definitionUrl="~/App_Data/combres.xml" />
+  <appSettings>
+	<add key="CombresSectionName" value="combres"/>
+  </appSettings>
+  <system.web>
+    <pages>
+      <namespaces>
+        <add namespace ="Combres" />
+      </namespaces>
+    </pages>  
+  </system.web>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false"/>
+  </system.webServer>
+</configuration>

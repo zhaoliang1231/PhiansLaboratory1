@@ -1,0 +1,91 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("FunctionalModuleJs")
+</head>
+
+<body>
+    @*<%-- 详细权限 --%>*@
+    <div id="cc" class="easyui-layout" data-options="fit:true,border:true,split:true">
+
+        <div data-options="region:'west',split:true,title:'页面信息'" style="width: 350px">
+            查询内容：
+            <input id="search_tree" style="width: 200px" class="easyui-textbox" />
+            <a href="#" id="test" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+            <div id="tree">
+            </div>
+            <div class="easyui-menu" id="keyMenu" style="display: none;">
+                <div id="tree_edit" data-options="iconCls:'icon-edit'">修改节点</div>
+                @*<div id="tree_add" data-options="iconCls:'icon-add'">
+                    添加同级节点
+                </div>*@
+                <div id="tree_add_next" data-options="iconCls:'icon-add'">
+                    添加下级节点
+                </div>
+                <div id="tree_del" data-options="iconCls:'icon-remove'">
+                    删除节点
+                </div>
+            </div>
+        </div>
+        <div id='widthSize' data-options="region:'center',split:true,title:'节点详细信息'" style="padding: 5px; background: #eee;">
+            <div id="show_info"></div>
+        </div>
+    </div>
+    <form id="dialog_Permissions">
+        <div style="float: left">
+            <div>
+                <div id="page_info" class="easyui-panel" title="页面信息" style="width: 400px; height: 1000px;">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    @*<%-- 添加项目对话框 --%>*@
+    <div style="display: none">
+        <form id="tree_add_dialog" method="post">
+            <div class="h_d" style="margin-top: 8px; margin-left: 15px">
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 80px;text-align:right;display:inline-block">节点类型:</label>
+                    <input id="NodeType" class="easyui-combobox" name="NodeType" style="width: 200px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 80px;text-align:right;display:inline-block">页面名称:</label>
+                    <input id="ModuleName" class="easyui-textbox" name="ModuleName" style="width: 200px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 80px;text-align:right;display:inline-block">图标:</label>
+                    <input id="IconCls" class="easyui-textbox" name="IconCls" style="width: 200px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 80px;text-align:right;display:inline-block">排序:</label>
+                    <input id="SortNum" class="easyui-textbox" name="SortNum" style="width: 200px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 80px;text-align:right;display:inline-block">链接:</label>
+                    <input id="U_url" class="easyui-textbox" name="U_url" style="width: 200px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                    <label style="color: #f00;text-align:right;display:inline-block">是否需要详细配置：</label>
+                    <span class="radioSpan">
+                        <input id="PermissionFlag1" type="checkbox" value="True" /><label style="color: #f00;">是</label>
+                        <input id="PermissionFlag2" type="checkbox" value="False" checked="checked" /><label style="color: #f00;">否</label>
+                        <input type="hidden" name="PermissionFlag" value="False" id="PermissionFlag" />
+                    </span>
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 80px;text-align:right;display:inline-block">附注:</label>
+                    <input id="remarks" class="easyui-textbox" name="Remarks"  data-options="multiline:true" style="width: 200px;height:44px;" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

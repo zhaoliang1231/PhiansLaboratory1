@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50D79F91-6562-4E6D-8928-7918A288710D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Phians_BLL</RootNamespace>
+    <AssemblyName>Phians_BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Words, Version=17.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Component\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="DALFactory">
+      <HintPath>..\DALFactory\bin\Debug\DALFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>Component\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\phians_laboratory\Component\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="LabSchedule">
+      <HintPath>..\libs\LabSchedule.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Component\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Windows.Excel, Version=0.1.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Component\Windows.Excel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonBLL.cs" />
+    <Compile Include="LedgerManagement\FixtureManagementBLL.cs" />
+    <Compile Include="LedgerManagement\TestBlockLibraryBLL.cs" />
+    <Compile Include="ProjectReview\ProjectReviewBLL.cs" />
+    <Compile Include="ProjectReview\QualificationManagementBLL.cs" />
+    <Compile Include="ReportAbnormal\AbnormalApplyReviewBLL.cs" />
+    <Compile Include="ReportAbnormal\AbnormalReportEditBLL.cs" />
+    <Compile Include="CommonBLL.cs" />
+    <Compile Include="GetFileBLL.cs" />
+    <Compile Include="FunctionalModuleBLL.cs" />
+    <Compile Include="LedgerManagement\EquipmentManagementBLL.cs" />
+    <Compile Include="MainfromBLL.cs" />
+    <Compile Include="ManageQuality\EnvironmentManageBLL.cs" />
+    <Compile Include="MonitoringManagement\ItemMonitoringBLL.cs" />
+    <Compile Include="PersonalCenter\MessageBLL.cs" />
+    <Compile Include="PersonalCenter\OperationUserBLL.cs" />
+    <Compile Include="ReportAbnormal\AbnormalReportManagementBLL.cs" />
+    <Compile Include="ReportManagement\ReportInspectBLL.cs" />
+    <Compile Include="ReportManagement\ReportManagementBLL.cs" />
+    <Compile Include="ReportManagement\ReportApprovalBLL.cs" />
+    <Compile Include="ReportManagement\ReportEditBLL.cs" />
+    <Compile Include="ReportManagement\ReportReviewBLL.cs" />
+    <Compile Include="StatisticalManagement\StatisticalManagementBLL.cs" />
+    <Compile Include="SystemSetting\DictionaryManagementBLL.cs" />
+    <Compile Include="SystemSetting\PageShowSettingBLL.cs" />
+    <Compile Include="SystemSetting\PersonalManagementBLL.cs" />
+    <Compile Include="SystemSetting\AuthorityManagementBLL.cs" />
+    <Compile Include="SystemSetting\OrganizationBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemSetting\OperationLogBLL.cs" />
+    <Compile Include="UserBLL.cs" />
+    <Compile Include="UserDemoBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DALFactory\Phans_DAL_DALFactory.csproj">
+      <Project>{5e94d50a-6027-49c0-b9c0-0debc6af9fd4}</Project>
+      <Name>Phans_DAL_DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Phans_DAL_INTERFACE\Phans_DAL_INTERFACE.csproj">
+      <Project>{153821af-c020-4b54-a696-cd4d1838c2b3}</Project>
+      <Name>Phans_DAL_INTERFACE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhiansCommon\PhiansCommon.csproj">
+      <Project>{31a8f6bb-aa28-4055-924f-ced966e5be81}</Project>
+      <Name>PhiansCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Phians_Entity\Phians_Entity.csproj">
+      <Project>{b551c389-a244-48dd-ac43-ae2c014d2a4d}</Project>
+      <Name>Phians_Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Component\Windows.Excel.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enum\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

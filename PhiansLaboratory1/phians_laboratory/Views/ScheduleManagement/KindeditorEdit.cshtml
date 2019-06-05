@@ -1,0 +1,278 @@
+﻿@{
+    ViewBag.Title = "KindeditorEdit";
+}
+<link href="~/Content/kindeditor/themes/default/default.css" rel="stylesheet" />
+<link href="~/Content/kindeditor/plugins/code/prettify.css" rel="stylesheet" />
+<html>
+<body>
+    <a href="javascript:;" id="submit_contation" style="position:absolute;top:1px;left:600px;cursor:pointer;background:#0094ff;width:60px;text-decoration-line:none;height:30px;border-radius:4px;line-height:30px;text-align:center;color:#fff">Save</a>
+    <form style="float:left;width:50%;position:relative;top:25px;" id="form_submit" runat="server">
+        <textarea id="editor" runat="server" style="width:100%;height:398px;float:left;visibility:hidden;overflow-x:hidden;"></textarea>
+
+    </form>
+    <a href="javascript:;" id="submit_standard" runat="server" style="position:absolute;top:0px;right:40px;cursor:pointer;background:#0094ff;width:60px;text-decoration-line:none;height:30px;line-height:30px;border-radius:4px;text-align:center;color:#fff">Save</a>
+    <form style="float:left;width:50%;position:relative;top:25px;" id="form_submit1" runat="server">
+        <textarea id="editor1" runat="server" style=";width:100%;height:398px;float:left;visibility:hidden;overflow-x:hidden;"></textarea>
+
+    </form>
+
+    <textarea id="MainDescription" style="display:none">@ViewData["MainDescription"] </textarea>
+    <textarea id="Method" style="display:none">@ViewData["Method"] </textarea>
+    <textarea id="TaskId" style="display:none">@ViewData["TaskId"] </textarea>
+    <textarea id="ProjectName" style="display:none">@ViewData["ProjectName"] </textarea>
+    
+    </body>
+</html>
+<!--引入引入kindeditor编辑器相关文件-->
+<script type="text/javascript" src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Content/kindeditor/kindeditor-all.js"></script>
+<script src="~/Content/kindeditor/lang/zh-CN.js"></script>
+<script src="~/Scripts/layer/2.4/layer.js"></script>
+@*<script src="~/Content/kindeditor/plugins/code/code.js"></script>*@
+        <script>
+            var editor1
+
+            var editor2
+                //详情编辑器
+                KindEditor.ready(function (K) {
+                    
+                    editor1 = K.create('textarea[id="editor"]', {
+                            cssPath: '../../Content/kindeditor/plugins/code/prettify.css',
+                            uploadJson: '@Url.Content("~/Ashx/upload_json.ashx")',//指定上传图片的服务器端程序
+                            fileManagerJson: '@Url.Content("~/Ashx/file_manager_json.ashx")',//指定浏览远程图片的服务器端程序
+                            allowFileManager: true,
+                            afterBlur: function () { this.sync(); },
+                            items: [
+                             'source', '|', 'undo', 'redo', '|', 'preview',
+                            '|', 'justifyleft', 'justifycenter', 'justifyright',
+                            'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+                            'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen', '/',
+                            'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+                            'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image'
+                            ],
+                    });
+
+                    editor1.html(document.getElementById("MainDescription").value);
+                    editor2
+                     = K.create('textarea[id="editor1"]', {
+                         cssPath: '../../Content/kindeditor/plugins/code/prettify.css',
+                         uploadJson: '@Url.Content("~/Ashx/upload_json.ashx")',//指定上传图片的服务器端程序
+                         fileManagerJson: '@Url.Content("~/Ashx/file_manager_json.ashx")',//指定浏览远程图片的服务器端程序
+                         allowFileManager: true,
+                         afterBlur: function () { this.sync(); },
+                         items: [
+                          'source', '|', 'undo', 'redo', '|', 'preview',
+                         '|', 'justifyleft', 'justifycenter', 'justifyright',
+                         'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+                         'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen', '/',
+                         'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+                         'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image'
+                         ],
+                     });
+
+                    editor2.html(document.getElementById("Method").value);
+                });
+            //详情编辑器
+            $(function () {
+                //保存检验条件
+                $("#submit_contation").unbind("click").bind("click", function () {
+                    var node =  document.getElementById("TaskId").value;
+                    if (node!="") {
+                        saveHtml();
+                    } else {
+                        $.messager.alert('Tips', 'Please select the tree to be operated！');
+                    }
+
+                });
+
+                //保存检验标准
+                $("#submit_standard").unbind("click").bind("click", function () {
+                    var node = document.getElementById("TaskId").value;
+                    if (node != "") {
+                        saveHtml1();
+                    } else {
+                        $.messager.alert('Tips', 'Please select the tree to be operated！');
+                    }
+
+                });
+            })
+
+            /*
+* 
+*functionName:saveHtml()
+*function://保存html文本 检验条件
+*Param 参数id  节点id,text 节点名
+*author:张慧敏
+*date:2018/4/17
+*/
+            function saveHtml() {
+                //获取文本值encodeHtml = HtmlUtil.htmlEncode(html);
+                var MainDescription = encode(document.getElementById("editor").value);
+                $.ajax({
+                    url: "/ScheduleManagement/EditHtmlInfo",
+                    type: 'POST',
+                    dataType: 'html',
+                    data: {
+                        TaskId: document.getElementById("TaskId").value,
+                        ProjectName: document.getElementById("ProjectName").value,
+                        flag: "0",
+                        MainDescription: MainDescription
+                    },
+                    success: function (data) {
+                        if (data) {
+                            var result = $.parseJSON(data);
+                            if (result.Success == true) {
+                                layer.alert(result.Message);
+                               // $.messager.alert('tips', result.Message);
+                            } else {
+                                layer.alert(result.Message);
+                            }
+                        }
+
+                    }
+                });
+            }
+
+
+            /*
+     * 
+     *functionName:saveHtml()
+     *function://保存html文本 检验标准
+     *Param 参数id  节点id,text 节点名
+     *author:张慧敏
+     *date:2018/4/17
+    */
+
+            function saveHtml1() {
+                //获取文本值
+                var Method = encode(document.getElementById("editor1").value);
+                $.ajax({
+                    url: "/ScheduleManagement/EditHtmlInfo",
+                    type: 'POST',
+                    dataType: 'html',
+                    data: {
+                        TaskId: document.getElementById("TaskId").value,
+                        ProjectName: document.getElementById("ProjectName").value,
+                        flag: "1",
+                        Method: Method
+                    },
+                    success: function (data) {
+                        if (data) {
+                            var result = $.parseJSON(data);
+                            if (result.Success == true) {
+                                layer.alert(result.Message);
+                            } else {
+                                layer.alert(result.Message);
+                            }
+                        }
+
+                    }
+                });
+            }
+
+            // public method for encoding
+            function encode(input) {
+                var _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+                var output = "";
+                var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+                var i = 0;
+                input = _utf8_encode(input);
+                while (i < input.length) {
+                    chr1 = input.charCodeAt(i++);
+                    chr2 = input.charCodeAt(i++);
+                    chr3 = input.charCodeAt(i++);
+                    enc1 = chr1 >> 2;
+                    enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+                    enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+                    enc4 = chr3 & 63;
+                    if (isNaN(chr2)) {
+                        enc3 = enc4 = 64;
+                    } else if (isNaN(chr3)) {
+                        enc4 = 64;
+                    }
+                    output = output +
+                    _keyStr.charAt(enc1) + _keyStr.charAt(enc2) +
+                    _keyStr.charAt(enc3) + _keyStr.charAt(enc4);
+                }
+                return output;
+            }
+            // public method for decoding
+            function decode(input) {
+                var _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+                var output = "";
+                var chr1, chr2, chr3;
+                var enc1, enc2, enc3, enc4;
+                var i = 0;
+                input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+                while (i < input.length) {
+                    enc1 = _keyStr.indexOf(input.charAt(i++));
+                    enc2 = _keyStr.indexOf(input.charAt(i++));
+                    enc3 = _keyStr.indexOf(input.charAt(i++));
+                    enc4 = _keyStr.indexOf(input.charAt(i++));
+                    chr1 = (enc1 << 2) | (enc2 >> 4);
+                    chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+                    chr3 = ((enc3 & 3) << 6) | enc4;
+                    output = output + String.fromCharCode(chr1);
+                    if (enc3 != 64) {
+                        output = output + String.fromCharCode(chr2);
+                    }
+                    if (enc4 != 64) {
+                        output = output + String.fromCharCode(chr3);
+                    }
+                }
+                output = _utf8_decode(output);
+                return output;
+            }
+
+            // private method for UTF-8 encoding
+            function _utf8_encode(string) {
+                var _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+                string = string.replace(/\r\n/g, "\n");
+                var utftext = "";
+                for (var n = 0; n < string.length; n++) {
+                    var c = string.charCodeAt(n);
+                    if (c < 128) {
+                        utftext += String.fromCharCode(c);
+                    } else if ((c > 127) && (c < 2048)) {
+                        utftext += String.fromCharCode((c >> 6) | 192);
+                        utftext += String.fromCharCode((c & 63) | 128);
+                    } else {
+                        utftext += String.fromCharCode((c >> 12) | 224);
+                        utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+                        utftext += String.fromCharCode((c & 63) | 128);
+                    }
+
+                }
+                return utftext;
+            }
+
+            // private method for UTF-8 decoding
+            function _utf8_decode(utftext) {
+                var _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+                var string = "";
+                var i = 0;
+                var c = c1 = c2 = 0;
+                while (i < utftext.length) {
+                    c = utftext.charCodeAt(i);
+                    if (c < 128) {
+                        string += String.fromCharCode(c);
+                        i++;
+                    } else if ((c > 191) && (c < 224)) {
+                        c2 = utftext.charCodeAt(i + 1);
+                        string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
+                        i += 2;
+                    } else {
+                        c2 = utftext.charCodeAt(i + 1);
+                        c3 = utftext.charCodeAt(i + 2);
+                        string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
+                        i += 3;
+                    }
+                }
+                return string;
+            };
+
+        </script>

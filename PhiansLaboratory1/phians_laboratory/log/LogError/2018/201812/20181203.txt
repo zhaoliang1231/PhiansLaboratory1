@@ -1,0 +1,489 @@
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 11:22:40,216 
+Ïß³ÌID:[18] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 11:37:48,519 
+Ïß³ÌID:[9] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 14:50:54,973 
+Ïß³ÌID:[9] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 14:55:27,497 
+Ïß³ÌID:[16] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 15:01:42,317 
+Ïß³ÌID:[26] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 15:11:27,641 
+Ïß³ÌID:[11] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 15:11:52,612 
+Ïß³ÌID:[18] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 15:12:38,322 
+Ïß³ÌID:[15] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 15:58:58,566 
+Ïß³ÌID:[58] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 16:05:02,184 
+Ïß³ÌID:[19] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 16:10:56,244 
+Ïß³ÌID:[71] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[Filling_report] Ê±²úÉúÒì³£
+ 
+System.ArgumentNullException: Öµ²»ÄÜÎª null¡£
+²ÎÊıÃû: value
+   ÔÚ ?.(Object , String )
+   ÔÚ Aspose.Words.Bookmark.set_Text(String value)
+   ÔÚ Phians_BLL.ReportEditBLL.insert_char82_163(Bookmark mark, DocumentBuilder docBuild, String mark_Name, String insertData) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportEditBLL.cs:ĞĞºÅ 1373
+   ÔÚ Phians_BLL.ReportEditBLL.Filling_report(String report_num, Int32 id, String tempPath, String outputPath, String tm_id, String return_url) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportEditBLL.cs:ĞĞºÅ 1278
+   ÔÚ phians_laboratory.Controllers.ReportManagementController.Filling_report(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ReportManagementController.cs:ĞĞºÅ 446
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 16:15:34,763 
+Ïß³ÌID:[103] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 16:25:02,906 
+Ïß³ÌID:[123] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 17:38:07,016 
+Ïß³ÌID:[157] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 17:39:08,530 
+Ïß³ÌID:[156] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 17:41:11,923 
+Ïß³ÌID:[153] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 17:52:26,484 
+Ïß³ÌID:[8] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-03 17:57:21,925 
+Ïß³ÌID:[28] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)

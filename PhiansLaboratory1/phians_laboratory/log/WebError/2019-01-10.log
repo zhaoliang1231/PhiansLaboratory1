@@ -1,0 +1,663 @@
+﻿2019-01-10 15:18:19
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 15:19:39
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 15:23:31
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 15:26:54
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 15:27:52
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 15:28:34
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 15:32:35
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 15:35:09
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 15:36:37
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 15:44:57
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 15:51:32
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 16:29:04
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+
+2019-01-10 16:29:27
+尝试除以零。
+异常信息：System.DivideByZeroException: 尝试除以零。
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 784
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.StatisticalManagementDAL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\StatisticalManagement\StatisticalManagementDAL.cs:行号 1473
+   在 Phians_BLL.StatisticalManagementBLL.Report_ArrangeList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\StatisticalManagement\StatisticalManagementBLL.cs:行号 31
+   在 phians_laboratory.Controllers.StatisticalManagementController.Report_ExportExcl(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\StatisticalManagementController.cs:行号 340
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：尝试除以零。
+
+----------------------------------
+

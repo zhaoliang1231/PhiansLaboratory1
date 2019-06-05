@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31A8F6BB-AA28-4055-924F-CED966E5BE81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhiansCommon</RootNamespace>
+    <AssemblyName>PhiansCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Words, Version=17.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Component\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="Security, Version=0.6.6.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Component\Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Windows.Excel, Version=0.1.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Component\Windows.Excel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsposeWordOperate.cs" />
+    <Compile Include="Comm.cs" />
+    <Compile Include="CookiesHelper.cs" />
+    <Compile Include="DataConvert.cs" />
+    <Compile Include="DataTableToList.cs" />
+    <Compile Include="DecryptEncryption\DecryptEncryption.cs" />
+    <Compile Include="Enum\LosslessReportStatusEnum.cs" />
+    <Compile Include="Enum\LosslessReport_EditApplyEnum.cs" />
+    <Compile Include="Enum\NDT_RevisionsRecordEnum.cs" />
+    <Compile Include="Enum\TB_ProcessRecordNodeIdEnum.cs" />
+    <Compile Include="ExcelOperate\ExcelOperate.cs" />
+    <Compile Include="FileOperate\FileOperate.cs" />
+    <Compile Include="ImgHelper.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="ListToDataTable.cs" />
+    <Compile Include="Md5.cs" />
+    <Compile Include="ModelUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="SqlInjection.cs" />
+    <Compile Include="SqlPagerHelper.cs" />
+    <Compile Include="StringOperation.cs" />
+    <Compile Include="TreeJsonByTable.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="ValidatorCodeTools.cs" />
+    <Compile Include="WordAddTableRows.cs" />
+    <Compile Include="WriteLog.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Component\Security.dll" />
+    <Content Include="Component\Windows.Excel.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

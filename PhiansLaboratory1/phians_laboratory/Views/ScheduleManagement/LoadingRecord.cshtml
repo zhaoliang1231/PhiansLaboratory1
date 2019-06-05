@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<script type="text/javascript">
+    function SetFullScreen() {
+        document.getElementById("PageOfficeCtrl1").FullScreen = !document.getElementById("PageOfficeCtrl1").FullScreen;
+    }
+    function OnProgressComplete() {
+        //window.parent.myFunc(); //调用父页面(Default.aspx)的js函数
+    }
+
+    //$(document).ready(function () {
+    //    SetFullScreen();
+    //});
+    //弹窗关闭函数
+    function Close() {
+        window.external.close();
+    }
+    function Save() {
+        document.getElementById("PageOfficeCtrl1").WebSave();
+    }
+    // 打印预览
+    function print_reports() {
+
+        document.getElementById("PageOfficeCtrl1").PrintPreview();
+        //document.getElementById("PageOfficeCtrl1").PrintOut(true, PrinterName, Copies, FromPage, ToPage, OutputFile);
+
+
+    }
+    function Print() {
+        document.getElementById("PageOfficeCtrl1").ShowDialog(4);
+    }
+
+</script>
+<div style=" width:100%; height:98%;">
+
+    @Html.Raw(ViewBag.EditorHtml)
+</div>

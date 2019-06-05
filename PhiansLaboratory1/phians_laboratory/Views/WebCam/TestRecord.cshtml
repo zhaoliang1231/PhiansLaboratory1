@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <script src="@Url.Content("~/Scripts/jquery-1.8.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jQueryWebcam/jquery.webcam.js")" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <div>
+        <label style="font-size:12px;color:#333;"> 图片名称：</label>
+        <input type="text" id="PictureName" style="width:150px;height:24px;border:1px solid #cfcfcf;border-radius:4px;margin-bottom:10px;" />
+        <a href="javascript:;" id="upload" style="margin-bottom:10px;display:inline-block;width:100px;margin-left:20px;height:30px;line-height:30px;background:#0094ff;color:#fff;text-decoration:none;text-align:center;border-radius:4px;">Take photo</a>
+    </div>
+    <div id="webcam"></div>
+
+    <div id="show"></div>
+</body>
+
+</html>
+<script src="~/Scripts/layer/2.4/layer.js"></script>
+<script type="text/javascript" content="text/html">
+    var pos = 0, ctx = null, saveCB, image = [];
+    var canvas = document.createElement('canvas');
+    var width_ = 640, height_ = 480;
+    canvas.setAttribute('width', width_);
+    canvas.setAttribute('height', height_);
+    ctx = canvas.getContext('2d');
+    image = ctx.getImageData(0, 0, width_, height_);
+
+    //加载滚动
+    function ityzl_SHOW_LOAD_LAYER() {
+        return layer.msg('加载中...', { icon: 16, shade: [0.5, '#f5f5f5'], scrollbar: false, offset: '0px', time: 100000 });
+    }
+    function ityzl_CLOSE_LOAD_LAYER(index) {
+        layer.close(index);
+    }
+    function ityzl_SHOW_TIP_LAYER() {
+        layer.msg('加载完成！', { time: 1000, offset: '10px' });
+    }
+    //获取url中的参数
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg); //匹配目标参数
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
+    //获取url链接传参
+    var TaskId = unescape(getUrlParam('TaskId'));
+    var ContentType = unescape(getUrlParam('flag'));
+    var saveCB = function (data) {
+        var col = data.split(';');
+        var img = image;
+        for (var i = 0; i < width_; i++) {
+            var tmp = parseInt(col[i]);
+            img.data[pos + 0] = (tmp >> 16) & 0xff;
+            img.data[pos + 1] = (tmp >> 8) & 0xff;
+            img.data[pos + 2] = tmp & 0xff;
+            img.data[pos + 3] = 0xff;
+            pos += 4;
+
+        }
+
+        if (pos >= 4 * width_ * height_) {
+            ctx.putImageData(img, 0, 0);
+            var PictureName = $("#PictureName").val();
+            //if (PictureName == "") {
+            //    layer.alert('ContentType is null!');
+            //    return;
+            //}
+            var ValueJson = window.parent.Value();//获取父页面的文本值
+            //if (ValueJson.ContentType=="") {
+            //    layer.alert('ContentType is null!');
+            //    return;
+            //}
+            if (ValueJson.SortNum == "") {
+                layer.alert('SortNum is null!');
+                return;
+            }
+            //     alert($("#ContentType").combobox("getValue"))
+            var i;
+            $.ajax({
+                url: '/ScheduleManagement/SaveTakephoto',
+                type: 'POST',
+                data: {
+                    image: canvas.toDataURL("image/png"),
+                    TaskId: TaskId,
+                    PicName: PictureName,
+                    ContentType: ContentType,
+                    SortNum: ValueJson.SortNum,
+                    Content: ValueJson.Content
+                },
+                beforeSend: function () {
+                    i = ityzl_SHOW_LOAD_LAYER();
+                },
+                success: function (data) {
+                    layer.alert('拍照成功!');
+                    //刷新右边列表
+                    window.parent.View_Take_photo(ContentType);
+                    $("#PictureName").val("");
+                    ityzl_CLOSE_LOAD_LAYER(i);
+                    ityzl_SHOW_TIP_LAYER();
+                },
+                error: function (e, jqxhr, settings, exception) {
+                    ityzl_CLOSE_LOAD_LAYER(i);
+                }
+            });
+
+            pos = 0;
+        }
+
+    };
+
+    $('#webcam').webcam({
+        width: width_,
+        height: height_,
+        mode: 'callback',
+        swffile: '@Url.Content("~/scripts/jQueryWebcam/jscam.swf")',
+        onSave: saveCB,
+
+        onCapture: function () {
+            webcam.save();
+
+        }
+    });
+
+    $('#upload').unbind("click").bind("click", function () {
+        webcam.capture();
+        return false;
+    });
+</script>

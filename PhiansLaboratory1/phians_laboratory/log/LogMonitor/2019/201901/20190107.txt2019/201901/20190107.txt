@@ -1,0 +1,400 @@
+
+ 
+记录时间：2019-01-07 15:12:26,754 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:QualificationManagement
+            开始时间：2019/1/7 15:12:26
+            结束时间：2019/1/7 15:12:26
+            总 时 间：0.0035658秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:12:26,949 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:QualificationManagement
+            开始时间：2019/1/7 15:12:26
+            结束时间：2019/1/7 15:12:26
+            总 时 间：0.1696828秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:12:27,360 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:LoadReportList
+            开始时间：2019/1/7 15:12:26
+            结束时间：2019/1/7 15:12:27
+            总 时 间：1.3498611秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:12:27,361 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:LoadReportList
+            开始时间：2019/1/7 15:12:27
+            结束时间：2019/1/7 15:12:27
+            总 时 间：0.0005001秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:12:27,431 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetAllUserList
+            开始时间：2019/1/7 15:12:26
+            结束时间：2019/1/7 15:12:27
+            总 时 间：1.4204127秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:12:27,431 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetAllUserList
+            开始时间：2019/1/7 15:12:27
+            结束时间：2019/1/7 15:12:27
+            总 时 间：0秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:12:27,801 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:LoadReportList
+            开始时间：2019/1/7 15:12:27
+            结束时间：2019/1/7 15:12:27
+            总 时 间：0.1546735秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:12:27,805 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:LoadReportList
+            开始时间：2019/1/7 15:12:27
+            结束时间：2019/1/7 15:12:27
+            总 时 间：0.003503秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:12:27,869 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetAllUserList
+            开始时间：2019/1/7 15:12:27
+            结束时间：2019/1/7 15:12:27
+            总 时 间：0.1216199秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:12:27,869 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetAllUserList
+            开始时间：2019/1/7 15:12:27
+            结束时间：2019/1/7 15:12:27
+            总 时 间：0秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:12:38,613 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/7 15:12:27
+            结束时间：2019/1/7 15:12:38
+            总 时 间：10.6516301秒
+            Form表单数据：state=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:16:18,620 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:QualificationManagement
+            开始时间：2019/1/7 15:16:18
+            结束时间：2019/1/7 15:16:18
+            总 时 间：6.55E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:16:18,629 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:QualificationManagement
+            开始时间：2019/1/7 15:16:18
+            结束时间：2019/1/7 15:16:18
+            总 时 间：0.0095239秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:16:19,465 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:LoadReportList
+            开始时间：2019/1/7 15:16:19
+            结束时间：2019/1/7 15:16:19
+            总 时 间：0.0865632秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:16:19,465 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:LoadReportList
+            开始时间：2019/1/7 15:16:19
+            结束时间：2019/1/7 15:16:19
+            总 时 间：0秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:16:19,562 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetAllUserList
+            开始时间：2019/1/7 15:16:19
+            结束时间：2019/1/7 15:16:19
+            总 时 间：0.0671317秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:16:19,562 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetAllUserList
+            开始时间：2019/1/7 15:16:19
+            结束时间：2019/1/7 15:16:19
+            总 时 间：0秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:16:44,685 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/7 15:16:19
+            结束时间：2019/1/7 15:16:44
+            总 时 间：24.9724528秒
+            Form表单数据：TemplateID=37&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:20:03,039 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:QualificationManagement
+            开始时间：2019/1/7 15:20:03
+            结束时间：2019/1/7 15:20:03
+            总 时 间：1.99E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:20:03,045 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:QualificationManagement
+            开始时间：2019/1/7 15:20:03
+            结束时间：2019/1/7 15:20:03
+            总 时 间：0.0065044秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:20:03,791 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:LoadReportList
+            开始时间：2019/1/7 15:20:03
+            结束时间：2019/1/7 15:20:03
+            总 时 间：0.0756507秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:20:03,791 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:LoadReportList
+            开始时间：2019/1/7 15:20:03
+            结束时间：2019/1/7 15:20:03
+            总 时 间：0秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:20:03,910 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetAllUserList
+            开始时间：2019/1/7 15:20:03
+            结束时间：2019/1/7 15:20:03
+            总 时 间：0.0851346秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:20:03,910 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetAllUserList
+            开始时间：2019/1/7 15:20:03
+            结束时间：2019/1/7 15:20:03
+            总 时 间：0秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-07 15:20:08,133 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/7 15:20:04
+            结束时间：2019/1/7 15:20:08
+            总 时 间：4.0614025秒
+            Form表单数据：TemplateID=37&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 

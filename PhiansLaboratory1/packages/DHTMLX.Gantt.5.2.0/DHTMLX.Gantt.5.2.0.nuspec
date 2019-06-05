@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DHTMLX.Gantt</id>
+    <version>5.2.0</version>
+    <title>dhtmlxGantt  - JavaScript Gantt chart</title>
+    <authors>DHTMLX</authors>
+    <owners>DHTMLX</owners>
+    <licenseUrl>https://dhtmlx.com/docs/products/dhtmlxGantt/license.shtml?gpl</licenseUrl>
+    <projectUrl>https://dhtmlx.com/docs/products/dhtmlxGantt/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Projects and tasks are comfortably organized into a hierarchical structure displayed in the left pane of the chart. The grid is easily configurable so you can add/remove custom columns to display required information. Current schedule status can be seen at a glance with percent-complete shadings. You can also enable tooltips or use built-in "quick info" popup to show the details for each task.</description>
+    <summary>dhtmlxGantt is an open source JavaScript Gantt chart that helps you illustrate a project schedule in a nice-looking chart.</summary>
+    <copyright>DHTMLX</copyright>
+    <tags>scheduler tasks timeline gantt</tags>
+  </metadata>
+</package>

@@ -1,0 +1,96 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ScheduleProjectIframe</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("siteJs")
+
+</head>
+<body style="width:100%;height:100%;">
+
+    <div style="margin: 20px auto; text-align: center">
+        <label>MTR NO.：</label>
+        <input id="mtr" class="easyui-textbox" style="width: 150px" />
+        <label>FollowUp：</label>
+        <input id="FollowUp" class="easyui-combobox" style="width: 150px" />
+        <label>Start Date：</label>
+        <input id="StartTime" class="easyui-datebox" style="width: 150px" />
+        <label>End Date： </label>
+        <input id="EndTime" class="easyui-datebox" style="width: 150px" />
+        <a href="javascript:;" id="search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+    </div>
+    <iframe src="/ScheduleManagement/ScheduleProjectView" frameborder="no" border=0 style="width:100%;height:500px;" id="ProjectView"></iframe>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    var firsttime = 0;
+    $(function () {
+       // var iframeHeight = $("#ProjectView").contents().find("body").height();
+
+        $("#ProjectView").load(function () {
+            var frame_content = $(this);
+            //获取子页面body的高度 并适量增加
+            var mainheight = frame_content.contents().find("body").height()+100 ;
+            //给iframe设置高度（不低于500）
+            frame_content.height(Math.max(mainheight, 500));
+        });
+        //$('#ProjectView').attr('height', iframeHeight)
+        $("#FollowUp").combobox({
+            url: "/ScheduleManagement/GetUserList",
+            valueField: 'UserId',
+            textField: 'UserName',
+            filter: function (q, row) {
+                var opts = $(this).combobox('options');
+                return row[opts.textField].indexOf(q) >= 0;
+            }
+        });
+        //设置时间
+        var curr_time = new Date();
+        $("#StartTime").datebox("setValue", myformatter(curr_time));
+        $("#EndTime").datebox("setValue", myformatter1(curr_time));
+
+        $('#search').unbind("click").bind("click", function () {
+
+            var src = "/ScheduleManagement/ScheduleProjectView?" + "FollowUp=" + $("#FollowUp").combobox('getValue') + "&PlanStartDate=" + $("#StartTime").datebox('getValue') + "&PlanEndDate=" + $("#EndTime").datebox('getValue') + "&MTRNO=" + $("#mtr").textbox('getText');
+            //document.getElementById('ProjectView').src = src;
+            $('#ProjectView').attr('src', src)
+        });
+
+        if (firsttime == 0) {
+            firsttime = 1;
+
+            var src = "/ScheduleManagement/ScheduleProjectView?" + "FollowUp=" + $("#FollowUp").combobox('getValue') + "&PlanStartDate=" + $("#StartTime").datebox('getValue') + "&PlanEndDate=" + $("#EndTime").datebox('getValue') + "&MTRNO=" + $("#mtr").textbox('getText');
+            //document.getElementById('ProjectView').src = src;
+            $('#ProjectView').attr('src', src)
+
+        }
+
+    });
+
+    //格式化时间
+    function myformatter(date) {
+        var y = date.getFullYear();
+        var m = date.getMonth() + 1;
+        var d = date.getDate();
+        return y + '-' + (m < 10 ? ('0' + m) : m) + '-' + (d < 10 ? ('0' + d) : d);
+    }
+    function myformatter1(date) {
+        var y = date.getFullYear();
+        var m = date.getMonth() + 1;
+        var d = date.getDate() + 1;
+        return y + '-' + (m < 10 ? ('0' + m) : m) + '-' + (d < 10 ? ('0' + d) : d);
+    }
+    //页面加载
+</script>
+
+

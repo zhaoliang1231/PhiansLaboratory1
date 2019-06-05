@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "TestBlockLibrary";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>设备管理</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("TestBlockLibraryJs")
+</head>
+<body>
+    <!--<%--设备库数据表格--%>-->
+    <div id="Probe_Library_datagrid"></div>
+
+    <div style="display: none">
+
+        <!-- 台账资料维护工具栏 -->
+        <div id="Probe_Library_datagrid_toolbar">
+            <a href="#" id="_edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">修改信息</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">增加信息</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">删除信息</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="batchImport" class="easyui-linkbutton" data-options="iconCls:'icon-redo',plain:true">批量导入</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a target="_blank" href="\Download\试块批量导入模板.xlsx" id="" class="easyui-linkbutton" data-options="iconCls:'icon-upload',plain:true">下载探头批量导入模板</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <input id="search" style="width: 150px" class="easyui-combobox" />
+            <label>为 </label>
+            <input id="key" style="width: 150px" class="easyui-textbox" />
+            <a href="#" id="maintenance_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+        </div>
+        <!--<%--dialog修改 设备库 资料--%>-->
+        <form id="AddEidt_info" method="post">
+            <div class="h_dline" style="height: 23px; margin-top: 30px; float: left; margin-left: 10px">
+                <p class="h_d1" style="width: 110px; text-align: right;">试块编号:</p>
+                <input id="CalBlockNum" name="CalBlockNum" required="required" class="easyui-textbox" style="width: 180px; height: 22px; margin-left: 5px" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 30px; float: left; margin-left: 10px">
+                <p class="h_d1" style="width: 110px; text-align: right;">校验试块:</p>
+                <input id="CalBlock" name="CalBlock" required="required" class="easyui-textbox" style="width: 180px; height: 22px; margin-left: 5px" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 30px; float: left; margin-left: 10px">
+                <p class="h_d1" style="width: 110px; text-align: right;">校验表面:</p>
+                <input id="C_S" name="C_S" class="easyui-textbox" style="width: 180px; height: 22px; margin-left: 5px" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 30px; float: left; margin-left: 10px">
+                <p class="h_d1" style="width: 110px; text-align: right;">仪器设置:</p>
+                <input id="InstrumentSet" name="InstrumentSet" class="easyui-textbox" style="width: 180px; height: 22px; margin-left: 5px" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 30px; float: left; margin-left: 10px">
+                <p class="h_d1" style="width: 110px; text-align: right;">参考反射体:</p>
+                <input id="Reflector" name="Reflector" class="easyui-textbox" style="width: 180px; height: 22px; margin-left: 5px" />
+            </div>
+            @*<div class="h_dline" style="height: 23px; margin-top: 30px; float: left; margin-left: 10px">
+                <p class="h_d1" style="width: 110px; text-align: right;">添加人:</p>
+                <input id="CreatePerson" name="CreatePerson" class="easyui-combobox" style="width: 180px; height: 22px; margin-left: 5px" />
+            </div>*@
+           
+            <div class="h_dline" style="height: 23px; margin-top: 30px; float: left; margin-left: 10px">
+                <p class="h_d1" style="width: 110px; text-align: right;">状态:</p>
+                <input id="State" name="State" required="required" class="easyui-combobox" style="width: 180px; height: 22px; margin-left: 5px" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 30px; margin-left: 10px; float: left">
+                <p class="h_d1" style="width: 110px; text-align: right;">说明:</p>
+                <input id="Remarks" name="Remarks" class="easyui-textbox" data-options="multiline:true" style="width: 400px; height: 66px; margin-left: 5px" />
+            </div>
+        </form>
+
+        <!-- 批量导入 -->
+        <form id="importFileForm" method="post" enctype="multipart/form-data">
+            <div class="h_dline" style="height: 23px; margin-top: 30px; margin-left:40px">
+                <p class="h_d1" style="width: 60px">上传文件:</p>
+                <input class="easyui-filebox" name="file" data-options="prompt:'文件上传',required:true" style="width:200px">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

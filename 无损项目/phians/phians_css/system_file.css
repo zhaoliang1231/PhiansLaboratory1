@@ -1,0 +1,30 @@
+﻿
+.td1 {
+width:60px;
+}
+
+
+.td2 {
+    width:auto;
+    text-align:left;
+}
+.easyui-textbox {
+width:150px;
+border: 0px;
+
+}
+/*头部信息*/
+.h_d 
+{   
+    clear:both;  
+ }  
+  
+.h_d1 
+{    
+    display:inline-block;  
+   margin-top:0px;
+
+
+
+
+}  

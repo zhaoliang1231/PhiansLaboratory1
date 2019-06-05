@@ -1,0 +1,584 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title>系统主页</title>
+    <link href="../Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/css/ace-rtl.min.css" rel="stylesheet" />
+    <link href="../Content/css/ace-skins.min.css" rel="stylesheet" />
+    <link href="../Content/css/sidebar-menu.css" rel="stylesheet" />
+    <link href="../Content/css/bootstrap-tab.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />-->
+    <!-- ace styles -->
+    <link href="../Content/css/ace.min.css" rel="stylesheet" class="ace-main-stylesheet" id="main-ace-style" />
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
+    <![endif]-->
+    <script src="../Scripts/jquery-1.11.3.min.js"></script>
+    <script src="../Scripts/boostrap/bootstrap.min.js"></script>
+    <!--//<script src="assets/js/ace-extra.min.js"></script>-->
+    <script src="../Scripts/ace/ace.min.js"></script>
+    <script src="~/Scripts/layer/2.4/layer.js"></script>
+    <script src="../Scripts/boostrap/bootstrap-tab.js"></script>
+    <script src="../Scripts/sidebar-menu.js"></script>
+
+    <script src="../Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="../Scripts/jquery.cookie.js"></script>
+    <style>
+        /*首页*/
+        .row {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        .tab-content {
+            padding: 0px;
+        }
+
+        .footer .footer-inner .footer-content {
+            padding: 0px;
+        }
+
+        .navbar {
+            z-index: 2 !important;
+        }
+    </style>
+</head>
+<html id="ss" style="background: url(/Content/image/bg.png);background-size:100%;">
+<body class="no-skin" id="body" style="overflow:hidden;">
+    <div id="navbar" class="navbar navbar-default          ace-save-state">
+        <div class="navbar-container ace-save-state" id="navbar-container">
+            <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+                <span class="sr-only">Toggle sidebar</span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-header pull-left">
+                <a href="index.html" class="navbar-brand">
+                    @*<small>
+                        <i class="fa fa-leaf"></i>
+                        PHIANS
+                    </small>*@
+                    <img src="~/Content/image/logo.png"  width="145"/>
+                </a>
+            </div>
+
+            <div class="navbar-buttons navbar-header pull-right">
+                <ul class="nav ace-nav">
+                    <li class="grey dropdown-modal">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle" title=" Tasks to download">
+                            <i class="ace-icon fa fa-tasks"></i>
+                            <span class="badge badge-grey">5</span>
+                        </a>
+
+                        <ul class="dropdown-menu-right dropdown-menu dropdown-navbar dropdown-yellow dropdown-caret dropdown-caret dropdown-close">
+                            <li class="dropdown-header">
+                                <i class="ace-icon fa fa-check"></i>
+                                说明下载
+                            </li>
+                            <li>
+                                <a target="_blank" href="\Download\posetup.zip">
+                                    <div class="clearfix">
+                                        <span class="pull-left">1.   在线office控件.zip</span>
+                                        <span class="pull-right">下载</span>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="\Download\模板自定义编辑要求-书签名字对应.xlsx">
+                                    <div class="clearfix">
+                                        <span class="pull-left">2.   模板自定义编辑要求</span>
+                                        <span class="pull-right">下载</span>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="\Download\Lodop.zip">
+                                    <div class="clearfix">
+                                        <span class="pull-left">3.   条码打印控件.zip　</span>
+                                        <span class="pull-right">下载</span>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="\Download\探头批量导入模板.xlsx">
+                                    <div class="clearfix">
+                                        <span class="pull-left">4.   探头批量导入模板.xlsx</span>
+                                        <span class="pull-right">下载</span>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="\Download\试块批量导入模板.xlsx">
+                                    <div class="clearfix">
+                                        <span class="pull-left">5.   试块批量导入模板.xlsx</span>
+                                        <span class="pull-right">下载</span>
+                                    </div>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="light-blue dropdown-modal">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <img class="nav-user-photo" id="user-photo" src=@ViewData["Portrait"] alt="Jason's Photo" />
+                            
+                            <span class="user-info">
+                                <small>欢迎</small>@ViewData["login_username"]
+                              
+                            </span>
+
+                            <i class="ace-icon fa fa-caret-down"></i>
+                        </a>
+
+                        <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                            @*<li>
+                                    <a href="#">
+                                        <i class="ace-icon fa fa-cog"></i>
+                                        Settings
+                                    </a>
+                                </li>*@
+
+                            <li>
+                                <a href="#" id="a4d8e57e-3ca7-4e6c-883d-a9caa08c5faf">
+                                    <i class="ace-icon fa fa-user"></i>
+                                    个人资料
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#edit">
+                                    <i class="ace-icon fa fa-adjust"></i>
+                                    修改头像
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#Password">
+                                    <i class="ace-icon fa fa-pencil"></i>
+                                   修改密码
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/mainform/loginout">
+                                    <i class="ace-icon fa fa-power-off"></i>
+                                    退出
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- /.navbar-container -->
+    </div>
+    @* 修改用户密码 *@
+    <div class="modal fade form-horizontal" id="Password" tabindex="-1" role="dialog" aria-labelledby="edit_password" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h3 class="modal-title" id="edit_password">
+                        edit password
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <div style="margin-top: 20px;margin-left:25%">
+                                <label for="password_text" style="width:150px;text-align:right">Current password：</label>
+                                <input type="password" id="Original_password" style="display:inline-block;border-radius:8px!important" />
+                            </div>
+                            <div style="margin-top: 20px;margin-left:25%">
+                                <label for="password_text" style="width:150px;text-align:right">New password：</label>
+                                <input type="password" id="New_password" style="display:inline-block;border-radius:8px!important" />
+                            </div>
+                            <div style="margin-top: 20px;margin-left:25%">
+                                <label for="password_text" style="width:150px;text-align:right">Confirm password：</label>
+                                <input type="password" id="Confirm_password" style="display:inline-block;border-radius:8px !important" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" id="save_password" class="btn btn-info" style="height:35px">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="height:35px">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 修改头像 -->
+    <div class="modal fade form-horizontal" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit_avatar" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h3 class="modal-title" id="edit_avatar">
+                        edit avatar
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <form id="form_submit" class="form-horizontal" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <img style="margin-top: 10px;margin-left:30%" id="Signature" src=@ViewData["Portrait"] width="300" height="150" />
+                            <p style="margin-top: 20px;margin-left:30%">
+                                <label for="txt_file">Photos：</label><input type="file" name="Portrait" id="txt_file" onchange="Filelist(this.files[0]) " class="file-loading" style="display:inline-block" />
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="save_image" class="btn btn-info" style="height:35px">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="height:35px">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-container ace-save-state" id="main-container">
+        <div class="sidebar" id="sidebar">
+            <ul class="nav nav-list" id="menu"></ul>
+            <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+                <i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+            </div>
+        </div>
+
+
+        <div class="main-content" style="border:#f00;">
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12" style="padding-left:5px;">
+                        <ul class="nav-my-tab">
+                            <li class="middletab">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="active">
+                                        <a href="#Index" role="tab" data-toggle="tab">
+                                            <i class="ace-icon fa fa-home"></i>系统首页
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="Index">
+                                <iframe class="tab_iframe" id ="ifa" src="/mainform/main" width="100%" height="800"  style="border:1px solid #cccccc" onload="changeFrameHeight1(this)" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="yes" allowtransparency="yes" style="overflow:hidden" style="overflow-x:hidden;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="footer-content">
+                <span class="bigger-120" style="font-size:12px !important;">
+                    Application &copy; @ViewData["root_context"]                
+                </span>
+                &nbsp; &nbsp;
+            </div>
+        </div>
+    </div>
+    <div id="UserName" style="display:none">@ViewData["login_usercount"] </div>
+</body>
+
+</html>
+<script src="@Url.Content("~/signalr/hubs")">
+
+</script>
+<script type="text/javascript">
+    //上传图片
+    function Filelist(f) {
+
+    }
+    $(function () {
+        //跳转information页面
+        $("#a4d8e57e-3ca7-4e6c-883d-a9caa08c5faf").unbind('click').bind('click', function () {
+            addTabs({ id: $(this).attr("id"), icon: "menu-icon fa fa-glass", title: "个人资料", url: "/PersonalCenter/PersonalInformation", close: true });
+            //  jumpPage('个人资料','/PersonalCenter/PersonalInformation');
+
+        });
+        //跳转message页面
+        $("#eeea330c-375c-4a16-a681-d45180593495").unbind('click').bind('click', function () {
+            addTabs({ id: $(this).attr("id"), icon: "menu-icon fa fa-glass", title: "工作消息", url: "/PersonalCenter/WorkMessage", close: true });
+
+        });
+        //修改头像
+        $('#save_image').unbind('click').bind('click', function () {
+            var Signature = $('#txt_file').val();//获取签名的地址
+            var files = $('#txt_file').prop('files');
+            var formData = new FormData();
+            var name = $("#txt_file").val();
+            formData.append("file", $("#txt_file")[0].files[0]);
+            formData.append("name", $("#txt_file")[0].files[0].name);
+            $.ajax({
+                url: "/PersonalCenter/UploadUserPortrait",
+                type: 'post',
+                data: formData,
+                datatype: 'JSON',
+                fileElementId: 'txt_file',
+                // 告诉jQuery不要去处理发送的数据
+                processData: false,
+                // 告诉jQuery不要去设置Content-Type请求头
+                contentType: false,
+                cache: false,
+                traditional: true,
+                success: function (data) {
+                    var result = $.parseJSON(data);
+                    if (result.Success == true) {
+                        console.log(result.Data.Portrait);
+                        $("#Signature").attr("src", result.Data.Portrait);//照片回显
+                        layer.alert(result.Message);
+                        location.reload();
+                        //  $('#edit').modal('hide');
+                    } else {
+                        layer.alert(result.Message);
+                    }
+                }
+            });
+        });
+
+
+        //修改密码
+        $("#save_password").unbind('click').bind('click', function () {
+            if ($("#Original_password").val() == "") {
+                layer.alert('Original password can not be null！');
+                $('#User_pwd').focus();
+                return;
+            }
+            if ($("#New_password").val() == "") {
+                layer.alert('New password can not be null！');
+                $('#User_pwd').focus();
+                return;
+            }
+            if ($("#Confirm_password").val() == "") {
+                layer.alert('Confirm password can not be null！');
+                $('#User_pwd').focus();
+                return;
+            }
+
+            if ($("#New_password").val() != $("#Confirm_password").val()) {
+                layer.alert("两次输入密码不一致");
+                return;
+            }
+
+            var password = encode($('#New_password').val());//获取密码文本框的val值
+            var Original_password = encode($('#Original_password').val());//获取密码文本框的val值
+
+            $.ajax({
+                url: "/mainform/UpdateUserPwd",
+                type: 'POST',
+                data: {
+                    UserPwd: password,
+                    Original_password: Original_password
+                },
+                success: function (data) { //请求成功时
+                    var result = $.parseJSON(data);
+                    if (result.Success == true) {
+                        $('#Password').modal('hide');
+                        layer.alert(result.Message);
+                    } else {
+                        layer.alert(result.Message);
+                    }
+                }
+            })
+        });
+
+    });
+    // public method for encoding
+    function encode(input) {
+        var _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+        var output = "";
+        var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+        var i = 0;
+        input = _utf8_encode(input);
+        while (i < input.length) {
+            chr1 = input.charCodeAt(i++);
+            chr2 = input.charCodeAt(i++);
+            chr3 = input.charCodeAt(i++);
+            enc1 = chr1 >> 2;
+            enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+            enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+            enc4 = chr3 & 63;
+            if (isNaN(chr2)) {
+                enc3 = enc4 = 64;
+            } else if (isNaN(chr3)) {
+                enc4 = 64;
+            }
+            output = output +
+            _keyStr.charAt(enc1) + _keyStr.charAt(enc2) +
+            _keyStr.charAt(enc3) + _keyStr.charAt(enc4);
+        }
+        return output;
+    }
+
+    // public method for decoding
+    function decode(input) {
+        var _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+        var output = "";
+        var chr1, chr2, chr3;
+        var enc1, enc2, enc3, enc4;
+        var i = 0;
+        input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+        while (i < input.length) {
+            enc1 = _keyStr.indexOf(input.charAt(i++));
+            enc2 = _keyStr.indexOf(input.charAt(i++));
+            enc3 = _keyStr.indexOf(input.charAt(i++));
+            enc4 = _keyStr.indexOf(input.charAt(i++));
+            chr1 = (enc1 << 2) | (enc2 >> 4);
+            chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+            chr3 = ((enc3 & 3) << 6) | enc4;
+            output = output + String.fromCharCode(chr1);
+            if (enc3 != 64) {
+                output = output + String.fromCharCode(chr2);
+            }
+            if (enc4 != 64) {
+                output = output + String.fromCharCode(chr3);
+            }
+        }
+        output = _utf8_decode(output);
+        return output;
+    }
+
+    // private method for UTF-8 encoding
+    function _utf8_encode(string) {
+        var _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+        string = string.replace(/\r\n/g, "\n");
+        var utftext = "";
+        for (var n = 0; n < string.length; n++) {
+            var c = string.charCodeAt(n);
+            if (c < 128) {
+                utftext += String.fromCharCode(c);
+            } else if ((c > 127) && (c < 2048)) {
+                utftext += String.fromCharCode((c >> 6) | 192);
+                utftext += String.fromCharCode((c & 63) | 128);
+            } else {
+                utftext += String.fromCharCode((c >> 12) | 224);
+                utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+                utftext += String.fromCharCode((c & 63) | 128);
+            }
+
+        }
+        return utftext;
+    }
+
+    // private method for UTF-8 decoding
+    function _utf8_decode(utftext) {
+        var _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+        var string = "";
+        var i = 0;
+        var c = c1 = c2 = 0;
+        while (i < utftext.length) {
+            c = utftext.charCodeAt(i);
+            if (c < 128) {
+                string += String.fromCharCode(c);
+                i++;
+            } else if ((c > 191) && (c < 224)) {
+                c2 = utftext.charCodeAt(i + 1);
+                string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
+                i += 2;
+            } else {
+                c2 = utftext.charCodeAt(i + 1);
+                c3 = utftext.charCodeAt(i + 2);
+                string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
+                i += 3;
+            }
+        }
+        return string;
+    }
+
+</script>
+<script>
+    $(function () {
+       
+      
+        /*//激活左边菜单*/
+        $.ajax({
+            url: "/mainform/GetMenuData",
+            type: "POST",
+            success: function (data) {
+                if (data) {
+                    var dataJson = $.parseJSON(data);
+                    $('#menu').sidebarMenu({
+                        data: dataJson
+                    });
+                }
+            }
+        });
+        //初始化消息插件
+        init_message_Hub();
+    });
+    //content height
+    var changeFrameHeight1 = function (that) {
+        $(that).height(document.documentElement.clientHeight - 135);
+        $(that).parent(".tab-pane").height(document.documentElement.clientHeight - 130 - 150);
+    }
+
+    function init_message_Hub() {
+        $.connection.hub.logging = false;
+
+        var chat = $.connection.messageHub;
+       
+        chat.client.broadcastMessage = function (message) {
+          
+            var mes = message.split("**")
+            //iframe窗
+            layer.open({
+                type: 1,
+                title: "广播消息提示",
+                closeBtn: 0, //不显示关闭按钮
+                shade: false,
+                area: ['300px', '300px'],
+                offset: 'rb', //右下角弹出
+                time: 8000, //2秒后自动关闭
+                anim: 2,
+                content: "消息内容：" + mes[0] + "<br>" + "消息时间：" + mes[1]
+            });
+            document.getElementById('ifa').contentWindow.location.reload(true);
+        };
+        chat.client.receive_message = function (message) {
+            layer.open({
+                type: 1,
+                title: "消息提示",
+                closeBtn: 0, //不显示关闭按钮
+                shade: false,
+                area: ['300px', '300px'],
+                offset: 'rb', //右下角弹出
+                time: 8000, //2秒后自动关闭
+                anim: 2,
+                content: "消息内容：" + message
+            });
+            document.getElementById('ifa').contentWindow.location.reload(true);
+        }
+        //开始服务
+        $.connection.hub.start().done(function () {
+            //注册用户服务  
+            //获取登录用户的直
+            var UserName = $("#UserName").html();
+            chat.server.register(UserName);                                      
+        });
+    };
+   
+</script>
+

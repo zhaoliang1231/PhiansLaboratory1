@@ -1,0 +1,1227 @@
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 10:28:03,636 
+Ïß³ÌID:[69] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[ReportTemplateAdd] Ê±²úÉúÒì³£
+ 
+System.ArgumentOutOfRangeException: Ë÷Òı³¬³ö·¶Î§¡£±ØĞëÎª·Ç¸ºÖµ²¢Ğ¡ÓÚ¼¯ºÏ´óĞ¡¡£
+²ÎÊıÃû: index
+   ÔÚ System.Collections.ArrayList.get_Item(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.Get(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.get_Item(Int32 index)
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.ReportTemplateAdd(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 144
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 10:28:05,483 
+Ïß³ÌID:[60] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[ReportTemplateAdd] Ê±²úÉúÒì³£
+ 
+System.ArgumentOutOfRangeException: Ë÷Òı³¬³ö·¶Î§¡£±ØĞëÎª·Ç¸ºÖµ²¢Ğ¡ÓÚ¼¯ºÏ´óĞ¡¡£
+²ÎÊıÃû: index
+   ÔÚ System.Collections.ArrayList.get_Item(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.Get(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.get_Item(Int32 index)
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.ReportTemplateAdd(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 144
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 10:31:17,498 
+Ïß³ÌID:[56] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[ReportTemplateAdd] Ê±²úÉúÒì³£
+ 
+System.ArgumentOutOfRangeException: Ë÷Òı³¬³ö·¶Î§¡£±ØĞëÎª·Ç¸ºÖµ²¢Ğ¡ÓÚ¼¯ºÏ´óĞ¡¡£
+²ÎÊıÃû: index
+   ÔÚ System.Collections.ArrayList.get_Item(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.Get(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.get_Item(Int32 index)
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.ReportTemplateAdd(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 144
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 10:37:22,746 
+Ïß³ÌID:[13] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[ReportTemplateAdd] Ê±²úÉúÒì³£
+ 
+System.ArgumentOutOfRangeException: Ë÷Òı³¬³ö·¶Î§¡£±ØĞëÎª·Ç¸ºÖµ²¢Ğ¡ÓÚ¼¯ºÏ´óĞ¡¡£
+²ÎÊıÃû: index
+   ÔÚ System.Collections.ArrayList.get_Item(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.Get(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.get_Item(Int32 index)
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.ReportTemplateAdd(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 144
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 10:37:56,246 
+Ïß³ÌID:[48] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[ReportTemplateAdd] Ê±²úÉúÒì³£
+ 
+System.ArgumentOutOfRangeException: Ë÷Òı³¬³ö·¶Î§¡£±ØĞëÎª·Ç¸ºÖµ²¢Ğ¡ÓÚ¼¯ºÏ´óĞ¡¡£
+²ÎÊıÃû: index
+   ÔÚ System.Collections.ArrayList.get_Item(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.Get(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.get_Item(Int32 index)
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.ReportTemplateAdd(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 144
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 10:40:46,027 
+Ïß³ÌID:[50] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[ReportTemplateAdd] Ê±²úÉúÒì³£
+ 
+System.ArgumentOutOfRangeException: Ë÷Òı³¬³ö·¶Î§¡£±ØĞëÎª·Ç¸ºÖµ²¢Ğ¡ÓÚ¼¯ºÏ´óĞ¡¡£
+²ÎÊıÃû: index
+   ÔÚ System.Collections.ArrayList.get_Item(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.Get(Int32 index)
+   ÔÚ System.Web.HttpFileCollection.get_Item(Int32 index)
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.ReportTemplateAdd(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 144
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:40:37,411 
+Ïß³ÌID:[10] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[LoadReportTemplate] Ê±²úÉúÒì³£
+ 
+System.DivideByZeroException: ³¢ÊÔ³ıÒÔÁã¡£
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 784
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 816
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 834
+   ÔÚ Phians_DAL.ProjectReviewDAL.LoadReportTemplate(TPageModel PageModel, Int32& totalRecord) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_DAL\ProjectReview\ProjectReviewDAL.cs:ĞĞºÅ 43
+   ÔÚ Phians_BLL.ProjectReviewBLL.LoadReportTemplate(TPageModel PageModel, Int32& totalRecord) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ProjectReview\ProjectReviewBLL.cs:ĞĞºÅ 26
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.LoadReportTemplate(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 79
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:40:38,801 
+Ïß³ÌID:[11] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[LoadReportTemplate] Ê±²úÉúÒì³£
+ 
+System.DivideByZeroException: ³¢ÊÔ³ıÒÔÁã¡£
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 784
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 816
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 834
+   ÔÚ Phians_DAL.ProjectReviewDAL.LoadReportTemplate(TPageModel PageModel, Int32& totalRecord) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_DAL\ProjectReview\ProjectReviewDAL.cs:ĞĞºÅ 43
+   ÔÚ Phians_BLL.ProjectReviewBLL.LoadReportTemplate(TPageModel PageModel, Int32& totalRecord) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ProjectReview\ProjectReviewBLL.cs:ĞĞºÅ 26
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.LoadReportTemplate(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 79
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:40:40,451 
+Ïß³ÌID:[10] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[LoadReportTemplate] Ê±²úÉúÒì³£
+ 
+System.DivideByZeroException: ³¢ÊÔ³ıÒÔÁã¡£
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 784
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 816
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 834
+   ÔÚ Phians_DAL.ProjectReviewDAL.LoadReportTemplate(TPageModel PageModel, Int32& totalRecord) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_DAL\ProjectReview\ProjectReviewDAL.cs:ĞĞºÅ 43
+   ÔÚ Phians_BLL.ProjectReviewBLL.LoadReportTemplate(TPageModel PageModel, Int32& totalRecord) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ProjectReview\ProjectReviewBLL.cs:ĞĞºÅ 26
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.LoadReportTemplate(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 79
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:51:59,673 
+Ïß³ÌID:[12] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportPreparation] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportPreparation.cshtml(2704): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:52:32,523 
+Ïß³ÌID:[7] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportPreparation] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportPreparation.cshtml(2704): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:52:43,591 
+Ïß³ÌID:[10] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportReview] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportReview.cshtml(146): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:53:07,460 
+Ïß³ÌID:[6] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportReview] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportReview.cshtml(146): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:53:48,019 
+Ïß³ÌID:[5] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportPreparation] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportPreparation.cshtml(2704): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:54:36,855 
+Ïß³ÌID:[8] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportPreparation] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportPreparation.cshtml(2704): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:54:45,492 
+Ïß³ÌID:[5] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[TemplateFile] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ProjectReview\TemplateFile.cshtml(38): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:55:07,024 
+Ïß³ÌID:[6] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportPreparation] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportPreparation.cshtml(2704): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:55:14,869 
+Ïß³ÌID:[6] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[AbnormalReportManagement] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\AbnormalReportManagement.cshtml(43): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:55:32,833 
+Ïß³ÌID:[8] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[mainformController] µÄ action[loginout] Ê±²úÉúÒì³£
+ 
+System.InvalidOperationException: Î´ÕÒµ½ÊÓÍ¼¡°loginout¡±»òÆäÄ¸°æÊÓÍ¼£¬»òÃ»ÓĞÊÓÍ¼ÒıÇæÖ§³ÖËÑË÷µÄÎ»ÖÃ¡£ËÑË÷ÁËÒÔÏÂÎ»ÖÃ: 
+~/Views/mainform/loginout.aspx
+~/Views/mainform/loginout.ascx
+~/Views/Shared/loginout.aspx
+~/Views/Shared/loginout.ascx
+~/Views/mainform/loginout.cshtml
+~/Views/mainform/loginout.vbhtml
+~/Views/Shared/loginout.cshtml
+~/Views/Shared/loginout.vbhtml
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:55:52,583 
+Ïß³ÌID:[15] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportPreparation] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportPreparation.cshtml(2704): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:56:09,640 
+Ïß³ÌID:[16] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportPreparation] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportPreparation.cshtml(2704): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:56:20,606 
+Ïß³ÌID:[13] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportReview] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportReview.cshtml(146): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 13:56:48,670 
+Ïß³ÌID:[12] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[ReportReview] Ê±²úÉúÒì³£
+ 
+System.Web.HttpCompileException (0x80004005): d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Views\ReportManagement\ReportReview.cshtml(146): error CS0103: µ±Ç°ÉÏÏÂÎÄÖĞ²»´æÔÚÃû³Æ¡°PageOffice¡±
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   ÔÚ System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   ÔÚ System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   ÔÚ Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ Microsoft.Web.Mvc.FixedRazorViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   ÔÚ System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   ÔÚ System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 14:01:03,371 
+Ïß³ÌID:[17] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[Filling_report] Ê±²úÉúÒì³£
+ 
+System.ArgumentNullException: Öµ²»ÄÜÎª null¡£
+²ÎÊıÃû: value
+   ÔÚ ?.(Object , String )
+   ÔÚ Aspose.Words.Bookmark.set_Text(String value)
+   ÔÚ Phians_BLL.ReportEditBLL.insert_char82_163(Bookmark mark, DocumentBuilder docBuild, String mark_Name, String insertData) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportEditBLL.cs:ĞĞºÅ 1412
+   ÔÚ Phians_BLL.ReportEditBLL.Filling_report(String report_num, Int32 id, String tempPath, String outputPath, String tm_id, String return_url) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportEditBLL.cs:ĞĞºÅ 1317
+   ÔÚ phians_laboratory.Controllers.ReportManagementController.Filling_report(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ReportManagementController.cs:ĞĞºÅ 547
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 14:01:04,772 
+Ïß³ÌID:[14] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[Filling_report] Ê±²úÉúÒì³£
+ 
+System.ArgumentNullException: Öµ²»ÄÜÎª null¡£
+²ÎÊıÃû: value
+   ÔÚ ?.(Object , String )
+   ÔÚ Aspose.Words.Bookmark.set_Text(String value)
+   ÔÚ Phians_BLL.ReportEditBLL.insert_char82_163(Bookmark mark, DocumentBuilder docBuild, String mark_Name, String insertData) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportEditBLL.cs:ĞĞºÅ 1412
+   ÔÚ Phians_BLL.ReportEditBLL.Filling_report(String report_num, Int32 id, String tempPath, String outputPath, String tm_id, String return_url) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportEditBLL.cs:ĞĞºÅ 1317
+   ÔÚ phians_laboratory.Controllers.ReportManagementController.Filling_report(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ReportManagementController.cs:ĞĞºÅ 547
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 14:01:05,805 
+Ïß³ÌID:[15] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[Filling_report] Ê±²úÉúÒì³£
+ 
+System.ArgumentNullException: Öµ²»ÄÜÎª null¡£
+²ÎÊıÃû: value
+   ÔÚ ?.(Object , String )
+   ÔÚ Aspose.Words.Bookmark.set_Text(String value)
+   ÔÚ Phians_BLL.ReportEditBLL.insert_char82_163(Bookmark mark, DocumentBuilder docBuild, String mark_Name, String insertData) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportEditBLL.cs:ĞĞºÅ 1412
+   ÔÚ Phians_BLL.ReportEditBLL.Filling_report(String report_num, Int32 id, String tempPath, String outputPath, String tm_id, String return_url) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportEditBLL.cs:ĞĞºÅ 1317
+   ÔÚ phians_laboratory.Controllers.ReportManagementController.Filling_report(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ReportManagementController.cs:ĞĞºÅ 547
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 14:01:15,585 
+Ïß³ÌID:[16] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ReportManagementController] µÄ action[Filling_report] Ê±²úÉúÒì³£
+ 
+System.ArgumentNullException: Öµ²»ÄÜÎª null¡£
+²ÎÊıÃû: value
+   ÔÚ ?.(Object , String )
+   ÔÚ Aspose.Words.Bookmark.set_Text(String value)
+   ÔÚ Phians_BLL.ReportEditBLL.insert_char82_163(Bookmark mark, DocumentBuilder docBuild, String mark_Name, String insertData) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportEditBLL.cs:ĞĞºÅ 1412
+   ÔÚ Phians_BLL.ReportEditBLL.Filling_report(String report_num, Int32 id, String tempPath, String outputPath, String tm_id, String return_url) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportEditBLL.cs:ĞĞºÅ 1317
+   ÔÚ phians_laboratory.Controllers.ReportManagementController.Filling_report(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ReportManagementController.cs:ĞĞºÅ 547
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 15:05:45,792 
+Ïß³ÌID:[167] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[OfficeOperateController] µÄ action[WordRead] Ê±²úÉúÒì³£
+ 
+System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕıÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ System.Convert.ToInt32(String value)
+   ÔÚ phians_laboratory.Controllers.OfficeOperateController.WordRead() Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\OfficeOperateController.cs:ĞĞºÅ 225
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 15:05:46,815 
+Ïß³ÌID:[168] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[OfficeOperateController] µÄ action[WordRead] Ê±²úÉúÒì³£
+ 
+System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕıÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ System.Convert.ToInt32(String value)
+   ÔÚ phians_laboratory.Controllers.OfficeOperateController.WordRead() Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\OfficeOperateController.cs:ĞĞºÅ 225
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 16:01:08,655 
+Ïß³ÌID:[152] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[ReportTemplateEdit] Ê±²úÉúÒì³£
+ 
+System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕıÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ System.Convert.ToInt32(String value)
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.ReportTemplateEdit(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 187
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 16:11:31,182 
+Ïß³ÌID:[11] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[LoadReportTemplate] Ê±²úÉúÒì³£
+ 
+System.DivideByZeroException: ³¢ÊÔ³ıÒÔÁã¡£
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 784
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 816
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 834
+   ÔÚ Phians_DAL.ProjectReviewDAL.LoadReportTemplate(TPageModel PageModel, Int32& totalRecord) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_DAL\ProjectReview\ProjectReviewDAL.cs:ĞĞºÅ 43
+   ÔÚ Phians_BLL.ProjectReviewBLL.LoadReportTemplate(TPageModel PageModel, Int32& totalRecord) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ProjectReview\ProjectReviewBLL.cs:ĞĞºÅ 26
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.LoadReportTemplate(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 79
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 16:12:28,255 
+Ïß³ÌID:[11] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[ProjectReviewController] µÄ action[LoadReportTemplate] Ê±²úÉúÒì³£
+ 
+System.DivideByZeroException: ³¢ÊÔ³ıÒÔÁã¡£
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 784
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 816
+   ÔÚ PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PetaPoco\Database.cs:ĞĞºÅ 834
+   ÔÚ Phians_DAL.ProjectReviewDAL.LoadReportTemplate(TPageModel PageModel, Int32& totalRecord) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_DAL\ProjectReview\ProjectReviewDAL.cs:ĞĞºÅ 43
+   ÔÚ Phians_BLL.ProjectReviewBLL.LoadReportTemplate(TPageModel PageModel, Int32& totalRecord) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\ProjectReview\ProjectReviewBLL.cs:ĞĞºÅ 26
+   ÔÚ phians_laboratory.Controllers.ProjectReviewController.LoadReportTemplate(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:ĞĞºÅ 79
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 16:32:35,080 
+Ïß³ÌID:[51] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[OfficeOperateController] µÄ action[WordEdit] Ê±²úÉúÒì³£
+ 
+System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕıÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ System.Convert.ToInt32(String value)
+   ÔÚ phians_laboratory.Controllers.OfficeOperateController.WordEdit() Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\OfficeOperateController.cs:ĞĞºÅ 149
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 16:49:42,909 
+Ïß³ÌID:[19] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[LedgerManagementController] µÄ action[importProbe] Ê±²úÉúÒì³£
+ 
+System.ArgumentException: Row number or column number cannot be zero
+   ÔÚ Windows.Excel.Cells.ExportDataTable(Int32 firstRow, Int32 firstColumn, Int32 totalRows, Int32 totalColumns, ExportTableOptions options)
+   ÔÚ Windows.Excel.Cells.ExportDataTableAsString(Int32 firstRow, Int32 firstColumn, Int32 totalRows, Int32 totalColumns, Boolean exportColumnName)
+   ÔÚ PhiansCommon.ExcelOperate.ExcelOperate.WorksheetToDataTable(Int32 firstRow, Int32 firstColumn, Workbook NewWorkbook, Int32 WorksheetsIndex, Boolean bolTitle) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PhiansCommon\ExcelOperate\ExcelOperate.cs:ĞĞºÅ 165
+   ÔÚ Phians_BLL.FixtureManagementBLL.importProbe(String FileUrl, Guid OperatePerson) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\LedgerManagement\FixtureManagementBLL.cs:ĞĞºÅ 125
+   ÔÚ phians_laboratory.Controllers.LedgerManagementController.importProbe(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:ĞĞºÅ 386
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 17:00:05,850 
+Ïß³ÌID:[14] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[LedgerManagementController] µÄ action[importProbe] Ê±²úÉúÒì³£
+ 
+System.ArgumentException: Row number or column number cannot be zero
+   ÔÚ Windows.Excel.Cells.ExportDataTable(Int32 firstRow, Int32 firstColumn, Int32 totalRows, Int32 totalColumns, ExportTableOptions options)
+   ÔÚ Windows.Excel.Cells.ExportDataTableAsString(Int32 firstRow, Int32 firstColumn, Int32 totalRows, Int32 totalColumns, Boolean exportColumnName)
+   ÔÚ PhiansCommon.ExcelOperate.ExcelOperate.WorksheetToDataTable(Int32 firstRow, Int32 firstColumn, Workbook NewWorkbook, Int32 WorksheetsIndex, Boolean bolTitle) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PhiansCommon\ExcelOperate\ExcelOperate.cs:ĞĞºÅ 165
+   ÔÚ Phians_BLL.FixtureManagementBLL.importProbe(String FileUrl, Guid OperatePerson) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\LedgerManagement\FixtureManagementBLL.cs:ĞĞºÅ 125
+   ÔÚ phians_laboratory.Controllers.LedgerManagementController.importProbe(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:ĞĞºÅ 386
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-10 17:06:12,481 
+Ïß³ÌID:[52] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔÚÖ´ĞĞ controller[LedgerManagementController] µÄ action[importProbe] Ê±²úÉúÒì³£
+ 
+System.ArgumentException: Row number or column number cannot be zero
+   ÔÚ Windows.Excel.Cells.ExportDataTable(Int32 firstRow, Int32 firstColumn, Int32 totalRows, Int32 totalColumns, ExportTableOptions options)
+   ÔÚ Windows.Excel.Cells.ExportDataTableAsString(Int32 firstRow, Int32 firstColumn, Int32 totalRows, Int32 totalColumns, Boolean exportColumnName)
+   ÔÚ PhiansCommon.ExcelOperate.ExcelOperate.WorksheetToDataTable(Int32 firstRow, Int32 firstColumn, Workbook NewWorkbook, Int32 WorksheetsIndex, Boolean bolTitle) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\PhiansCommon\ExcelOperate\ExcelOperate.cs:ĞĞºÅ 165
+   ÔÚ Phians_BLL.FixtureManagementBLL.importProbe(String FileUrl, Guid OperatePerson) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\Phians_BLL\LedgerManagement\FixtureManagementBLL.cs:ĞĞºÅ 125
+   ÔÚ phians_laboratory.Controllers.LedgerManagementController.importProbe(FormCollection FormCollection) Î»ÖÃ d:\¹¤×÷ÏîÄ¿\20181008ÎŞËğÏîÄ¿ÖØĞÂĞŞ¸ÄÄÚÈİ¼°¼ÇÂ¼\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:ĞĞºÅ 386
+   ÔÚ lambda_method(Closure , ControllerBase , Object[] )
+   ÔÚ System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ÔÚ System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)

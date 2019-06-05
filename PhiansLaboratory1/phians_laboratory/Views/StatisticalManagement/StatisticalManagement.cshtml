@@ -1,0 +1,98 @@
+﻿@{
+    ViewBag.Title = "StatisticalManagement";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title> 统计管理</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("StatisticalManagementJs")
+
+</head>
+<body>
+        <div id="report_arrangeMain" style="overflow: hidden;">
+            <div style="position: absolute; z-index: 99999; left: 50px;">
+                <div class="sTestSearch fl ml-10" style="height: 23px; margin-top: 10px; margin-left: 15px; float: left">
+                    <label class="all1" style="margin-left: 3px;font-size:12px">统计类型：</label>
+                    <input id="report_arrange_group" name="" class="easyui-combobox" style="width: 100px; height: 22px; margin-left: 5px;" />
+                    <span class="statistics" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <span id="department" style="display: none;">
+                        <label class="all1" style="font-size:12px">科室：</label>
+                        <input id="comboxdepartment" name="review_personnel" style="width: 100px; height: 22px; margin-left: 5px;" />
+                    </span>
+                    <span id="group_personal" style="display: none;">
+                        <label class="all1" style="font-size:12px">班组：</label>
+                        <input id="comboxgroup" name="review_personnel" class="easyui-combobox " data-options="required:false" style="width: 100px; height: 22px; margin-left: 5px;" />
+                    </span>
+                    <span id="overdue" style="display: none;">
+                        <label class="all1" style="font-size:12px">逾期统计：</label>
+                        <input id="overdueStatistics" name="overdueStatistics" class="easyui-combobox " style="width: 100px; height: 22px; margin-left: 5px;" />
+                    </span>
+                    <span id="ReportTemplate" style="display: none;">
+                        <label class="all1" style="font-size:12px">报告类型统计：</label>
+                        <input id="GetReportTemplate" name="GetReportTemplate" class="easyui-combobox " data-options="required:false" style="width: 150px; height: 22px; margin-left: 5px;" />
+                    </span>
+                    <span id="personal" style="display: none;">SendBackCount
+                        <label class="all1" style="margin-left: 3px;font-size:12px">人员：</label>
+                        <input id="comboxperson" name="review_personnel" class="easyui-combobox" style="width: 100px; height: 22px; margin-left: 5px;" />
+                    </span>
+                    @*<span id="statistics_type" style="display: none;">
+                        <span class="statistics" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                        <input id="statisticsChk1" class="statistics" type="radio" value="0" checked="checked" name="statistics" /><label class="statistics">统计所有组</label>
+                        <input id="statisticsChk2" class="statistics" type="radio" value="1" name="statistics" /><label class="statistics">统计所有人</label>
+                    </span>*@
+                    <span id="allTime" style="display: none;">
+                        <label class="all1" style="margin-left: 3px;font-size:12px" >耗时：</label>
+                        <input id="allTimeH" name="allTime" class="easyui-numberbox" style="width: 60px; height: 22px; margin-left: 5px;" data-options="required:true" />天
+                    </span>
+                    <span id="frequency" style="display: none;">
+                        <label class="all1" style="margin-left: 3px;font-size:12px">次数：</label>
+                        <input id="allFrequency" name="allTime" class="easyui-numberbox" style="width: 60px; height: 22px; margin-left: 5px;" data-options="required:true" />次
+                    </span>
+                    <span class="statistics" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                </div>
+                <div class="sTestSearch fl ml-10" style="height: 23px; margin-top: 10px; margin-left: 36px; float: left">
+                    <label class="all1" style="font-size:12px">检验日期：</label>
+                    <input id="dateStart" class="easyui-datebox" style="width: 102px" /><label style="margin-left: 12px; font-size: 12px"> 到 </label>
+                    <p class="h_d1" style="width: 6px"></p>
+                    <input id="dateEnd" class="easyui-datebox" style="width: 102px; margin-left: 10px;" />
+                    <a id="date_select_" style="font-size:12px; display: inline-block; width: 40px; height: 20px; margin-left: 5px; line-height: 20px; border-radius: 4px; text-align: center; background: #3398DB; text-align: center; color: #fff; cursor: pointer;">查询</a>
+                </div>
+
+            </div>
+            
+            <!-- 柱状图 -->
+            <div id="container" style="width: 90%; height: 600px; top: 60px; margin-top: 15px;position:relative"></div>
+            <!-- 饼状图 -->
+            <div id="container1" style="width: 90%; height: 400px; top: 60px; display: none;"></div>
+
+
+            <div id="echartsBox" style="position: relative; z-index: 99999; left: 30px; display: none; margin:0 auto 20px; text-align: center;">
+                <label class="" style="font-size:12px">列表显示：</label>
+                <input id="echartsList" class="easyui-combobox" style="width: 180px; height: 22px;"/>
+                <a id="echartsSearch" style="font-size: 12px; display: inline-block; width: 40px; height: 20px; margin-left: 5px; line-height: 20px; border-radius: 4px; text-align: center; background: #3398DB; text-align: center; color: #fff; cursor: pointer;">查询</a>
+                <span id="qualifiedAll" style="font-size: 12px; vertical-align: middle; display: none">
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <input id="qualifiedChecked" type="checkbox" name="qualified" value="1" style="vertical-align: middle" checked="checked"/>一次通过
+                    <input id="unqualifiedChecked" type="checkbox" name="unqualified" value="0" style="vertical-align: middle"/>多次通过
+                    <input id="condition" name="condition" type="hidden" value="0"/>
+                </span>
+                <span id="exportReport" style="display:none;">
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <a id="exportButton" style="font-size: 12px; display: inline-block; width: 40px; height: 20px; margin-left: 5px; line-height: 20px; border-radius: 4px; text-align: center; background: green; text-align: center; color: #fff; cursor: pointer;">导出</a>
+                </span>
+            </div>
+
+            <div id="echartsDatagrid" style="display:none;margin-top:60px"></div>
+
+           
+
+        </div>
+        
+</body>
+</html>
+

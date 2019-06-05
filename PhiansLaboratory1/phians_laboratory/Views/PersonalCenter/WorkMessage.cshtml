@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "WorkMessage";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title>Work Message</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("WorkMessageJs")
+    @*<link rel="stylesheet" type="text/css" href="/uploadify/uploadify.css" />*@
+
+</head>
+<body>
+    @*消息列表*@
+    <div id="MessageList"></div>
+
+    <div style="display: none">
+        <div id="message_show_toolbar">
+            <label class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">消息状态:</label>
+            <input id="search_message" style="width: 150px" class="easyui-combobox" />
+            <input id="search_key" style="width: 150px" class="easyui-combobox" />
+            <input id="search_key1" style="width: 150px" class="easyui-textbox" />
+            <a href="javascript:;" id="search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+            <span class="link_button" style="display:inline-block;">
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none">
+                    <a href="javascript:;" id="click_ok" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true" style="display:inline-block;">确认已阅读消息</a>
+                </span>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none">
+                    <a href="javascript:;" id="click_all_ok" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">确认阅读全部消息</a>
+                </span>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

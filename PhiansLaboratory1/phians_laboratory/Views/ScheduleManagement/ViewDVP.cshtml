@@ -1,0 +1,1112 @@
+﻿@{
+    ViewBag.Title = "ViewDVP";
+}
+@{
+    ViewBag.Title = "DVPInformation";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+
+    <link href="~/Content/kindeditor/themes/default/default.css" rel="stylesheet" />
+    <link href="~/Content/kindeditor/plugins/code/prettify.css" rel="stylesheet" />
+    <style>
+        #source {
+            width: 100%;
+        }
+
+            #source .panel {
+                float: left;
+                width: 50%;
+            }
+
+                #source .panel:nth-child(5) {
+                    width: 100%;
+                }
+
+                #source .panel #report_datagrid {
+                    width: 100%;
+                }
+
+        /*#experimenter .panel {
+              float: left;
+              width: 33.333%;
+          }*/
+
+        .ke-container {
+            float: left;
+        }
+
+        /*#experimenter .panel .panel-header {
+              width: 100% !important;
+          }
+
+          #experimenter .panel-body {
+              width: 100% !important;
+          }
+
+          #experimenter .datagrid-view {
+              height: 300px !important;
+          }
+
+
+        */
+        .datagrid-btable tr td {
+            width: 100px !important;
+        }
+    </style>
+</head>
+<body style="width: 100%;height:1040px;overflow:hidden;">
+    @*整体布局*@
+    <div id="cc" class="easyui-layout" style="width: 100%;height:1040px;overflow:hidden;">
+        <div data-options="region:'west',split:false" style="width:440px;height:1040px;overflow-x:hidden;">
+            <div id="Laboratory_tree" class="easyui-panel" title="Laboratory" style="width: 438px; height:500px;border-bottom:none">
+                @*<div class="easyui-menu" id="keyMenu">
+                    <div id="tree_edit" data-options="iconCls:'icon-edit'">Edit Item</div>
+                    <div id="tree_add_next" data-options="iconCls:'icon-add'">
+                        Add Children Item
+                    </div>
+                    <div id="tree_del" data-options="iconCls:'icon-remove'">
+                        Delete Item
+                    </div>*@
+                    @*<div id="tree_copy" data-options="iconCls:'icon-read'">
+                            Copy Review
+                        </div>*@
+                    @*<div id="View_Sample" data-options="iconCls:'icon-read'">
+                        View Sample process
+                    </div>
+                    <div id="View_temprature_Btn" data-options="iconCls:'icon-add'">
+                        View temprature && Humidity
+                    </div>
+                    <div id="Choose_Compare_Btn" data-options="iconCls:'icon-add'">
+                        Choose Compare Item
+                    </div>
+                </div>*@
+            </div>
+            <!-- 树页面工具栏 -->
+            <div id="Laboratory_tree_toolbar" class="easyui-panel" style="border-top:none;width: 438px;display:none">
+                @*<a href="javascript:;" id="Item_add1" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit Item</a>
+                <a href="javascript:;" id="tree_add_next1" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add Children Item</a>
+                <a href="javascript:;" id="tree_del1" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true"> Delete Item</a>
+                <a href="javascript:;" id="Choose_Template" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true"> Choose Template</a>
+                <a href="javascript:;" id="tree_copy" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true"> Copy Review</a>*@
+                @*<a href="../../gooflow/demo/demo.html" id="item_process" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">制定流程图</a>*@
+            </div>
+            <div id="report_datagrid" style="float:left;margin-left:2px;width: 430px;overflow-x:hidden;"></div>
+        </div>
+        @*复制模板*@
+        <div id="TemplateCombobox_dialog">
+            <div class="h_dline" style="height: 23px; margin-top: 40px; margin-left: 10px;float: left;">
+                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Template:</label>
+                <input id="TemplateCombobox" class="easyui-combobox" name="" style="width: 300px; height: 23px; margin-left: 5px" required="required" />
+            </div>
+
+        </div>
+        @*拷贝模板*@
+        <div id="Copy_Review_dialog" class="easyui-layout" style="width: 1300px; height: 650px; position: relative;">
+            <div data-options="region:'west',split:false" style="width: 20%; height: 500px; overflow: hidden;" title="">
+                <div id="copyTree" style="width: 250px; height: 570px; overflow: auto; "></div>
+            </div>
+            <div data-options="region:'center',split:false" style="width: 20%; height: 500px; overflow: hidden; position: relative;" title="待拷贝项目信息">
+                <form id="copyContent" method="post" style="height: 550px;width:300px">
+                    <div style="margin-top:130px">
+                        <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px; float: left;">
+                            <label class="h_d1" style="width: 100px; text-align: right; display: inline-block">MTRNO:</label>
+                            <input id="" class="easyui-textbox" name="MTRNO" style="width: 170px;" required="required" readonly="readonly" />
+                        </div>
+                        <div class="h_dline" style="height: 23px; margin-top: 30px; margin-left: 10px; float: left;">
+                            <label class="h_d1" style="width: 100px; text-align: right; display: inline-block">ProjectName:</label>
+                            <input id="ProjectName1" class="easyui-textbox" name="ProjectName" style="width: 170px; " required="required" />
+                        </div>
+                        <div class="h_dline" style="height: 23px; margin-top: 30px; margin-left: 10px; float: left;">
+                            <label class="h_d1" style="width: 100px; text-align: right; display: inline-block">Test time(h):</label>
+                            <input id="Total" class="easyui-numberbox" name="Total" style="width: 170px; " required="required" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div data-options="region:'east',split:false" style="width: 55%; height: 100%; margin-left: 5px;overflow: hidden; position: relative;">
+                <div id="" class="easyui-tabs" style="width: 100%; height: 570px; position: relative;">
+                    <div title="拷贝子项目" style="height: 100%; overflow-y: hidden">
+                        <div id="TestDatagrid"></div>
+                    </div>
+                    <div title="拷贝主项目" style="height: 100%; overflow-y: hidden;">
+                        <div id="MainTestDatagrid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="TestDatagrid_toolbar">
+            <label for="CurrentMTR">Show current MTR <input id="CurrentMTR" type="checkbox" checked="checked" /></label>
+            <input id="KeyValue" style="width: 100px" class="easyui-combobox" />
+            <input id="KeyValue1" style="width: 100px" class="easyui-textbox" />
+            <a href="javascript:;" id="SearchCopy" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="copy" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">Copy</a>
+        </div>
+        <div id="MainTestDatagrid_toolbar">
+            <label for="MCurrentMTR">Show current MTR <input id="MCurrentMTR" type="checkbox" checked="checked" /></label>
+            <input id="MainKeyValue" style="width: 150px" class="easyui-combobox" />
+            <input id="MainKeyValue1" style="width: 150px" class="easyui-textbox" />
+            <a href="javascript:;" id="MainSearchCopy" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="MainCopy" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">Copy</a>
+        </div>
+        @*<div>
+                <form id="CopyMainProjectForm" method="post">
+                    <div title="Edit Type" style="margin-left:20px">
+                        <div class="h_dline" style="height: 23px; margin-top: 60px;margin-left: 15px;float:left;">
+                            <p class="h_d1" style="width: 150px;float:left;margin-top:5px">Main Project Name：</p>
+                            <input id="ProjectName1" class="easyui-textbox" name="" style="width: 180px; height: 30px; " required="required" />
+                        </div>
+                    </div>
+                </form>
+            </div>*@
+        @*整体样品流转流程图*@
+        <div id="sample_dialog">
+            <div id="sample_diagrid"></div>
+            <div id="sample_information_toolbar" style="display:none">
+                <form>
+                    <label class="h_d1" style="width: 120px; text-align: right; display: inline-block">SampleNo Range:</label>
+                    <label id="MotoNum_Range" style="color:#ff0000"></label>
+                    @*<input id="MotoNum_Range" class="easyui-textbox" style="width: 150px; height: 23px; margin-left: 5px" />*@
+                    <label class="h_d1" style="width: 80px; text-align: right; display: inline-block">SampleNo:</label>
+                    <input id="SampleNo1" class="easyui-textbox" name="MotoNum" style="width: 150px; height: 23px; margin-left: 5px" placeholder="1#~2#" required="required" />
+                    <label class="h_d1" style="width: 40px; text-align: right; display: inline-block">Sort:</label>
+                    <input id="Sort" class="easyui-numberbox" name="Sort" style="width: 150px; height: 23px; margin-left: 5px" required="required" />
+                    <a href="javascript:;" id="sample_save" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">Save</a>
+                </form>
+            </div>
+        </div>
+        <div data-options="region:'center'" style="padding:5px;background:#eee;height:1000px;">
+            <div id="tt2" class="easyui-tabs" style="width: 100%; position: relative; margin-top: 0px">
+                <!--<%-- 参数评审 --%>-->
+                <div title="参数评审" style=" border: 0px; height: 100%;overflow-y:hidden">
+                    <div class="easyui-panel" data-options="title:'检验条件/检验标准'" style=" border: 0px; height: 100%;overflow-y:hidden">
+                        <div data-options="region:'north',title:'检验条件/检验标准',split:true">
+                            <div class="easyui-panel" data-options="fit:true,border:false" style="overflow:hidden;">
+                                <!--style给定宽度可以影响编辑器的最终宽度-->
+                                @*<a href="javascript:;" id="submit_contation" style="position:absolute;top:30px;left:120px;cursor:pointer;background:#0094ff;width:60px;text-decoration-line:none;height:30px;border-radius:4px;line-height:30px;text-align:center;color:#fff">Save</a>
+                                    <form style="float:left;width:50%;position:relative;" id="form_submit" runat="server">
+                                        <textarea id="editor" runat="server" style="width:100%;height:450px;float:left;visibility:hidden;overflow-x:hidden;"></textarea>
+
+                                    </form>*@
+                                @*<a href="javascript:;" id="submit_standard" runat="server" style="position:absolute;top:30px;right:40px;cursor:pointer;background:#0094ff;width:60px;text-decoration-line:none;height:30px;line-height:30px;border-radius:4px;text-align:center;color:#fff">Save</a>
+                                    <form style="float:left;width:50%;position:relative;" id="form_submit1" runat="server">
+                                        <textarea id="editor1" runat="server" style="width:100%;height:450px;float:left;visibility:hidden;overflow-x:hidden;"></textarea>
+
+                                    </form>*@
+                                <iframe src="/ScheduleManagement/KindeditorEdit1" style="width:100%;height:450px;" id="EditIframe"></iframe>
+                            </div>
+                        </div>
+                        <!--<div data-options="region:'center'" style="padding:5px;background:#eee;">
+                            <div class="easyui-panel" title="检验标准"
+                                 data-options="fit:true,border:false" style="overflow-x:hidden;">
+                                style给定宽度可以影响编辑器的最终宽度
+
+                            </div>
+                        </div>-->
+                        @*参数选择部分*@
+                        <div data-options="region:'south',split:true" style="height:460px;" id="experimenter">
+                            <div id="cc_" class="easyui-layout" style="width:100%;height:440px;">
+                                <div data-options="region:'west',title:'West',title:'Condition',split:true" style="width:420px;">
+                                    <div id="contation_datagrid"></div>
+                                </div>
+
+                                <div data-options="region:'center',title:'Test Condition',split:true" style="padding:5px;">
+                                    <div id="Test_parameters_info_datagrid"></div>
+
+                                </div>
+                                <div data-options="region:'east',title:'Performance_parameter',split:true" style="padding:5px;width:550px;">
+                                    <div id="Performance_parameters_info_datagrid"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--<%-- 项目信息 --%>-->
+                <div title="资源评审" style="border: 0px; height: 100%;">
+                    <div data-options="region:'south',split:true" style="height:500px;" id="source">
+                        <div id="Equipment_list" style="float:left;"></div>
+                        <div id="Fixture_list" style="float:left;margin-left:2px;"></div>
+                        @*人员*@
+                        <div id="employee_list" style="float:left;margin-left:2px;"></div>
+                        <div id="Consumables_list" style="float:left;margin-left:2px;"></div>
+                        <div id="control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div style="display:none">
+        <!-- 报告工具栏 -->
+        <div id="Report_info_toolbar">
+            @*<a href="javascript:;" id="Report_info_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Report_info_edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Report_info_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+        </div>
+        <!-- 性能参数工具栏 -->
+        <div id="Performance_parameters_info_toolbar">
+            @*<a href="javascript:;" id="Performance_parameters_info_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Performance_parameters_info_edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Performance_parameters_info_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Performance_parameters_info_showDialog" class="easyui-linkbutton" data-options="iconCls:'icon-tip',plain:true">Show</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <label style="color: #f00;display:inline-block">Common：</label>
+            <span class="radioSpan" id="">
+                <input id="Commonflag_true" type="radio" name="Commonflag_true" value="true" /><label style="color: #f00;">Yes</label>
+                <input id="Commonflag_false" type="radio" name="Commonflag_true" value="false" checked="checked" /><label style="color: #f00;">No</label>
+            </span>*@
+        </div>
+        <!-- 性能参数详细列表工具栏（show） -->
+        <div id="Performance_parameters_show_toolbar">
+            @*<a href="javascript:;" id="Performance_parameters_show_edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Performance_parameters_show_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+        </div>
+        <!-- 参数条件工具栏 -->
+        <div id="contation_datagrid_toolbar">
+            @*<a href="javascript:;" id="contation_datagrid_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="contation_datagrid_edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="contation_datagrid_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="template_add" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">Copy templete</a>*@
+        </div>
+        <!-- 测试参数工具栏 -->
+        <div id="Test_parameters_info_toolbar">
+            @*<a href="javascript:;" id="Test_parameters_info_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Test_parameters_info_edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Test_parameters_info_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Test_parameters_info_showDialog" class="easyui-linkbutton" data-options="iconCls:'icon-tip',plain:true">Show</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <label style="color: #f00;display:inline-block">Common：</label>
+            <span class="radioSpan" id="">
+                <input id="Commonflag_yes" name="Commonflag_yes" type="radio" value="true" /><label style="color: #f00;">Yes</label>
+                <input id="Commonflag_no" name="Commonflag_yes" type="radio" value="false" checked="checked" /><label style="color: #f00;">No</label>
+            </span>*@
+        </div>
+        <!-- 测试参数详细列表工具栏（show） -->
+        <div id="Test_parameters_show_toolbar">
+            @*<a href="javascript:;" id="Test_parameters_show_edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Test_parameters_show_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+        </div>
+        <!-- 设备工具栏 -->
+        <div id="equipment_toolbar">
+            @*<a href="javascript:;" id="equipment_read" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">View Detail</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="equipment_add1" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="equipment_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+        </div>
+        <!-- 夹具工具栏 -->
+        <div id="clamp_toolbar">
+            @*<a href="javascript:;" id="clamp_read" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">View Detail</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="clamp_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="clamp_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+        </div>
+        <!-- 人员工具栏 -->
+        <div id="person_toolbar">
+            @*<a href="javascript:;" id="person_read" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">View Detail</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+            @*<a href="javascript:;" id="person_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="person_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+        </div>
+        <!-- 易耗品工具栏 -->
+        <div id="Consumables_toolbar">
+            @*<a href="javascript:;" id="Consumables_read" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">View Detail</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Consumables_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Consumables_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+        </div>
+        <!-- 控制器工具栏 -->
+        <div id="control_toolbar">
+            @*<a href="javascript:;" id="control_read" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">View Detail</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="control_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="control_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="control_add_program" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add Program</a>*@
+        </div>
+        <!--<%-- 温度条件 --%>-->
+        <div id="temprature_dialog">
+            <div id="temprature_datagrid"></div>
+            <div style="display:none">
+                <!-- 温度条件工具栏 -->
+                <div id="temprature_toolbar">
+                    <a href="javascript:;" id="temprature_add_Btn" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+
+                    <a href="javascript:;" id="temprature_delete_Btn" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!--<%-- 性能参数添加授权工具栏 --%>-->
+        <div id="Parameter_authorize_toobar">
+            <input class="easyui-combobox" id="Parameter_datagrid_search1" style="width:100px;" data-options="editable:false" />
+            <input class="easyui-textbox" id="Parameter_datagrid_search" style="width:100px;" />
+            <a href="javascript:;" id="Parameter_datagrid_find" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+        </div>
+        <!--<%-- 测试参数添加授权工具栏 --%>-->
+        <div id="Test_authorize_toobar">
+            <input class="easyui-combobox" id="Test_datagrid_search1" style="width:100px;" data-options="editable:false" />
+            <input class="easyui-textbox" id="Test_datagrid_search" style="width:100px;" />
+            <a href="javascript:;" id="Test_datagrid_find" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+        </div>
+        <!-- 设备添加授权工具栏 -->
+        <div id="equipment_authorize_toolbar">
+            <input class="easyui-combobox" id="equipment_search1" style="width:120px;" data-options="editable:false" />
+            <input class="easyui-textbox" id="equipment_search" style="width:120px;" />
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="equipment_find" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+        </div>
+        <!-- 报告添加授权工具栏 -->
+        <div id="report_authorize_toolbar">
+            <input class="easyui-combobox" id="report_search1" style="width:120px;" data-options="editable:false" />
+            <input class="easyui-textbox" id="report_search" style="width:120px;" />
+            <a href="javascript:;" id="report_find" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+        </div>
+        <!-- 夹具添加授权工具栏 -->
+        <div id="clamp_authorize_toolbar">
+            <input class="easyui-combobox" id="clamp_search1" style="width:120px;" data-options="editable:false" />
+            <input class="easyui-textbox" id="clamp_search" style="width:120px;" />
+            <a href="javascript:;" id="clam_find" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+        </div>
+        <!-- 人员添加授权工具栏 -->
+        <div id="person_authorize_toolbar">
+            <input class="easyui-combobox" id="person_search1" style="width:120px;" data-options="editable:false" />
+            <input class="easyui-textbox" id="person_search" style="width:120px;" />
+            <a href="javascript:;" id="person_find" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+        </div>
+        <!-- 易耗品添加授权工具栏 -->
+        <div id="Consumables_authorize_toolbar">
+            <input class="easyui-combobox" id="Consumables_search1" style="width:120px;" data-options="editable:false" />
+            <input class="easyui-textbox" id="Consumables_search" style="width:120px;" />
+            <a href="javascript:;" id="Consumable_find" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+        </div>
+        <!-- 控制器添加授权工具栏 -->
+        <div id="Control_authorize_toolbar">
+            <input class="easyui-combobox" id="control_search1" style="width:120px;" data-options="editable:false" />
+            <input class="easyui-textbox" id="control_search" style="width:120px;" />
+            <a href="javascript:;" id="control_find" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+        </div>
+        <!-- 控制器程序添加授权工具栏 -->
+        <div id="Control_program_authorize_toolbar">
+            <input class="easyui-combobox" id="program_search1" style="width:120px;" data-options="editable:false" />
+            <input class="easyui-textbox" id="program_search" style="width:120px;" />
+            <a href="javascript:;" id="program_find" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+        </div>
+        <!-- 条件授权工具栏 -->
+        <!-- 程媛 -->
+        <div id="condition_authorize_toolbar">
+            <input class="easyui-combobox" id="templete_search" style="width:120px;" data-options="editable:false" />
+            <input class="easyui-textbox" id="templete_search1" style="width:120px;" />
+            <a href="javascript:;" id="condition_find" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">search</a>
+        </div>
+
+        @*条件搜索添加*@
+        <form id="contation_datagrid_dialog" style="overflow:hidden" method="post">
+            <div style="margin-left:30px">
+                <div class="h_dline" style="height: 23px; margin-top: 30px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 140px;float:left;margin-top:5px">ConditionName：</p>
+                    <input id="ConditionName" class="easyui-textbox" name="ConditionName" style="width: 300px; height: 23px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 35px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 140px;float:left;margin-top:5px">Remark：</p>
+                    <input id="" class="easyui-textbox" name="Remark" style="width: 300px; height: 66px" />
+                </div>
+            </div>
+        </form>
+
+        <!--Test Condition Show Dialog -->
+        <div id="testcondition_show_dialog">
+            <div id="testcondition_show_datagrid" style="width: 350px; height:400px; margin-top:0"></div>
+        </div>
+
+        <!-- Performance Parameters Show Dialog -->
+        <div id="performance_parameter_show_dialog">
+            <div id="performance_parameter_show_datagrid" style="width: 350px; height:400px; margin-top:0"></div>
+        </div>
+
+
+
+        <div title="performance parameter" id="parameter_dialog1" style="overflow:hidden">
+            <div class="h_d" style="width: 100%; height: 500px; margin-left: 10px; margin-top: 8px">
+                <div class="h_d1">
+                    <!--<%-- 测试参数 --%>
+
+
+                                <!--<%-- 人员列表 --%>-->
+                    <div class="h_d1">
+                        <div id="Test_parameter_Unauthorize" style="width: 350px; height: 450px; margin-top: 0px">
+                        </div>
+                    </div>
+                    <!--<%-- 选择按钮 --%>-->
+                    <div class="h_d1" style="width: 75px; height: 400px; margin-left: 15px">
+                        <div class="easyui-panel" data-options="border:false" style="margin-top: 0px; width: 75px; height: 450px;">
+                            <a id="add_Test_parameter" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 80px">Add</a>
+                            <a id="remove_Test_parameter" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 15px">delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_d1">
+                    <!--<%-- 已经授权人员 --%>-->
+                    <div id="Test_parameter_authorize" style="width: 300px; height: 450px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<%-- 性能参数 --%>-->
+        <div title="性能参数" id="parameter_dialog" style="overflow:hidden">
+            <div class="h_d" style="width: 100%; height: 500px; margin-left: 10px; margin-top: 8px;">
+                <div class="h_d1">
+                    <!--<%-- 性能参数 --%>-->
+                    <div class="h_d1">
+                        <div id="Performance_parameter_Unauthorize" style="width: 400px; height: 450px; margin-top: 0px">
+                        </div>
+                    </div>
+                    <!--<%-- 选择按钮 --%>-->
+                    <div class="h_d1" style="width: 75px; height: 320px; margin-left: 15px">
+                        <div class="easyui-panel" data-options="border:false" style="margin-top: 0px; width: 75px; height: 450px;">
+                            <a id="add_Performance_parameter" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 80px">Add</a>
+                            <a id="remove_Performance_parameter1" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 15px">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_d1">
+                    <!--<%-- 已经授权性能参数 --%>-->
+                    <div id="Performance_parameter_authorize" style="width: 350px; height: 450px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<%-- 试验人员 --%>-->
+        <div title="试验人员" id="person_dialog" style="overflow:hidden">
+            <div class="h_d" style="width: 100%; height: 350px; margin-left: 10px; margin-top: 8px;">
+                <div class="h_d1">
+                    <!--<%-- 人员列表 --%>-->
+                    <div class="h_d1">
+                        <div id="employee_datagrid" style="width: 350px; height: 400px; margin-top: 0px">
+                        </div>
+                    </div>
+                    <!--<%-- 选择按钮 --%>-->
+                    <div class="h_d1" style="width: 75px; height: 350px; margin-left: 15px">
+
+                        <div class="easyui-panel" data-options="border:false" style="margin-top: 0px; width: 75px; height: 400px;">
+                            <a id="add_employee_person" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 80px">Add</a>
+                            <a id="remove_employee_person" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 15px">Delete</a>
+                            <!--<a id="add_signature" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 220px">添加</a>
+                            <a id="remove_signature" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 15px">删除</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="h_d1">
+                    <!--<%-- 已经授权人员 --%>-->
+                    <div id="employee_authorize" style="width: 300px; height: 400px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<%--易耗品--%>-->
+        <div title="易耗品" id="Consumables_dialog">
+            <div class="h_d" style=" height: 300px; margin-left: 10px; margin-top: 8px">
+                <div class="h_d1">
+                    <!--<%-- 备选易耗品 --%>-->
+                    <div class="h_d1">
+                        <div id="Consumables_datagrid" style="width: 350px; height: 400px; margin-top: 0px">
+                        </div>
+                    </div>
+                    <!--<%-- 选择按钮 --%>-->
+                    <div class="h_d1" style="width: 75px; height: 350px; margin-left: 15px">
+                        <div class="easyui-panel" data-options="border:false" style="margin-top: 0px; width: 75px; height: 400px;">
+                            <a id="add_Consumables_datagrid" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 80px">Add</a>
+                            <a id="remove_Consumables_datagrid" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 20px">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_d1">
+                    <!--<%-- 已备选易耗品 --%>-->
+                    <div id="Consumables_authorize" style="width:320px; height: 400px;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--<%-- 试验设备 --%>-->
+        <div title="试验设备" id="equipment_info_dialog">
+            <div class="h_d" style=" height: 300px; margin-left: 10px; margin-top: 8px">
+                <div class="h_d1">
+                    <!--<%-- 备选标准器 --%>-->
+                    <div class="" style="float:left;">
+                        <div id="Equipment_info_datagrid" style="width: 350px; height: 400px; margin-top: 0px">
+                        </div>
+                    </div>
+                    <!--<%-- 选择按钮 --%>-->
+                    <div class="h_d1" style="width: 75px; height: 320px; margin-left: 15px">
+                        <div class="easyui-panel" data-options="border:false" style="margin-top: 0px; width: 75px; height: 400px;">
+                            <a id="add_equipment" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 100px">Add</a>
+                            <a id="remove_equipment" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 40px">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_d1">
+                    <!--<%-- 已备选标准器 --%>-->
+                    <div id="Equipment_info_authorize" style="width: 300px; height: 400px;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--<%--夹具--%>-->
+        <div title="夹具" id="Fixture_list_dialog">
+            <div class="h_d" style=" height: 300px; margin-left: 10px; margin-top: 8px">
+                <div class="h_d1">
+                    <!--<%-- 备选标准器 --%>-->
+                    <div class="h_d1">
+                        <div id="Fixture_datagrid" style="width: 350px; height: 400px; margin-top: 0px">
+                        </div>
+                    </div>
+                    <!--<%-- 选择按钮 --%>-->
+                    <div class="h_d1" style="width: 75px; height: 400px; margin-left: 15px">
+                        <div class="easyui-panel" data-options="border:false" style="margin-top: 0px; width: 75px; height: 400px;">
+                            <a id="add_Fixture_datagrid" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 80px">Add</a>
+                            <a id="remove_Fixture_datagrid" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 20px">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_d1">
+                    <!--<%-- 已备选标准器 --%>-->
+                    <div id="Fixture_authorize" style="width: 300px; height: 400px;">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--<%--控制器--%>-->
+        <div title="控制器" id="control_dialog" style="overflow:hidden">
+            <div class="h_d" style=" height: 500px; margin-left: 10px; margin-top: 8px">
+                <div class="h_d1">
+                    <!--<%-- 备选标准器 --%>-->
+                    <div class="h_d1">
+                        <div id="Control_datagrid" style="width: 350px; height: 400px; margin-top: 0px">
+                        </div>
+                    </div>
+                    <!--<%-- 选择按钮 --%>-->
+                    <div class="h_d1" style="width: 75px; height: 400px; margin-left: 15px">
+                        <div class="easyui-panel" data-options="border:false" style="margin-top: 0px; width: 75px; height: 400px;">
+                            <a id="add_Control_datagrid" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 80px">Add</a>
+                            <a id="remove_Control_datagrid" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 20px">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_d1">
+                    <!--<%-- 已备选标准器 --%>-->
+                    <div id="Control_authorize" style="width: 300px; height: 400px;"></div>
+                </div>
+            </div>
+        </div>
+        @* 程媛 *@
+        @* 添加控制器程序 *@
+        <div title="添加程序" id="Control_program_dialog" style="overflow:hidden">
+            <div class="h_d" style=" height: 500px; margin-left: 10px; margin-top: 8px">
+                <div class="h_d1">
+                    <!--<%-- 备选控制器程序 --%>-->
+                    <div class="h_d1">
+                        <div id="Control_program_datagrid" style="width: 350px; height: 400px; margin-top: 0px">
+                        </div>
+                    </div>
+                    <!--<%-- 选择按钮 --%>-->
+                    <div class="h_d1" style="width: 75px; height: 400px; margin-left: 15px">
+                        <div class="easyui-panel" data-options="border:false" style="margin-top: 0px; width: 75px; height: 400px;">
+                            <a id="add_program_datagrid" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 80px">Add</a>
+                            <a id="remove_program_datagrid" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 20px">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_d1">
+                    <!--<%-- 已备控制器程序 --%>-->
+                    <div id="Control_program_authorize" style="width: 300px; height: 400px;"></div>
+                </div>
+            </div>
+        </div>
+        <!--查看详细夹具-->
+        <!-- 夹具列表 -->
+        <div id="clamp_datagrid_dia">
+            <div id="ViewClampList"></div>
+        </div>
+        <!--查看详细易耗品-->
+        <div title="查看易耗品" id="Consumables_detail_dialog">
+            <form id="Consumables_datagrid_detail" method="post">
+                <div class="h_d" style="margin-top: 8px; margin-left: 15px">
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;display:none">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">TaskNum:</label>
+                        <input id="TaskNum" class="easyui-textbox" name="TaskNum" style="width: 250px;height:23px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">PONum:</label>
+                        <input id="PONum" class="easyui-textbox" name="PONum" style="width: 250px;height:23px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">ConsumablesName:</label>
+                        <input id="ConsumablesName" class="easyui-textbox" name="ConsumablesName" style="width: 250px;height:23px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">ConsumablesType:</label>
+                        <input id="ConsumablesType" class="easyui-textbox" name="ConsumablesType" style="width: 250px;height:23px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Qty:</label>
+                        <input id="Qty" class="easyui-textbox" name="Qty" style="width: 250px;height:23px;" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--查看详细人员-->
+        <div title="查看人员" id="employee_detail_dialog">
+            <form id="employee_datagrid_detail" method="post">
+                <div class="h_d" style="margin-top: 8px; margin-left: 15px">
+                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;display:none">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">TaskNum:</label>
+                        <input id="TaskNum" class="easyui-textbox" name="TaskNum" style="width: 250px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">UserId:</label>
+                        <input id="UserId" class="easyui-textbox" name="UserId" style="width: 250px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">UserCount:</label>
+                        <input id="UserCount" class="easyui-textbox" name="UserCount" style="width: 250px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">JobNum:</label>
+                        <input id="JobNum" class="easyui-textbox" name="JobNum" style="width: 250px;" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- 设备列表 -->
+        <div id="equipment_datagrid_dia">
+            <div id="ViewEquipmentList"></div>
+        </div>
+        <!--查看详细控制器-->
+        <!-- 控制器列表 -->
+        <div id="control_datagrid_dia">
+            <div id="ViewControlList"></div>
+        </div>
+        <!-- 控制器列表 -->
+        <div id="control_datagrid_dia">
+            <div id="ViewControlList"></div>
+        </div>
+        <!-- 选择对比项目 -->
+        <div id="Compare_dialog">
+            <div id="Compare_Item_tree"></div>
+        </div>
+        @*性能参数添加*@
+        <div id="add_Performance_parameter_add">
+            <form id="add_Performance_detail" method="post">
+                <div class="h_d" style="margin-top: 8px; margin-left: 15px">
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Range:</label>
+                        <input id="RangeFlag" class="easyui-combobox" name="" style="width: 250px;" data-options="editable:false" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;width:550px">
+                        <label style="color: #f00;width: 140px;text-align:right;display:inline-block">Auto：</label>
+                        <span class="radioSpan">
+                            <input id="AutoFlag1" type="checkbox" value="true" /><label style="color: #f00;">Yes</label>
+                            <input id="AutoFlag2" type="checkbox" value="false" checked="checked" /><label style="color: #f00;">No</label>
+                            <input type="hidden" name="Flag" value="false" id="AutoFlag" />
+                        </span>
+                    </div>
+
+                    @*<div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                            <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">unit:</label>
+                            <input id="unit" class="easyui-textbox" name="unit" style="width: 250px;" />
+                        </div>*@
+                    <div class="h_dline hide_div1" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">lower limit:</label>
+                        <input id="RequiredValue1" class="easyui-textbox" name="" style="width: 250px;" />
+                    </div>
+
+                    <div class="h_dline hide_div" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">upper limit:</label>
+                        <input id="RequiredValue2" class="easyui-textbox" name="" style="width: 250px;" />
+                    </div>
+
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;width:550px">
+                        <label style="color: #f00;width: 140px;text-align:right;display:inline-block">Common：</label>
+                        <span class="radioSpan">
+                            <input id="Commonflag1" type="checkbox" value="true" /><label style="color: #f00;">Yes</label>
+                            <input id="Commonflag2" type="checkbox" value="false" checked="checked" /><label style="color: #f00;">No</label>
+                            <input type="hidden" name="Commonflag" value="false" id="Commonflag" />
+                        </span>
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Unit:</label>
+                        <input id="ParameterUnit1" class="easyui-combobox" name="ParameterUnit" style="width: 250px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">remarks:</label>
+                        <input id="remarks1" class="easyui-textbox" name="remarks" data-options="muliture:true" style="width: 250px;height:44px;" />
+                    </div>
+                    <fieldset style="border: 1px solid #c3ddf4; height: 120px; width: 600px; margin-top: 20px;margin-left:20px;float:left;">
+                        <legend style="font-weight: 600">Compare</legend>
+                        <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                            <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">CompareRange:</label>
+                            <input id="CompareRangeFlag" class="easyui-combobox" name="" style="width: 250px;" data-options="editable:false" />
+                        </div>
+                        <div class="h_dline hide_div1_" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                            <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">CompareLower:</label>
+                            <input id="min_limit" class="easyui-textbox" name="" style="width: 250px;" />
+                        </div>
+
+                        <div class="h_dline hide_div_" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                            <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">CompareTOP:</label>
+                            <input id="max_limit" class="easyui-textbox" name="" style="width: 250px;" />
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+        @*测试参数添加*@
+        <div id="add_Test_parameter_add">
+            <form id="add_Test_detail" method="post">
+                <div class="h_d" style="margin-top: 8px; margin-left: 15px">
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Value:</label>
+                        <input id="ParameterValue" class="easyui-textbox" name="ParameterValue" style="width: 250px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Unit：</label>
+                        <input id="ParameterUnit" class="easyui-combobox" name="ParameterUnit" style="width: 250px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;">
+                        <label style="color: #f00;width: 140px;text-align:right;display:inline-block">Common：</label>
+                        <span class="radioSpan">
+                            <input id="Commonflag1_" type="checkbox" value="true" /><label style="color: #f00;">Yes</label>
+                            <input id="Commonflag2_" type="checkbox" value="false" checked="checked" /><label style="color: #f00;">No</label>
+                            <input type="hidden" name="Commonflag" value="false" id="Commonflag_" />
+                        </span>
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">remarks:</label>
+                        <input id="remarks2" class="easyui-textbox" name="remarks" data-options="muliture:true" style="width: 250px;height:44px;" />
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+
+
+        @*report报告添加*@
+        <div id="report_add_dialog" method="post">
+            <div id="report_add_datagrid" style="width: 350px; height: 400px; margin-top: 0px">
+            </div>
+            @*<div class="h_d" style=" height: 300px; margin-left: 10px; margin-top: 8px">
+                    <div class="h_d1">
+                        <!--<%-- 备选标准器 --%>-->
+                        <div class="h_d1">
+
+                        </div>
+                        <!--<%-- 选择按钮 --%>-->
+                        <div class="h_d1" style="width: 75px; height: 400px; margin-left: 15px">
+                            <div class="easyui-panel" data-options="border:false" style="margin-top: 0px; width: 75px; height: 400px;">
+                                <a id="add_report_add_datagrid" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 80px">Add</a>
+                                <a id="remove_report_add_datagrid" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 20px">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h_d1">
+                        <!--<%-- 已备选标准器 --%>-->
+                        <div id="report_add_authorize" style="width: 300px; height: 400px;">
+                        </div>
+
+                    </div>
+                </div>*@
+        </div>
+        @*report报告修改*@
+        <form id="report_edit_dialog" method="post">
+            <div class="h_d" style="margin-top: 40px; margin-left: 15px">
+                @*<div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Parameter:</label>
+                        <input id="Parameter" class="easyui-textbox" name="Parameter" style="width: 250px;" />
+                    </div>*@
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 80px;text-align:right;display:inline-block">Remark:</label>
+                    <input id="" class="easyui-textbox" name="Remark" style="width: 300px;height:88px;" data-options="muliture:true" />
+                </div>
+            </div>
+        </form>
+
+        <!--//添加DVP项目-->
+        <form id="Item_dialog1" method="post">
+            <div style="margin-top: 10px; float: left;width:100%;overflow-x:hidden;">
+                <div class="h_d" style="margin-left: 15px;width:100%">
+                    <div class="h_d1" style="width: 32%; height: 500px; margin-left: 6px; margin-top: 6px">
+                        <!--<%-- 检定项目--%>-->
+                        <div id="TestTitle_tree" style="width: 100%; height: 500px;" class="easyui-panel" title="TestTitle"></div>
+
+                    </div>
+                    <div class="h_d1" style="width: 65%; height: 500px; margin-left: 10px;">
+                        <div class="h_d" style="margin-top: 8px; margin-left: 15px">
+                            <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px; float: left;">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">MTRNO:</label>
+                                <input id="MTRNO" class="easyui-textbox" name="" style="width: 280px;" required="required" readonly />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px; float: left;display:none" id="Project">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">TestTitle:</label>
+                                <input id="ProjectId" class="easyui-textbox" name="" style="width: 280px;" data-options="editable:false" />
+                                <input id="ProjectId_" type="hidden" name="ProjectId" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px; float: left;display:none" id="SampleText">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">SampleNo:</label>
+                                <input id="SampleNo" class="easyui-textbox" name="" style="width: 280px;" />
+                            </div>
+                            <div id="main_num" style="display:none">
+                                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">MainNum:</label>
+                                    <input id="MainNum" class="easyui-textbox" name="MainNum" style="width: 140px;" />
+                                </div>
+                                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">MainDescription:</label>
+                                    <input id="MainDescription" class="easyui-textbox" name="MainDescription" style="width: 140px;" />
+                                </div>
+                            </div>
+                            <div id="Sub_num" style="display:none">
+                                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">SubNum.:</label>
+                                    <input id="SubNum" class="easyui-textbox" name="SubNum" style="width: 140px;" />
+                                </div>
+                                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">SubtDescription:</label>
+                                    <input id="SubtDescription" class="easyui-textbox" name="SubtDescription" style="width: 140px;" />
+                                </div>
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">TestItem:</label>
+                                <input id="TestItem" class="easyui-textbox" name="TestItem" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">MotoNum:</label>
+                                <input id="MotoNum" class="easyui-textbox" name="MotoNum" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px; float: left;">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">ProjectName:</label>
+                                <input id="ProjectName" class="easyui-textbox" name="ProjectName" style="width: 280px;" required />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px; float: left;">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Test time(h):</label>
+                                <input id="test_time" class="easyui-numberbox" name="Total" style="width: 280px;" required />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">SampleQty:</label>
+                                <input id="SampleQty" class="easyui-numberbox" name="" style="width: 140px;" />
+                            </div>
+
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Operator:</label>
+                                <input id="Operator" class="easyui-textbox" name="Operator" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">TestStartDate:</label>
+                                <input id="TestStartDate" class="easyui-datebox" name="TestStartDate" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">TestEndDate:</label>
+                                <input id="TestEndDate" class="easyui-datebox" name="TestEndDate" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">PlanStartDate:</label>
+                                <input id="PlanStartDate" class="easyui-datebox" name="PlanStartDate" style="width: 140px;" />
+                            </div>
+
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">PlanEndDate:</label>
+                                <input id="PlanEndDate" class="easyui-datebox" name="PlanEndDate" style="width: 140px;" />
+                            </div>
+
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Temperature:</label>
+                                <input id="Temperature" class="easyui-textbox" name="Temperature" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Humidity:</label>
+                                <input id="Humidity" class="easyui-textbox" name="Humidity" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">ReportName:</label>
+                                <input id="ReportName" class="easyui-textbox" name="ReportName" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">TestResource:</label>
+                                <input id="TestResource" class="easyui-textbox" name="TestResource" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">MachineTime:</label>
+                                <input id="MachineTime" class="easyui-numberbox" name="MachineTime" style="width: 140px;" />h
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">NonLife:</label>
+                                <input id="NonLife" class="easyui-datebox" name="NonLife" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">TestResult:</label>
+                                <input id="TestResult" class="easyui-textbox" name="TestResult" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">activation:</label>
+                                <input id="activation" class="easyui-textbox" name="activation" style="width: 140px;" />
+                            </div>
+
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">TaskRemarks:</label>
+                                <input id="TaskRemarks" class="easyui-textbox" name="TaskRemarks" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">SerialNum:</label>
+                                <input id="SerialNum" class="easyui-textbox" name="SerialNum" style="width: 140px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none">
+                                <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Conculsion:</label>
+                                <input id="Conculsion" class="easyui-textbox" name="Conculsion" style="width: 140px;" />
+                            </div>
+                            @*<div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px; float: left;display:none" id="Isparent_">*@
+                            @*<label style="color: #f00;width: 140px;text-align:right;display:inline-block">Isparent：</label>
+                                <span class="radioSpan">
+                                    <input id="Isparent1" type="checkbox" value="True" /><label style="color: #f00;">Yes</label>
+                                    <input id="Isparent2" type="checkbox" value="False" checked="checked" /><label style="color: #f00;">No</label>
+
+                                </span>*@
+                            @*<input type="hidden" name="Isparent" value="False" id="Isparent" />
+                                </div>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+        @*添加模板dialog*@
+        <!-- 程媛 -->
+        <div id="template_add_dialog" style="overflow:hidden">
+            <div title="参数模板">
+                <div id="cc" class="easyui-layout" style="height:750px;">
+                    <div data-options="region:'west',title:'Templete',split:false" style="width:400px;height:720px">
+                        <div id="Parameter_model_datagrid" style="width:400px;height:720px">
+                        </div>
+                    </div>
+                    <div data-options="region:'center',title:'Conditional parameters'" style="padding:5px;">
+                        <div class="h_d" style=" height: 740px; overflow:hidden">
+                            <div class="h_d1">
+                                <!--<%-- 模版条件列表 --%>-->
+                                <div class="h_d1">
+                                    <div id="ConditionTemplate_datagrid" style="width: 400px; height: 720px; margin-top: 0px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h_d1">
+                                <div class="h_d1">
+                                    <!--<%-- 已经授权测试参数 --%>-->
+                                    <div id="Contation_Test_Parameter_authorize" style="width: 400px; height: 360px;position:relative;top:0px;">
+                                    </div>
+                                    <!--<%-- 已授权性能参数 --%>-->
+                                    <div id="Contation_Performance_parameter_authorize" style="width: 400px; height: 360px; margin-top: 30px; clear: both">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- HXW -->
+        @*温度添加修改对话框*@
+        <form id="tempratureform" method="post">
+
+            <div class="h_d" style="margin-top: 8px; margin-left: 15px">
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Temperature Start:</label>
+                    <input id="TemperatureStart" class="easyui-numberbox" name="TemperatureStart" style="width: 280px;" required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;" id="">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Temperature End:</label>
+                    <input id="TemperatureEnd" class="easyui-numberbox" name="TemperatureEnd" style="width: 280px;" required="required" />
+
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;" id="">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Temperature Unit:</label>
+                    <input id="TemperatureUnit" class="easyui-textbox" name="TemperatureUnit" style="width: 280px;" />
+
+                </div>
+
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Humidity Start:</label>
+                    <input id="HumidityStart" class="easyui-numberbox" name="HumidityStart" style="width: 280px;" required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Humidity End:</label>
+                    <input id="HumidityEnd" class="easyui-numberbox" name="HumidityEnd" style="width: 280px;" required="required" />
+
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Humidity Unit:</label>
+                    <input id="HumidityUnit" class="easyui-textbox" name="HumidityUnit" style="width: 280px;" />
+
+                </div>
+
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Total Time:</label>
+                    <input id="TotalTime" class="easyui-numberbox" name="TotalTime" style="width: 280px;" required="required" />
+
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+<a href="@PageOffice.PageOfficeLink.OpenWindow("/WordCommon/WordOperation?", "width=1300px;height=1000px;")" id="ShowOffice">显示报告版本</a>
+@Html.CombresLink("DVPInformationJs")
+</html>
+
+

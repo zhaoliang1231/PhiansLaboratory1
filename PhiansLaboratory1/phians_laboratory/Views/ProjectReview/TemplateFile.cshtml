@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "TemplateFile";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("TemplateFileJs")
+</head>
+<body>
+    <div class="easyui-panel" data-options="fit:true,border:false">
+
+        <div id="report"></div>
+    </div>
+    @*<%--工具栏--%>*@
+    <div style="display: none">
+        <div id="report_toolbar">
+            <a href="#" id="report_read_1" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">阅读文件</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="addTemplate" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加模板</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="editTemplate" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">修改信息</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="report_read_2" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">编辑world文件</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="deleteTemplate" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">删除模板</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="DownloadReport" class="easyui-linkbutton" data-options="iconCls:'icon-upload',plain:true">下载模板</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <input id="search" style="width: 150px" class="easyui-combobox" />
+            <input id="search1" style="width: 150px" class="easyui-textbox" />
+            <a href="#" id="search_info" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>           
+            <a href="@PageOffice.PageOfficeLink.OpenWindow("/OfficeOperate/WordRead?", "width=1300px;height=1000px;")" id="ShowOffice"></a>
+            <a href="@PageOffice.PageOfficeLink.OpenWindow("/OfficeOperate/WordEdit?", "width=1300px;height=1000px;")" id="reports_edit_1"></a> @*编辑模式打开*@
+        
+        </div>
+
+        <!-- 添加模板 -->
+        <form id="importFileForm" method="post" enctype="multipart/form-data">
+            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 40px;">
+                <p class="h_d1" style="width: 60px">文件编号:</p>
+                <input id="FileNum" name="FileNum" class="easyui-textbox" data-options="required:true" style="width: 200px; height: 25px; margin-left: 5px" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 40px;">
+                <p class="h_d1" style="width: 60px">文件类型:</p>
+                <input id="FileType" name="FileType" class="easyui-combobox" data-options="required:true" style="width: 200px; height: 25px; margin-left: 5px" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 40px; ">
+                <p class="h_d1" style="width: 60px">文件名称:</p>
+                <input id="FileName" name="FileName" class="easyui-textbox" style="width: 200px; height: 25px; margin-left: 5px" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 40px; ">
+                <p class="h_d1" style="width: 60px;">审核级别:</p>
+                <input id="ReviewLevel" name="ReviewLevel" class="easyui-combobox" style="width: 200px; height: 25px; margin-left: 5px" />
+            </div>
+            <div id="UploadFiles" class="h_dline" style="height: 23px; margin-top: 10px; margin-left:40px;display:block">
+                <p class="h_d1" style="width: 60px">上传文件:</p>
+                <input class="easyui-filebox" name="file" data-options="prompt:'文件上传',required:true" style="width:200px">
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 30px; margin-left:40px">
+                <p class="h_d1" style="width: 60px">说明:</p>
+                <input id="Remark" name="Remark" class="easyui-textbox" data-options="multiline:true" style="width: 200px; height: 60px; margin-left: 5px" />
+            </div>
+
+
+        </form>
+
+    </div>
+</body>
+</html>
+

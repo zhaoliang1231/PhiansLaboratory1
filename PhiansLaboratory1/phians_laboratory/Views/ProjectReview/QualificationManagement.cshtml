@@ -1,0 +1,94 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("QualificationManagementJs")
+    <style>
+        .datagrid-header td, .datagrid-body td, .datagrid-footer td {
+            width: 100px !important;
+        }
+
+        .datagrid-btable tr td {
+            width: 100px !important;
+        }
+
+        #Contation .datagrid-header .datagrid-cell {
+            width: auto !important;
+        }
+    </style>
+</head>
+<body style="overflow:hidden;">
+
+    <div id="cc" class="easyui-layout" style="width: 100%; height: 1200px;overflow-x:hidden">
+        <div data-options="region:'center'" style=" border: 0px; height: 100%;overflow:hidden">
+            <div id="" class="easyui-layout" style="height:780px;">
+                <div data-options="region:'west',title:'模板',split:true" style="width:450px;padding:5px;height:780px">
+
+                    <div id="Parameter_model_datagrid">
+                    </div>
+
+                </div>
+                <div data-options="region:'center',title:'授权'">
+                    <div class="h_d" style="  overflow:hidden">
+                        <div class="h_d1">
+                            <!--<%-- 模版条件列表 --%>-->
+                            <div class="h_d1" style="width: 420px; height: 740px;">
+
+                                <div id="userlist_datagrid">
+                                </div>
+
+                            </div>
+                            <!--<%-- 按钮 --%>-->
+                            <div class="h_d1" style="width: 75px; height: 720px; margin-left: 15px">
+                                <div class="easyui-panel" data-options="border:false" style="margin-top: 0px; width: 75px; height: 710px;">
+                                    <a id="addUser" class="easyui-linkbutton" data-options="iconCls:'icon-add'" style="margin-top: 200px">添加</a>
+                                    <a id="removeUser" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" style="margin-top: 10px">删除</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h_d1">
+                            <div style="width: 460px; height: 720px;position:relative;top:0px;">
+                                <div id="userlist_authorize">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div style="display:none">
+
+        <div id="Parameter_model_datagrid_toolbar">
+            <label class="h_d1" style="text-align:right;display:inline-block">模板授权:</label>
+            <input id="NodeType" class="easyui-combobox" name="NodeType" style="width: 200px;" />
+
+        </div>
+        <div id="Authorization_test_toolbar">
+
+        </div>
+        <div id="ConditionTemplate_toolbar">
+            <input id="search" style="width: 150px" class="easyui-combobox" />
+            <input id="search1" style="width: 150px" class="easyui-textbox" />
+            <a href="#" id="search_info" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+        </div>
+
+    </div>
+</body>
+</html>

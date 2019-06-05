@@ -1,0 +1,140 @@
+
+ 
+记录时间：2019-01-07 15:12:38,704 
+线程ID:[15] 
+日志级别：  ERROR 
+错误描述：在执行 controller[ProjectReviewController] 的 action[GetQualificationUserList] 时产生异常
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 PetaPoco.Internal.ParametersHelper.<>c__DisplayClass1.<ProcessParams>b__0(Match m) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Utilities\ParametersHelper.cs:行号 30
+   在 System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator, Int32 count, Int32 startat)
+   在 System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   在 PetaPoco.Internal.ParametersHelper.ProcessParams(String sql, Object[] args_src, List`1 args_dest) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Utilities\ParametersHelper.cs:行号 20
+   在 PetaPoco.Sql.Build(StringBuilder sb, List`1 args, Sql lhs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Core\Sql.cs:行号 135
+   在 PetaPoco.Sql.Build(StringBuilder sb, List`1 args, Sql lhs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Core\Sql.cs:行号 150
+   在 PetaPoco.Sql.Build(StringBuilder sb, List`1 args, Sql lhs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Core\Sql.cs:行号 150
+   在 PetaPoco.Sql.Build(StringBuilder sb, List`1 args, Sql lhs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Core\Sql.cs:行号 150
+   在 PetaPoco.Sql.Build() 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Core\Sql.cs:行号 88
+   在 PetaPoco.Sql.get_SQL() 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Core\Sql.cs:行号 44
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.QualificationManagementDAL.GetQualificationUserList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\ProjectReview\QualificationManagementDAL.cs:行号 117
+   在 Phians_BLL.QualificationManagementBLL.GetQualificationUserList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\ProjectReview\QualificationManagementBLL.cs:行号 41
+   在 phians_laboratory.Controllers.ProjectReviewController.GetQualificationUserList(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:行号 152
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeSynchronousActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2019-01-07 15:16:44,800 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：在执行 controller[ProjectReviewController] 的 action[GetQualificationUserList] 时产生异常
+ 
+System.Data.SqlClient.SqlException (0x80131904): The multi-part identifier "TP.UserId" could not be bound.
+The multi-part identifier "TP.AuthorizationType" could not be bound.
+The multi-part identifier "TP.TemplateID" could not be bound.
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 PetaPoco.Database.ExecuteScalar[T](String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 683
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 778
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.QualificationManagementDAL.GetQualificationUserList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\ProjectReview\QualificationManagementDAL.cs:行号 117
+   在 Phians_BLL.QualificationManagementBLL.GetQualificationUserList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\ProjectReview\QualificationManagementBLL.cs:行号 41
+   在 phians_laboratory.Controllers.ProjectReviewController.GetQualificationUserList(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:行号 152
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeSynchronousActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+ClientConnectionId:c6421e7a-896c-4a51-8b79-c35cd32797e2
+Error Number:4104,State:1,Class:16
+
+ 
+记录时间：2019-01-07 15:20:08,241 
+线程ID:[36] 
+日志级别：  ERROR 
+错误描述：在执行 controller[ProjectReviewController] 的 action[GetQualificationUserList] 时产生异常
+ 
+System.Data.SqlClient.SqlException (0x80131904): The multi-part identifier "TP.UserId" could not be bound.
+The multi-part identifier "TP.AuthorizationType" could not be bound.
+The multi-part identifier "TP.TemplateID" could not be bound.
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 PetaPoco.Database.ExecuteScalar[T](String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 683
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sqlCount, Object[] countArgs, String sqlPage, Object[] pageArgs) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 778
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, String sql, Object[] args) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 816
+   在 PetaPoco.Database.Page[T](Int64 page, Int64 itemsPerPage, Sql sql) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 834
+   在 Phians_DAL.QualificationManagementDAL.GetQualificationUserList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\ProjectReview\QualificationManagementDAL.cs:行号 117
+   在 Phians_BLL.QualificationManagementBLL.GetQualificationUserList(TPageModel PageModel, Int32& totalRecord) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\ProjectReview\QualificationManagementBLL.cs:行号 41
+   在 phians_laboratory.Controllers.ProjectReviewController.GetQualificationUserList(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\ProjectReviewController.cs:行号 152
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeSynchronousActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+ClientConnectionId:c6421e7a-896c-4a51-8b79-c35cd32797e2
+Error Number:4104,State:1,Class:16

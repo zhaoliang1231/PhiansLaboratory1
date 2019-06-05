@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "ItemMonitoring";
+}
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    <link href="~/Content/step/css/ystep.css" rel="stylesheet" />
+    @Html.CombresLink("ItemMonitoringJs")
+    <script src="~/Content/step/js/ystep.js"></script>
+</head>
+<body>
+    @*培训计划制定列表*@
+    <div id="cc" class="easyui-layout" data-options="fit:true">
+        <div data-options="region:'north',title:'MTR List'" id="north" >
+            <div id="ItemMonitoring_datagrid"></div>
+        </div>
+        <div data-options="region:'south',title:'Task Progress'" style="height:150px;overflow:hidden" id="south">
+            <div class="ystep4" style="margin-top:30px;overflow:hidden;margin-left:20px"></div>
+        </div>
+    </div> 
+  
+    <div style="display:none">
+        <!-- 工具栏 -->
+        <div id="formlate_datagrid_toolbar">
+            <a href="javascript:;" id="Item_process_record" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">MTR Process Record</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="ItemMonitoring_Item" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">View Item</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <label>Range：</label>
+            <input id="search" style="width: 150px" class="easyui-combobox" />
+            <label>for</label>
+            <input id="key" class="easyui-textbox" style="width: 150px" />
+            <a href="javascript:;" id="Monitoring_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+        </div>
+        @*加载MTR流程记录信息*@
+        <div id="MTR_Process_dialog">
+            <div id="MTR_Process_datagrid"></div>
+        </div>
+        <div id="MTR_Process_toolbar">
+            <label>Range：</label>
+            <input id="search_MTR_Process" style="width: 150px" class="easyui-combobox" />
+            <label>for</label>
+            <input id="key_MTR_Process" class="easyui-textbox" style="width: 150px" />
+            <a href="javascript:;" id="MTR_Process_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="MTR_Process_view" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">View</a>
+        </div>
+        @*主项目*@
+        <div id="Item_Main_dialog">
+           <div id="Item_Main_datagrid"></div>
+        </div>
+        <div id="Item_Main_toolbar">
+            @*<a href="#" id="View_Chirdren_Item" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">View Chirdren Item</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+            <label>Range：</label>
+            <input id="search_Main" style="width: 150px" class="easyui-combobox" />
+            <label>for</label>
+            <input id="key_Main" class="easyui-textbox" style="width: 150px" />
+            <a href="javascript:;" id="Item_Main_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+        </div>
+        @*子项目*@
+        <div id="Item_Chirdren_dialog">
+            <div id="Item_Chirdren_datagrid"></div>
+        </div>
+        <div id="Item_Chirdren_toolbar">
+            <label>Range：</label>
+            <input id="search_Chirdren" style="width: 150px" class="easyui-combobox" />
+            <label>for</label>
+            <input id="key_Chirdren" class="easyui-textbox" style="width: 150px" />
+            <a href="javascript:;" id="Item_Chirdren_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+        </div>
+        @*退回信息表单*@
+        <form id="return_info_dialog" method="post">
+            <div class="h_d" style="margin-top: 20px; margin-left: 15px">
+                <div class="h_dline" style="height: 23px; margin-top: 4px; margin-left: 10px;float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">MTR No:</label>
+                    <input id="" class="easyui-textbox" name="MTRNo" style="width: 160px;" readonly="readonly" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Operator.:</label>
+                    <input id="" class="easyui-textbox" name="Operator_n" style="width: 160px;" readonly="readonly" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Operate Date:</label>
+                    <input id="" class="easyui-datebox" name="OperateDate" style="width: 160px;" readonly="readonly" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Node Result:</label>
+                    <input id="" class="easyui-textbox" name="NodeResult" style="width: 160px;" readonly="readonly" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">NodeId:</label>
+                    <input id="NodeId" class="easyui-textbox" name="NodeId" style="width: 160px;" readonly="readonly" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                    <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Remark:</label>
+                    <input id="" class="easyui-textbox" name="Remark" style="width: 160px; height: 60px; " readonly="readonly" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,145 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("AbnormalReportEditJs")
+</head>
+<body>
+    <div id="tt" class="easyui-panel" data-options="fit:true,border:false" style=" margin-left: 2px; overflow: scroll; overflow-x: hidden; overflow-y: hidden">
+        <div id="report_edit_task">
+            <!--<%-- 检测报告编制-报告信息-工具栏 --%>-->
+            <div id="reports_toolbar">
+
+                <span style="display: inline-block; float: left;">
+                    <label>页面选择：</label><a href="#" id="page_all" style="width: 130px" class="easyui-combobox"></a>
+                    <label>管理选择：</label><a href="#" id="management_all" style="width: 100px" class="easyui-combobox"></a>
+                </span>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="#" id="Preview_Report" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">预览报告</a>
+                <div class="auditingSelect" style="display:inline-block">
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <a href="#" id="read_report_info" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">查看附件</a>
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <a href="#" id="Edit_online_report" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">编制这份报告</a>
+                </div>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="#" id="view_return_info" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">查看申请原因</a>
+                <div class="editSelect" style="display:none">
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <a href="#" id="returnCompilation" class="easyui-linkbutton" data-options="iconCls:'icon-undo',plain:true">退回编制</a>
+                </div>
+                <div class="editSelect" style="display:none">
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <a href="#" id="throughAuditing" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">通过审核</a>
+                </div>
+                @*<div class="auditingSelect" style="display:inline-block">
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <a href="#" id="edit_time" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">修改时间</a>
+                </div>*@
+                <div class="auditingSelect" style="display:inline-block">
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <a href="#" id="Submit_report" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">提交审核</a>
+                </div>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <input id="search" style="width: 150px" class="easyui-combobox" />
+                <input id="search1" style="width: 150px" class="easyui-textbox" />
+                <a href="#" id="search_info" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+            </div>
+        </div>
+    </div>
+
+    <form id="review_remarks_word" method="post">
+        <textarea id="remarksValue" style="width:320px;height:110px"></textarea>
+    </form>
+
+    @*<%--查看图片--%>*@
+    <form id="Picture_form" method="post">
+        <img id="Picture_img" src="#" width="200" height="120" />
+    </form>
+    <!-- 查看附件 -->
+    <form id="read_dialog" style="overflow-x: hidden;" method="post">
+        <!--<%--任务datagrid--%>-->
+        <div id="read_table"></div>
+        <div id="read_toolbar">
+            <a href="#" id="add_read" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加附件</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="del_read" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">删除附件</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="read_read" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">查看附件</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="#" id="download_read" class="easyui-linkbutton" data-options="iconCls:'icon-upload',plain:true">下载附件</a>
+            @*<span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="#" id="downloads_read" class="easyui-linkbutton" data-options="iconCls:'icon-upload',plain:true">批量下载附件</a>*@
+        </div>
+    </form>
+    <!-- 添加附件 -->
+    <form id="add_read_dialog" style="padding-top: 30px;" method="post" enctype="multipart/form-data">
+        <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 4px; float: left">
+            <p class="h_d1" style="width: 80px; text-align: right;">附件名称：</p>
+            <input id="" name="accessory_name" class="easyui-textbox" style="width: 300px; height: 22px; margin-left: 5px" />
+        </div>
+        <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 4px; float: left">
+            <p class="h_d1" style="width: 80px; text-align: right;">上传文件：</p>
+            <input id="file_add" name="Filedata" class="easyui-filebox" required="required" style="width: 300px; height: 22px; margin-left: 5px" />
+        </div>
+        <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 4px; float: left">
+            <p class="h_d1" style="width: 80px; text-align: right;">附注:</p>
+            <input id="remarks1" name="remarks" class="easyui-textbox" data-options="multiline:true" style="width: 300px; height: 66px; margin-left: 5px" />
+        </div>
+    </form>
+    <%-- 隐藏 --%>
+    <div style="display: none">
+        <form id="S_dialog" runat="server" method="post">
+            @*<%--//消息类型--%>*@
+            <asp:HiddenField ID="message_type" runat="server" />
+            @*<%-- 隐藏的消息提示按钮 --%>*@
+            <div style="display: none"><a id="test_message" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit'">测试消息</a>    </div>
+            @*<%-- 登录账户 --%>*@
+            <asp:HiddenField ID="user_count" runat="server" />
+            @*<%-- 1代表存在；0代表不存在 --%>*@
+            <asp:HiddenField ID="contract_sate" runat="server" Value="0" />
+            <asp:HiddenField ID="contract_url" runat="server" Value="0" />
+            @*<%-- 预览证书：为“预览证书”时禁用一切写入操作；为“0”时恢复 --%>*@
+            <asp:HiddenField ID="view_word_sate" runat="server" Value="0" />
+        </form>
+        <form id="Back_report_dialog" method="post">
+            <div style="margin-top: 5px; text-align: right; margin-right: 20px">
+                <label style="display: inline-block; width: 80px">退回原因：</label><input id="return_info" name="return_info" data-options="multiline:true" class="easyui-textbox" style="width: 300px; height: 100px;" />
+            </div>
+            <div style="margin-top: 5px; text-align: right; margin-right: 20px">
+                <label style="display: inline-block; width: 80px">说明：</label><input id="remarks" name="return_info" data-options="multiline:true" class="easyui-textbox" style="width: 300px; height: 100px;" />
+            </div>
+        </form>
+
+        <form id="importFileForm1" method="post">
+            <div class="h_dline" style="height: 20px; margin-top: 10px; margin-left: 10px;">
+                <p class="h_d1" style="width: 60px; text-align: right;">室:</p>
+                <input id="room" name="" required="required" class="easyui-combobox" style="width: 180px; height: 22px; margin-left: 5px" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px">
+                <p class="h_d1" style="width: 60px">组:</p>
+                <input id="group" name="" class="easyui-combobox" style="width: 180px; height: 22px; margin-left: 5px" />
+            </div>
+            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px">
+                <p class="h_d1" style="width: 60px">评审人:</p>
+                <input id="review_personnel" name="review_personnel_word" class="easyui-combobox" style="width: 180px; height: 22px; margin-left: 5px" />
+            </div>
+
+        </form>
+
+        <a href="<%=PageOffice.PageOfficeLink.OpenWindow(" />mainform/read_contract.aspx?","width=1000px ;height=740px;")%>" id="read_doc" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">阅读文件</a>
+        <a href="<%=PageOffice.PageOfficeLink.OpenWindow(" />mainform/word_view.aspx?report_state=edit&save_type=Lossless_report_&","width=1000px ;height=740px;")%>" id="reports_edit_1" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">编制这份证书1</a>
+        <a href="<%=PageOffice.PageOfficeLink.OpenWindow(" />mainform/read_contract.aspx?","width=1000px ;height=740px;")%>" id="read_records" class="easyui-linkbutton" data-options="iconCls:'icon-read'" style="margin-left: 40px">查看检测记录</a>
+    </div>
+    <a href="@PageOffice.PageOfficeLink.OpenWindow("/OfficeOperate/WordRead?", "width=1300px;height=1000px;")" id="WordRead"></a> @*只读报告*@
+    <a href="@PageOffice.PageOfficeLink.OpenWindow("/OfficeOperate/WordEdit?", "width=1300px;height=1000px;")" id="reports_edit_1"></a> @*编辑模式打开*@
+</body>
+</html>

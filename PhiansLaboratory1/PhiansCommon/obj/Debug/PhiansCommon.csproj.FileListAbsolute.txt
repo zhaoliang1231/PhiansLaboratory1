@@ -1,0 +1,16 @@
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\bin\Debug\PhiansCommon.dll
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\bin\Debug\PhiansCommon.pdb
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\bin\Debug\Aspose.Words.dll
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\bin\Debug\Security.dll
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\bin\Debug\Windows.Excel.dll
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\obj\Debug\PhiansCommon.dll
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\obj\Debug\PhiansCommon.pdb
+D:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\obj\Debug\PhiansCommon.csprojResolveAssemblyReference.cache
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\bin\Debug\PhiansCommon.dll
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\bin\Debug\PhiansCommon.pdb
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\bin\Debug\Aspose.Words.dll
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\bin\Debug\Security.dll
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\bin\Debug\Windows.Excel.dll
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\obj\Debug\PhiansCommon.dll
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\obj\Debug\PhiansCommon.pdb
+F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PhiansCommon\obj\Debug\PhiansCommon.csprojResolveAssemblyReference.cache

@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This file contains basic settings needed for most web apps.
+  For full Combres settings (with explanation), refer to the sample definition file: combres_full_with_annotation.xml
+  Also, refer to Combres' documentation: http://combres.codeplex.com/documentation	
+-->
+<combres xmlns='urn:combres'>
+  <filters>
+    <filter type="Combres.Filters.FixUrlsInCssFilter, Combres" />
+  </filters>
+  <resourceSets url="~/combres.axd"
+                defaultDuration="30"
+                defaultVersion="666ww6"
+                defaultDebugEnabled="true"
+                defaultIgnorePipelineWhenDebug="true"
+                localChangeMonitorInterval="30"
+                remoteChangeMonitorInterval="60"
+                >
+    <resourceSet name="siteCss" type="css">
+      <resource path="/Scripts/easyui/themes/bootstrap/easyui.css" />
+
+      <resource path="/Scripts/easyui/themes/icon.css" />
+      <resource path="/Content/myStyle.css" />
+    </resourceSet>
+    <!--//不加mystyle  <resource path="/Content/myStyle.css" />-->
+    <resourceSet name="siteCss1" type="css">
+      <resource path="/Content/css/bootstrap.min.css" />
+
+      <resource path="/Scripts/easyui/themes/icon.css" />
+
+    </resourceSet>
+    <!--//login  -->
+    <resourceSet name="loginCss" type="css">
+      <resource path="/Content/css/bootstrap.min.css" />
+      <resource path="/Content/css/jquery-ui.min.css" />
+      <resource path="/Content/font-awesome/4.5.0/css/font-awesome.min.css" />
+      <resource path="/Content/css/ace.min.css" />
+      <resource path="/Content/common.css" />
+    </resourceSet>
+    <resourceSet name="loginJs" type="js">
+      <resource path="/Scripts/jquery-1.11.3.min.js" />
+      <resource path="/Scripts/jquery-ui-1.12.1.custom/jquery-ui.min.js" />
+      <resource path="/Scripts/boostrap/bootstrap.min.js" />
+      <resource path="/Scripts/ace/ace.min.js" />
+      <resource path="/Scripts/layer/2.4/layer.js" />
+      <resource path="/phianJs/login.js" />
+    </resourceSet>
+    <resourceSet name="siteJs"  type="js" >
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/supersized.3.2.7.min.js" />
+    </resourceSet>
+
+    <resourceSet name="mainformCss" type="css">
+      <resource path="/Scripts/easyui/themes/default/easyui.css" />
+      <resource path="/Scripts/easyui/themes/icon.css" />
+      <resource path="/Content/mainform.css" />
+
+    </resourceSet>
+    <!--系统主页面css-->
+    <resourceSet name="mainCss"  type="css">
+      <resource path="/Content/css/bootstrap.min.css" />
+      <resource path="/Content/font-awesome/4.5.0/css/font-awesome.min.css" />
+      <resource path="/Content/css/ace-rtl.min.css" />
+      <resource path="/Content/css/ace-skins.min.css" />
+      <resource path="/Content/css/sidebar-menu.css" />
+      <resource path=" /Content/css/ace.min.css" />
+      <resource path="/Content/css/bootstrap-tab.css" />
+    </resourceSet>
+    <!--系统祖主页面-->
+    <resourceSet name="mainformJs"  type="js">
+      <resource path="/Scripts/jquery-1.11.3.min.js" />
+      <resource path="/Scripts/boostrap/bootstrap.min.js" />
+      <resource path="/Scripts/ace/ace.min.js" />
+      <resource path="/Scripts/boostrap/bootstrap-tab.js" />
+      <resource path="/Scripts/sidebar-menu.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/mainformIndex.js" />
+    </resourceSet>
+    <!--模板配置-->
+    <resourceSet name="FunctionalModuleJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/FunctionalModule.js" />
+    </resourceSet>
+    <!--人员管理-->
+    <resourceSet name="PersonalManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SystemSettings/PersonalManagement.js" />
+    </resourceSet>
+      <!--查看人员管理-->
+      <resourceSet name="ViewPersonalManagementJs"  type="js">
+        <resource path="/Scripts/easyui/jquery.min.js" />
+        <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+        <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+        <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+        <resource path="/Scripts/jquery.cookie.js" />
+        <resource path="/phianJs/SystemSettings/ViewPersonalManagement.js" />
+    </resourceSet>
+    <!--部门管理-->
+    <resourceSet name="DepartmentManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SystemSettings/DepartmentManagement.js" />
+    </resourceSet>
+    <!--Cnas管理-->
+    <resourceSet name="CNASManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SystemSettings/CNASManagement.js" />
+    </resourceSet>
+    <!--字典管理-->
+    <resourceSet name="DictionaryManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SystemSettings/DictionaryManagement.js" />
+    </resourceSet>
+    <!--字典管理-->
+    <resourceSet name="WarehouseManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SystemSettings/WarehouseManagement.js" />
+    </resourceSet>
+    <!--系统日志-->
+    <resourceSet name="SystemLogJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SystemSettings/SystemLog.js" />
+    </resourceSet>
+    <!--权限管理-->
+    <resourceSet name="AuthorityManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/easyui/datagrid-detailview.js" />
+      <resource path="/phianJs/SystemSettings/AuthorityManagement.js" />
+    </resourceSet>
+    <!--单位管理-->
+    <resourceSet name="UnitManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SystemSettings/UnitManagement.js" />
+    </resourceSet>
+    <!--环境设备管理-->
+    <resourceSet name="EnvironmentalEquipmentBindingJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SystemSettings/EnvironmentalEquipmentBinding.js" />
+    </resourceSet>
+    <!--个人资料-->
+    <resourceSet name="PersonalInformmationJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/PersonalCenter/PersonalInformation.js" />
+    </resourceSet>
+    <!--工作消息-->
+    <resourceSet name="WorkMessageJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/PersonalCenter/WorkMessage.js" />
+    </resourceSet>
+    <!--环境管理-->
+    <resourceSet name="EnvironmentManageJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ManageQuality/EnvironmentManage.js" />
+    </resourceSet>
+    <!--管理评审-->
+    <resourceSet name="ManageDocumentsJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ManageQuality/ManageDocuments.js" />
+    </resourceSet>
+    <!--内部审核-->
+    <resourceSet name="InternaldocumentsJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ManageQuality/Internaldocuments.js" />
+    </resourceSet>
+    <!--体系文件-->
+    <resourceSet name="SystemDocumentsJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ManageQuality/SystemDocuments.js" />
+    </resourceSet>
+    <!--技术培训文件-->
+    <resourceSet name="TechnicalTrainingJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ManageQuality/TechnicalTraining.js" />
+    </resourceSet>
+    <!--资质管理-->
+    <resourceSet name="QualificationManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ProjectReview/QualificationManagement.js" />
+    </resourceSet>
+    <!--规程文件-->
+    <resourceSet name="ProceduresFileJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ProjectReview/ProceduresFile.js" />
+    </resourceSet>
+    <!--模板文件-->
+    <resourceSet name="TemplateFileJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ProjectReview/TemplateFile.js" />
+    </resourceSet>
+    <!--台账设备管理-->
+    <resourceSet name="EquipmentManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/LedgerManagement/EquipmentManagement.js" />
+    </resourceSet>
+     <!--台账设备管理试块库-->
+    <resourceSet name="TestBlockLibraryJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/LedgerManagement/TestBlockLibrary.js" />
+    </resourceSet>
+    <!--设备库-->
+    <resourceSet name="EquipmentLibraryJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/LedgerManagement/EquipmentLibrary.js" />
+    </resourceSet>
+    <!--台账排程设备管理-->
+    <resourceSet name="SchedulingEquipmentManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/LedgerManagement/SchedulingEquipmentManagement.js" />
+    </resourceSet>
+    <!--台账设备管理-->
+    <resourceSet name="EquipmentOperationRecordJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/LedgerManagement/EquipmentOperationRecord.js" />
+    </resourceSet>
+    <!--夹具管理-->
+    <resourceSet name="FixtureManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/LedgerManagement/FixtureManagement.js" />
+    </resourceSet>
+    <!--易耗品管理-->
+    <resourceSet name="ConsumableManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/LedgerManagement/ConsumableManagement.js" />
+    </resourceSet>
+    <!--标准物质-->
+    <resourceSet name="StandardSubstanceJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/LedgerManagement/StandardSubstance.js" />
+    </resourceSet>
+    <!--借用记录管理-->
+    <resourceSet name="BorrowingRecordsManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/LedgerManagement/BorrowingRecordsManagement.js" />
+    </resourceSet>
+    <!--控制器-->
+    <resourceSet name="ControllerShowJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/LedgerManagement/ControllerShow.js" />
+    </resourceSet>
+    <!--数据管理-->
+    <resourceSet name="DataManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/DataManagement.js" />
+    </resourceSet>
+    <!--MTR登记-->
+    <resourceSet name="MTRRegistrationJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/MTRRegistration.js" />
+    </resourceSet>
+    <!--MTR管理-->
+    <resourceSet name="MTRManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/MTRManagement.js" />
+    </resourceSet>
+    <!--MTR登记-->
+    <resourceSet name="BUMTRJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/BU/BUMTR.js" />
+      
+    </resourceSet>
+    
+    <!--DVP管理信息-->
+    <resourceSet name="DVPInformationManagerJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/DVPInformationManager.js" />
+    </resourceSet>
+    <!--DVP信息-->
+    <resourceSet name="DVPInformationJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/DVPInformation.js" />
+    </resourceSet>
+    <!--任务日程-->
+    <resourceSet name="TaskScheduleJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/TaskSchedule.js" />
+    </resourceSet>
+    <!--任务日程列表数据-->
+    <resourceSet name="TaskScheduleDatagridJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/TaskScheduleDatagrid.js" />
+    </resourceSet>
+    
+    <!--设备日程-->
+    <resourceSet name="EquipmentScheduleJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/EquipmentSchedule.js" />
+    </resourceSet>
+    <!--夹具日程-->
+    <resourceSet name="FixtureScheduleJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/FixtureSchedule.js" />
+    </resourceSet>
+    <!--控制器日程-->
+    <resourceSet name="ControlScheduleJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/ControlSchedule.js" />
+    </resourceSet>
+
+    <!--项目排程时间-->
+    <resourceSet name="ScheduleProjectJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/phianJs/ScheduleManagement/ScheduleProject.js" />
+    </resourceSet>
+    <!--测试记录信息-->
+    <resourceSet name="TestRecordJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/TestRecord.js" />
+    </resourceSet>
+        <!--测试记录管理-->
+    <resourceSet name="TestRecordManagerJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ScheduleManagement/TestRecordManager.js" />
+    </resourceSet>
+    <!--样品管理-->
+    <resourceSet name="SampleManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/C_LODOP/LodopFuncs.js"/>
+      <resource path="/phianJs/SampleManagement/SampleManagement.js" />
+    </resourceSet>
+    <!--样品领取-->
+    <resourceSet name="SampleCollectionJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SampleManagement/SampleCollection.js" />
+    </resourceSet>
+    <!--样品接收-->
+    <resourceSet name="SampleReceptionJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/C_LODOP/LodopFuncs.js"/>
+      <resource path="/phianJs/SampleManagement/SampleReception.js" />
+    </resourceSet>
+    <!--样品流转转-->
+    <resourceSet name="SampleTwistJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SampleManagement/SampleTwist.js" />
+    </resourceSet>
+    <!--样品归还-->
+    <resourceSet name="SampleReturnJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SampleManagement/SampleReturn.js" />
+    </resourceSet>
+    <!--样品借出-->
+    <resourceSet name="SampleBorrowJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SampleManagement/SampleBorrow.js" />
+    </resourceSet>
+    <!--报告管理-->
+    <resourceSet name="ReportManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/ReportManagement.js" />
+    </resourceSet>
+    <!--报告编制-->
+    <resourceSet name="ReportPreparationJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/ReportPreparation.js" />
+    </resourceSet>
+    <!--报告审核-->
+    <resourceSet name="ReportReviewJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/ReportReview.js" />
+    </resourceSet>
+    <!--报告签发-->
+    <resourceSet name="ReportIssuedJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/ReportIssued.js" />
+    </resourceSet>
+    <!--报告查看-->
+    <resourceSet name="ReportViewJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/ReportView.js" />
+    </resourceSet>
+    <!--异常申请审核-->
+    <resourceSet name="AbnormalApplyReviewJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/AbnormalApplyReview.js" />
+    </resourceSet>
+    <!--异常报告处理-->
+    <resourceSet name="AbnormalReportDealJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/AbnormalReportDeal.js" />
+    </resourceSet>
+    <!--异常报告编制-->
+    <resourceSet name="AbnormalReportEditJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/AbnormalReportEdit.js" />
+    </resourceSet>
+    <!--异常报告审核-->
+    <resourceSet name="AbnormalReportReviewJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/AbnormalReportReview.js" />
+    </resourceSet>
+    <!--异常报告签发-->
+    <resourceSet name="AbnormalApplyIssueJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/AbnormalApplyIssue.js" />
+    </resourceSet>
+    <!--异常报告管理-->
+    <resourceSet name="AbnormalReportManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/ReportManagement/AbnormalReportManagement.js" />
+    </resourceSet>
+    <!--监督计划管理-->
+    <resourceSet name="SupervisionPlanManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SupervisionManagement/SupervisionPlanManagement.js" />
+    </resourceSet>
+    <!--监督计划审批-->
+    <resourceSet name="SupervisionPlanApprovalJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SupervisionManagement/SupervisionPlanApproval.js" />
+    </resourceSet>
+    <!--监督计划执行-->
+    <resourceSet name="SupervisionPlanImplementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SupervisionManagement/SupervisionPlanImplement.js" />
+    </resourceSet>
+    <!--监督计划制定-->
+    <resourceSet name="SupervisionPlanFormulateJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SupervisionManagement/SupervisionPlanFormulate.js" />
+    </resourceSet>
+    <!--日常监督登记表-->
+    <resourceSet name="DailySupervisionRegistrationJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SupervisionManagement/DailySupervisionRegistration.js" />
+    </resourceSet>
+    <!--人员能力矩阵表-->
+    <resourceSet name="PersonnelAbilityTableJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SupervisionManagement/PersonnelAbilityTable.js" />
+    </resourceSet>
+    <!--培训计划管理-->
+    <resourceSet name="TrainingPlanManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/TrainingManagement/TrainingPlanManagement.js" />
+    </resourceSet>
+    <!--培训计划审批-->
+    <resourceSet name="TrainingPlanApprovalJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/TrainingManagement/TrainingPlanApproval.js" />
+    </resourceSet>
+    <!--培训计划执行-->
+    <resourceSet name="TrainingPlanImplementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/TrainingManagement/TrainingPlanImplement.js" />
+    </resourceSet>
+    <!--培训计划制定-->
+    <resourceSet name="TrainingPlanFormulateJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/TrainingManagement/TrainingPlanFormulate.js" />
+    </resourceSet>
+    <!--任务监控-->
+    <resourceSet name="ItemMonitoringJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/MonitoringManagement/ItemMonitoring.js" />
+    </resourceSet>
+   <!--统计管理-->
+    <resourceSet name="StatisticalManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/echarts.min.js" />
+      <resource path="/phianJs/StatisticalManagement/StatisticalManagement.js" />
+    </resourceSet>
+    <!--人员任务统计-->
+    <resourceSet name="PersonnelTaskStatisticsJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/echarts.min.js" />
+      <resource path="/phianJs/StatisticalManagement/PersonnelTaskStatistics.js" />
+    </resourceSet>
+    
+    <!--项目分析统计-->
+    
+    <resourceSet name="TaskItemStatisticsJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/echarts.min.js" />
+      <resource path="/phianJs/StatisticalManagement/TaskItemStatistics.js" />
+    </resourceSet>
+    <!--报告统计-->
+    <resourceSet name="ReportStatisticsJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/echarts.min.js" />
+      <resource path="/phianJs/StatisticalManagement/ReportStatistics.js" />
+    </resourceSet>
+    <!--温度统计-->
+    <resourceSet name="TemperatureStatisticsJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/echarts.min.js" />
+      <resource path="/phianJs/StatisticalManagement/TemperatureStatistics.js" />
+    </resourceSet>
+    <!--统计详情-->
+    <resourceSet name="StatisticalDetailJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/echarts.min.js" />
+      <resource path="/phianJs/StatisticalManagement/StatisticalDetail.js" />
+    </resourceSet>
+    <!--统计设备利用率-->
+    <resourceSet name="EquipmentStatisticsJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/echarts.min.js" />
+      <resource path="/phianJs/StatisticalManagement/EquipmentStatistics.js" />
+    </resourceSet>
+    <!--统计设备类型利用率-->
+    <resourceSet name="EquipmentTypeStatisticsJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/echarts.min.js" />
+      <resource path="/phianJs/StatisticalManagement/EquipmentTypeStatistics.js" />
+    </resourceSet>
+    <!--统计设备测试利用率-->
+    <resourceSet name="EquipmentTypeTestStatisticsJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.signalR-2.2.2.min.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/Scripts/echarts.min.js" />
+      <resource path="/phianJs/StatisticalManagement/EquipmentTypeTestStatistics.js" />
+    </resourceSet>
+    <!--温度监控-->
+    <resourceSet name="TemperatureRecordJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/MonitoringManagement/TemperatureRecord.js" />
+    </resourceSet>
+    <!--待发邮件-->
+    <resourceSet name="PendingEmailJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/EmailManagement/PendingEmail.js" />
+    </resourceSet>
+    <!--个人发送-->
+    <resourceSet name="PersonalSendingtJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/EmailManagement/PersonalSending.js" />
+    </resourceSet>
+    <!--邮件管理-->
+    <resourceSet name="EmailManagementJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/EmailManagement/EmailManagement.js" />
+    </resourceSet>
+    <!--页面管理-->
+    <resourceSet name="PageShowSettingJs"  type="js">
+      <resource path="/Scripts/easyui/jquery.min.js" />
+      <resource path="/Scripts/easyui/jquery.easyui.min.js" />
+      <resource path="/Scripts/easyui/locale/easyui-lang-zh_CN.js" />
+      <resource path="/Scripts/jquery.cookie.js" />
+      <resource path="/phianJs/SystemSettings/PageShowSetting.js" />
+    </resourceSet>
+    <resourceSet name="cookieJs"  type="js">
+      <resource path="/Scripts/jquery.cookie.js" />
+   
+    </resourceSet>
+  
+  </resourceSets>
+</combres>

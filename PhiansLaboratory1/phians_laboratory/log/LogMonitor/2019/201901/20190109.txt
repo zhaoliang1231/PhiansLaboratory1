@@ -1,0 +1,4512 @@
+
+ 
+记录时间：2019-01-09 17:00:46,914 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：LoginController
+            ActionName:Index
+            开始时间：2019/1/9 17:00:46
+            结束时间：2019/1/9 17:00:46
+            总 时 间：0.109599秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:00:49,473 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：LoginController
+            ViewName:Index
+            开始时间：2019/1/9 17:00:46
+            结束时间：2019/1/9 17:00:49
+            总 时 间：2.5488014秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:00:57,386 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：LoginController
+            ActionName:login
+            开始时间：2019/1/9 17:00:56
+            结束时间：2019/1/9 17:00:57
+            总 时 间：0.5000362秒
+            Form表单数据：UserCount=YWRtaW4=&UserPwd=MTIzNDU2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:00:57,386 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：LoginController
+            ViewName:login
+            开始时间：2019/1/9 17:00:57
+            结束时间：2019/1/9 17:00:57
+            总 时 间：0秒
+            Form表单数据：UserCount=YWRtaW4=&UserPwd=MTIzNDU2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:00:57,566 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:Index
+            开始时间：2019/1/9 17:00:57
+            结束时间：2019/1/9 17:00:57
+            总 时 间：0.1293765秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:00:58,746 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:Index
+            开始时间：2019/1/9 17:00:57
+            结束时间：2019/1/9 17:00:58
+            总 时 间：1.1802655秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:00:59,546 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:main
+            开始时间：2019/1/9 17:00:59
+            结束时间：2019/1/9 17:00:59
+            总 时 间：0.3751784秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:00:59,785 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:GetMenuData
+            开始时间：2019/1/9 17:00:59
+            结束时间：2019/1/9 17:00:59
+            总 时 间：0.3106039秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:00:59,785 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:GetMenuData
+            开始时间：2019/1/9 17:00:59
+            结束时间：2019/1/9 17:00:59
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:00:59,787 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:main
+            开始时间：2019/1/9 17:00:59
+            结束时间：2019/1/9 17:00:59
+            总 时 间：0.2411227秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:13,727 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportPreparation
+            开始时间：2019/1/9 17:02:13
+            结束时间：2019/1/9 17:02:13
+            总 时 间：0.0020283秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:16,912 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportPreparation
+            开始时间：2019/1/9 17:02:13
+            结束时间：2019/1/9 17:02:16
+            总 时 间：3.1840583秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:18,563 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadTemplateCombobox
+            开始时间：2019/1/9 17:02:18
+            结束时间：2019/1/9 17:02:18
+            总 时 间：0.0550795秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:18,572 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadTemplateCombobox
+            开始时间：2019/1/9 17:02:18
+            结束时间：2019/1/9 17:02:18
+            总 时 间：0.0090072秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:18,594 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportPreparation
+            开始时间：2019/1/9 17:02:18
+            结束时间：2019/1/9 17:02:18
+            总 时 间：0.0005017秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:18,650 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportPreparation
+            开始时间：2019/1/9 17:02:18
+            结束时间：2019/1/9 17:02:18
+            总 时 间：0.0565398秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:18,651 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2019/1/9 17:02:18
+            结束时间：2019/1/9 17:02:18
+            总 时 间：0.0776432秒
+            Form表单数据：PageId=101
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:18,651 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2019/1/9 17:02:18
+            结束时间：2019/1/9 17:02:18
+            总 时 间：0秒
+            Form表单数据：PageId=101
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:19,780 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportEditList
+            开始时间：2019/1/9 17:02:19
+            结束时间：2019/1/9 17:02:19
+            总 时 间：0.2782396秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:19,780 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportEditList
+            开始时间：2019/1/9 17:02:19
+            结束时间：2019/1/9 17:02:19
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:35,406 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadTemplateCombobox
+            开始时间：2019/1/9 17:02:35
+            结束时间：2019/1/9 17:02:35
+            总 时 间：0.0415578秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:02:35,406 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadTemplateCombobox
+            开始时间：2019/1/9 17:02:35
+            结束时间：2019/1/9 17:02:35
+            总 时 间：0.0005029秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:10,824 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:QualificationManagement
+            开始时间：2019/1/9 17:03:10
+            结束时间：2019/1/9 17:03:10
+            总 时 间：0.0005955秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:11,895 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:QualificationManagement
+            开始时间：2019/1/9 17:03:10
+            结束时间：2019/1/9 17:03:11
+            总 时 间：1.0718026秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:12,269 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:LoadReportList
+            开始时间：2019/1/9 17:03:12
+            结束时间：2019/1/9 17:03:12
+            总 时 间：0.1281608秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:12,269 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:LoadReportList
+            开始时间：2019/1/9 17:03:12
+            结束时间：2019/1/9 17:03:12
+            总 时 间：0秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:12,401 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetAllUserList
+            开始时间：2019/1/9 17:03:12
+            结束时间：2019/1/9 17:03:12
+            总 时 间：0.1426544秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:12,401 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetAllUserList
+            开始时间：2019/1/9 17:03:12
+            结束时间：2019/1/9 17:03:12
+            总 时 间：0秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:12,552 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:12
+            结束时间：2019/1/9 17:03:12
+            总 时 间：0.1331618秒
+            Form表单数据：TemplateID=37&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:12,553 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:12
+            结束时间：2019/1/9 17:03:12
+            总 时 间：0秒
+            Form表单数据：TemplateID=37&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:16,145 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:16
+            结束时间：2019/1/9 17:03:16
+            总 时 间：0.0731381秒
+            Form表单数据：TemplateID=13&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:16,145 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:16
+            结束时间：2019/1/9 17:03:16
+            总 时 间：0秒
+            Form表单数据：TemplateID=13&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:19,659 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AddReportBaseInfo
+            开始时间：2019/1/9 17:03:19
+            结束时间：2019/1/9 17:03:19
+            总 时 间：0.1801212秒
+            Form表单数据：ReportType=产品理化试验报告&report_num=zl12356777&TemplateChoose1=13&clientele_department=&Job_num=&clientele=&circulation_NO=&procedure_NO=&application_num=&Subassembly_name=&Inspection_context=&Project_name=&Material=&Type_=,&Chamfer_type=&Drawing_num=&Procedure_=&Inspection_opportunity=&apparent_condition=&manufacturing_process=&Batch_Num=&figure=&disable_report_num=&Tubes_num=&Tubes_Size=&welding_method=&Inspection_result=&Inspection_NO=&Inspection_date=2019-01-09&Work_instruction=&heat_treatment=&flag=0&remarks=&id=&tm_id=13
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:19,660 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AddReportBaseInfo
+            开始时间：2019/1/9 17:03:19
+            结束时间：2019/1/9 17:03:19
+            总 时 间：0秒
+            Form表单数据：ReportType=产品理化试验报告&report_num=zl12356777&TemplateChoose1=13&clientele_department=&Job_num=&clientele=&circulation_NO=&procedure_NO=&application_num=&Subassembly_name=&Inspection_context=&Project_name=&Material=&Type_=,&Chamfer_type=&Drawing_num=&Procedure_=&Inspection_opportunity=&apparent_condition=&manufacturing_process=&Batch_Num=&figure=&disable_report_num=&Tubes_num=&Tubes_Size=&welding_method=&Inspection_result=&Inspection_NO=&Inspection_date=2019-01-09&Work_instruction=&heat_treatment=&flag=0&remarks=&id=&tm_id=13
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:25,185 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetAllUserList
+            开始时间：2019/1/9 17:03:25
+            结束时间：2019/1/9 17:03:25
+            总 时 间：0.0856549秒
+            Form表单数据：AuthorizationType=2&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:25,185 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetAllUserList
+            开始时间：2019/1/9 17:03:25
+            结束时间：2019/1/9 17:03:25
+            总 时 间：0秒
+            Form表单数据：AuthorizationType=2&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:25,268 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:25
+            结束时间：2019/1/9 17:03:25
+            总 时 间：0.0831166秒
+            Form表单数据：TemplateID=13&AuthorizationType=2&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:25,268 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:25
+            结束时间：2019/1/9 17:03:25
+            总 时 间：0秒
+            Form表单数据：TemplateID=13&AuthorizationType=2&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:27,666 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:AddQualificationPerson
+            开始时间：2019/1/9 17:03:27
+            结束时间：2019/1/9 17:03:27
+            总 时 间：0.1602105秒
+            Form表单数据：TemplateID=13&UserId=8cff8e9f-f539-41c9-80ce-06a97f481390&AuthorizationType=2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:27,666 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:AddQualificationPerson
+            开始时间：2019/1/9 17:03:27
+            结束时间：2019/1/9 17:03:27
+            总 时 间：0秒
+            Form表单数据：TemplateID=13&UserId=8cff8e9f-f539-41c9-80ce-06a97f481390&AuthorizationType=2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:27,829 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:27
+            结束时间：2019/1/9 17:03:27
+            总 时 间：0.1041271秒
+            Form表单数据：TemplateID=13&AuthorizationType=2&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:27,829 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:27
+            结束时间：2019/1/9 17:03:27
+            总 时 间：0秒
+            Form表单数据：TemplateID=13&AuthorizationType=2&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:31,447 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetAllUserList
+            开始时间：2019/1/9 17:03:31
+            结束时间：2019/1/9 17:03:31
+            总 时 间：0.0906071秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:31,447 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetAllUserList
+            开始时间：2019/1/9 17:03:31
+            结束时间：2019/1/9 17:03:31
+            总 时 间：0秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:31,547 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:31
+            结束时间：2019/1/9 17:03:31
+            总 时 间：0.1010784秒
+            Form表单数据：TemplateID=13&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:31,547 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:31
+            结束时间：2019/1/9 17:03:31
+            总 时 间：0秒
+            Form表单数据：TemplateID=13&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:33,548 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:AddQualificationPerson
+            开始时间：2019/1/9 17:03:33
+            结束时间：2019/1/9 17:03:33
+            总 时 间：0.1190191秒
+            Form表单数据：TemplateID=13&UserId=8cff8e9f-f539-41c9-80ce-06a97f481390&AuthorizationType=0
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:33,549 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:AddQualificationPerson
+            开始时间：2019/1/9 17:03:33
+            结束时间：2019/1/9 17:03:33
+            总 时 间：0秒
+            Form表单数据：TemplateID=13&UserId=8cff8e9f-f539-41c9-80ce-06a97f481390&AuthorizationType=0
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:33,666 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:33
+            结束时间：2019/1/9 17:03:33
+            总 时 间：0.078604秒
+            Form表单数据：TemplateID=13&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:33,666 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetQualificationUserList
+            开始时间：2019/1/9 17:03:33
+            结束时间：2019/1/9 17:03:33
+            总 时 间：0秒
+            Form表单数据：TemplateID=13&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:37,515 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AddReportBaseInfo
+            开始时间：2019/1/9 17:03:37
+            结束时间：2019/1/9 17:03:37
+            总 时 间：0.2386532秒
+            Form表单数据：ReportType=产品理化试验报告&report_num=zl12356777&TemplateChoose1=13&clientele_department=&Job_num=&clientele=&circulation_NO=&procedure_NO=&application_num=&Subassembly_name=&Inspection_context=&Project_name=&Material=&Type_=,&Chamfer_type=&Drawing_num=&Procedure_=&Inspection_opportunity=&apparent_condition=&manufacturing_process=&Batch_Num=&figure=&disable_report_num=&Tubes_num=&Tubes_Size=&welding_method=&Inspection_result=&Inspection_NO=&Inspection_date=2019-01-09&Work_instruction=&heat_treatment=&flag=0&remarks=&id=&tm_id=13
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:37,515 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AddReportBaseInfo
+            开始时间：2019/1/9 17:03:37
+            结束时间：2019/1/9 17:03:37
+            总 时 间：0秒
+            Form表单数据：ReportType=产品理化试验报告&report_num=zl12356777&TemplateChoose1=13&clientele_department=&Job_num=&clientele=&circulation_NO=&procedure_NO=&application_num=&Subassembly_name=&Inspection_context=&Project_name=&Material=&Type_=,&Chamfer_type=&Drawing_num=&Procedure_=&Inspection_opportunity=&apparent_condition=&manufacturing_process=&Batch_Num=&figure=&disable_report_num=&Tubes_num=&Tubes_Size=&welding_method=&Inspection_result=&Inspection_NO=&Inspection_date=2019-01-09&Work_instruction=&heat_treatment=&flag=0&remarks=&id=&tm_id=13
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:38,909 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportEditList
+            开始时间：2019/1/9 17:03:38
+            结束时间：2019/1/9 17:03:38
+            总 时 间：0.1412636秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:38,909 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportEditList
+            开始时间：2019/1/9 17:03:38
+            结束时间：2019/1/9 17:03:38
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:50,756 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:Filling_report
+            开始时间：2019/1/9 17:03:49
+            结束时间：2019/1/9 17:03:50
+            总 时 间：1.4232733秒
+            Form表单数据：id=22491&tm_id=13&report_format=.doc&report_num=zl12356777
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:50,756 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:Filling_report
+            开始时间：2019/1/9 17:03:50
+            结束时间：2019/1/9 17:03:50
+            总 时 间：0秒
+            Form表单数据：id=22491&tm_id=13&report_format=.doc&report_num=zl12356777
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:52,325 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportEditList
+            开始时间：2019/1/9 17:03:52
+            结束时间：2019/1/9 17:03:52
+            总 时 间：0.1172851秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:52,325 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportEditList
+            开始时间：2019/1/9 17:03:52
+            结束时间：2019/1/9 17:03:52
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:53,283 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadRoomCombobox
+            开始时间：2019/1/9 17:03:53
+            结束时间：2019/1/9 17:03:53
+            总 时 间：0.1579434秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:53,284 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadRoomCombobox
+            开始时间：2019/1/9 17:03:53
+            结束时间：2019/1/9 17:03:53
+            总 时 间：0.0005001秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:54,678 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadGroupCombobox
+            开始时间：2019/1/9 17:03:54
+            结束时间：2019/1/9 17:03:54
+            总 时 间：0.1314857秒
+            Form表单数据：GroupId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:54,679 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadGroupCombobox
+            开始时间：2019/1/9 17:03:54
+            结束时间：2019/1/9 17:03:54
+            总 时 间：0.0005049秒
+            Form表单数据：GroupId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:56,806 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:SubmitEditReport
+            开始时间：2019/1/9 17:03:56
+            结束时间：2019/1/9 17:03:56
+            总 时 间：0.5448617秒
+            Form表单数据：id=22491&Inspection_personnel=admin&report_num=zl12356777&group=9&level_Inspection=Ⅱ&level_date=2019-01-09 17:03:53&report_url=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:56,806 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:SubmitEditReport
+            开始时间：2019/1/9 17:03:56
+            结束时间：2019/1/9 17:03:56
+            总 时 间：0秒
+            Form表单数据：id=22491&Inspection_personnel=admin&report_num=zl12356777&group=9&level_Inspection=Ⅱ&level_date=2019-01-09 17:03:53&report_url=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:58,320 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportEditList
+            开始时间：2019/1/9 17:03:58
+            结束时间：2019/1/9 17:03:58
+            总 时 间：0.1202413秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:03:58,321 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportEditList
+            开始时间：2019/1/9 17:03:58
+            结束时间：2019/1/9 17:03:58
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:01,863 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportReview
+            开始时间：2019/1/9 17:04:01
+            结束时间：2019/1/9 17:04:01
+            总 时 间：0.0005132秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:01,879 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportReview
+            开始时间：2019/1/9 17:04:01
+            结束时间：2019/1/9 17:04:01
+            总 时 间：0.0160125秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:02,238 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2019/1/9 17:04:02
+            结束时间：2019/1/9 17:04:02
+            总 时 间：0.0806243秒
+            Form表单数据：PageId=102
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:02,239 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2019/1/9 17:04:02
+            结束时间：2019/1/9 17:04:02
+            总 时 间：0秒
+            Form表单数据：PageId=102
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:02,264 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportReview
+            开始时间：2019/1/9 17:04:02
+            结束时间：2019/1/9 17:04:02
+            总 时 间：3.71E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:02,268 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportReview
+            开始时间：2019/1/9 17:04:02
+            结束时间：2019/1/9 17:04:02
+            总 时 间：0.0035019秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:02,320 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadDaySetting
+            开始时间：2019/1/9 17:04:02
+            结束时间：2019/1/9 17:04:02
+            总 时 间：0.0530762秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:02,321 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadDaySetting
+            开始时间：2019/1/9 17:04:02
+            结束时间：2019/1/9 17:04:02
+            总 时 间：0.0005006秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:03,259 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:02
+            结束时间：2019/1/9 17:04:03
+            总 时 间：0.2854087秒
+            Form表单数据：history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:03,259 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:03
+            结束时间：2019/1/9 17:04:03
+            总 时 间：0秒
+            Form表单数据：history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:06,975 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:06
+            结束时间：2019/1/9 17:04:06
+            总 时 间：0.2826024秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:06,976 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:06
+            结束时间：2019/1/9 17:04:06
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:07,073 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:load_accessory
+            开始时间：2019/1/9 17:04:06
+            结束时间：2019/1/9 17:04:07
+            总 时 间：0.296542秒
+            Form表单数据：report_id=22491&search=undefined&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:07,073 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:load_accessory
+            开始时间：2019/1/9 17:04:07
+            结束时间：2019/1/9 17:04:07
+            总 时 间：0秒
+            Form表单数据：report_id=22491&search=undefined&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:10,810 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadLevel
+            开始时间：2019/1/9 17:04:10
+            结束时间：2019/1/9 17:04:10
+            总 时 间：0.0365566秒
+            Form表单数据：tm_id=13
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:10,810 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadLevel
+            开始时间：2019/1/9 17:04:10
+            结束时间：2019/1/9 17:04:10
+            总 时 间：0秒
+            Form表单数据：tm_id=13
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:12,753 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:SubmitReviewReport
+            开始时间：2019/1/9 17:04:12
+            结束时间：2019/1/9 17:04:12
+            总 时 间：0.5383762秒
+            Form表单数据：ids=22491&level_date=2019-01-09 17:04:10&report_nums=zl12356777&report_urls=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&tm_ids=13&level_Audit=Ⅱ
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:12,753 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:SubmitReviewReport
+            开始时间：2019/1/9 17:04:12
+            结束时间：2019/1/9 17:04:12
+            总 时 间：0秒
+            Form表单数据：ids=22491&level_date=2019-01-09 17:04:10&report_nums=zl12356777&report_urls=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&tm_ids=13&level_Audit=Ⅱ
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:13,540 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:13
+            结束时间：2019/1/9 17:04:13
+            总 时 间：0.1278444秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:13,540 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:13
+            结束时间：2019/1/9 17:04:13
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:17,390 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2019/1/9 17:04:17
+            结束时间：2019/1/9 17:04:17
+            总 时 间：0.0461102秒
+            Form表单数据：PageId=102
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:17,390 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2019/1/9 17:04:17
+            结束时间：2019/1/9 17:04:17
+            总 时 间：0秒
+            Form表单数据：PageId=102
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:18,341 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:18
+            结束时间：2019/1/9 17:04:18
+            总 时 间：0.3033372秒
+            Form表单数据：history_flag=1&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:18,343 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:18
+            结束时间：2019/1/9 17:04:18
+            总 时 间：0.0010054秒
+            Form表单数据：history_flag=1&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:21,346 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:TakeBackReviewReport
+            开始时间：2019/1/9 17:04:21
+            结束时间：2019/1/9 17:04:21
+            总 时 间：0.3386631秒
+            Form表单数据：id=22491&Inspection_personnel=admin
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:21,346 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:TakeBackReviewReport
+            开始时间：2019/1/9 17:04:21
+            结束时间：2019/1/9 17:04:21
+            总 时 间：0秒
+            Form表单数据：id=22491&Inspection_personnel=admin
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:22,813 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:22
+            结束时间：2019/1/9 17:04:22
+            总 时 间：0.1620791秒
+            Form表单数据：history_flag=1&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:22,813 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:22
+            结束时间：2019/1/9 17:04:22
+            总 时 间：0秒
+            Form表单数据：history_flag=1&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:25,242 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2019/1/9 17:04:25
+            结束时间：2019/1/9 17:04:25
+            总 时 间：0.0457718秒
+            Form表单数据：PageId=102
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:25,243 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2019/1/9 17:04:25
+            结束时间：2019/1/9 17:04:25
+            总 时 间：0秒
+            Form表单数据：PageId=102
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:26,020 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:25
+            结束时间：2019/1/9 17:04:26
+            总 时 间：0.1171215秒
+            Form表单数据：history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:26,020 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:26
+            结束时间：2019/1/9 17:04:26
+            总 时 间：0秒
+            Form表单数据：history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:27,422 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadLevel
+            开始时间：2019/1/9 17:04:27
+            结束时间：2019/1/9 17:04:27
+            总 时 间：0.0360869秒
+            Form表单数据：tm_id=13
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:27,422 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadLevel
+            开始时间：2019/1/9 17:04:27
+            结束时间：2019/1/9 17:04:27
+            总 时 间：0秒
+            Form表单数据：tm_id=13
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:28,838 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:SubmitReviewReport
+            开始时间：2019/1/9 17:04:28
+            结束时间：2019/1/9 17:04:28
+            总 时 间：0.5614924秒
+            Form表单数据：ids=22491&level_date=2019-01-09 17:04:27&report_nums=zl12356777&report_urls=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&tm_ids=13&level_Audit=Ⅱ
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:28,838 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:SubmitReviewReport
+            开始时间：2019/1/9 17:04:28
+            结束时间：2019/1/9 17:04:28
+            总 时 间：0秒
+            Form表单数据：ids=22491&level_date=2019-01-09 17:04:27&report_nums=zl12356777&report_urls=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&tm_ids=13&level_Audit=Ⅱ
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:29,541 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:29
+            结束时间：2019/1/9 17:04:29
+            总 时 间：0.1055207秒
+            Form表单数据：history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:29,541 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportReviewList
+            开始时间：2019/1/9 17:04:29
+            结束时间：2019/1/9 17:04:29
+            总 时 间：0秒
+            Form表单数据：history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:31,767 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportIssued
+            开始时间：2019/1/9 17:04:31
+            结束时间：2019/1/9 17:04:31
+            总 时 间：0.0016021秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:31,782 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportIssued
+            开始时间：2019/1/9 17:04:31
+            结束时间：2019/1/9 17:04:31
+            总 时 间：0.0145065秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:32,087 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2019/1/9 17:04:32
+            结束时间：2019/1/9 17:04:32
+            总 时 间：0.0676048秒
+            Form表单数据：PageId=103
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:32,088 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2019/1/9 17:04:32
+            结束时间：2019/1/9 17:04:32
+            总 时 间：0秒
+            Form表单数据：PageId=103
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:32,135 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportIssued
+            开始时间：2019/1/9 17:04:32
+            结束时间：2019/1/9 17:04:32
+            总 时 间：3.99E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:32,135 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadDaySetting
+            开始时间：2019/1/9 17:04:32
+            结束时间：2019/1/9 17:04:32
+            总 时 间：0.0400399秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:32,136 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadDaySetting
+            开始时间：2019/1/9 17:04:32
+            结束时间：2019/1/9 17:04:32
+            总 时 间：0.0005018秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:32,138 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportIssued
+            开始时间：2019/1/9 17:04:32
+            结束时间：2019/1/9 17:04:32
+            总 时 间：0.0030018秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:33,075 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportIssueList
+            开始时间：2019/1/9 17:04:32
+            结束时间：2019/1/9 17:04:33
+            总 时 间：0.305786秒
+            Form表单数据：search=&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:33,076 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportIssueList
+            开始时间：2019/1/9 17:04:33
+            结束时间：2019/1/9 17:04:33
+            总 时 间：0秒
+            Form表单数据：search=&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:35,930 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:loginout
+            开始时间：2019/1/9 17:04:35
+            结束时间：2019/1/9 17:04:35
+            总 时 间：0.0436316秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:36,023 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:loginout
+            开始时间：2019/1/9 17:04:35
+            结束时间：2019/1/9 17:04:36
+            总 时 间：0.092313秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:36,103 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：LoginController
+            ActionName:Index
+            开始时间：2019/1/9 17:04:35
+            结束时间：2019/1/9 17:04:36
+            总 时 间：0.1332524秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:36,149 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：LoginController
+            ViewName:Index
+            开始时间：2019/1/9 17:04:36
+            结束时间：2019/1/9 17:04:36
+            总 时 间：0.0459034秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:42,658 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：LoginController
+            ActionName:login
+            开始时间：2019/1/9 17:04:42
+            结束时间：2019/1/9 17:04:42
+            总 时 间：0.0747455秒
+            Form表单数据：UserCount=eXVzaGFvaHVp&UserPwd=MTIzNDU2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:42,659 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：LoginController
+            ViewName:login
+            开始时间：2019/1/9 17:04:42
+            结束时间：2019/1/9 17:04:42
+            总 时 间：0秒
+            Form表单数据：UserCount=eXVzaGFvaHVp&UserPwd=MTIzNDU2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:42,793 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:Index
+            开始时间：2019/1/9 17:04:42
+            结束时间：2019/1/9 17:04:42
+            总 时 间：0.1048203秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:42,798 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:Index
+            开始时间：2019/1/9 17:04:42
+            结束时间：2019/1/9 17:04:42
+            总 时 间：0.0050043秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:43,088 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:main
+            开始时间：2019/1/9 17:04:42
+            结束时间：2019/1/9 17:04:43
+            总 时 间：0.1466274秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:43,091 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:main
+            开始时间：2019/1/9 17:04:43
+            结束时间：2019/1/9 17:04:43
+            总 时 间：0.0030014秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:43,100 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:GetMenuData
+            开始时间：2019/1/9 17:04:43
+            结束时间：2019/1/9 17:04:43
+            总 时 间：0.0450355秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:43,100 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:GetMenuData
+            开始时间：2019/1/9 17:04:43
+            结束时间：2019/1/9 17:04:43
+            总 时 间：0.0005018秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:44,853 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportIssued
+            开始时间：2019/1/9 17:04:44
+            结束时间：2019/1/9 17:04:44
+            总 时 间：2.27E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:44,856 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportIssued
+            开始时间：2019/1/9 17:04:44
+            结束时间：2019/1/9 17:04:44
+            总 时 间：0.0020014秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:45,140 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2019/1/9 17:04:45
+            结束时间：2019/1/9 17:04:45
+            总 时 间：0.1206246秒
+            Form表单数据：PageId=103
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:45,140 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2019/1/9 17:04:45
+            结束时间：2019/1/9 17:04:45
+            总 时 间：0秒
+            Form表单数据：PageId=103
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:45,143 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportIssued
+            开始时间：2019/1/9 17:04:45
+            结束时间：2019/1/9 17:04:45
+            总 时 间：0.0005289秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:45,188 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadDaySetting
+            开始时间：2019/1/9 17:04:45
+            结束时间：2019/1/9 17:04:45
+            总 时 间：0.0465598秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:45,188 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadDaySetting
+            开始时间：2019/1/9 17:04:45
+            结束时间：2019/1/9 17:04:45
+            总 时 间：0.0004993秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:45,188 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportIssued
+            开始时间：2019/1/9 17:04:45
+            结束时间：2019/1/9 17:04:45
+            总 时 间：0.0450302秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:46,055 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportIssueList
+            开始时间：2019/1/9 17:04:45
+            结束时间：2019/1/9 17:04:46
+            总 时 间：0.1851727秒
+            Form表单数据：search=&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:46,055 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportIssueList
+            开始时间：2019/1/9 17:04:46
+            结束时间：2019/1/9 17:04:46
+            总 时 间：0秒
+            Form表单数据：search=&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:50,454 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:SubmitIssueReport
+            开始时间：2019/1/9 17:04:50
+            结束时间：2019/1/9 17:04:50
+            总 时 间：0.0525358秒
+            Form表单数据：report_nums=zl12356777&report_urls=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&ids=22491
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:50,454 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:SubmitIssueReport
+            开始时间：2019/1/9 17:04:50
+            结束时间：2019/1/9 17:04:50
+            总 时 间：0秒
+            Form表单数据：report_nums=zl12356777&report_urls=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&ids=22491
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:55,866 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:PersonalManagement
+            开始时间：2019/1/9 17:04:55
+            结束时间：2019/1/9 17:04:55
+            总 时 间：0.0009747秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:57,434 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:PersonalManagement
+            开始时间：2019/1/9 17:04:55
+            结束时间：2019/1/9 17:04:57
+            总 时 间：1.5680765秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:57,909 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetGroupTree
+            开始时间：2019/1/9 17:04:57
+            结束时间：2019/1/9 17:04:57
+            总 时 间：0.0881003秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:57,909 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:PersonalManagement
+            开始时间：2019/1/9 17:04:57
+            结束时间：2019/1/9 17:04:57
+            总 时 间：3E-07秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:57,909 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetGroupTree
+            开始时间：2019/1/9 17:04:57
+            结束时间：2019/1/9 17:04:57
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:57,912 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:PersonalManagement
+            开始时间：2019/1/9 17:04:57
+            结束时间：2019/1/9 17:04:57
+            总 时 间：0.0029883秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:57,989 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetGroupTree
+            开始时间：2019/1/9 17:04:57
+            结束时间：2019/1/9 17:04:57
+            总 时 间：0.0480435秒
+            Form表单数据：id=8cff8e9f-f539-41c9-80ce-06a97f481391
+            URL参数：ParentId=8cff8e9f-f539-41c9-80ce-06a97f481391
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:57,989 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetGroupTree
+            开始时间：2019/1/9 17:04:57
+            结束时间：2019/1/9 17:04:57
+            总 时 间：0秒
+            Form表单数据：id=8cff8e9f-f539-41c9-80ce-06a97f481391
+            URL参数：ParentId=8cff8e9f-f539-41c9-80ce-06a97f481391
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,197 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0.1331922秒
+            Form表单数据：GroupId=8cff8e9f-f539-41c9-80ce-06a97f481391&page=1&rows=13&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,197 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0秒
+            Form表单数据：GroupId=8cff8e9f-f539-41c9-80ce-06a97f481391&page=1&rows=13&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,308 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0.1156865秒
+            Form表单数据：id=32da7ef1-74ba-4cfe-aeec-5d10b6aa64eb
+            URL参数：ParentId=32da7ef1-74ba-4cfe-aeec-5d10b6aa64eb
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,309 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0秒
+            Form表单数据：id=32da7ef1-74ba-4cfe-aeec-5d10b6aa64eb
+            URL参数：ParentId=32da7ef1-74ba-4cfe-aeec-5d10b6aa64eb
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,363 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0.167725秒
+            Form表单数据：id=5cfdf201-8dd4-499c-ad0b-34f77920b036
+            URL参数：ParentId=5cfdf201-8dd4-499c-ad0b-34f77920b036
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,363 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0秒
+            Form表单数据：id=5cfdf201-8dd4-499c-ad0b-34f77920b036
+            URL参数：ParentId=5cfdf201-8dd4-499c-ad0b-34f77920b036
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,376 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0.072636秒
+            Form表单数据：id=0d652422-8338-41e0-952a-67c23bd15dad
+            URL参数：ParentId=0d652422-8338-41e0-952a-67c23bd15dad
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,376 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0秒
+            Form表单数据：id=0d652422-8338-41e0-952a-67c23bd15dad
+            URL参数：ParentId=0d652422-8338-41e0-952a-67c23bd15dad
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,518 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0.3243341秒
+            Form表单数据：id=158d233d-1e20-4a9f-b3cf-716b248d59d0
+            URL参数：ParentId=158d233d-1e20-4a9f-b3cf-716b248d59d0
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,518 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0.1421341秒
+            Form表单数据：id=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：ParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,518 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0秒
+            Form表单数据：id=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：ParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,518 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0秒
+            Form表单数据：id=158d233d-1e20-4a9f-b3cf-716b248d59d0
+            URL参数：ParentId=158d233d-1e20-4a9f-b3cf-716b248d59d0
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,520 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0.1556355秒
+            Form表单数据：id=d17891cc-a8d3-4c30-a777-3da249501802
+            URL参数：ParentId=d17891cc-a8d3-4c30-a777-3da249501802
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,520 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0秒
+            Form表单数据：id=d17891cc-a8d3-4c30-a777-3da249501802
+            URL参数：ParentId=d17891cc-a8d3-4c30-a777-3da249501802
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,773 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0.2562155秒
+            Form表单数据：GroupId=8cff8e9f-f539-41c9-80ce-06a97f481393&page=1&rows=13&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,773 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0秒
+            Form表单数据：GroupId=8cff8e9f-f539-41c9-80ce-06a97f481393&page=1&rows=13&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,774 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0.2602155秒
+            Form表单数据：id=9a809604-009b-443f-93e0-7129a1e77425
+            URL参数：ParentId=9a809604-009b-443f-93e0-7129a1e77425
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,774 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0秒
+            Form表单数据：id=9a809604-009b-443f-93e0-7129a1e77425
+            URL参数：ParentId=9a809604-009b-443f-93e0-7129a1e77425
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,776 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0.2122215秒
+            Form表单数据：id=eb615c35-86e1-48a8-815e-f9dce548b83b
+            URL参数：ParentId=eb615c35-86e1-48a8-815e-f9dce548b83b
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:58,776 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetGroupTree
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:58
+            总 时 间：0秒
+            Form表单数据：id=eb615c35-86e1-48a8-815e-f9dce548b83b
+            URL参数：ParentId=eb615c35-86e1-48a8-815e-f9dce548b83b
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,130 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0.3472607秒
+            Form表单数据：GroupId=a80423dd-87c0-4d81-9fa7-e3e232d962c5&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,130 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0秒
+            Form表单数据：GroupId=a80423dd-87c0-4d81-9fa7-e3e232d962c5&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,130 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0.2917682秒
+            Form表单数据：GroupId=a6c1c9bc-0a2c-40d0-a112-b7470b2f0e53&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,131 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0秒
+            Form表单数据：GroupId=a6c1c9bc-0a2c-40d0-a112-b7470b2f0e53&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,131 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:58
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0.2922684秒
+            Form表单数据：GroupId=160c2dec-18a0-4ec0-9576-5dab4b9827ae&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,131 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0秒
+            Form表单数据：GroupId=160c2dec-18a0-4ec0-9576-5dab4b9827ae&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,246 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0.1101495秒
+            Form表单数据：GroupId=de69e177-08d6-4647-b5b8-d0489f3c1af1&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,246 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0秒
+            Form表单数据：GroupId=de69e177-08d6-4647-b5b8-d0489f3c1af1&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,346 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0.0986197秒
+            Form表单数据：GroupId=bbee7a09-bed8-4f31-8266-7dd740318e62&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,346 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0秒
+            Form表单数据：GroupId=bbee7a09-bed8-4f31-8266-7dd740318e62&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,431 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0.08358秒
+            Form表单数据：GroupId=2c735d45-dc06-4294-850a-14b8384820c2&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,431 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0秒
+            Form表单数据：GroupId=2c735d45-dc06-4294-850a-14b8384820c2&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,550 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0.0785642秒
+            Form表单数据：GroupId=1e7924e0-0dea-43f6-9c93-e89a7f5190e1&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,550 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0秒
+            Form表单数据：GroupId=1e7924e0-0dea-43f6-9c93-e89a7f5190e1&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,677 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0.0901527秒
+            Form表单数据：GroupId=f967c5c6-bf07-47d0-8383-032c12e7dee2&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:04:59,678 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:04:59
+            结束时间：2019/1/9 17:04:59
+            总 时 间：0.0005025秒
+            Form表单数据：GroupId=f967c5c6-bf07-47d0-8383-032c12e7dee2&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:09,231 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:UpdateUserImg
+            开始时间：2019/1/9 17:05:08
+            结束时间：2019/1/9 17:05:09
+            总 时 间：0.5309708秒
+            Form表单数据：UserName=系统&UserId=e1f529e7-86f6-471d-8019-65d3e6055a67
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:09,231 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:UpdateUserImg
+            开始时间：2019/1/9 17:05:09
+            结束时间：2019/1/9 17:05:09
+            总 时 间：0秒
+            Form表单数据：UserName=系统&UserId=e1f529e7-86f6-471d-8019-65d3e6055a67
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:09,380 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：SystemSettingsController
+            ActionName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:05:09
+            结束时间：2019/1/9 17:05:09
+            总 时 间：0.095931秒
+            Form表单数据：GroupId=f967c5c6-bf07-47d0-8383-032c12e7dee2&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:09,380 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：SystemSettingsController
+            ViewName:GetgroupPersonnelList
+            开始时间：2019/1/9 17:05:09
+            结束时间：2019/1/9 17:05:09
+            总 时 间：0秒
+            Form表单数据：GroupId=f967c5c6-bf07-47d0-8383-032c12e7dee2&page=1&rows=23&sort=UserCount&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:13,885 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:SubmitIssueReport
+            开始时间：2019/1/9 17:05:13
+            结束时间：2019/1/9 17:05:13
+            总 时 间：0.1565711秒
+            Form表单数据：report_nums=zl12356777&report_urls=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&ids=22491
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:13,885 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:SubmitIssueReport
+            开始时间：2019/1/9 17:05:13
+            结束时间：2019/1/9 17:05:13
+            总 时 间：0秒
+            Form表单数据：report_nums=zl12356777&report_urls=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&ids=22491
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:18,804 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:QualificationManagement
+            开始时间：2019/1/9 17:05:18
+            结束时间：2019/1/9 17:05:18
+            总 时 间：2.13E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:18,810 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:QualificationManagement
+            开始时间：2019/1/9 17:05:18
+            结束时间：2019/1/9 17:05:18
+            总 时 间：0.0055009秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:19,085 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:LoadReportList
+            开始时间：2019/1/9 17:05:18
+            结束时间：2019/1/9 17:05:19
+            总 时 间：0.0956157秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:19,085 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:LoadReportList
+            开始时间：2019/1/9 17:05:19
+            结束时间：2019/1/9 17:05:19
+            总 时 间：0秒
+            Form表单数据：page=1&rows=40&sort=AddDate&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:19,195 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetAllUserList
+            开始时间：2019/1/9 17:05:19
+            结束时间：2019/1/9 17:05:19
+            总 时 间：0.1060932秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:19,195 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetAllUserList
+            开始时间：2019/1/9 17:05:19
+            结束时间：2019/1/9 17:05:19
+            总 时 间：0秒
+            Form表单数据：AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:19,459 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/9 17:05:19
+            结束时间：2019/1/9 17:05:19
+            总 时 间：0.1236819秒
+            Form表单数据：TemplateID=37&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:19,460 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetQualificationUserList
+            开始时间：2019/1/9 17:05:19
+            结束时间：2019/1/9 17:05:19
+            总 时 间：0.000499秒
+            Form表单数据：TemplateID=37&AuthorizationType=0&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:28,189 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetAllUserList
+            开始时间：2019/1/9 17:05:28
+            结束时间：2019/1/9 17:05:28
+            总 时 间：0.0946023秒
+            Form表单数据：AuthorizationType=1&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:28,222 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetAllUserList
+            开始时间：2019/1/9 17:05:28
+            结束时间：2019/1/9 17:05:28
+            总 时 间：0.0325228秒
+            Form表单数据：AuthorizationType=1&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:28,261 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/9 17:05:28
+            结束时间：2019/1/9 17:05:28
+            总 时 间：0.0735549秒
+            Form表单数据：TemplateID=37&AuthorizationType=1&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:28,261 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetQualificationUserList
+            开始时间：2019/1/9 17:05:28
+            结束时间：2019/1/9 17:05:28
+            总 时 间：0秒
+            Form表单数据：TemplateID=37&AuthorizationType=1&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:33,624 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/9 17:05:33
+            结束时间：2019/1/9 17:05:33
+            总 时 间：0.1035991秒
+            Form表单数据：TemplateID=13&AuthorizationType=1&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:33,624 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetQualificationUserList
+            开始时间：2019/1/9 17:05:33
+            结束时间：2019/1/9 17:05:33
+            总 时 间：0秒
+            Form表单数据：TemplateID=13&AuthorizationType=1&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:46,871 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:AddQualificationPerson
+            开始时间：2019/1/9 17:05:46
+            结束时间：2019/1/9 17:05:46
+            总 时 间：0.1702433秒
+            Form表单数据：TemplateID=13&UserId=e1f529e7-86f6-471d-8019-65d3e6055a67&AuthorizationType=1
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:46,871 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:AddQualificationPerson
+            开始时间：2019/1/9 17:05:46
+            结束时间：2019/1/9 17:05:46
+            总 时 间：0秒
+            Form表单数据：TemplateID=13&UserId=e1f529e7-86f6-471d-8019-65d3e6055a67&AuthorizationType=1
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:47,011 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ProjectReviewController
+            ActionName:GetQualificationUserList
+            开始时间：2019/1/9 17:05:46
+            结束时间：2019/1/9 17:05:47
+            总 时 间：0.0865789秒
+            Form表单数据：TemplateID=13&AuthorizationType=1&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:47,012 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ProjectReviewController
+            ViewName:GetQualificationUserList
+            开始时间：2019/1/9 17:05:47
+            结束时间：2019/1/9 17:05:47
+            总 时 间：0秒
+            Form表单数据：TemplateID=13&AuthorizationType=1&search=&key=&page=1&rows=30&sort=UserName&order=asc
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:52,028 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:SubmitIssueReport
+            开始时间：2019/1/9 17:05:51
+            结束时间：2019/1/9 17:05:52
+            总 时 间：0.5084156秒
+            Form表单数据：report_nums=zl12356777&report_urls=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&ids=22491
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:52,028 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:SubmitIssueReport
+            开始时间：2019/1/9 17:05:52
+            结束时间：2019/1/9 17:05:52
+            总 时 间：0秒
+            Form表单数据：report_nums=zl12356777&report_urls=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&ids=22491
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:52,660 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportIssueList
+            开始时间：2019/1/9 17:05:52
+            结束时间：2019/1/9 17:05:52
+            总 时 间：0.1301319秒
+            Form表单数据：search=&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:52,660 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportIssueList
+            开始时间：2019/1/9 17:05:52
+            结束时间：2019/1/9 17:05:52
+            总 时 间：0秒
+            Form表单数据：search=&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:59,343 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:loginout
+            开始时间：2019/1/9 17:05:59
+            结束时间：2019/1/9 17:05:59
+            总 时 间：0.0381183秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:59,447 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:loginout
+            开始时间：2019/1/9 17:05:59
+            结束时间：2019/1/9 17:05:59
+            总 时 间：0.1035727秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:59,534 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：LoginController
+            ActionName:Index
+            开始时间：2019/1/9 17:05:59
+            结束时间：2019/1/9 17:05:59
+            总 时 间：0.1776524秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:05:59,582 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：LoginController
+            ViewName:Index
+            开始时间：2019/1/9 17:05:59
+            结束时间：2019/1/9 17:05:59
+            总 时 间：0.0475334秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:05,408 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：LoginController
+            ActionName:login
+            开始时间：2019/1/9 17:06:05
+            结束时间：2019/1/9 17:06:05
+            总 时 间：0.081305秒
+            Form表单数据：UserCount=YWRtaW4=&UserPwd=MTIzNDU2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:05,408 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：LoginController
+            ViewName:login
+            开始时间：2019/1/9 17:06:05
+            结束时间：2019/1/9 17:06:05
+            总 时 间：0秒
+            Form表单数据：UserCount=YWRtaW4=&UserPwd=MTIzNDU2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:05,576 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:Index
+            开始时间：2019/1/9 17:06:05
+            结束时间：2019/1/9 17:06:05
+            总 时 间：0.1211527秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:05,580 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:Index
+            开始时间：2019/1/9 17:06:05
+            结束时间：2019/1/9 17:06:05
+            总 时 间：0.004505秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:05,950 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:main
+            开始时间：2019/1/9 17:06:05
+            结束时间：2019/1/9 17:06:05
+            总 时 间：0.1821471秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:05,955 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:main
+            开始时间：2019/1/9 17:06:05
+            结束时间：2019/1/9 17:06:05
+            总 时 间：0.0040021秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:05,958 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:GetMenuData
+            开始时间：2019/1/9 17:06:05
+            结束时间：2019/1/9 17:06:05
+            总 时 间：0.0545519秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:05,958 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:GetMenuData
+            开始时间：2019/1/9 17:06:05
+            结束时间：2019/1/9 17:06:05
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:09,310 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportManagement
+            开始时间：2019/1/9 17:06:09
+            结束时间：2019/1/9 17:06:09
+            总 时 间：0.0005017秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:09,339 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportManagement
+            开始时间：2019/1/9 17:06:09
+            结束时间：2019/1/9 17:06:09
+            总 时 间：0.0295191秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:09,746 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportManagement
+            开始时间：2019/1/9 17:06:09
+            结束时间：2019/1/9 17:06:09
+            总 时 间：1.07E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:09,749 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportManagement
+            开始时间：2019/1/9 17:06:09
+            结束时间：2019/1/9 17:06:09
+            总 时 间：0.0024996秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:09,750 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2019/1/9 17:06:09
+            结束时间：2019/1/9 17:06:09
+            总 时 间：0.0556115秒
+            Form表单数据：PageId=104
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:09,750 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2019/1/9 17:06:09
+            结束时间：2019/1/9 17:06:09
+            总 时 间：0秒
+            Form表单数据：PageId=104
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:11,088 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportManageList
+            开始时间：2019/1/9 17:06:10
+            结束时间：2019/1/9 17:06:11
+            总 时 间：0.526531秒
+            Form表单数据：search=&key=&search1=&key1=&search2=&key2=&search3=&key3=&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:11,088 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportManageList
+            开始时间：2019/1/9 17:06:11
+            结束时间：2019/1/9 17:06:11
+            总 时 间：0.0005006秒
+            Form表单数据：search=&key=&search1=&key1=&search2=&key2=&search3=&key3=&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:15,369 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadRoomCombobox
+            开始时间：2019/1/9 17:06:15
+            结束时间：2019/1/9 17:06:15
+            总 时 间：0.0451302秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:15,370 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadRoomCombobox
+            开始时间：2019/1/9 17:06:15
+            结束时间：2019/1/9 17:06:15
+            总 时 间：0.0005006秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:17,036 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadGroupCombobox
+            开始时间：2019/1/9 17:06:16
+            结束时间：2019/1/9 17:06:17
+            总 时 间：0.0436199秒
+            Form表单数据：GroupId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:17,037 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadGroupCombobox
+            开始时间：2019/1/9 17:06:17
+            结束时间：2019/1/9 17:06:17
+            总 时 间：0.0005002秒
+            Form表单数据：GroupId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:18,208 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadPersonnelCombobox
+            开始时间：2019/1/9 17:06:18
+            结束时间：2019/1/9 17:06:18
+            总 时 间：0.048925秒
+            Form表单数据：id=9
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:18,209 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadPersonnelCombobox
+            开始时间：2019/1/9 17:06:18
+            结束时间：2019/1/9 17:06:18
+            总 时 间：0.0005037秒
+            Form表单数据：id=9
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:23,306 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:SubmitAbnormalReport
+            开始时间：2019/1/9 17:06:22
+            结束时间：2019/1/9 17:06:23
+            总 时 间：0.7132514秒
+            Form表单数据：review_personnel=admin&error_remark=123&other_remarks=&report_num=zl12356777&File_url=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&report_id=22491&constitute_personnel=admin
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:23,306 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:SubmitAbnormalReport
+            开始时间：2019/1/9 17:06:23
+            结束时间：2019/1/9 17:06:23
+            总 时 间：0秒
+            Form表单数据：review_personnel=admin&error_remark=123&other_remarks=&report_num=zl12356777&File_url=/upload_Folder/Lossless_report_/59352269-d0c5-4045-940a-08f7736c80cf.doc&report_id=22491&constitute_personnel=admin
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:25,193 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportManageList
+            开始时间：2019/1/9 17:06:24
+            结束时间：2019/1/9 17:06:25
+            总 时 间：0.4075362秒
+            Form表单数据：search=&key=&search1=&key1=&search2=&key2=&search3=&key3=&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:25,193 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportManageList
+            开始时间：2019/1/9 17:06:25
+            结束时间：2019/1/9 17:06:25
+            总 时 间：0秒
+            Form表单数据：search=&key=&search1=&key1=&search2=&key2=&search3=&key3=&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:28,573 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AbnormalApplyReview
+            开始时间：2019/1/9 17:06:28
+            结束时间：2019/1/9 17:06:28
+            总 时 间：0.0005412秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:28,581 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AbnormalApplyReview
+            开始时间：2019/1/9 17:06:28
+            结束时间：2019/1/9 17:06:28
+            总 时 间：0.0079934秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:29,170 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateList
+            开始时间：2019/1/9 17:06:28
+            结束时间：2019/1/9 17:06:29
+            总 时 间：0.2672874秒
+            Form表单数据：search=TB_NDT_R.report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:29,170 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateList
+            开始时间：2019/1/9 17:06:29
+            结束时间：2019/1/9 17:06:29
+            总 时 间：0秒
+            Form表单数据：search=TB_NDT_R.report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:36,490 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:PassUnusualApply
+            开始时间：2019/1/9 17:06:36
+            结束时间：2019/1/9 17:06:36
+            总 时 间：0.3527017秒
+            Form表单数据：accept_state=1&report_id=22491&id=2163&type=1
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:36,490 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:PassUnusualApply
+            开始时间：2019/1/9 17:06:36
+            结束时间：2019/1/9 17:06:36
+            总 时 间：0秒
+            Form表单数据：accept_state=1&report_id=22491&id=2163&type=1
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:36,615 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateList
+            开始时间：2019/1/9 17:06:36
+            结束时间：2019/1/9 17:06:36
+            总 时 间：0.0865965秒
+            Form表单数据：search=TB_NDT_R.report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:36,615 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateList
+            开始时间：2019/1/9 17:06:36
+            结束时间：2019/1/9 17:06:36
+            总 时 间：0秒
+            Form表单数据：search=TB_NDT_R.report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:38,783 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AbnormalReportEdit
+            开始时间：2019/1/9 17:06:38
+            结束时间：2019/1/9 17:06:38
+            总 时 间：0.0030696秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:38,798 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AbnormalReportEdit
+            开始时间：2019/1/9 17:06:38
+            结束时间：2019/1/9 17:06:38
+            总 时 间：0.0145093秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:39,165 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AbnormalReportEdit
+            开始时间：2019/1/9 17:06:39
+            结束时间：2019/1/9 17:06:39
+            总 时 间：3.84E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:39,171 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AbnormalReportEdit
+            开始时间：2019/1/9 17:06:39
+            结束时间：2019/1/9 17:06:39
+            总 时 间：0.0065059秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:39,368 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateEditList
+            开始时间：2019/1/9 17:06:39
+            结束时间：2019/1/9 17:06:39
+            总 时 间：0.2032216秒
+            Form表单数据：search=report_num&key=&history_flag=0&PageType=Edit&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:39,368 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateEditList
+            开始时间：2019/1/9 17:06:39
+            结束时间：2019/1/9 17:06:39
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&PageType=Edit&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:43,376 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateList
+            开始时间：2019/1/9 17:06:43
+            结束时间：2019/1/9 17:06:43
+            总 时 间：0.2872551秒
+            Form表单数据：search=TB_NDT_R.report_num&key=&history_flag=1&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:43,376 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateList
+            开始时间：2019/1/9 17:06:43
+            结束时间：2019/1/9 17:06:43
+            总 时 间：0秒
+            Form表单数据：search=TB_NDT_R.report_num&key=&history_flag=1&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:45,665 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateList
+            开始时间：2019/1/9 17:06:45
+            结束时间：2019/1/9 17:06:45
+            总 时 间：0.1211683秒
+            Form表单数据：search=TB_NDT_R.report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:45,666 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateList
+            开始时间：2019/1/9 17:06:45
+            结束时间：2019/1/9 17:06:45
+            总 时 间：0秒
+            Form表单数据：search=TB_NDT_R.report_num&key=&history_flag=0&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:52,857 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadRoomCombobox
+            开始时间：2019/1/9 17:06:52
+            结束时间：2019/1/9 17:06:52
+            总 时 间：0.0435491秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:52,857 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadRoomCombobox
+            开始时间：2019/1/9 17:06:52
+            结束时间：2019/1/9 17:06:52
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:54,886 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadGroupCombobox
+            开始时间：2019/1/9 17:06:54
+            结束时间：2019/1/9 17:06:54
+            总 时 间：0.0363164秒
+            Form表单数据：GroupId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:54,886 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadGroupCombobox
+            开始时间：2019/1/9 17:06:54
+            结束时间：2019/1/9 17:06:54
+            总 时 间：0秒
+            Form表单数据：GroupId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:56,525 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：CommonController
+            ActionName:LoadPersonnelCombobox
+            开始时间：2019/1/9 17:06:56
+            结束时间：2019/1/9 17:06:56
+            总 时 间：0.0361803秒
+            Form表单数据：id=9
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:56,525 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：CommonController
+            ViewName:LoadPersonnelCombobox
+            开始时间：2019/1/9 17:06:56
+            结束时间：2019/1/9 17:06:56
+            总 时 间：0.0005147秒
+            Form表单数据：id=9
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:59,731 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:SubmitAbnormalReportReview
+            开始时间：2019/1/9 17:06:59
+            结束时间：2019/1/9 17:06:59
+            总 时 间：0.252771秒
+            Form表单数据：review_personnel_word=admin&PageType=Edit&id=2163&report_id=22491
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:59,731 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:SubmitAbnormalReportReview
+            开始时间：2019/1/9 17:06:59
+            结束时间：2019/1/9 17:06:59
+            总 时 间：0秒
+            Form表单数据：review_personnel_word=admin&PageType=Edit&id=2163&report_id=22491
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:59,865 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateEditList
+            开始时间：2019/1/9 17:06:59
+            结束时间：2019/1/9 17:06:59
+            总 时 间：0.0896205秒
+            Form表单数据：search=report_num&key=&history_flag=0&PageType=Edit&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:06:59,865 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateEditList
+            开始时间：2019/1/9 17:06:59
+            结束时间：2019/1/9 17:06:59
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&PageType=Edit&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:03,012 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AbnormalReportManagement
+            开始时间：2019/1/9 17:07:03
+            结束时间：2019/1/9 17:07:03
+            总 时 间：0.0010959秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:03,024 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AbnormalReportManagement
+            开始时间：2019/1/9 17:07:03
+            结束时间：2019/1/9 17:07:03
+            总 时 间：0.0115107秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:03,474 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateManagementList
+            开始时间：2019/1/9 17:07:03
+            结束时间：2019/1/9 17:07:03
+            总 时 间：0.2631671秒
+            Form表单数据：page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:03,474 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateManagementList
+            开始时间：2019/1/9 17:07:03
+            结束时间：2019/1/9 17:07:03
+            总 时 间：0秒
+            Form表单数据：page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:11,111 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateManagementList
+            开始时间：2019/1/9 17:07:10
+            结束时间：2019/1/9 17:07:11
+            总 时 间：0.7716288秒
+            Form表单数据：page=71&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:11,112 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateManagementList
+            开始时间：2019/1/9 17:07:11
+            结束时间：2019/1/9 17:07:11
+            总 时 间：0秒
+            Form表单数据：page=71&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:18,854 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateManagementList
+            开始时间：2019/1/9 17:07:18
+            结束时间：2019/1/9 17:07:18
+            总 时 间：0.1329243秒
+            Form表单数据：page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:18,854 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateManagementList
+            开始时间：2019/1/9 17:07:18
+            结束时间：2019/1/9 17:07:18
+            总 时 间：0秒
+            Form表单数据：page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:22,834 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateEditList
+            开始时间：2019/1/9 17:07:22
+            结束时间：2019/1/9 17:07:22
+            总 时 间：0.1615644秒
+            Form表单数据：search=report_num&key=&history_flag=0&PageType=Audit&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:22,834 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateEditList
+            开始时间：2019/1/9 17:07:22
+            结束时间：2019/1/9 17:07:22
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&PageType=Audit&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:35,721 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:SubmitAbnormalReportReview
+            开始时间：2019/1/9 17:07:35
+            结束时间：2019/1/9 17:07:35
+            总 时 间：0.3388884秒
+            Form表单数据：PageType=Audit&id=2163&report_id=22491
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:35,721 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:SubmitAbnormalReportReview
+            开始时间：2019/1/9 17:07:35
+            结束时间：2019/1/9 17:07:35
+            总 时 间：0秒
+            Form表单数据：PageType=Audit&id=2163&report_id=22491
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:35,863 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateEditList
+            开始时间：2019/1/9 17:07:35
+            结束时间：2019/1/9 17:07:35
+            总 时 间：0.116087秒
+            Form表单数据：search=report_num&key=&history_flag=0&PageType=Audit&page=1&rows=27
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2019-01-09 17:07:35,863 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateEditList
+            开始时间：2019/1/9 17:07:35
+            结束时间：2019/1/9 17:07:35
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&PageType=Audit&page=1&rows=27
+            URL参数：
+                    
+ 

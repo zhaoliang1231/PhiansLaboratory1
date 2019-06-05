@@ -1,0 +1,64 @@
+2017-10-30 23:00:51,431 [37] DEBUG Combres.Configuration - Reload Combres settings
+2017-10-30 23:00:51,432 [54] DEBUG Combres.ChangeMonitor - Dynamic resource change monitor thread starts...
+2017-10-30 23:00:51,462 [37] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - Computing hash for set siteCss.  Current hash: 
+2017-10-30 23:00:51,465 [37] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/themes/default/easyui.css' (Mode: Static)
+2017-10-30 23:00:51,466 [37] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/themes/icon.css' (Mode: Static)
+2017-10-30 23:00:51,467 [37] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Content/supersized.css' (Mode: Static)
+2017-10-30 23:00:51,482 [37] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Content/style.css' (Mode: Static)
+2017-10-30 23:00:51,484 [37] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - New hash: -255671359
+2017-10-30 23:00:51,485 [37] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - Computing hash for set siteJs.  Current hash: 
+2017-10-30 23:00:51,485 [37] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/jquery.min.js' (Mode: Static)
+2017-10-30 23:00:51,486 [37] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/jquery.easyui.min.js' (Mode: Static)
+2017-10-30 23:00:51,488 [37] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/locale/easyui-lang-zh_CN.js' (Mode: Static)
+2017-10-30 23:00:51,488 [37] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/supersized.3.2.7.min.js' (Mode: Static)
+2017-10-30 23:00:51,489 [37] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - New hash: 1128185529
+2017-10-30 23:00:51,490 [37] DEBUG Combres.ChangeMonitor - Watch new settings
+2017-10-30 23:00:51,497 [37] DEBUG Combres.Configuration - Elapsed time for 'ReloadSettings': 57 ms
+2017-10-30 23:09:59,671 [34] DEBUG Combres.Configuration - Reload Combres settings
+2017-10-30 23:09:59,672 [30] DEBUG Combres.ChangeMonitor - Dynamic resource change monitor thread starts...
+2017-10-30 23:09:59,719 [34] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - Computing hash for set siteCss.  Current hash: 
+2017-10-30 23:09:59,721 [34] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/themes/default/easyui.css' (Mode: Static)
+2017-10-30 23:09:59,727 [34] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/themes/icon.css' (Mode: Static)
+2017-10-30 23:09:59,729 [34] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Content/supersized.css' (Mode: Static)
+2017-10-30 23:09:59,731 [34] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Content/style.css' (Mode: Static)
+2017-10-30 23:09:59,735 [34] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - New hash: -255671359
+2017-10-30 23:09:59,735 [34] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - Computing hash for set siteJs.  Current hash: 
+2017-10-30 23:09:59,735 [34] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/jquery.min.js' (Mode: Static)
+2017-10-30 23:09:59,743 [34] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/jquery.easyui.min.js' (Mode: Static)
+2017-10-30 23:09:59,763 [34] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/locale/easyui-lang-zh_CN.js' (Mode: Static)
+2017-10-30 23:09:59,765 [34] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/supersized.3.2.7.min.js' (Mode: Static)
+2017-10-30 23:09:59,768 [34] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - New hash: 1128185529
+2017-10-30 23:09:59,769 [34] DEBUG Combres.ChangeMonitor - Watch new settings
+2017-10-30 23:09:59,777 [34] DEBUG Combres.Configuration - Elapsed time for 'ReloadSettings': 83 ms
+2017-10-30 23:14:04,599 [21] DEBUG Combres.Configuration - Reload Combres settings
+2017-10-30 23:14:04,600 [30] DEBUG Combres.ChangeMonitor - Dynamic resource change monitor thread starts...
+2017-10-30 23:14:04,632 [21] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - Computing hash for set siteCss.  Current hash: 
+2017-10-30 23:14:04,634 [21] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/themes/default/easyui.css' (Mode: Static)
+2017-10-30 23:14:04,636 [21] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/themes/icon.css' (Mode: Static)
+2017-10-30 23:14:04,637 [21] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Content/supersized.css' (Mode: Static)
+2017-10-30 23:14:04,637 [21] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Content/style.css' (Mode: Static)
+2017-10-30 23:14:04,639 [21] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - New hash: -255671359
+2017-10-30 23:14:04,639 [21] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - Computing hash for set siteJs.  Current hash: 
+2017-10-30 23:14:04,639 [21] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/jquery.min.js' (Mode: Static)
+2017-10-30 23:14:04,640 [21] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/jquery.easyui.min.js' (Mode: Static)
+2017-10-30 23:14:04,642 [21] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/locale/easyui-lang-zh_CN.js' (Mode: Static)
+2017-10-30 23:14:04,643 [21] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/supersized.3.2.7.min.js' (Mode: Static)
+2017-10-30 23:14:04,644 [21] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - New hash: 1128185529
+2017-10-30 23:14:04,644 [21] DEBUG Combres.ChangeMonitor - Watch new settings
+2017-10-30 23:14:04,651 [21] DEBUG Combres.Configuration - Elapsed time for 'ReloadSettings': 42 ms
+2017-10-30 23:16:38,840 [6] DEBUG Combres.Configuration - Reload Combres settings
+2017-10-30 23:16:38,840 [8] DEBUG Combres.ChangeMonitor - Dynamic resource change monitor thread starts...
+2017-10-30 23:16:38,878 [6] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - Computing hash for set siteCss.  Current hash: 
+2017-10-30 23:16:38,880 [6] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/themes/default/easyui.css' (Mode: Static)
+2017-10-30 23:16:38,881 [6] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/themes/icon.css' (Mode: Static)
+2017-10-30 23:16:38,882 [6] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Content/supersized.css' (Mode: Static)
+2017-10-30 23:16:38,882 [6] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Content/style.css' (Mode: Static)
+2017-10-30 23:16:38,884 [6] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - New hash: -255671359
+2017-10-30 23:16:38,885 [6] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - Computing hash for set siteJs.  Current hash: 
+2017-10-30 23:16:38,885 [6] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/jquery.min.js' (Mode: Static)
+2017-10-30 23:16:38,886 [6] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/jquery.easyui.min.js' (Mode: Static)
+2017-10-30 23:16:38,888 [6] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/easyui/locale/easyui-lang-zh_CN.js' (Mode: Static)
+2017-10-30 23:16:38,888 [6] DEBUG Combres.ResourceContentReader - Retrieving new content for Resource '/Scripts/supersized.3.2.7.min.js' (Mode: Static)
+2017-10-30 23:16:38,889 [6] DEBUG Combres.VersionGenerators.HashCodeVersionGenerator - New hash: 1128185529
+2017-10-30 23:16:38,890 [6] DEBUG Combres.ChangeMonitor - Watch new settings
+2017-10-30 23:16:38,898 [6] DEBUG Combres.Configuration - Elapsed time for 'ReloadSettings': 48 ms

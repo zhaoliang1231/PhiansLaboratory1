@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "ProceduresFile";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    @Html.CombresLink("ProceduresFileJs")
+</head>
+<body>
+    <div id="Layout" class="easyui-layout" data-options="fit:true">
+        @*文件类型类别*@
+        <div data-options="region:'west',border:true">
+            <div id="Procedures_tree"></div>
+        </div>
+
+        @*列表*@
+        <div data-options="region:'east',border:true">
+            <div id="Procedures_file_datagrid"></div>
+        </div>
+    </div>
+
+    @*工具栏*@
+    <div style="display: none">
+        @*添加文件类型内容*@
+        <div id="tree_add_dialog">
+            <div class="h_d" style="height: 50px; margin-top: 25px; margin-left: 15px">
+                <p class="h_d1" style="width: 100px">File type name:</p>
+                <input id="tree_add_dialog_input" class="h_d1 easyui-textbox" name="" style="width: 200px;" />
+            </div>
+        </div>
+        <a href="@PageOffice.PageOfficeLink.OpenWindow("/WordCommon/WordOperation?", "width=1300px;height=1000px;")" id="ShowOffice"></a>
+        <div id="Procedures_file_toolbar">
+            <a href="javascript:;" id="Procedures_file_add" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">Add</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Procedures_file_edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Procedures_file_del" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Environmental_management_read" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">Read File</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Download_files" class="easyui-linkbutton" data-options="iconCls:'icon-redo',plain:true">Download File</a>
+            @*<a href="javascript:;" id="Environmental_management_audit" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">审核文件</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="Environmental_management_Send_receive" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">签发文件</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+            <input id="search" style="width: 150px" class="easyui-combobox" />
+            <input id="search1" style="width: 150px" class="easyui-textbox" />
+            <a href="javascript:;" id="Procedures_file_search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+        </div>
+        <!--<%-- 修改文件 --%>-->
+        <form id="edit_file" style="overflow-x:hidden;" enctype="multipart/form-data" method="post">
+            <div title="Edit Type" style="margin-left:20px">
+                <div class="h_dline" style="height: 23px; margin-top: 40px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 80px;float:left;margin-top:5px">File Num：</p>
+                    <input id="FileNum1" class="easyui-textbox" name="FileNum" style="width: 180px; height: 23px; " required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 40px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 80px;float:left;margin-top:5px">File Type：</p>
+                    <input id="FileType1" class="easyui-textbox" name="FileType" style="width: 180px; height: 23px; " readonly="readonly"/>
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 40px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 80px;float:left;margin-top:5px">File Name：</p>
+                    <input id="FileNewName1" class="easyui-textbox" name="FileName" style="width: 180px; height: 23px; " required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 40px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 80px;float:left;margin-top:5px">File Remark：</p>
+                    <input id="FileRemark1" class="easyui-textbox" name="FileRemark" style="width: 180px; height: 23px;" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 40px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 80px;float:left;margin-top:5px">Remarks：</p>
+                    <input id="Remarks1" class="easyui-textbox" name="Remarks" data-options="multiline:true" style="width: 455px; height: 72px; " />
+                </div>
+            </div>
+        </form>
+        <!--<%-- 增加文件 --%>-->
+        <form id="add_file" style="overflow-x:hidden;" enctype="multipart/form-data" method="post">
+            <div title="Add Type" style="margin-left:20px">
+                <div class="h_dline" style="height: 23px; margin-top: 30px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 100px;float:left;margin-top:5px">File Num：</p>
+                    <input id="FileNum" class="easyui-textbox" name="FileNum" style="width: 150px; height: 23px" required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 30px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 100px;float:left;margin-top:5px">File Type：</p>
+                    <input id="FileType" class="easyui-textbox" name="FileType" style="width: 150px; height: 23px;" readonly="readonly" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 30px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 100px;float:left;margin-top:5px">File Name：</p>
+                    <input id="FileName" class="easyui-textbox" name="FileName" style="width: 150px; height: 23px" required="required" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 30px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 100px;float:left;margin-top:5px">File Remark：</p>
+                    <input id="FileRemark" class="easyui-textbox" name="FileRemark" style="width: 150px; height: 23px" />
+                </div>
+
+                <div class="h_dline" style="height: 23px; margin-top: 30px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 100px;float:left;margin-top:5px">Upload Files：</p>
+                    <input type="file" name="uploadify" id="uploadify" />
+                </div>
+
+                <div class="h_dline" style="height: 23px; margin-top: 30px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 100px;float:left;margin-top:5px">Remarks：</p>
+                    <input id="Remarks" class="easyui-textbox" name="Remarks" data-options="multiline:true" style="width: 455px; height: 72px" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+

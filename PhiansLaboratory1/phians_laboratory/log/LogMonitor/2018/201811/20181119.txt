@@ -1,0 +1,2272 @@
+
+ 
+记录时间：2018-11-19 08:46:59,280 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：LoginController
+            ActionName:Index
+            开始时间：2018/11/19 星期一 8:46:59
+            结束时间：2018/11/19 星期一 8:46:59
+            总 时 间：0.0460718秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:00,984 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：LoginController
+            ViewName:Index
+            开始时间：2018/11/19 星期一 8:46:59
+            结束时间：2018/11/19 星期一 8:47:00
+            总 时 间：1.6970971秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:14,867 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：LoginController
+            ActionName:login
+            开始时间：2018/11/19 星期一 8:47:14
+            结束时间：2018/11/19 星期一 8:47:14
+            总 时 间：0.3721038秒
+            Form表单数据：UserCount=YWRtaW4=&UserPwd=MTIzNDU2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:14,867 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：LoginController
+            ViewName:login
+            开始时间：2018/11/19 星期一 8:47:14
+            结束时间：2018/11/19 星期一 8:47:14
+            总 时 间：0秒
+            Form表单数据：UserCount=YWRtaW4=&UserPwd=MTIzNDU2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:14,955 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:Index
+            开始时间：2018/11/19 星期一 8:47:14
+            结束时间：2018/11/19 星期一 8:47:14
+            总 时 间：0.0570078秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:16,044 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:Index
+            开始时间：2018/11/19 星期一 8:47:14
+            结束时间：2018/11/19 星期一 8:47:16
+            总 时 间：1.0890622秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:16,817 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:main
+            开始时间：2018/11/19 星期一 8:47:16
+            结束时间：2018/11/19 星期一 8:47:16
+            总 时 间：0.4181143秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:17,146 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:main
+            开始时间：2018/11/19 星期一 8:47:16
+            结束时间：2018/11/19 星期一 8:47:17
+            总 时 间：0.3290188秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:17,227 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:GetMenuData
+            开始时间：2018/11/19 星期一 8:47:17
+            结束时间：2018/11/19 星期一 8:47:17
+            总 时 间：0.0550377秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:17,227 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:GetMenuData
+            开始时间：2018/11/19 星期一 8:47:17
+            结束时间：2018/11/19 星期一 8:47:17
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:34,341 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:47:34
+            结束时间：2018/11/19 星期一 8:47:34
+            总 时 间：0.0040233秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:35,329 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:47:34
+            结束时间：2018/11/19 星期一 8:47:35
+            总 时 间：0.9880565秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:35,749 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:47:35
+            结束时间：2018/11/19 星期一 8:47:35
+            总 时 间：0.0871038秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:35,749 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:47:35
+            结束时间：2018/11/19 星期一 8:47:35
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:40,584 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:47:40
+            结束时间：2018/11/19 星期一 8:47:40
+            总 时 间：0.0240309秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:40,584 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:47:40
+            结束时间：2018/11/19 星期一 8:47:40
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:45,039 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:47:44
+            结束时间：2018/11/19 星期一 8:47:45
+            总 时 间：0.1440456秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:45,039 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:47:45
+            结束时间：2018/11/19 星期一 8:47:45
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:52,356 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:47:52
+            结束时间：2018/11/19 星期一 8:47:52
+            总 时 间：0.0870642秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=核岛探伤组&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:47:52,356 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:47:52
+            结束时间：2018/11/19 星期一 8:47:52
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=核岛探伤组&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:48:09,273 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:48:09
+            结束时间：2018/11/19 星期一 8:48:09
+            总 时 间：0.0780317秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=核岛探伤组&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:48:09,273 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:48:09
+            结束时间：2018/11/19 星期一 8:48:09
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=核岛探伤组&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:48:10,373 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:48:10
+            结束时间：2018/11/19 星期一 8:48:10
+            总 时 间：0.0820947秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=核岛探伤组&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:48:10,373 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:48:10
+            结束时间：2018/11/19 星期一 8:48:10
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=核岛探伤组&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:48:11,211 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:48:11
+            结束时间：2018/11/19 星期一 8:48:11
+            总 时 间：0.0890426秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=核岛探伤组&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:48:11,211 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:48:11
+            结束时间：2018/11/19 星期一 8:48:11
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=核岛探伤组&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:48:17,683 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:48:17
+            结束时间：2018/11/19 星期一 8:48:17
+            总 时 间：0.0750127秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=核岛探伤组&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:48:17,684 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:48:17
+            结束时间：2018/11/19 星期一 8:48:17
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=1&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=核岛探伤组&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:02,396 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:49:02
+            结束时间：2018/11/19 星期一 8:49:02
+            总 时 间：7.02E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:02,400 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:49:02
+            结束时间：2018/11/19 星期一 8:49:02
+            总 时 间：0.0040003秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:02,706 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:49:02
+            结束时间：2018/11/19 星期一 8:49:02
+            总 时 间：0.037088秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:02,706 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:49:02
+            结束时间：2018/11/19 星期一 8:49:02
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:12,578 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:49:12
+            结束时间：2018/11/19 星期一 8:49:12
+            总 时 间：0.0250418秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:12,578 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:49:12
+            结束时间：2018/11/19 星期一 8:49:12
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:18,238 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:49:18
+            结束时间：2018/11/19 星期一 8:49:18
+            总 时 间：0.0760243秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:18,238 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:49:18
+            结束时间：2018/11/19 星期一 8:49:18
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:22,036 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:49:21
+            结束时间：2018/11/19 星期一 8:49:22
+            总 时 间：0.0870416秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:22,036 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:49:22
+            结束时间：2018/11/19 星期一 8:49:22
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:30,884 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:49:30
+            结束时间：2018/11/19 星期一 8:49:30
+            总 时 间：4.76E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:30,886 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:49:30
+            结束时间：2018/11/19 星期一 8:49:30
+            总 时 间：0.0020002秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:31,181 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:49:31
+            结束时间：2018/11/19 星期一 8:49:31
+            总 时 间：0.0500646秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:31,182 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:49:31
+            结束时间：2018/11/19 星期一 8:49:31
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:45,389 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:49:45
+            结束时间：2018/11/19 星期一 8:49:45
+            总 时 间：0.0230582秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:45,389 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:49:45
+            结束时间：2018/11/19 星期一 8:49:45
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:46,459 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:49:46
+            结束时间：2018/11/19 星期一 8:49:46
+            总 时 间：0.0751037秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:49:46,459 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:49:46
+            结束时间：2018/11/19 星期一 8:49:46
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:50:01,815 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:50:01
+            结束时间：2018/11/19 星期一 8:50:01
+            总 时 间：0.119082秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:50:01,815 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:50:01
+            结束时间：2018/11/19 星期一 8:50:01
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:50:32,103 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:50:31
+            结束时间：2018/11/19 星期一 8:50:32
+            总 时 间：0.4311144秒
+            Form表单数据：StatisticsType=Edittime&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:50:32,103 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:50:32
+            结束时间：2018/11/19 星期一 8:50:32
+            总 时 间：0秒
+            Form表单数据：StatisticsType=Edittime&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:54:40,580 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:54:40
+            结束时间：2018/11/19 星期一 8:54:40
+            总 时 间：2.65E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:54:40,585 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:54:40
+            结束时间：2018/11/19 星期一 8:54:40
+            总 时 间：0.0050003秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:54:41,138 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:54:41
+            结束时间：2018/11/19 星期一 8:54:41
+            总 时 间：0.0790584秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:54:41,138 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:54:41
+            结束时间：2018/11/19 星期一 8:54:41
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:54:47,988 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:54:47
+            结束时间：2018/11/19 星期一 8:54:47
+            总 时 间：0.0320502秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:54:47,988 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:54:47
+            结束时间：2018/11/19 星期一 8:54:47
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:54:49,571 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:54:49
+            结束时间：2018/11/19 星期一 8:54:49
+            总 时 间：0.0810407秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:54:49,571 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:54:49
+            结束时间：2018/11/19 星期一 8:54:49
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:54:55,337 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:54:55
+            结束时间：2018/11/19 星期一 8:54:55
+            总 时 间：0.1080705秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:54:55,337 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:54:55
+            结束时间：2018/11/19 星期一 8:54:55
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:55:49,162 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:55:49
+            结束时间：2018/11/19 星期一 8:55:49
+            总 时 间：4.91E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:55:49,167 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:55:49
+            结束时间：2018/11/19 星期一 8:55:49
+            总 时 间：0.0050003秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:55:49,919 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:55:49
+            结束时间：2018/11/19 星期一 8:55:49
+            总 时 间：0.0820924秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:55:49,919 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:55:49
+            结束时间：2018/11/19 星期一 8:55:49
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:55:51,745 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:55:51
+            结束时间：2018/11/19 星期一 8:55:51
+            总 时 间：0.0370969秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:55:51,745 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:55:51
+            结束时间：2018/11/19 星期一 8:55:51
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:19,116 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:56:19
+            结束时间：2018/11/19 星期一 8:56:19
+            总 时 间：6.24E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:19,121 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:56:19
+            结束时间：2018/11/19 星期一 8:56:19
+            总 时 间：0.0050003秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:19,680 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:56:19
+            结束时间：2018/11/19 星期一 8:56:19
+            总 时 间：0.0790946秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:19,680 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:56:19
+            结束时间：2018/11/19 星期一 8:56:19
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:21,879 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:56:21
+            结束时间：2018/11/19 星期一 8:56:21
+            总 时 间：0.0340204秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:21,879 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:56:21
+            结束时间：2018/11/19 星期一 8:56:21
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:34,253 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:56:34
+            结束时间：2018/11/19 星期一 8:56:34
+            总 时 间：2.81E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:34,257 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:56:34
+            结束时间：2018/11/19 星期一 8:56:34
+            总 时 间：0.0040002秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:34,807 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:56:34
+            结束时间：2018/11/19 星期一 8:56:34
+            总 时 间：0.0560599秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:34,808 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:56:34
+            结束时间：2018/11/19 星期一 8:56:34
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:37,079 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:56:37
+            结束时间：2018/11/19 星期一 8:56:37
+            总 时 间：0.0280898秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:56:37,079 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:56:37
+            结束时间：2018/11/19 星期一 8:56:37
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:57:41,332 
+线程ID:[39] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:57:41
+            结束时间：2018/11/19 星期一 8:57:41
+            总 时 间：6.49E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:57:41,338 
+线程ID:[39] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 8:57:41
+            结束时间：2018/11/19 星期一 8:57:41
+            总 时 间：0.0060004秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:57:41,930 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:57:41
+            结束时间：2018/11/19 星期一 8:57:41
+            总 时 间：0.0560991秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:57:41,930 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:57:41
+            结束时间：2018/11/19 星期一 8:57:41
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:57:43,152 
+线程ID:[40] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 8:57:43
+            结束时间：2018/11/19 星期一 8:57:43
+            总 时 间：0.030069秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:57:43,152 
+线程ID:[40] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 8:57:43
+            结束时间：2018/11/19 星期一 8:57:43
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:57:43,931 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 8:57:43
+            结束时间：2018/11/19 星期一 8:57:43
+            总 时 间：0.0810135秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 08:57:43,931 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 8:57:43
+            结束时间：2018/11/19 星期一 8:57:43
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:00:50,988 
+线程ID:[53] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:00:50
+            结束时间：2018/11/19 星期一 9:00:50
+            总 时 间：1.26E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:00:50,992 
+线程ID:[53] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:00:50
+            结束时间：2018/11/19 星期一 9:00:50
+            总 时 间：0.0040002秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:00:51,402 
+线程ID:[54] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:00:51
+            结束时间：2018/11/19 星期一 9:00:51
+            总 时 间：0.0600363秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:00:51,402 
+线程ID:[54] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:00:51
+            结束时间：2018/11/19 星期一 9:00:51
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:00:54,681 
+线程ID:[53] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:00:54
+            结束时间：2018/11/19 星期一 9:00:54
+            总 时 间：0.0280239秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:00:54,681 
+线程ID:[53] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:00:54
+            结束时间：2018/11/19 星期一 9:00:54
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:00:56,716 
+线程ID:[53] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 9:00:56
+            结束时间：2018/11/19 星期一 9:00:56
+            总 时 间：0.0790402秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:00:56,716 
+线程ID:[53] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 9:00:56
+            结束时间：2018/11/19 星期一 9:00:56
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:04,320 
+线程ID:[55] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 9:01:04
+            结束时间：2018/11/19 星期一 9:01:04
+            总 时 间：0.0850752秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:04,320 
+线程ID:[55] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 9:01:04
+            结束时间：2018/11/19 星期一 9:01:04
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:26,759 
+线程ID:[55] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:01:26
+            结束时间：2018/11/19 星期一 9:01:26
+            总 时 间：5.86E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:26,768 
+线程ID:[55] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:01:26
+            结束时间：2018/11/19 星期一 9:01:26
+            总 时 间：0.0090005秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:27,300 
+线程ID:[55] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:01:27
+            结束时间：2018/11/19 星期一 9:01:27
+            总 时 间：0.0580895秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:27,301 
+线程ID:[55] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:01:27
+            结束时间：2018/11/19 星期一 9:01:27
+            总 时 间：0.0010001秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:34,653 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:01:34
+            结束时间：2018/11/19 星期一 9:01:34
+            总 时 间：0.0250101秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:34,653 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:01:34
+            结束时间：2018/11/19 星期一 9:01:34
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:35,573 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 9:01:35
+            结束时间：2018/11/19 星期一 9:01:35
+            总 时 间：0.0790627秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:35,573 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 9:01:35
+            结束时间：2018/11/19 星期一 9:01:35
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:52,393 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 9:01:52
+            结束时间：2018/11/19 星期一 9:01:52
+            总 时 间：0.0860248秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:01:52,394 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 9:01:52
+            结束时间：2018/11/19 星期一 9:01:52
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:13,369 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:03:13
+            结束时间：2018/11/19 星期一 9:03:13
+            总 时 间：5.64E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:13,374 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:03:13
+            结束时间：2018/11/19 星期一 9:03:13
+            总 时 间：0.0050002秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:13,763 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:03:13
+            结束时间：2018/11/19 星期一 9:03:13
+            总 时 间：0.0500789秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:13,763 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:03:13
+            结束时间：2018/11/19 星期一 9:03:13
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:16,594 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:03:16
+            结束时间：2018/11/19 星期一 9:03:16
+            总 时 间：0.0250408秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:16,594 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:03:16
+            结束时间：2018/11/19 星期一 9:03:16
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:19,516 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 9:03:19
+            结束时间：2018/11/19 星期一 9:03:19
+            总 时 间：0.1330079秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:19,517 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 9:03:19
+            结束时间：2018/11/19 星期一 9:03:19
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:55,267 
+线程ID:[68] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:03:55
+            结束时间：2018/11/19 星期一 9:03:55
+            总 时 间：5.27E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:55,274 
+线程ID:[68] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:03:55
+            结束时间：2018/11/19 星期一 9:03:55
+            总 时 间：0.0070004秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:55,695 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:03:55
+            结束时间：2018/11/19 星期一 9:03:55
+            总 时 间：0.0470772秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:55,695 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:03:55
+            结束时间：2018/11/19 星期一 9:03:55
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:57,655 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:03:57
+            结束时间：2018/11/19 星期一 9:03:57
+            总 时 间：0.0280893秒
+            Form表单数据：GroupParentId=5cfdf201-8dd4-499c-ad0b-34f77920b036
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:03:57,655 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:03:57
+            结束时间：2018/11/19 星期一 9:03:57
+            总 时 间：0秒
+            Form表单数据：GroupParentId=5cfdf201-8dd4-499c-ad0b-34f77920b036
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:04:00,935 
+线程ID:[65] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 9:04:00
+            结束时间：2018/11/19 星期一 9:04:00
+            总 时 间：0.0890769秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=5cfdf201-8dd4-499c-ad0b-34f77920b036&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:04:00,936 
+线程ID:[65] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 9:04:00
+            结束时间：2018/11/19 星期一 9:04:00
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=5cfdf201-8dd4-499c-ad0b-34f77920b036&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:05:58,759 
+线程ID:[73] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:05:58
+            结束时间：2018/11/19 星期一 9:05:58
+            总 时 间：1.61E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:05:58,764 
+线程ID:[73] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:05:58
+            结束时间：2018/11/19 星期一 9:05:58
+            总 时 间：0.0050003秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:06:52,159 
+线程ID:[80] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:06:52
+            结束时间：2018/11/19 星期一 9:06:52
+            总 时 间：7.04E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:06:52,162 
+线程ID:[80] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:06:52
+            结束时间：2018/11/19 星期一 9:06:52
+            总 时 间：0.0030002秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:06:52,619 
+线程ID:[76] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:06:52
+            结束时间：2018/11/19 星期一 9:06:52
+            总 时 间：0.0280967秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:06:52,619 
+线程ID:[76] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:06:52
+            结束时间：2018/11/19 星期一 9:06:52
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:06:54,344 
+线程ID:[80] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:06:54
+            结束时间：2018/11/19 星期一 9:06:54
+            总 时 间：0.0230953秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:06:54,344 
+线程ID:[80] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:06:54
+            结束时间：2018/11/19 星期一 9:06:54
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:07:01,371 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 9:07:01
+            结束时间：2018/11/19 星期一 9:07:01
+            总 时 间：0.0860973秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:07:01,371 
+线程ID:[63] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 9:07:01
+            结束时间：2018/11/19 星期一 9:07:01
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:08:18,683 
+线程ID:[77] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:08:18
+            结束时间：2018/11/19 星期一 9:08:18
+            总 时 间：1.93E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:08:18,693 
+线程ID:[77] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:StatisticalManagement
+            开始时间：2018/11/19 星期一 9:08:18
+            结束时间：2018/11/19 星期一 9:08:18
+            总 时 间：0.0100006秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:08:19,228 
+线程ID:[77] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:08:19
+            结束时间：2018/11/19 星期一 9:08:19
+            总 时 间：0.0320505秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:08:19,228 
+线程ID:[77] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:08:19
+            结束时间：2018/11/19 星期一 9:08:19
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8CFF8E9F-F539-41C9-80CE-06A97F481391
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:08:20,637 
+线程ID:[84] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:select_group
+            开始时间：2018/11/19 星期一 9:08:20
+            结束时间：2018/11/19 星期一 9:08:20
+            总 时 间：0.0250311秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:08:20,637 
+线程ID:[84] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:select_group
+            开始时间：2018/11/19 星期一 9:08:20
+            结束时间：2018/11/19 星期一 9:08:20
+            总 时 间：0秒
+            Form表单数据：GroupParentId=8cff8e9f-f539-41c9-80ce-06a97f481393
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:08:23,112 
+线程ID:[77] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 9:08:23
+            结束时间：2018/11/19 星期一 9:08:23
+            总 时 间：0.0800726秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=&dateStart=2018-11-01&dateEnd=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:08:23,113 
+线程ID:[77] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 9:08:23
+            结束时间：2018/11/19 星期一 9:08:23
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=&dateStart=2018-11-01&dateEnd=
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:08:31,957 
+线程ID:[85] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：StatisticalManagementController
+            ActionName:report_arrange
+            开始时间：2018/11/19 星期一 9:08:31
+            结束时间：2018/11/19 星期一 9:08:31
+            总 时 间：0.1340785秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=&dateStart=2018-11-01&dateEnd=2018-11-19
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-19 09:08:31,957 
+线程ID:[85] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：StatisticalManagementController
+            ViewName:report_arrange
+            开始时间：2018/11/19 星期一 9:08:31
+            结束时间：2018/11/19 星期一 9:08:31
+            总 时 间：0秒
+            Form表单数据：StatisticsType=report_Edit&StatisticsKey=0&DepartmentGroupID=8cff8e9f-f539-41c9-80ce-06a97f481393&GroupName=&Day=&dateStart=2018-11-01&dateEnd=2018-11-19
+            URL参数：
+                    
+ 

@@ -1,0 +1,767 @@
+﻿2018-12-24 10:01:57
+未能找到文件“F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\upload_Folder\Lossless_report_\bd6dd027-e030-45be-be07-35de1dd23fba.doc”。
+异常信息：System.IO.FileNotFoundException: 未能找到文件“F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\upload_Folder\Lossless_report_\bd6dd027-e030-45be-be07-35de1dd23fba.doc”。
+文件名:“F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\upload_Folder\Lossless_report_\bd6dd027-e030-45be-be07-35de1dd23fba.doc”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 System.IO.File.OpenRead(String path)
+   在 Aspose.Words.Document..ctor(String fileName, LoadOptions loadOptions)
+   在 Aspose.Words.Document..ctor(String fileName)
+   在 Phians_BLL.ReportManagementBLL.Alldownload(Object model) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportManagementBLL.cs:行号 84
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   在 phians_laboratory.Controllers.ReportManagementController.Alldownload(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\ReportManagementController.cs:行号 2222
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeSynchronousActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 System.IO.File.OpenRead(String path)
+   在 Aspose.Words.Document..ctor(String fileName, LoadOptions loadOptions)
+   在 Aspose.Words.Document..ctor(String fileName)
+   在 Phians_BLL.ReportManagementBLL.Alldownload(Object model) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\ReportManagement\ReportManagementBLL.cs:行号 84
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   在 phians_laboratory.Controllers.ReportManagementController.Alldownload(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\ReportManagementController.cs:行号 2222
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeSynchronousActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未能找到文件“F:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\upload_Folder\Lossless_report_\bd6dd027-e030-45be-be07-35de1dd23fba.doc”。
+
+----------------------------------
+
+2018-12-24 11:20:25
+未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+异常信息：System.InvalidOperationException: 未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+
+----------------------------------
+
+2018-12-24 11:20:33
+未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+异常信息：System.InvalidOperationException: 未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+
+----------------------------------
+
+2018-12-24 11:20:38
+未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+异常信息：System.InvalidOperationException: 未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+
+----------------------------------
+
+2018-12-24 11:21:23
+未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+异常信息：System.InvalidOperationException: 未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+
+----------------------------------
+
+2018-12-24 13:33:15
+未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+异常信息：System.InvalidOperationException: 未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+
+----------------------------------
+
+2018-12-24 13:33:58
+未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+异常信息：System.InvalidOperationException: 未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+
+----------------------------------
+
+2018-12-24 13:34:16
+未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+异常信息：System.InvalidOperationException: 未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+
+----------------------------------
+
+2018-12-24 13:35:00
+未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+异常信息：System.InvalidOperationException: 未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未找到视图“TestBlockLibrary”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/LedgerManagement/TestBlockLibrary.aspx
+~/Views/LedgerManagement/TestBlockLibrary.ascx
+~/Views/Shared/TestBlockLibrary.aspx
+~/Views/Shared/TestBlockLibrary.ascx
+~/Views/LedgerManagement/TestBlockLibrary.cshtml
+~/Views/LedgerManagement/TestBlockLibrary.vbhtml
+~/Views/Shared/TestBlockLibrary.cshtml
+~/Views/Shared/TestBlockLibrary.vbhtml
+
+----------------------------------
+
+2018-12-24 14:47:39
+未将对象引用设置到对象的实例。
+异常信息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Phians_DAL.FixtureManagementDAL.importProbe(List`1 listmodel, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\LedgerManagement\FixtureManagementDAL.cs:行号 266
+   在 Phians_BLL.FixtureManagementBLL.importProbe(String FileUrl, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\LedgerManagement\FixtureManagementBLL.cs:行号 129
+   在 phians_laboratory.Controllers.LedgerManagementController.importProbe(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:行号 395
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 Phians_DAL.FixtureManagementDAL.importProbe(List`1 listmodel, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\LedgerManagement\FixtureManagementDAL.cs:行号 266
+   在 Phians_BLL.FixtureManagementBLL.importProbe(String FileUrl, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\LedgerManagement\FixtureManagementBLL.cs:行号 129
+   在 phians_laboratory.Controllers.LedgerManagementController.importProbe(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:行号 395
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未将对象引用设置到对象的实例。
+
+----------------------------------
+
+2018-12-24 14:50:46
+SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+异常信息：System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 PetaPoco.Database.ExecuteScalarHelper(IDbCommand cmd) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 2495
+   在 PetaPoco.Providers.SqlServerDatabaseProvider.ExecuteInsert(Database db, IDbCommand cmd, String primaryKeyName) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Providers\SqlServerDatabaseProvider.cs:行号 47
+   在 PetaPoco.Database.ExecuteInsert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1364
+   在 PetaPoco.Database.Insert(Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1275
+   在 Phians_DAL.TestBlockLibraryDAL.importTestBlockLibrary(List`1 listmodel, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\LedgerManagement\TestBlockLibraryDAL.cs:行号 257
+   在 Phians_BLL.TestBlockLibraryBLL.importTestBlockLibrary(String FileUrl, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\LedgerManagement\TestBlockLibraryBLL.cs:行号 77
+   在 phians_laboratory.Controllers.LedgerManagementController.importTestBlockLibrary(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:行号 602
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 PetaPoco.Database.ExecuteScalarHelper(IDbCommand cmd) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 2495
+   在 PetaPoco.Providers.SqlServerDatabaseProvider.ExecuteInsert(Database db, IDbCommand cmd, String primaryKeyName) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Providers\SqlServerDatabaseProvider.cs:行号 47
+   在 PetaPoco.Database.ExecuteInsert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1364
+   在 PetaPoco.Database.Insert(Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1275
+   在 Phians_DAL.TestBlockLibraryDAL.importTestBlockLibrary(List`1 listmodel, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\LedgerManagement\TestBlockLibraryDAL.cs:行号 257
+   在 Phians_BLL.TestBlockLibraryBLL.importTestBlockLibrary(String FileUrl, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\LedgerManagement\TestBlockLibraryBLL.cs:行号 77
+   在 phians_laboratory.Controllers.LedgerManagementController.importTestBlockLibrary(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:行号 602
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+
+----------------------------------
+
+2018-12-24 14:50:58
+SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+异常信息：System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 PetaPoco.Database.ExecuteScalarHelper(IDbCommand cmd) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 2495
+   在 PetaPoco.Providers.SqlServerDatabaseProvider.ExecuteInsert(Database db, IDbCommand cmd, String primaryKeyName) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Providers\SqlServerDatabaseProvider.cs:行号 47
+   在 PetaPoco.Database.ExecuteInsert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1364
+   在 PetaPoco.Database.Insert(Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1275
+   在 Phians_DAL.TestBlockLibraryDAL.importTestBlockLibrary(List`1 listmodel, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\LedgerManagement\TestBlockLibraryDAL.cs:行号 257
+   在 Phians_BLL.TestBlockLibraryBLL.importTestBlockLibrary(String FileUrl, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\LedgerManagement\TestBlockLibraryBLL.cs:行号 77
+   在 phians_laboratory.Controllers.LedgerManagementController.importTestBlockLibrary(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:行号 602
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 PetaPoco.Database.ExecuteScalarHelper(IDbCommand cmd) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 2495
+   在 PetaPoco.Providers.SqlServerDatabaseProvider.ExecuteInsert(Database db, IDbCommand cmd, String primaryKeyName) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Providers\SqlServerDatabaseProvider.cs:行号 47
+   在 PetaPoco.Database.ExecuteInsert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1364
+   在 PetaPoco.Database.Insert(Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1275
+   在 Phians_DAL.TestBlockLibraryDAL.importTestBlockLibrary(List`1 listmodel, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\LedgerManagement\TestBlockLibraryDAL.cs:行号 257
+   在 Phians_BLL.TestBlockLibraryBLL.importTestBlockLibrary(String FileUrl, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\LedgerManagement\TestBlockLibraryBLL.cs:行号 77
+   在 phians_laboratory.Controllers.LedgerManagementController.importTestBlockLibrary(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:行号 602
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+
+----------------------------------
+
+2018-12-24 14:54:30
+未将对象引用设置到对象的实例。
+异常信息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Phians_DAL.FixtureManagementDAL.importProbe(List`1 listmodel, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\LedgerManagement\FixtureManagementDAL.cs:行号 266
+   在 Phians_BLL.FixtureManagementBLL.importProbe(String FileUrl, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\LedgerManagement\FixtureManagementBLL.cs:行号 129
+   在 phians_laboratory.Controllers.LedgerManagementController.importProbe(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:行号 395
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 Phians_DAL.FixtureManagementDAL.importProbe(List`1 listmodel, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\LedgerManagement\FixtureManagementDAL.cs:行号 266
+   在 Phians_BLL.FixtureManagementBLL.importProbe(String FileUrl, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\LedgerManagement\FixtureManagementBLL.cs:行号 129
+   在 phians_laboratory.Controllers.LedgerManagementController.importProbe(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:行号 395
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：未将对象引用设置到对象的实例。
+
+----------------------------------
+
+2018-12-24 14:56:34
+SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+异常信息：System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 PetaPoco.Database.ExecuteScalarHelper(IDbCommand cmd) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 2495
+   在 PetaPoco.Providers.SqlServerDatabaseProvider.ExecuteInsert(Database db, IDbCommand cmd, String primaryKeyName) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Providers\SqlServerDatabaseProvider.cs:行号 47
+   在 PetaPoco.Database.ExecuteInsert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1364
+   在 PetaPoco.Database.Insert(Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1275
+   在 Phians_DAL.TestBlockLibraryDAL.importTestBlockLibrary(List`1 listmodel, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\LedgerManagement\TestBlockLibraryDAL.cs:行号 257
+   在 Phians_BLL.TestBlockLibraryBLL.importTestBlockLibrary(String FileUrl, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\LedgerManagement\TestBlockLibraryBLL.cs:行号 77
+   在 phians_laboratory.Controllers.LedgerManagementController.importTestBlockLibrary(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:行号 602
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常堆栈：   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 PetaPoco.Database.ExecuteScalarHelper(IDbCommand cmd) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 2495
+   在 PetaPoco.Providers.SqlServerDatabaseProvider.ExecuteInsert(Database db, IDbCommand cmd, String primaryKeyName) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Providers\SqlServerDatabaseProvider.cs:行号 47
+   在 PetaPoco.Database.ExecuteInsert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1364
+   在 PetaPoco.Database.Insert(Object poco) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\PetaPoco\Database.cs:行号 1275
+   在 Phians_DAL.TestBlockLibraryDAL.importTestBlockLibrary(List`1 listmodel, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_DAL\LedgerManagement\TestBlockLibraryDAL.cs:行号 257
+   在 Phians_BLL.TestBlockLibraryBLL.importTestBlockLibrary(String FileUrl, Guid OperatePerson) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\Phians_BLL\LedgerManagement\TestBlockLibraryBLL.cs:行号 77
+   在 phians_laboratory.Controllers.LedgerManagementController.importTestBlockLibrary(FormCollection FormCollection) 位置 f:\工作项目\20181008无损项目重新修改内容及记录\PhiansLaboratory1\phians_laboratory\Controllers\LedgerManagementController.cs:行号 602
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+异常简述：SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+
+----------------------------------
+

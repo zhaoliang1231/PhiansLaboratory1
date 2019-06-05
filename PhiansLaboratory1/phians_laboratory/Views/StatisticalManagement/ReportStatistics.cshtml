@@ -1,0 +1,47 @@
+﻿@model dynamic
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title> 项目统计分析</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+
+    @Html.CombresLink("ReportStatisticsJs")
+
+</head>
+<body>
+    <div id="tt" class="easyui-tabs">
+        <div title="报告分析">
+            <div id="cc" class="easyui-layout" style="height:800px;">
+                <div data-options="region:'north',title:'图形分析',split:true" style="height:800px;overflow:hidden">
+                    <div id="container" style="width:100%;height:600px;"></div>
+                </div>
+            </div>
+        </div>
+        <div title="异常报告分析">
+            <div id="cc1" class="easyui-layout" style="height:800px;">
+                <div data-options="region:'north',title:'图形分析',split:true" style="height:400px;overflow:hidden">
+                    <div id="cc3" class="easyui-layout" style="width:100%;height:400px;overflow-x:hidden;">
+                        <div data-options="region:'west',split:true" style="width:50%;">
+                            <!-- 柱状图 -->
+                            <div id="Test_Container" style="width:100%;height:300px;"></div>
+                        </div>
+                        <div data-options="region:'center'" style="width:50%;padding:5px;">
+                            <div id="Test_ContainerPie" style="height:300px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div data-options="region:'south',title:'数据列表',split:true" id="TestList" style="height:300px;">
+                    <div id="TestList" style="width:400px;height:300px;"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+<script src="~/Scripts/echarts/echarts.js"></script>

@@ -1,0 +1,1248 @@
+
+ 
+记录时间：2018-11-26 09:30:50,951 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：LoginController
+            ActionName:Index
+            开始时间：2018/11/26 星期一 9:30:50
+            结束时间：2018/11/26 星期一 9:30:50
+            总 时 间：0.0050515秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:30:52,631 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：LoginController
+            ViewName:Index
+            开始时间：2018/11/26 星期一 9:30:50
+            结束时间：2018/11/26 星期一 9:30:52
+            总 时 间：1.6690955秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:30:58,823 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：LoginController
+            ActionName:login
+            开始时间：2018/11/26 星期一 9:30:58
+            结束时间：2018/11/26 星期一 9:30:58
+            总 时 间：0.3650234秒
+            Form表单数据：UserCount=YWRtaW4=&UserPwd=MTIzNDU2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:30:58,823 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：LoginController
+            ViewName:login
+            开始时间：2018/11/26 星期一 9:30:58
+            结束时间：2018/11/26 星期一 9:30:58
+            总 时 间：0秒
+            Form表单数据：UserCount=YWRtaW4=&UserPwd=MTIzNDU2
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:30:58,877 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:Index
+            开始时间：2018/11/26 星期一 9:30:58
+            结束时间：2018/11/26 星期一 9:30:58
+            总 时 间：0.0180248秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:00,173 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:Index
+            开始时间：2018/11/26 星期一 9:30:58
+            结束时间：2018/11/26 星期一 9:31:00
+            总 时 间：1.2960741秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:00,534 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:main
+            开始时间：2018/11/26 星期一 9:31:00
+            结束时间：2018/11/26 星期一 9:31:00
+            总 时 间：0.1600195秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:00,585 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:main
+            开始时间：2018/11/26 星期一 9:31:00
+            结束时间：2018/11/26 星期一 9:31:00
+            总 时 间：0.0510029秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:00,598 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:GetMenuData
+            开始时间：2018/11/26 星期一 9:31:00
+            结束时间：2018/11/26 星期一 9:31:00
+            总 时 间：0.1230232秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:00,598 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:GetMenuData
+            开始时间：2018/11/26 星期一 9:31:00
+            结束时间：2018/11/26 星期一 9:31:00
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:04,839 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：FunctionalModuleController
+            ActionName:FunctionalModule
+            开始时间：2018/11/26 星期一 9:31:04
+            结束时间：2018/11/26 星期一 9:31:04
+            总 时 间：3.97E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:06,029 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：FunctionalModuleController
+            ViewName:FunctionalModule
+            开始时间：2018/11/26 星期一 9:31:04
+            结束时间：2018/11/26 星期一 9:31:06
+            总 时 间：1.1900681秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:06,662 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：FunctionalModuleController
+            ActionName:LoadPage
+            开始时间：2018/11/26 星期一 9:31:06
+            结束时间：2018/11/26 星期一 9:31:06
+            总 时 间：0.019044秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:06,662 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：FunctionalModuleController
+            ViewName:LoadPage
+            开始时间：2018/11/26 星期一 9:31:06
+            结束时间：2018/11/26 星期一 9:31:06
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:41,098 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AbnormalReportEdit
+            开始时间：2018/11/26 星期一 9:31:41
+            结束时间：2018/11/26 星期一 9:31:41
+            总 时 间：0.0030026秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:31:44,272 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AbnormalReportEdit
+            开始时间：2018/11/26 星期一 9:31:41
+            结束时间：2018/11/26 星期一 9:31:44
+            总 时 间：3.1661811秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:07,303 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：FunctionalModuleController
+            ActionName:LoadPage
+            开始时间：2018/11/26 星期一 9:33:07
+            结束时间：2018/11/26 星期一 9:33:07
+            总 时 间：0.1740335秒
+            Form表单数据：id=2147efda-9ce3-4f56-b24c-cf2f16cabc54
+            URL参数：ParentId=2147efda-9ce3-4f56-b24c-cf2f16cabc54
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:07,303 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：FunctionalModuleController
+            ViewName:LoadPage
+            开始时间：2018/11/26 星期一 9:33:07
+            结束时间：2018/11/26 星期一 9:33:07
+            总 时 间：0秒
+            Form表单数据：id=2147efda-9ce3-4f56-b24c-cf2f16cabc54
+            URL参数：ParentId=2147efda-9ce3-4f56-b24c-cf2f16cabc54
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:08,552 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：FunctionalModuleController
+            ActionName:LoadPage
+            开始时间：2018/11/26 星期一 9:33:08
+            结束时间：2018/11/26 星期一 9:33:08
+            总 时 间：0.0350049秒
+            Form表单数据：id=2147efda-9ce3-4f56-b24c-cf2f16cabc52
+            URL参数：ParentId=2147efda-9ce3-4f56-b24c-cf2f16cabc52
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:08,553 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：FunctionalModuleController
+            ViewName:LoadPage
+            开始时间：2018/11/26 星期一 9:33:08
+            结束时间：2018/11/26 星期一 9:33:08
+            总 时 间：0秒
+            Form表单数据：id=2147efda-9ce3-4f56-b24c-cf2f16cabc52
+            URL参数：ParentId=2147efda-9ce3-4f56-b24c-cf2f16cabc52
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:09,585 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：FunctionalModuleController
+            ActionName:LoadPage
+            开始时间：2018/11/26 星期一 9:33:09
+            结束时间：2018/11/26 星期一 9:33:09
+            总 时 间：0.034064秒
+            Form表单数据：id=8b796ff8-9ac5-4e05-9400-7bb068142778
+            URL参数：ParentId=8b796ff8-9ac5-4e05-9400-7bb068142778
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:09,585 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：FunctionalModuleController
+            ViewName:LoadPage
+            开始时间：2018/11/26 星期一 9:33:09
+            结束时间：2018/11/26 星期一 9:33:09
+            总 时 间：0秒
+            Form表单数据：id=8b796ff8-9ac5-4e05-9400-7bb068142778
+            URL参数：ParentId=8b796ff8-9ac5-4e05-9400-7bb068142778
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:10,285 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：FunctionalModuleController
+            ActionName:LoadModuleInfo
+            开始时间：2018/11/26 星期一 9:33:10
+            结束时间：2018/11/26 星期一 9:33:10
+            总 时 间：0.134104秒
+            Form表单数据：PageId=8b796ff8-9ac5-4e05-9400-7bb068142778&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:10,285 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：FunctionalModuleController
+            ViewName:LoadModuleInfo
+            开始时间：2018/11/26 星期一 9:33:10
+            结束时间：2018/11/26 星期一 9:33:10
+            总 时 间：0秒
+            Form表单数据：PageId=8b796ff8-9ac5-4e05-9400-7bb068142778&page=1&rows=10
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:37,731 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AbnormalReportEdit
+            开始时间：2018/11/26 星期一 9:33:37
+            结束时间：2018/11/26 星期一 9:33:37
+            总 时 间：7.39E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:37,738 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AbnormalReportEdit
+            开始时间：2018/11/26 星期一 9:33:37
+            结束时间：2018/11/26 星期一 9:33:37
+            总 时 间：0.0070004秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:38,322 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateEditList
+            开始时间：2018/11/26 星期一 9:33:38
+            结束时间：2018/11/26 星期一 9:33:38
+            总 时 间：0.2131077秒
+            Form表单数据：search=&key=&history_flag=0&PageType=Edit&page=1&rows=20
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:38,322 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateEditList
+            开始时间：2018/11/26 星期一 9:33:38
+            结束时间：2018/11/26 星期一 9:33:38
+            总 时 间：0秒
+            Form表单数据：search=&key=&history_flag=0&PageType=Edit&page=1&rows=20
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:57,181 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AbnormalReportEdit
+            开始时间：2018/11/26 星期一 9:33:57
+            结束时间：2018/11/26 星期一 9:33:57
+            总 时 间：6.71E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:57,181 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AbnormalReportEdit
+            开始时间：2018/11/26 星期一 9:33:57
+            结束时间：2018/11/26 星期一 9:33:57
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:57,768 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateEditList
+            开始时间：2018/11/26 星期一 9:33:57
+            结束时间：2018/11/26 星期一 9:33:57
+            总 时 间：0.1041001秒
+            Form表单数据：search=&key=&history_flag=0&PageType=Edit&page=1&rows=25
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 09:33:57,768 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateEditList
+            开始时间：2018/11/26 星期一 9:33:57
+            结束时间：2018/11/26 星期一 9:33:57
+            总 时 间：0秒
+            Form表单数据：search=&key=&history_flag=0&PageType=Edit&page=1&rows=25
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:35,908 
+线程ID:[89] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportPreparation
+            开始时间：2018/11/26 星期一 10:19:35
+            结束时间：2018/11/26 星期一 10:19:35
+            总 时 间：0.0010203秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:36,100 
+线程ID:[89] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportPreparation
+            开始时间：2018/11/26 星期一 10:19:35
+            结束时间：2018/11/26 星期一 10:19:36
+            总 时 间：0.192011秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:37,729 
+线程ID:[89] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportPreparation
+            开始时间：2018/11/26 星期一 10:19:37
+            结束时间：2018/11/26 星期一 10:19:37
+            总 时 间：2.44E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:37,740 
+线程ID:[89] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportPreparation
+            开始时间：2018/11/26 星期一 10:19:37
+            结束时间：2018/11/26 星期一 10:19:37
+            总 时 间：0.0110007秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:37,882 
+线程ID:[84] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2018/11/26 星期一 10:19:37
+            结束时间：2018/11/26 星期一 10:19:37
+            总 时 间：0.1550332秒
+            Form表单数据：PageId=101
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:37,882 
+线程ID:[84] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2018/11/26 星期一 10:19:37
+            结束时间：2018/11/26 星期一 10:19:37
+            总 时 间：0秒
+            Form表单数据：PageId=101
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:38,827 
+线程ID:[84] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportEditList
+            开始时间：2018/11/26 星期一 10:19:38
+            结束时间：2018/11/26 星期一 10:19:38
+            总 时 间：0.1340873秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=20
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:38,827 
+线程ID:[84] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportEditList
+            开始时间：2018/11/26 星期一 10:19:38
+            结束时间：2018/11/26 星期一 10:19:38
+            总 时 间：0秒
+            Form表单数据：search=report_num&key=&history_flag=0&page=1&rows=20
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:41,647 
+线程ID:[83] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportReview
+            开始时间：2018/11/26 星期一 10:19:41
+            结束时间：2018/11/26 星期一 10:19:41
+            总 时 间：5.2E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:41,672 
+线程ID:[83] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportReview
+            开始时间：2018/11/26 星期一 10:19:41
+            结束时间：2018/11/26 星期一 10:19:41
+            总 时 间：0.0250015秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:42,102 
+线程ID:[83] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2018/11/26 星期一 10:19:42
+            结束时间：2018/11/26 星期一 10:19:42
+            总 时 间：0.059078秒
+            Form表单数据：PageId=102
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:42,103 
+线程ID:[83] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2018/11/26 星期一 10:19:42
+            结束时间：2018/11/26 星期一 10:19:42
+            总 时 间：0秒
+            Form表单数据：PageId=102
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:42,105 
+线程ID:[84] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportReview
+            开始时间：2018/11/26 星期一 10:19:42
+            结束时间：2018/11/26 星期一 10:19:42
+            总 时 间：7.82E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:42,111 
+线程ID:[84] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportReview
+            开始时间：2018/11/26 星期一 10:19:42
+            结束时间：2018/11/26 星期一 10:19:42
+            总 时 间：0.0060004秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:42,846 
+线程ID:[83] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadReportReviewList
+            开始时间：2018/11/26 星期一 10:19:42
+            结束时间：2018/11/26 星期一 10:19:42
+            总 时 间：0.1770206秒
+            Form表单数据：history_flag=0&page=1&rows=20
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:42,846 
+线程ID:[83] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadReportReviewList
+            开始时间：2018/11/26 星期一 10:19:42
+            结束时间：2018/11/26 星期一 10:19:42
+            总 时 间：0秒
+            Form表单数据：history_flag=0&page=1&rows=20
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:48,277 
+线程ID:[89] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportIssued
+            开始时间：2018/11/26 星期一 10:19:48
+            结束时间：2018/11/26 星期一 10:19:48
+            总 时 间：0.0020426秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:48,297 
+线程ID:[89] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportIssued
+            开始时间：2018/11/26 星期一 10:19:48
+            结束时间：2018/11/26 星期一 10:19:48
+            总 时 间：0.0200011秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:48,719 
+线程ID:[84] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportIssued
+            开始时间：2018/11/26 星期一 10:19:48
+            结束时间：2018/11/26 星期一 10:19:48
+            总 时 间：6.79E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:48,721 
+线程ID:[89] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2018/11/26 星期一 10:19:48
+            结束时间：2018/11/26 星期一 10:19:48
+            总 时 间：0.060068秒
+            Form表单数据：PageId=103
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:48,722 
+线程ID:[84] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportIssued
+            开始时间：2018/11/26 星期一 10:19:48
+            结束时间：2018/11/26 星期一 10:19:48
+            总 时 间：0.0030002秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:19:48,722 
+线程ID:[89] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2018/11/26 星期一 10:19:48
+            结束时间：2018/11/26 星期一 10:19:48
+            总 时 间：0秒
+            Form表单数据：PageId=103
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:26:47,141 
+线程ID:[68] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：FunctionalModuleController
+            ActionName:LoadPage
+            开始时间：2018/11/26 星期一 10:26:47
+            结束时间：2018/11/26 星期一 10:26:47
+            总 时 间：0.0970268秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:26:47,142 
+线程ID:[68] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：FunctionalModuleController
+            ViewName:LoadPage
+            开始时间：2018/11/26 星期一 10:26:47
+            结束时间：2018/11/26 星期一 10:26:47
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:37,701 
+线程ID:[59] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：mainformController
+            ActionName:GetMenuData
+            开始时间：2018/11/26 星期一 10:33:37
+            结束时间：2018/11/26 星期一 10:33:37
+            总 时 间：0.1271022秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:37,701 
+线程ID:[59] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：mainformController
+            ViewName:GetMenuData
+            开始时间：2018/11/26 星期一 10:33:37
+            结束时间：2018/11/26 星期一 10:33:37
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:41,792 
+线程ID:[58] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportManagement
+            开始时间：2018/11/26 星期一 10:33:41
+            结束时间：2018/11/26 星期一 10:33:41
+            总 时 间：0.0010877秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:41,809 
+线程ID:[58] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportManagement
+            开始时间：2018/11/26 星期一 10:33:41
+            结束时间：2018/11/26 星期一 10:33:41
+            总 时 间：0.0160009秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:42,123 
+线程ID:[58] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:loadPageShowSetting
+            开始时间：2018/11/26 星期一 10:33:42
+            结束时间：2018/11/26 星期一 10:33:42
+            总 时 间：0.0300066秒
+            Form表单数据：PageId=104
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:42,123 
+线程ID:[58] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:loadPageShowSetting
+            开始时间：2018/11/26 星期一 10:33:42
+            结束时间：2018/11/26 星期一 10:33:42
+            总 时 间：0秒
+            Form表单数据：PageId=104
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:42,139 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:ReportManagement
+            开始时间：2018/11/26 星期一 10:33:42
+            结束时间：2018/11/26 星期一 10:33:42
+            总 时 间：7.5E-06秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:42,142 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:ReportManagement
+            开始时间：2018/11/26 星期一 10:33:42
+            结束时间：2018/11/26 星期一 10:33:42
+            总 时 间：0.0030002秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:46,828 
+线程ID:[59] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AbnormalReportEdit
+            开始时间：2018/11/26 星期一 10:33:46
+            结束时间：2018/11/26 星期一 10:33:46
+            总 时 间：9.48E-05秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:46,839 
+线程ID:[59] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AbnormalReportEdit
+            开始时间：2018/11/26 星期一 10:33:46
+            结束时间：2018/11/26 星期一 10:33:46
+            总 时 间：0.0110007秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:47,159 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateEditList
+            开始时间：2018/11/26 星期一 10:33:47
+            结束时间：2018/11/26 星期一 10:33:47
+            总 时 间：0.0590127秒
+            Form表单数据：search=&key=&history_flag=0&PageType=Edit&page=1&rows=20
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:47,159 
+线程ID:[62] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateEditList
+            开始时间：2018/11/26 星期一 10:33:47
+            结束时间：2018/11/26 星期一 10:33:47
+            总 时 间：0秒
+            Form表单数据：search=&key=&history_flag=0&PageType=Edit&page=1&rows=20
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:50,636 
+线程ID:[56] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:AbnormalReportReview
+            开始时间：2018/11/26 星期一 10:33:50
+            结束时间：2018/11/26 星期一 10:33:50
+            总 时 间：0.001091秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 10:33:50,649 
+线程ID:[56] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:AbnormalReportReview
+            开始时间：2018/11/26 星期一 10:33:50
+            结束时间：2018/11/26 星期一 10:33:50
+            总 时 间：0.0130008秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 11:31:27,116 
+线程ID:[111] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateEditList
+            开始时间：2018/11/26 星期一 11:31:27
+            结束时间：2018/11/26 星期一 11:31:27
+            总 时 间：0.0500819秒
+            Form表单数据：search=&key=&history_flag=1&PageType=Edit&page=1&rows=25
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 11:31:27,116 
+线程ID:[111] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateEditList
+            开始时间：2018/11/26 星期一 11:31:27
+            结束时间：2018/11/26 星期一 11:31:27
+            总 时 间：0秒
+            Form表单数据：search=&key=&history_flag=1&PageType=Edit&page=1&rows=25
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 11:31:28,554 
+线程ID:[112] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ReportManagementController
+            ActionName:LoadUnusualCertificateEditList
+            开始时间：2018/11/26 星期一 11:31:28
+            结束时间：2018/11/26 星期一 11:31:28
+            总 时 间：0.0600485秒
+            Form表单数据：search=&key=&history_flag=0&PageType=Edit&page=1&rows=25
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 11:31:28,554 
+线程ID:[112] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：ReportManagementController
+            ViewName:LoadUnusualCertificateEditList
+            开始时间：2018/11/26 星期一 11:31:28
+            结束时间：2018/11/26 星期一 11:31:28
+            总 时 间：0秒
+            Form表单数据：search=&key=&history_flag=0&PageType=Edit&page=1&rows=25
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 11:36:30,484 
+线程ID:[117] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：FunctionalModuleController
+            ActionName:FunctionalModule
+            开始时间：2018/11/26 星期一 11:36:30
+            结束时间：2018/11/26 星期一 11:36:30
+            总 时 间：0.0020073秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 11:36:31,647 
+线程ID:[117] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：FunctionalModuleController
+            ViewName:FunctionalModule
+            开始时间：2018/11/26 星期一 11:36:30
+            结束时间：2018/11/26 星期一 11:36:31
+            总 时 间：1.1620665秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 11:36:32,087 
+线程ID:[114] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：FunctionalModuleController
+            ActionName:LoadPage
+            开始时间：2018/11/26 星期一 11:36:32
+            结束时间：2018/11/26 星期一 11:36:32
+            总 时 间：0.073099秒
+            Form表单数据：
+            URL参数：
+                    
+ 
+
+ 
+记录时间：2018-11-26 11:36:32,087 
+线程ID:[114] 
+日志级别：  INFO  
+跟踪描述：
+            View视图生成时间监控：
+            ControllerName：FunctionalModuleController
+            ViewName:LoadPage
+            开始时间：2018/11/26 星期一 11:36:32
+            结束时间：2018/11/26 星期一 11:36:32
+            总 时 间：0秒
+            Form表单数据：
+            URL参数：
+                    
+ 

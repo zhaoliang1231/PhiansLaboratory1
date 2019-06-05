@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16EA19BE-2D36-4F19-9839-CAA1E112C13C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Phians_DAL</RootNamespace>
+    <AssemblyName>Phians_DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LedgerManagement\TestBlockLibraryDAL.cs" />
+    <Compile Include="ProjectReview\ProjectReviewDAL.cs" />
+    <Compile Include="ProjectReview\QualificationManagementDAL.cs" />
+    <Compile Include="ReportAbnormal\AbnormalApplyReviewDAL.cs" />
+    <Compile Include="ReportAbnormal\AbnormalReportEditDAL.cs" />
+    <Compile Include="CommonDAL.cs" />
+    <Compile Include="LedgerManagement\EquipmentManagementDAL.cs" />
+    <Compile Include="LedgerManagement\FixtureManagementDAL.cs" />
+    <Compile Include="ManageQuality\EnvironmentManageDAL.cs" />
+    <Compile Include="FunctionalModuleDAL.cs" />
+    <Compile Include="MainformDAL.cs" />
+    <Compile Include="GetOperationType.cs" />
+    <Compile Include="MonitoringManagement\ItemMonitoringDAL.cs" />
+    <Compile Include="OfficeOperateDAL.cs" />
+    <Compile Include="PersonalCenter\MessageDAL.cs" />
+    <Compile Include="PersonalCenter\OperationUserDAL.cs" />
+    <Compile Include="ReportAbnormal\AbnormalReportManagementDAL.cs" />
+    <Compile Include="ReportManagement\ReportApprovalDAL.cs" />
+    <Compile Include="ReportManagement\ReportInspectDAL.cs" />
+    <Compile Include="ReportManagement\ReportManagementDAL.cs" />
+    <Compile Include="ReportManagement\ReportEditDAL.cs" />
+    <Compile Include="ReportManagement\ReportReviewDAL.cs" />
+    <Compile Include="StatisticalManagement\StatisticalManagementDAL.cs" />
+    <Compile Include="SystemSetting\DictionaryManagementDAL.cs" />
+    <Compile Include="SystemSetting\PageShowSettingDAL.cs" />
+    <Compile Include="SystemSetting\PersonalManagementDAL.cs" />
+    <Compile Include="SystemSetting\AuthorityManagementDAL.cs" />
+    <Compile Include="SystemSetting\OrganizationDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemSetting\OperationLogDAL.cs" />
+    <Compile Include="UserDAL.cs" />
+    <Compile Include="UserDemoDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PetaPoco\PetaPoco.csproj">
+      <Project>{33699753-151d-4100-8f12-9ae1aeb5c5bd}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Phans_DAL_INTERFACE\Phans_DAL_INTERFACE.csproj">
+      <Project>{153821af-c020-4b54-a696-cd4d1838c2b3}</Project>
+      <Name>Phans_DAL_INTERFACE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhiansCommon\PhiansCommon.csproj">
+      <Project>{31a8f6bb-aa28-4055-924f-ced966e5be81}</Project>
+      <Name>PhiansCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Phians_Entity\Phians_Entity.csproj">
+      <Project>{b551c389-a244-48dd-ac43-ae2c014d2a4d}</Project>
+      <Name>Phians_Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

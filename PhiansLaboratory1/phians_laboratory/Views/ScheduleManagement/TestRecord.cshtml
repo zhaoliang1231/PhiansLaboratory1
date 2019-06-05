@@ -1,0 +1,517 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title></title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    <link href="~/Content/kindeditor/themes/default/default.css" rel="stylesheet" />
+    <link href="~/Content/kindeditor/plugins/code/prettify.css" rel="stylesheet" />
+</head>
+<body>
+    @*任务列表*@
+    <div id="task_record"></div>
+
+    <div style="display:none">
+        @*测试记录列表*@
+        <div id="test_records"></div>
+        <!-- 任务工具栏 -->
+        <div id="task_record_toolbar">
+            <label>Sample Num:</label>
+            <input id="task_search1" style="width: 150px" class="easyui-textbox" />
+            <a href="javascript:;" id="search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="StartTesting" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">Start Testing</a>
+        </div>
+        <!--  @*开始测试*@-->
+        <div id="View_TestTask_dialog">
+            <div id="tt2" class="easyui-tabs">
+                <!--<%-- 基本信息 --%>-->
+                <div title="基本信息">
+                    <form style="margin-top: 20px; margin-left: 20px" id="info_Add">
+                        <fieldset style="border: 2px solid #c3ddf4;  width: 1000px;height:100px; margin-top: 15px;margin-left:20px;margin:auto;">
+                            <legend style="font-weight: 600">Test Title</legend>
+                            <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px;float: left;">
+                                <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">Test Title:</label>
+                                <input id="" class="easyui-textbox" name="ProjectName" style="width: 200px;" disabled />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 20px; margin-left: 10px; float: left;">
+                                <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">资质名称:</label>
+                                <input id="" class="easyui-textbox" name="ProjectName_n" style="width: 200px;" disabled />
+                            </div>
+                        </fieldset>
+                        <fieldset style="border: 2px solid #c3ddf4;  width: 1000px;height:400px; margin-top: 30px;margin-left:20px;margin:auto;">
+                            <legend style="font-weight: 600">Information</legend>
+                            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px;float: left;">
+                                <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">SampleQty:</label>
+                                <input id="" class="easyui-textbox" name="SampleQty" style="width: 200px;" readonly />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">SampleNo:</label>
+                                <input id="" class="easyui-textbox" name="SampleNo" style="width: 200px;" readonly />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">Operator:</label>
+                                <input id="Operator" class="easyui-textbox" name="Operator" style="width: 200px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">TestStartDate:</label>
+                                <input id="TestStartDate" class="easyui-datetimebox" name="TestStartDate" style="width: 200px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">TestEndDate:</label>
+                                <input id="TestEndDate" class="easyui-datetimebox" name="TestEndDate" style="width: 200px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">Room Num:</label>
+                                <input id="RoomNum" class="easyui-combobox" name="RoomNum" style="width: 200px;" />
+                            </div>
+                            <div class="h_dline" style="height: 23px; margin-top: 10px; margin-left: 10px; float: left;">
+                                <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">Lab Climate Conditions:</label>
+                                <input id="Temperature" class="easyui-textbox" name="Temperature" style="width: 200px;" />℃
+                                <input id="Humidity" class="easyui-textbox" name="humidity" style="width: 200px;" />%RH
+                            </div>
+                            <div style="margin:10px 25px;float: left;width:100%;">
+                                <div class="h_d" style="margin-top:4px;margin-bottom:4px;margin-right:25px">
+                                    <div class="h_d1" style="width:150px;text-align:right;">SetupRemark：</div>
+                                    <input class="easyui-textbox" name="SetupRemark" id="SetupRemark" style="width: 500px;height:66px;" data-options="multiline:true" />
+                                </div>
+                            </div>
+                            <div class="h_dline" style="margin:0 10px;float: left;width:100%;">
+                                <label class="h_d1" style="width: 170px;text-align:right;display:inline-block">Conculsion:</label>
+                                <input class="easyui-textbox" style="width:500px;height:66px;" name="Conculsion" id="Conculsion" />
+                            </div>
+                            <div class="h_dline" style="height: 23px;margin-top: 10px; margin-left: 200px; float: left;width:100%">
+                                <a href="javascript:;" id="information_save" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">Save</a>
+                            </div>
+                          
+                           
+                           
+                        </fieldset>
+                    </form>
+
+                </div>
+                <!--<%-- 上传文件 --%>-->
+                <div title="检验条件">
+                    <!--style给定宽度可以影响编辑器的最终宽度-->
+                    <div id="p" class="easyui-panel" title="检验条件/检验标准" style="width:100%;height:700px;padding:10px;background:#fafafa;">
+                        <!--style给定宽度可以影响编辑器的最终宽度-->
+                        <form style="float:left;width:50%;position:relative;" id="form_submit" runat="server">
+                            <textarea id="editor" runat="server" style="width:100%;height:450px;float:left;overflow-x:hidden;"></textarea>
+
+                        </form>
+                        <form style="float:left;width:50%;position:relative;" id="form_submit1" runat="server">
+                            <textarea id="editor1" runat="server" style="width:100%;height:450px;float:left;overflow-x:hidden;"></textarea>
+
+                        </form>
+                    </div>
+                </div>
+                <!--<%-- 测试设备 --%>-->
+                <div title="检测设备">
+                    <div id="View_TestEquipment_datagrid"></div>
+                </div>
+                <!--<%-- 测试数据 --%>-->
+                <div title="检测数据">
+                    <div id="tt3" class="easyui-tabs" style="height:720px;">
+                        <div title="3.1 Data">
+                            <div id="UploadTestDataFile_datagrid"></div>
+                        </div>
+                        <div title="3.2 Set-up Data">
+                            <div id="View_photo_records_datagrid1"></div>
+                        </div>
+                        <div title="3.3 Monitor Data">
+                            <div id="View_photo_records_Monitor_datagrid"></div>
+                        </div>
+                        <div title="3.4 Test Photos">
+                            <div id="View_photo_records_Test_datagrid"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--<%-- 上传文件 --%>-->
+                @*<div title="查看测试记录" style="display:none">
+                        <div id="test_records_datagrid"></div>
+                    </div>*@
+                <!--<%-- 上传文件 --%>-->
+                <div title="检测结果&&备注">
+                    <form method="post" id="Submit_Remark_dialog">
+                        <div style="margin-right:25px;width:700px;margin:50px auto;">
+                            <div class="h_d">
+                                <label style="width:100px;text-align:right;display:inline-block">Test Result：</label>
+                                <input class="easyui-textbox" style="width:500px;height:150px;" name="TestResult" data-options="multiline:true" id="TestResult" />
+                            </div>
+                            <div class="h_d" style="margin:25px auto;">
+                                <div class="h_d1" style="width:100px;text-align:right;">Remark：</div>
+                                <input class="easyui-textbox" name="TaskRemarks" id="" style="width: 500px;height:150px;" data-options="multiline:true" />
+                            </div>
+                            <a href="javascript:;" id="Submit_Remark" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true" style="margin-left:500px;font-size:16px;">Submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="View_TestTask_toolbar">
+            <a href="javascript:;" id="View_Test_information" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">View Test information</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            @*<a href="#" id="View_Take_photo1" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">View Upload File</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="#" id="Upload_Record_Template" class="easyui-linkbutton" data-options="iconCls:'icon-upload',plain:true">Upload Record</a>*@
+            @*<span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="#" id="TestUploadInformation" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">View Upload Information</a>*@
+            @*<span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="#" id="ViewTestDataFile" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">ViewTestDataFile</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="#" id="test_record_look" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">View Test Records</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+            @*<span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="#" id="ConfirmComplete" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">Confirm Completion</a>*@
+        </div>
+        <!-- 查看测试记录工具栏 -->
+        <div id="test_records_toolbar">
+            <a href="javascript:;" id="edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">Edit Test Records</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <label>Range:</label>
+            <input id="records_key" style="width: 150px" class="easyui-combobox" data-options="editable:true" />
+            <label>for</label>
+            <input id="records_key1" style="width: 150px" class="easyui-textbox" />
+            <a href="javascript:;" id="key" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="import_records" class="easyui-linkbutton" data-options="iconCls:'icon-undo',plain:true">Import Data</a>
+        </div>
+        <!-- 导入测试数据 -->
+        <form id="import_file" style="overflow-x:hidden;" enctype="multipart/form-data" method="post">
+            <div style="margin-left:30px">
+                <div class="h_dline" style="height: 23px; margin-top: 40px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 180px;float:left;margin-top:5px">Maintitle：</p>
+                    <label for="Maintitle"><input type="radio" name="Maintitle" value="true" checked="checked" id="Maintitle" />True</label>
+                    <label for="Maintitle"><input type="radio" name="Maintitle" value="false" id="Maintitle1" />False</label>
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 30px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 180px;float:left;margin-top:5px">Row：</p>
+                    <input id="row" class="easyui-numberbox" name="row" style="width: 150px; height: 23px;" required="required" validtype="onlyNum" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 35px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 180px;float:left;margin-top:5px">MotoNum Column index：</p>
+                    <input id="MotoNumColumn" class="easyui-numberbox" name="MotoNumColumn" style="width: 150px; height: 23px" required="required" validtype="onlyNum" />
+                </div>
+                <div class="h_dline" style="height: 23px; margin-top: 35px;margin-left: 15px;float:left;">
+                    <p class="h_d1" style="width: 180px;float:left;margin-top:5px">Import Files：</p>
+                    <input type="file" name="uploadify" id="uploadify" />
+                </div>
+            </div>
+        </form>
+        @*3.2Set-uo Data*@
+        <div id="View_photo_record_toolbar1">
+            <a href="javascript:;" id="Take_photo" class="easyui-linkbutton" data-options="iconCls:'icon-photo',plain:true">Upload File</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="View_photo_list1" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">View Photo</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="View_photo_delete1" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+        </div>
+        <!--@*//查看上传文件*@-->
+        <div id="View_photo_record_toolbar">
+            <a href="javascript:;" id="View_photo_list" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">View Photo</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="View_photo_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+        </div>
+        @*3.3 Monitor Data*@
+        <div id="View_photo_record_Monitor_toolbar">
+            <a href="javascript:;" id="Take_photo_Monitor" class="easyui-linkbutton" data-options="iconCls:'icon-photo',plain:true">Upload File</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="View_photo_list_Monitor" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">View Photo</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="EditTestDataFile_" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">Online Edit</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="View_photo_delete_Monitor" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+        </div>
+        <!--@*//查看上传文件*@-->
+        <div id="View_photo_record_Monitor_toolbar1">
+            <a href="javascript:;" id="Take_photo_Monitor1" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">View Photo</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="View_photo_delete_Monitor1" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+        </div>
+        @*3.4 Test Photos*@
+        <div id="View_photo_record_Test_toolbar">
+            <a href="javascript:;" id="Take_photo_Test" class="easyui-linkbutton" data-options="iconCls:'icon-photo',plain:true">Upload File</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="View_photo_list_Test" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">View Photo</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="View_photo_delete_Test" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+        </div>
+        <!--@*//查看上传文件*@-->
+        <div id="View_photo_record_Test_toolbar1">
+            <a href="javascript:;" id="Take_photo_Test1" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">View Photo</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+            <a href="javascript:;" id="View_photo_delete_Test1" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+            <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+        </div>
+        <!--照相信息-->
+        <div id="take_photo_dialog" style="overflow-x:hidden;">
+            <div id="cc" class="easyui-layout" style="width:1250px;height:750px;">
+                <div data-options="region:'east'" style="width:450px;">
+                    <div id="View_photo_records_datagrid"></div>
+                </div>
+                <div data-options="region:'west'" style="width:800px;overflow-x:hidden">
+
+                    <div class="h_dline" style="height: 23px; margin-top: 10px;margin-bottom:4px; margin-left: 25px; float: left;width:100%;">
+                        <p class="h_d1" style="width: 150px">Choose operate type：</p>
+                        <span class="radioSpan" id="radioSpan">
+                            <input id="u_file" type="checkbox" checked="checked" value="0" /><label for="u_file">Upload File</label>
+                            <input id="u_photo" type="checkbox" value="1" /><label for="u_photo">Take Photo</label>
+                        </span>
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 4px;margin-bottom:4px; margin-left: 25px; float: left;width:100%;">
+                        <p class="h_d1" style="width: 150px">SortNum：</p>
+                        <input id="SortNum" class="easyui-numberbox" style="width: 250px" required="required" />
+                    </div>
+                    <div style="margin:0px 25px;float: left;width:100%;display: none">
+                        <div class="h_d" style="margin-top:4px;margin-bottom:4px;margin-right:25px">
+                            <div class="h_d1" style="width:150px;text-align:right;">Font Remark：</div>
+                            <input class="easyui-textbox" name="Content" id="Content" style="width: 400px;height:66px;" data-options="multiline:true" />
+                        </div>
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 10px;margin-bottom:4px; margin-left: 25px; float: left;width:100%;" id="radio_choose">
+                        <p class="h_d1" style="width: 150px">Choose operate file：</p>
+                        <span class="radioSpan" id="radioSpan1">
+                            <input id="u_file1" type="checkbox"  value="0" /><label for="u_file1">Upload File</label>
+                        </span>
+                    </div>
+                    @*用来作为文件队列区域*@
+                    <div style="height: 180px; width: 750px; margin-top: 30px; margin-left: 20px; " id="upload_file">
+                        <form id="info_form_photo" method="post" enctype="multipart/form-data">
+                            <div class="h_d" style="margin-top: 4px;margin-bottom:4px; margin-right:20px;float:left;">
+                                <div class="h_d1" style="width:150px;text-align:right;" id="name">Photo Name：</div>
+                                <input class="easyui-textbox" name="PicName" id="PicName" style="width: 250px" />
+                            </div>
+                            <div class="h_d" style="margin-top: 4px;margin-bottom:4px; margin-right:20px;float:left;">
+                                <div class="h_d1" style="width:150px;text-align:right;" id="Photo">Photo：</div>
+                                <input class="easyui-filebox" name="PicUrl" style="width: 250px" />
+                            </div>
+                        </form>
+                        <div style="margin-left: 50px;margin-top:20px;display:inline-block;width:100%;">
+                            <a href="javascript:;" id="save_image" style="margin-left: 150px;margin-top:20px;" class="easyui-linkbutton" data-options="iconCls:'icon-ok'">Save Photo</a>
+                        </div>
+                    </div>
+
+                    <div style="margin:0px 100px;display:none;width:100%;" id="upload_piture">
+                        <iframe id="WebCam_photo" src="" width="520" height="450" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--@*//查看上传文件*@-->
+        <div id="View_photo_records1">
+
+            <!-- 任务工具栏 -->
+            @*<div id="View_photo_record_toolbar">
+                <a href="#" id="View_photo_list" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">View Photo</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="#" id="View_photo_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                </div>*@
+            @*</div>*@
+            <!--@*查看图片*@-->
+            <div id="look_photo_detail" style="text-align:center;margin: auto">
+                <img src="#" id="detail_img" style="width:70%;margin-top:30px;"/>
+            </div>
+
+            <!--@*修改测试记录*@-->
+            <form id='edit_test_records' method="post"></form>
+            <!-- 查看上传列表信息 -->
+            <div id="UploadTestDataFile_dialog">
+
+                @*UploadTestDataFile*@
+                <div id="UploadTestDataFile_datagrid_toolbar">
+                    <a href="javascript:;" id="UploadTestDataFile_upload" class="easyui-linkbutton" data-options="iconCls:'icon-upload',plain:true">UploadData</a>
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <a href="javascript:;" id="UploadTestDataFile_download" class="easyui-linkbutton" data-options="iconCls:'icon-redo',plain:true">Download</a>
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <a href="javascript:;" id="EditTestDataFile" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">Online Edit</a>
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                    <a href="javascript:;" id="Delete_UploadData" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">DeleteUploadData</a>
+                </div>
+            </div>
+            <!-- 上传列表信息 -->
+            <form id="UploadTestDataFile_form" method="post" enctype="multipart/form-data">
+                <fieldset style="border: 1px solid #c3ddf4; height: 180px; width: 600px; margin-top: 15px;margin-left:20px">
+                    <legend style="font-weight: 600">Upload Record Data</legend>
+                    <div class="h_d1" style="margin-left: 50px;margin-top:25px">
+                        <label style="width:100px;text-align:right">DataType：</label><input class="easyui-combobox" style="width:350px;height:28px" name="DataType" required="required" id="DataType" />
+                    </div>
+                    <div class="h_d1" style="margin-left: 50px;margin-top:10px">
+                        <label style="width:100px;text-align:right">Import File：</label><input class="easyui-filebox" style="width:350px;height:28px" name="FileName" required="required" id="UploadTestDataFile_Name" />
+
+                    </div>
+                    <div class="h_d" style="margin-top: 20px;margin-left:100px">
+                        <a href="javascript:;" id="upload_file_save" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">Upload File</a>
+                    </div>
+                </fieldset>
+
+                <fieldset style="border: 1px solid #c3ddf4; height: 180px; width: 600px; margin-top: 15px;margin-left:20px">
+                    <legend style="font-weight: 600">Detection Report Template</legend>
+                    <div class="h_d" style="margin-top: 30px;margin-left:25px">
+                        <label style="width:140px;text-align:right;display:inline-block">Report Template：</label>
+                        <input id="recordTemplate" class="easyui-combobox" style="width: 260px;" require="require" />
+                    </div>
+                    <div class="h_d" style="margin-top: 30px;margin-left:55px">
+                        <a href="javascript:;" id="view_record_template_temp" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">View Report Template</a>
+                        <a href="javascript:;" id="load_record_template" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">Load Report Template</a>
+                    </div>
+                </fieldset>
+            </form>
+            <!-- MTR完成填入开始结束时间 -->
+            <form id="Complete_dialog" method="post" enctype="multipart/form-data">
+                @*<div class="h_d1" style="margin-left: 50px;margin-top:25px;">
+                        <label style="width:100px;text-align:right;display:inline-block">Test Result：</label>
+                        <input class="easyui-textbox" style="width:350px;height:150px;" name="TestResult" required="required" id="TestResult" />
+                    </div>*@
+                @*<div class="h_d1" style="margin-left: 50px;margin-top:15px">
+                        <label style="width:100px;text-align:right;display:inline-block">Conculsion：</label><input class="easyui-textbox" style="width:350px;height:150px;" name="Conculsion" id="Conculsion" />
+                    </div>*@
+                @* <div class="h_d1" style="margin-left: 50px;margin-top:15px">
+                        <label style="width:100px;text-align:right;display:inline-block">Task Remarks：</label><input class="easyui-textbox" style="width:350px;height:26px;" name="TaskRemarks" id="TaskRemarks" />
+                    </div>*@
+            </form>
+            <!--  @*查看测试设备*@-->
+            <div id="View_TestEquipment_dialog">
+                @*<div id="View_TestEquipment_datagrid"></div>*@
+            </div>
+            <div id="View_TestEquipment_toolbar">
+                <a href="javascript:;" id="Scan" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">Scan</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+                <a href="javascript:;" id="Scan_delete" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true">Delete</a>
+                <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>
+
+            </div>
+            <!--  @*查看测试记录信息*@-->
+            <div id="View_TestInformation_dialog">
+                <div id="View_TestInformation_datagrid"></div>
+            </div>
+            <div id="View_TestInformation_toolbar">
+                @*<a href="#" id="Scan" class="easyui-linkbutton" data-options="iconCls:'icon-read',plain:true">Scan</a>
+                    <span class="datagrid-btn-separator" style="vertical-align: middle; height: 22px; display: inline-block; float: none"></span>*@
+
+            </div>
+            <!-- 扫码 -->
+            <form id="Scan_dialog" method="post" enctype="multipart/form-data">
+                <div class="h_d1" style="margin-left: 50px;margin-top:50px">
+                    <label style="width:100px;text-align:right">EquipmentCode：</label><input class="easyui-textbox" style="width:350px;height:28px" name="EquipmentCode" required="required" id="EquipmentCode" />
+                    <a href="javascript:;" id="Scan_View" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">View</a>
+                </div>
+                <fieldset style="border: 1px solid #c3ddf4; height: 280px; width: 600px; margin-top: 15px;margin-left:20px">
+                    <div class="h_dline" style="height: 23px; margin-top: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Manufactory No.:</label>@*出厂编号*@
+                        <input id="ManufactoryNum" class="easyui-textbox" name="ManufactoryNum" style="width: 140px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 10px; float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Equipment Name:</label>@*设备名称*@
+                        <input id="EquipmentName" class="easyui-textbox" name="EquipmentName" style="width: 140px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 10px; float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Status:</label>@*制造厂商*@
+                        <input id="StatusFlag" class="easyui-textbox" name="StatusFlag" style="width: 140px;" />
+                    </div>
+                    <div class="h_dline" style="height: 23px; margin-top: 10px;float: left;">
+                        <label class="h_d1" style="width: 140px;text-align:right;display:inline-block">Cal. Date:</label>@*设备规格型号*@
+                        <input id="CalibrationDate" class="easyui-textbox" name="CalibrationDate" style="width: 140px;" />
+                    </div>
+
+                </fieldset>
+
+            </form>
+            <!-- 测试记录模板 -->
+            <form id="record_template_form" style="overflow-x: hidden;">
+                <div style="float: left">
+                    <!--<%-- 检测报告模板 --%>-->
+                    @*<fieldset style="border: 1px solid #c3ddf4; height: 280px; width: 600px; margin-top: 15px;margin-left:20px">
+                            <legend style="font-weight: 600">Detection Record Template</legend>
+                            <div class="h_d" style="margin-top: 30px;margin-left:25px">
+                                <label style="width:140px;text-align:right;display:inline-block">Record Template：</label>
+                                <input id="recordTemplate" class="easyui-combobox" style="width: 260px;" require="require" />
+                            </div>
+                            <div class="h_d" style="margin-top: 30px;margin-left:55px">
+                                <a href="#" id="view_record_template_temp" class="easyui-linkbutton" data-options="iconCls:'icon-Document',plain:true">View Record Template</a>
+                                <a href="#" id="load_record_template" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:true">Load Record Template</a>
+                            </div>
+                        </fieldset>*@
+                </div>
+            </form>
+            @*添加/修改MTR信息*@
+        </div>
+        <a href="@PageOffice.PageOfficeLink.OpenWindow("/ScheduleManagement/LoadingRecord?", "width=1300px;height=1000px;")" id="ShowOffice_"></a>
+        <a href="@PageOffice.PageOfficeLink.OpenWindow("/WordCommon/WordOperation?", "width=1300px;height=1000px;")" id="ShowOffice"></a>
+        <a href="@PageOffice.PageOfficeLink.OpenWindow("/WordCommon/OfficeRevisionsShow?", "width=1300px;height=1000px;")" id="ShowOffice2"></a>
+        <a href="@PageOffice.PageOfficeLink.OpenWindow("/WordCommon/WordEdit?", "width=1300px;height=1000px;")" id="ShowOffice1"></a>
+        <a href="@PageOffice.PageOfficeLink.OpenWindow("/WordCommon/WordEdit?", "width=1300px;height=1000px;")" id="ShowOffice3"></a>
+        <a href="@PageOffice.PageOfficeLink.OpenWindow("/WordCommon/WordEdit?", "width=1300px;height=1000px;")" id="ShowOffice4"></a>
+    </div>
+</body>
+
+</html>
+<!--引入引入kindeditor编辑器相关文件-->
+@*<script src="~/Content/kindeditor/kindeditor-all.js"></script>
+<script src="~/Content/kindeditor/lang/zh-CN.js"></script>
+<script src="~/Content/kindeditor/plugins/code/code.js"></script>*@
+@Html.CombresLink("TestRecordJs")
+@*<script>
+    $(function () {
+        //详情编辑器
+        KindEditor.ready(function (K) {
+            this.editor
+                = K.create('textarea[id="editor"]', {
+                    cssPath: '../../Content/kindeditor/plugins/code/prettify.css',
+                    uploadJson: '@Url.Content("~/Ashx/upload_json.ashx")',//指定上传图片的服务器端程序
+                    fileManagerJson: '@Url.Content("~/Ashx/file_manager_json.ashx")',//指定浏览远程图片的服务器端程序
+                    allowFileManager: true,
+                    afterCreate: function () { //kindeditor创建后，将编辑器的内容设置到原来的textarea控件里
+                        this.sync();
+                    },
+                    afterBlur: function () { this.sync(); },
+                    items: [
+                   'source', '|', 'undo', 'redo', '|', 'preview',
+                  '|', 'justifyleft', 'justifycenter', 'justifyright',
+                  'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+                  'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen', '/',
+                  'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+                  'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'multiimage',
+                    ],
+                });
+
+        });
+        //详情编辑器
+        KindEditor.ready(function (K) {
+            this.editor
+                = K.create('textarea[id="editor1"]', {
+                    cssPath: '../../Content/kindeditor/plugins/code/prettify.css',
+                    uploadJson: '@Url.Content("~/Ashx/upload_json.ashx")',//指定上传图片的服务器端程序
+                    fileManagerJson: '@Url.Content("~/Ashx/file_manager_json.ashx")',//指定浏览远程图片的服务器端程序
+                    allowFileManager: true,
+                    afterCreate: function () { //kindeditor创建后，将编辑器的内容设置到原来的textarea控件里
+                        this.sync();
+                    },
+                    afterBlur: function () { this.sync(); },
+                     items: [
+                     'source', '|', 'undo', 'redo', '|', 'preview',
+		            '|', 'justifyleft', 'justifycenter', 'justifyright',
+		            'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+		            'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen', '/',
+		            'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+		            'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'multiimage',
+                    ],
+                });
+
+        });
+    });
+</script>*@

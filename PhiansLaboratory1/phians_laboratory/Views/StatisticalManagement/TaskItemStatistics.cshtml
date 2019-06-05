@@ -1,0 +1,86 @@
+﻿@model dynamic
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" /> 
+    <title> 项目统计分析</title>
+    @using Combres.Mvc
+    @Html.CombresLink("siteCss")
+    
+    @Html.CombresLink("TaskItemStatisticsJs")
+    <style>
+        #Test_Container canvas{
+            width:760px !important;
+        }
+    </style> 
+</head>
+<body>
+    <div id="tt" class="easyui-tabs" >
+        <div title="MTR分析">
+            <div id="cc" class="easyui-layout" style="height:800px;">
+                <div data-options="region:'north',title:'图形分析',split:true" style="height:400px;overflow:hidden">
+                    <div class="sTestSearch fr" style="height:40px;margin-top:10px; text-align:center;">
+                        <form>
+                            <label>图表类型：</label>
+                            <input id="Echar_Type" class="easyui-combobox" style="width:200px" />
+                            <label>开始时间：</label>
+                            <input id="StartTime" class="easyui-datebox" style="width: 150px" />
+                            <label>结束时间： </label>
+                            <input id="EndTime" class="easyui-datebox" style="width: 150px" />
+                            <a href="javascript:;" id="search" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+                        </form>
+                    </div>
+                    <div id="cc2" class="easyui-layout" style="width:100%;height:400px;overflow-x:hidden;">
+                        <div data-options="region:'west',split:true" style="width:50%;">
+                            <!-- 柱状图 -->
+                            <div id="container" style="width:100%;height:300px;"></div>
+                        </div>
+                        <div data-options="region:'center'" style="width:50%;padding:5px;">
+                            <div id="container_pie" style="width:100%;height:300px;"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div data-options="region:'south',title:'列表显示',split:true" id="List" style="height:400px;">
+                    <div id="DataList"></div>
+                </div>
+            </div>  
+        </div>
+        <div title="测试项目类型分析">
+            <div id="cc1" class="easyui-layout" style="height:800px;">
+                <div data-options="region:'north',title:'图形分析',split:true" style="height:400px;overflow:hidden">
+                    <div class="sTestSearch fr" style="height:40px;margin-top:10px; text-align:center;">
+                        <form>
+                            <label>开始时间：</label>
+                            <input id="StartTime1" class="easyui-datebox" style="width: 150px" />
+                            <label>结束时间： </label>
+                            <input id="EndTime1" class="easyui-datebox" style="width: 150px" />
+                            <a href="javascript:;" id="search1" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">Search</a>
+                        </form>
+                    </div>
+                    <div id="cc3" class="easyui-layout" style="width:100%;height:400px;overflow-x:hidden;">
+                        <div data-options="region:'west',split:true" style="width:50%;">
+                            <!-- 柱状图 -->
+                            <div id="Test_Container" style="height:300px;"></div>
+                        </div>
+                        <div data-options="region:'center'" style="width:50%;padding:5px;">
+                            <div id="Test_ContainerPie" style="height:300px;"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div data-options="region:'south',title:'数据列表',split:true" id="TestList" style="height:300px;">
+                    <div id="TestList" style="width:400px;height:300px;"></div>
+                </div>
+            </div>
+        </div>
+       
+    </div>  
+   
+</body>
+</html>
+<script src="~/Scripts/echarts/echarts.js"></script>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>combres.mvc</id>
+    <version>2.3.0.4</version>
+    <title>Combres.Mvc</title>
+    <authors>Buu Nguyen</authors>
+    <owners>Buu Nguyen</owners>
+    <licenseUrl>https://github.com/buunguyen/combres/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/buunguyen/combres</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Include extension methods for Combres to integrate more nicer with ASP.NET MVC applications.</description>
+    <summary>MVC Extension for Combres.</summary>
+    <releaseNotes />
+    <language>en-US</language>
+    <tags>asp.net asp.net-mvc azure closure compression minification yui yuicompressor ajaxmin dotless yslow performance obfuscation optimization speed</tags>
+    <dependencies>
+      <dependency id="combres" version="[2.3.0.4]" />
+    </dependencies>
+  </metadata>
+</package>
